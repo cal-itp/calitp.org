@@ -1,0 +1,24 @@
+article {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 80vw;
+}
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+picture.railway img {
+  width: 100%;
+}
+
+nav .links {
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 1em;
+}
