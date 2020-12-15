@@ -1,0 +1,5 @@
+.jekyll-*
+.bundle
+.netlify
+.vscode
+_site
