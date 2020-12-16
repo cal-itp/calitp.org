@@ -15,7 +15,13 @@ picture.railway img {
   width: 100%;
 }
 
-nav .links {
+header nav, footer nav {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1.75fr 0.25fr;
+}
+
+header nav .links, footer nav .links {
   list-style: none;
   display: grid;
   grid-template-rows: 1fr;
