@@ -9,19 +9,19 @@ layout: default
       <img id="logo" src="images/calitp_logo_MAIN.png" alt="Cal-ITP: California Integrated Travel Project" width="215"/>
     </picture>
     <ul class="links">
-      <li><a href="#">About the project</a></li>
-      <li><a href="#">Fast facts</a></li>
-      <li><a href="#">Reach out</a></li>
+      <li><a href="#about"><strong>About the project</strong></a></li>
+      <li><a href="#fastfacts">Fast facts</a></li>
+      <li><a href="#reachout">Reach out</a></li>
       <!-- <li><a>Support for Transit Providers</a></li> -->
     </ul>
   </nav>
 </header>
 
 <article>
-  <section id="deck" style="display:grid; grid-template-rows: 1fr; grid-template-columns: 1.75fr 0.25fr;">
+  <section id="deck">
     <section>
       <h1>A modern and consistent transportation experience throughout California</h1>
-      <p>Learn how the California Integrated Travel Project (Cal-ITP) is making riding by rail and bus simpler and more cost-effective—for providers and riders.</p>
+      <p class="big">Learn how the California Integrated Travel Project (Cal-ITP) is making riding by rail and bus simpler and more cost-effective—for providers and riders.</p>
     </section>
 
     <picture>
@@ -29,41 +29,35 @@ layout: default
     </picture>
   </section>
 
-  <section style="display: grid; grid-template-rows: 1fr 1fr 1fr; grid-template-columns: 1fr;">
-    <section>
-      <section style="display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr;">
-        <picture>
-          <img id="enabling-contactless-payment" src="images/enabling-contactless-payment.png" alt="A trio of images, from left to right: a contactless-enabled bank card, a mobile wallet on a smartphone, and a mobile wallet on a smartwatch">
-        </picture>
-        <section>
-          <h2>Enabling contactless payments</h2>
-          <p>Adding a contactless payment reader to a bus or train means customers can quickly and easily tap to pay as they board with the bank card or smartphone that’s already in their pocket—just like they’d tap to buy a coffee.</p>
-          <p>Starting with Monterey-Salinas Transit, Cal-ITP and partners like Visa will soon demonstrate how a transit provider that has traditionally used cash and agency-specific fare cards can accept contactless bank card payments like any other merchant. This system can scale to create fare-payment consistency across the hundreds of transit providers throughout California!</p>
-        </section>
+  <section id="details">
+    <section id="enabling-contactless-payment" class="callout">
+      <picture>
+        <img src="images/enabling-contactless-payment.png" alt="A trio of images, from left to right: a contactless-enabled bank card, a mobile wallet on a smartphone, and a mobile wallet on a smartwatch">
+      </picture>
+      <section>
+        <h2>Enabling contactless payments</h2>
+        <p>Adding a contactless payment reader to a bus or train means customers can quickly and easily tap to pay as they board with the bank card or smartphone that’s already in their pocket—just like they’d tap to buy a coffee.</p>
+        <p>Starting with Monterey-Salinas Transit, Cal-ITP and partners like Visa will soon demonstrate how a transit provider that has traditionally used cash and agency-specific fare cards can accept contactless bank card payments like any other merchant. This system can scale to create fare-payment consistency across the hundreds of transit providers throughout California!</p>
       </section>
     </section>
 
-    <section>
-      <section style="display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr;">
-        <picture>
-          <img id="automating-customer-discounts" src="images/automating-customer-discounts.png" alt="Checking a state-issued identification">
-        </picture>
-        <section>
-          <h2>Automating customer discounts</h2>
-          <p>Cal-ITP is working with state partners to streamline the process for riders to instantly qualify for and receive discounts across all California transit providers without having to prove eligibility to each agency. Older adults, youth, lower-income riders, veterans, people with disabilities, and others will be able to access free or reduced fares without the hassle of paperwork.</p>
-        </section>
+    <section id="automating-customer-discounts" class="callout">
+      <picture>
+        <img src="images/automating-customer-discounts.png" alt="Checking a state-issued identification">
+      </picture>
+      <section>
+        <h2>Automating customer discounts</h2>
+        <p>Cal-ITP is working with state partners to streamline the process for riders to instantly qualify for and receive discounts across all California transit providers without having to prove eligibility to each agency. Older adults, youth, lower-income riders, veterans, people with disabilities, and others will be able to access free or reduced fares without the hassle of paperwork.</p>
       </section>
     </section>
 
-    <section>
-      <section style="display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr;">
-        <picture>
-          <img id="standardizing-trip-quality" src="images/standardizing-trip-quality.png" alt="A bus that transits real-time arrival and departure information">
-        </picture>
-        <section>
-          <h2>Standardizing information for easy trip planning</h2>
-          <p>Cal-ITP is helping transit providers remove the guesswork for riders wondering when the next bus or train will arrive or if they’ll make their connection by using the General Transit Feed Specification (GTFS)—the global standard for publishing transit information. Cal-ITP developed California Minimum GTFS Guidelines and is working to ensure statewide GTFS static coverage by the end of 2020 and GTFS Realtime by the end of 2021. Along the way, the Cal-ITP team will support transit providers by assessing their systems and providing technical assistance so riders can easily access complete, accurate, consistent, and timely mobility data for their journey.</p>
-        </section>
+    <section id="standardizing-trip-quality" class="callout">
+      <picture>
+        <img src="images/standardizing-trip-quality.png" alt="A bus that transits real-time arrival and departure information">
+      </picture>
+      <section>
+        <h2>Standardizing information for easy trip planning</h2>
+        <p>Cal-ITP is helping transit providers remove the guesswork for riders wondering when the next bus or train will arrive or if they’ll make their connection by using the General Transit Feed Specification (GTFS)—the global standard for publishing transit information. Cal-ITP developed California Minimum GTFS Guidelines and is working to ensure statewide GTFS static coverage by the end of 2020 and GTFS Realtime by the end of 2021. Along the way, the Cal-ITP team will support transit providers by assessing their systems and providing technical assistance so riders can easily access complete, accurate, consistent, and timely mobility data for their journey.</p>
       </section>
     </section>
   </section>

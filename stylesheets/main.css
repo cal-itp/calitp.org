@@ -1,4 +1,5 @@
 article {
+  margin-block-start: 140px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   width: 80vw;
@@ -15,10 +16,21 @@ picture.railway img {
   width: 100%;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 10vw;
+  background-color: white;
+}
+
 header nav, footer nav {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 80vw;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.75fr 0.25fr;
+  padding: 0.5em;
 }
 
 header nav .links, footer nav .links {
@@ -26,5 +38,52 @@ header nav .links, footer nav .links {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, max-content);
-  grid-gap: 1em;
+  grid-gap: 5em;
+}
+
+.links a {
+  color: black;
+}
+
+#triforce {
+  width: 100%;
+}
+
+#deck {
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1.75fr 1fr;
+  grid-gap: 3em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 48.83px;
+}
+
+.big {
+  font-size: 24px;
+}
+
+#details {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+}
+
+#details .callout {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr;
+  color: white;
+}
+
+#details #enabling-contactless-payment {
+  background-image: url('../images/section-1-bg.svg');
+}
+#details #automating-customer-discounts {
+  background-image: url('../images/section-2-bg.svg');
+}
+#details #standardizing-trip-quality {
+  background-image: url('../images/section-3-bg.svg');
 }
