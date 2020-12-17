@@ -8,12 +8,30 @@ h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
 }
 
-p {
+h1 {
+  font-size: 48.83px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p, a, li {
   font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: black;
 }
 
 picture.railway img {
   width: 100%;
+  margin-block-start: 4em;
+  margin-block-end: 4em;
 }
 
 header {
@@ -23,6 +41,13 @@ header {
   background-color: white;
 }
 
+footer {
+  background-color: #323A45;
+}
+footer nav .links a {
+  color: white;
+}
+
 header nav, footer nav {
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -30,7 +55,6 @@ header nav, footer nav {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.75fr 0.25fr;
-  padding: 0.5em;
 }
 
 header nav .links, footer nav .links {
@@ -41,8 +65,13 @@ header nav .links, footer nav .links {
   grid-gap: 5em;
 }
 
+p.important {
+  font-size: 24px;
+}
+
 .links a {
   color: black;
+  font-size: 18px;
 }
 
 #triforce {
@@ -55,10 +84,7 @@ header nav .links, footer nav .links {
   grid-template-columns: 1.75fr 1fr;
   grid-gap: 3em;
   line-height: 1.1;
-}
-
-h1 {
-  font-size: 48.83px;
+  align-items: center;
 }
 
 .big {
@@ -74,8 +100,24 @@ h1 {
 #details .callout {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 3em;
   color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-block-start: 6em;
+  padding-block-end: 6em;
+  padding-inline-start: 3em;
+  padding-inline-end: 3em;
+}
+
+#details .callout a {
+  color: white;
+}
+
+.callout img {
+  width: 100%;
 }
 
 #details #enabling-contactless-payment {
@@ -86,4 +128,42 @@ h1 {
 }
 #details #standardizing-trip-quality {
   background-image: url('../images/section-3-bg.svg');
+}
+
+.red-link {
+  background-color: #DB5461;
+  color: white;
+}
+.blue-link {
+  background-color: #046B99;
+  color: white;
+}
+.green-link {
+  background-color: #00775D;
+  color: white;
+}
+.purple-link {
+  background-color: #4C387A;
+  color: white;
+}
+.gold-link {
+  background-color: #C8700A;
+  color: white;
+}
+
+.constricted {
+  width: 60vw;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+#funfacts #facts {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2em;
+}
+
+#funfacts picture img {
+  width: 100%;
 }
