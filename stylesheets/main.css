@@ -69,7 +69,7 @@ p.important {
 }
 
 .links a {
-  color: black;
+  color: #323A45;
   font-size: 18px;
 }
 
@@ -100,18 +100,34 @@ p.important {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  #details {
+    justify-items: center;
+  }
+  #details .box {
+    max-width: 1440px;
+  }
 }
 
 #details .box .callout {
+  max-width: 828px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 4fr;
   grid-gap: 3em;
-  color: white;
   margin-block-start: 6em;
   margin-block-end: 6em;
   margin-inline-start: 3em;
   margin-inline-end: 3em;
+}
+
+.callout p, .callout h3 {
+  color: white;
 }
 
 #details .callout a {
