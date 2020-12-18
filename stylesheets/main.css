@@ -26,7 +26,6 @@ p, a, li {
   color: #323A45;
 }
 
-
 picture.railway img {
   width: 100%;
   margin-block-start: 4em;
@@ -96,10 +95,13 @@ p.important {
   grid-template-columns: 1fr;
 }
 
-#details .box {
+.box {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+#details .box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,27 +117,34 @@ p.important {
 }
 
 #details .box .callout {
-  max-width: 828px;
+    /* max-width: 850px; */
+    /* min-height: 450px; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: max-content 4fr;
+    grid-gap: 3em;
+    /* align-items: center; */
+    justify-content: center;
+    justify-items: center;
+    padding: 3em;
+  /* max-width: 850px; */
+  /* min-height: 450px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 4fr;
-  grid-gap: 3em;
-  margin-block-start: 6em;
+  grid-gap: 3em; */
+  /* margin-block-start: 6em;
   margin-block-end: 6em;
   margin-inline-start: 3em;
-  margin-inline-end: 3em;
+  margin-inline-end: 3em; */
 }
 
-.callout p, .callout h3 {
-  color: white;
-}
-
-#details .callout a {
+.box p, .box h3, .box a, .box li {
   color: white;
 }
 
 .callout img {
-  width: 100%;
+  width: 50%;
 }
 
 #details #enabling-contactless-payment {
@@ -188,9 +197,57 @@ p.important {
 }
 
 #funfacts picture img {
-  width: 70%;
+  width: 100%;
 }
 
 #about {
   padding-top: 100px;
+}
+
+#lastminute {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: min-content min-content;
+  grid-gap: 2em;
+  justify-content: center;
+}
+
+#lastminute #connect {
+  background-image: url('../images/connect-bg.svg');
+}
+#lastminute #update {
+  background-image: url('../images/connect-bg.svg');
+}
+
+#lastminute .box {
+  width: 400px;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#lastminute .box picture {
+  display: flex;
+  justify-content: center;
+}
+
+#lastminute .box picture img {
+  width: 80px;
+}
+
+.blob {
+  padding: 2em;
+}
+
+
+.right-callout {
+  max-width: 700px;
+}
+
+#triforce {
+  max-width: 450px;
+}
+
+.callout picture {
+  text-align: right;
 }
