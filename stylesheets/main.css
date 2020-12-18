@@ -97,19 +97,22 @@ p.important {
   grid-template-columns: 1fr;
 }
 
-#details .callout {
+#details .box {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#details .box .callout {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 4fr;
   grid-gap: 3em;
   color: white;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding-block-start: 6em;
-  padding-block-end: 6em;
-  padding-inline-start: 3em;
-  padding-inline-end: 3em;
+  margin-block-start: 6em;
+  margin-block-end: 6em;
+  margin-inline-start: 3em;
+  margin-inline-end: 3em;
 }
 
 #details .callout a {
@@ -152,18 +155,23 @@ p.important {
 }
 
 .constricted {
-  width: 60vw;
+  width: 50vw;
   margin-inline-start: auto;
   margin-inline-end: auto;
 }
 
 #funfacts #facts {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr;
   grid-gap: 2em;
 }
 
+#funfacts #facts picture {
+  text-align: center;
+  margin-block-start: 1.5em;
+}
+
 #funfacts picture img {
-  width: 100%;
+  width: 70%;
 }
