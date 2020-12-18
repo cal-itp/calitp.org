@@ -6,6 +6,7 @@ article {
 }
 h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
+  color: #323A45;
 }
 
 h1 {
@@ -22,11 +23,9 @@ h3 {
 
 p, a, li {
   font-family: 'Poppins', sans-serif;
+  color: #323A45;
 }
 
-a {
-  color: black;
-}
 
 picture.railway img {
   width: 100%;
