@@ -117,26 +117,13 @@ p.important {
 }
 
 #details .box .callout {
-    /* max-width: 850px; */
-    /* min-height: 450px; */
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: max-content 4fr;
+    grid-template-columns: 1fr max-content;
     grid-gap: 3em;
-    /* align-items: center; */
     justify-content: center;
     justify-items: center;
     padding: 3em;
-  /* max-width: 850px; */
-  /* min-height: 450px;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 3em; */
-  /* margin-block-start: 6em;
-  margin-block-end: 6em;
-  margin-inline-start: 3em;
-  margin-inline-end: 3em; */
 }
 
 .box p, .box h3, .box a, .box li {
@@ -144,7 +131,7 @@ p.important {
 }
 
 .callout img {
-  width: 50%;
+  width: 150px;
 }
 
 #details #enabling-contactless-payment {
@@ -210,6 +197,8 @@ p.important {
   grid-template-columns: min-content min-content;
   grid-gap: 2em;
   justify-content: center;
+  margin-block-start: 5em;
+  margin-block-end: 5em;
 }
 
 #lastminute #connect {
