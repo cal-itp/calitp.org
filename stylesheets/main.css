@@ -35,12 +35,13 @@ picture.railway img {
 header {
   position: fixed;
   top: 0;
-  left: 10vw;
   background-color: white;
+  width: 100vw;
 }
 
 footer {
   background-color: #323A45;
+  width: 100vw;
 }
 footer nav .links a {
   color: white;
@@ -105,16 +106,9 @@ p.important {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1100px;
 }
 
-@media (min-width: 1440px) {
-  #details {
-    justify-items: center;
-  }
-  #details .box {
-    max-width: 1440px;
-  }
-}
 
 #details .box .callout {
     display: grid;
@@ -234,7 +228,6 @@ p.important {
   padding: 2em;
 }
 
-
 .right-callout {
   max-width: 700px;
 }
@@ -245,4 +238,41 @@ p.important {
 
 .callout picture {
   text-align: right;
+}
+
+@media (max-width: 1024px) {
+  #details {
+    justify-items: center;
+  }
+  #details .box {
+    width: 810px;
+  }
+  .right-callout {
+    max-width: 500px;
+  }
+  .callout picture img {
+    width: 100px;
+  }
+  #lastminute {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    justify-items: center;
+    margin-block-start: 5em;
+    margin-block-end: 5em;
+  }
+  #details #enabling-contactless-payment {
+    background-image: url('../images/section-1-bg-tablet.svg');
+  }
+  #details #automating-customer-discounts {
+    background-image: url('../images/section-2-bg-tablet.svg');
+  }
+  #details #standardizing-trip-quality {
+    background-image: url('../images/section-3-bg-tablet.svg');
+  }
+}
+@media (min-width: 1441px) {
+  #details {
+    justify-items: center;
+  }
 }
