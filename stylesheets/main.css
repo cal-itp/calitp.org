@@ -205,11 +205,11 @@ p.important {
   background-image: url('../images/connect-bg.svg');
 }
 #lastminute #update {
-  background-image: url('../images/connect-bg.svg');
+  background-image: url('../images/update-bg.svg');
 }
 
 #lastminute .box {
-  width: 400px;
+  width: 375px;
   padding: 1em;
   display: flex;
   justify-content: center;
@@ -274,5 +274,22 @@ p.important {
 @media (min-width: 1441px) {
   #details {
     justify-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #details .box {
+    width: 610px;
+  }
+  .right-callout {
+    max-width: 350px;
+  }
+  #details #enabling-contactless-payment {
+    background-image: url('../images/section-1-bg-tablet.svg');
+  }
+  #details #automating-customer-discounts {
+    background-image: url('../images/section-2-bg-tablet.svg');
+  }
+  #details #standardizing-trip-quality {
+    background-image: url('../images/section-3-bg-tablet.svg');
   }
 }
