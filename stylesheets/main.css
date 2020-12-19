@@ -188,7 +188,13 @@ p.important {
 }
 
 #about {
-  padding-top: 100px;
+  padding-top: 80px;
+}
+#funfacts {
+  padding-top: 80px;
+}
+#reachout {
+  padding-top: 80px;
 }
 
 #lastminute {
