@@ -1,5 +1,4 @@
 article {
-  margin-block-start: 140px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   width: 80vw;
@@ -33,8 +32,7 @@ picture.railway img {
 }
 
 header {
-  position: fixed;
-  top: 0;
+  padding-block-start: 20px;
   background-color: white;
   width: 100vw;
 }
@@ -66,6 +64,7 @@ header nav .links, footer nav .links {
 
 p.important {
   font-size: 24px;
+  margin-block-end: 50px;
 }
 
 .links a {
@@ -91,6 +90,7 @@ p.important {
 }
 
 #details {
+  margin-block-start: 50px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr;
@@ -124,9 +124,6 @@ p.important {
   color: white;
 }
 
-.callout img {
-  width: 150px;
-}
 
 #details #enabling-contactless-payment {
   background-image: url('../images/section-1-bg.svg');
@@ -215,6 +212,10 @@ p.important {
   justify-content: center;
 }
 
+#lastminute h3 {
+  font-size: 25px;
+}
+
 #lastminute .box picture {
   display: flex;
   justify-content: center;
@@ -225,7 +226,7 @@ p.important {
 }
 
 .blob {
-  padding: 2em;
+  padding: 2.5em;
 }
 
 .right-callout {
@@ -240,12 +241,26 @@ p.important {
   text-align: right;
 }
 
+#about h2 {
+  margin-block-start: 50px;
+}
+
 @media (max-width: 1024px) {
+  #deck {
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: initial;
+    justify-items: center;
+    text-align: center;
+  }
   #details {
     justify-items: center;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 2em;
   }
   #details .box {
-    width: 810px;
+    width: 100%;
+    border-radius: 35px;
   }
   .right-callout {
     max-width: 500px;
@@ -262,6 +277,28 @@ p.important {
     margin-block-end: 5em;
   }
   #details #enabling-contactless-payment {
+    background-color: #C64E5A;
+  }
+  #details #automating-customer-discounts {
+    background-color: #046B99;
+  }
+  #details #standardizing-trip-quality {
+    background-color: #5B559C;
+  }
+}
+
+@media (max-width: 768px) {
+  #details .box .callout {
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr;
+  }
+  /* #details .box {
+    width: 610px;
+  } */
+  /* .right-callout {
+    max-width: 350px;
+  } */
+  /* #details #enabling-contactless-payment {
     background-image: url('../images/section-1-bg-tablet.svg');
   }
   #details #automating-customer-discounts {
@@ -269,6 +306,13 @@ p.important {
   }
   #details #standardizing-trip-quality {
     background-image: url('../images/section-3-bg-tablet.svg');
+  } */
+}
+@media (max-width: 320px) {
+  article {
+    margin-inline-start: initial;
+    margin-inline-end: initial;
+    width: 100vw;
   }
 }
 @media (min-width: 1441px) {
@@ -276,20 +320,12 @@ p.important {
     justify-items: center;
   }
 }
-@media (max-width: 768px) {
-  #details .box {
-    width: 610px;
+@media (min-width: 1025px) {
+  header {
+    position: fixed;
+    top: 0;
   }
-  .right-callout {
-    max-width: 350px;
-  }
-  #details #enabling-contactless-payment {
-    background-image: url('../images/section-1-bg-tablet.svg');
-  }
-  #details #automating-customer-discounts {
-    background-image: url('../images/section-2-bg-tablet.svg');
-  }
-  #details #standardizing-trip-quality {
-    background-image: url('../images/section-3-bg-tablet.svg');
+  article {
+    margin-block-start: 140px;
   }
 }
