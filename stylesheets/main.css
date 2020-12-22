@@ -112,10 +112,13 @@ p.important {
 }
 
 #details .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    width: 100%;
+    max-width: 1200px;
 }
 
 
@@ -126,7 +129,7 @@ p.important {
     grid-gap: 3em;
     justify-content: center;
     justify-items: center;
-    padding: 3em;
+    padding: 2em;
 }
 
 .box p, .box h3, .box a, .box li {
