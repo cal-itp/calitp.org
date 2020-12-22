@@ -337,7 +337,7 @@ p.important {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   article {
     margin-inline-start: initial;
     margin-inline-end: initial;
