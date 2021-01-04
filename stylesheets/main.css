@@ -275,6 +275,9 @@ p.important {
 }
 
 @media (max-width: 1024px) {
+  .constricted {
+    width: 80vw;
+  }
   #deck {
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr;
