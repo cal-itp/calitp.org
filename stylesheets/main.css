@@ -1,6 +1,6 @@
 article {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 80vw;
 }
 h1, h2, h3, h4 {
@@ -27,8 +27,8 @@ p, a, li {
 
 picture.railway img {
   width: 100%;
-  margin-block-start: 4em;
-  margin-block-end: 4em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 header {
@@ -50,8 +50,8 @@ nav ul {
 }
 
 header nav, footer nav {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 80vw;
   display: grid;
   grid-template-rows: 1fr;
@@ -73,7 +73,7 @@ header nav .links, footer nav .links {
 
 p.important {
   font-size: 24px;
-  margin-block-end: 50px;
+  margin-bottom: 50px;
 }
 
 .links a {
@@ -110,7 +110,7 @@ p.important {
 }
 
 #details {
-  margin-block-start: 50px;
+  margin-top: 50px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr;
@@ -142,7 +142,8 @@ p.important {
     justify-content: center;
     justify-items: center;
     padding: 3em;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box p, .box h3, .box a, .box li {
@@ -183,8 +184,8 @@ p.important {
 
 .constricted {
   width: 50vw;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #funfacts #facts {
@@ -196,7 +197,7 @@ p.important {
 
 #funfacts #facts picture {
   text-align: center;
-  margin-block-start: 1.5em;
+  margin-top: 1.5em;
 }
 
 #funfacts picture img {
@@ -219,8 +220,8 @@ p.important {
   grid-template-columns: min-content min-content;
   grid-gap: 2em;
   justify-content: center;
-  margin-block-start: 5em;
-  margin-block-end: 5em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 #lastminute #connect {
@@ -251,7 +252,8 @@ p.important {
 }
 
 .blob {
-  padding-inline: 2.5em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 
 .right-callout {
@@ -267,7 +269,7 @@ p.important {
 }
 
 #about h2 {
-  margin-block-start: 50px;
+  margin-top: 50px;
 }
 
 #hamburger {
@@ -304,8 +306,8 @@ p.important {
     grid-template-columns: 1fr;
     grid-gap: 2em;
     justify-items: center;
-    margin-block-start: 5em;
-    margin-block-end: 5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
   #details #enabling-contactless-payment {
     background-color: #C64E5A;
@@ -357,8 +359,8 @@ p.important {
 }
 @media (max-width: 540px) {
   article {
-    margin-inline-start: initial;
-    margin-inline-end: initial;
+    margin-left: initial;
+    margin-right: initial;
     width: 100vw;
   }
   header nav .links.visible {
@@ -380,13 +382,15 @@ p.important {
     grid-gap: 1em;
   }
   #details {
-    margin-inline: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   #details .box {
     width: 100%;
   }
   #lastminute {
-    margin-inline: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   #lastminute .box {
     width: 100%;
@@ -394,8 +398,8 @@ p.important {
   }
   .constricted {
     width: 90vw;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #funfacts #facts {
@@ -424,6 +428,6 @@ p.important {
     top: 0;
   }
   article {
-    margin-block-start: 140px;
+    margin-top: 140px;
   }
 }
