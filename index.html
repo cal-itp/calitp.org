@@ -18,9 +18,9 @@ layout: default
       </svg>
     </button>
     <ul class="links">
-      <li><a href="#about" onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'})"><strong>About the project</strong></a></li>
-      <li><a href="#funfacts" onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'})">Fast facts</a></li>
-      <li><a href="#reachout" onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'})">Reach out</a></li>
+      <li><a href="#about" onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'}); window.location.hash = this.hash;"><strong>About the project</strong></a></li>
+      <li><a href="#funfacts" onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'}); window.location.hash = this.hash;">Fast facts</a></li>
+      <li><a href="#reachout" onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'}); window.location.hash = this.hash;">Reach out</a></li>
       <!-- <li><a>Support for Transit Providers</a></li> -->
     </ul>
   </nav>

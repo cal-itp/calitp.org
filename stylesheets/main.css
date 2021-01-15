@@ -423,7 +423,10 @@ p.important {
     justify-items: center;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
+  #funfacts, #reachout {
+    padding-top: 100px;
+  }
   header {
     position: fixed;
     top: 0;
