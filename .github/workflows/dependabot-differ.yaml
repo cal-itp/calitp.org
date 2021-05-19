@@ -1,0 +1,73 @@
+name: Dependabot Diff Checker
+
+on:
+  pull_request:
+    branches:
+      - core
+
+jobs:
+  dependabot_diff:
+    name: Site Build Difference
+    runs-on: ubuntu-latest
+    if: startsWith(github.head_ref, 'dependabot/') # Only run on Dependabot branches
+    steps:
+      - name: Checkout Pull Request Branch
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+          bundler-cache: true
+
+      - name: Build Pull Request Version of Website
+        run: |
+          bundle exec jekyll build
+          mv _site _site-pr
+
+      - name: Checkout Default Branch
+        uses: actions/checkout@v2
+        with:
+          ref: core
+          clean: false
+          submodules: true
+
+      - name: Build Production Version of Website
+        run: |
+          bundle exec jekyll build
+
+      - name: Compare Built Websites
+        id: site-diff
+        run: |
+          has_changes=0
+          site_diff=$(diff -r _site-pr _site) || has_changes=$?
+
+          if [[ $has_changes == 0 ]]; then
+            PR_COMMENT="
+            There were no changes to the code of the compiled website as a result of this Dependabot update.
+            "
+          else
+            PR_COMMENT="
+            There were changes to the compiled website as a result of this Dependabot update:
+
+            \`\`\`
+            $site_diff
+            \`\`\`
+            "
+          fi
+
+          # Replace newlines and other special characters with escaped equivalents
+          PR_COMMENT="${PR_COMMENT//'%'/'%25'}"
+          PR_COMMENT="${PR_COMMENT//$'\n'/'%0A'}"
+          PR_COMMENT="${PR_COMMENT//$'\r'/'%0D'}"
+
+          echo "::set-output name=pr-comment::$PR_COMMENT"
+          echo "::set-output name=pr-number::$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')"
+
+      - name: Comment on the Pull Request
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ steps.site-diff.outputs.pr-number}}
+          body: ${{ steps.site-diff.outputs.pr-comment }}
