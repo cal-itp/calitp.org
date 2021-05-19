@@ -1,15 +1,15 @@
 name: Dependabot Diff Checker
 
 on:
-  pull_request:
-    branches:
-      - core
+  pull_request_target:
+    types:
+      - labeled
 
 jobs:
   dependabot_diff:
     name: Site Build Difference
     runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'dependabot/') # Only run on Dependabot branches
+    if: contains(github.event.pull_request.labels.*.name, 'dependencies') # See https://git.io/JsVv1
     steps:
       - name: Checkout Pull Request Branch
         uses: actions/checkout@v2
