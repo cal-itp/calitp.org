@@ -66,10 +66,9 @@ jobs:
           PR_COMMENT="${PR_COMMENT//$'\r'/'%0D'}"
 
           echo "::set-output name=pr-comment::$PR_COMMENT"
-          echo "::set-output name=pr-number::$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')"
 
       - name: Comment on the Pull Request
         uses: peter-evans/create-or-update-comment@v1
         with:
-          issue-number: ${{ steps.site-diff.outputs.pr-number}}
+          issue-number: ${{ github.event.pull_request.number }}
           body: ${{ steps.site-diff.outputs.pr-comment }}
