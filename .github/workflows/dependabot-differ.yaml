@@ -24,6 +24,7 @@ jobs:
 
       - name: Build Pull Request Version of Website
         run: |
+          bundle install
           bundle exec jekyll build
           mv _site _site-pr
 
@@ -36,6 +37,7 @@ jobs:
 
       - name: Build Production Version of Website
         run: |
+          bundle install
           bundle exec jekyll build
 
       - name: Compare Built Websites
