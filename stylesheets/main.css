@@ -183,6 +183,20 @@ p.important {
   color: white;
 }
 
+.red-link:focus,
+.red-link:hover,
+.blue-link:focus,
+.blue-link:hover,
+.green-link:focus,
+.green-link:hover,
+.purple-link:focus,
+.purple-link:hover,
+.gold-link:focus,
+.gold-link:hover {
+  color: white;
+  text-decoration-style: dotted;
+}
+
 .constricted {
   width: 50vw;
   margin-left: auto;
