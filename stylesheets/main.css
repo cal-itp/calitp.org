@@ -157,6 +157,7 @@ p.important {
 }
 #details #automating-customer-discounts {
   background-image: url('../images/section-2-bg.svg');
+  margin-bottom: 1.25rem;
 }
 #details #standardizing-trip-quality {
   background-image: url('../images/section-3-bg.svg');
@@ -343,6 +344,7 @@ p.important {
   #details #automating-customer-discounts {
     background-color: #046B99;
     background-image: initial;
+    margin-bottom: 0;
   }
   #details #standardizing-trip-quality {
     background-color: #5B559C;
