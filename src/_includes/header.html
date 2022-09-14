@@ -1,0 +1,42 @@
+<header>
+  <nav>
+    <picture>
+      <a href="/">
+        <img src="images/calitp_logo_MAIN.png" alt="Cal-ITP: California Integrated Travel Project" width="215" />
+      </a>
+    </picture>
+    <button
+      id="hamburger"
+      onclick="event.preventDefault(); document.querySelector('#hamburger + .links').classList.toggle('visible')"
+    >
+      <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="12" y="14" width="27" height="4" rx="2" fill="#323A45" />
+        <rect x="12" y="23" width="27" height="4" rx="2" fill="#323A45" />
+        <rect x="12" y="32" width="27" height="4" rx="2" fill="#323A45" />
+      </svg>
+    </button>
+    <ul class="links">
+      <li>
+        <a
+          href="#about"
+          onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'}); window.location.hash = this.hash;"
+          ><strong>About the project</strong></a
+        >
+      </li>
+      <li>
+        <a
+          href="#funfacts"
+          onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'}); window.location.hash = this.hash;"
+          >Fast facts</a
+        >
+      </li>
+      <li>
+        <a
+          href="#reachout"
+          onclick="event.preventDefault(); document.querySelector(this.hash).scrollIntoView({behavior: 'smooth'}); window.location.hash = this.hash;"
+          >Reach out</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
