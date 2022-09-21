@@ -3,9 +3,12 @@ article {
   margin-right: auto;
   width: 80vw;
 }
-h1, h2, h3, h4 {
-  font-family: 'Raleway', sans-serif;
-  color: #323A45;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: #323a45;
 }
 
 h1 {
@@ -20,9 +23,11 @@ h3 {
   font-size: 30px;
 }
 
-p, a, li {
-  font-family: 'Poppins', sans-serif;
-  color: #323A45;
+p,
+a,
+li {
+  font-family: "Poppins", sans-serif;
+  color: #323a45;
 }
 
 picture.railway img {
@@ -37,8 +42,7 @@ header {
 }
 
 footer {
-  background-color: #323A45;
-  width: 100vw;
+  background-color: #323a45;
 }
 footer nav .links a {
   color: white;
@@ -49,7 +53,8 @@ nav ul {
   padding-left: initial;
 }
 
-header nav, footer nav {
+header nav,
+footer nav {
   margin-left: auto;
   margin-right: auto;
   width: 80vw;
@@ -63,7 +68,8 @@ header nav {
   grid-template-columns: 7fr 1fr;
 }
 
-header nav .links, footer nav .links {
+header nav .links,
+footer nav .links {
   list-style: none;
   display: grid;
   grid-template-rows: 1fr;
@@ -77,7 +83,7 @@ p.important {
 }
 
 .links a {
-  color: #323A45;
+  color: #323a45;
   font-size: 18px;
 }
 
@@ -86,7 +92,7 @@ p.important {
 }
 
 #deck {
-  display:grid;
+  display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.75fr 1fr;
   grid-gap: 3em;
@@ -125,62 +131,63 @@ p.important {
 }
 
 #details .box {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content;
-    width: 100%;
-    max-width: 1200px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  width: 100%;
+  max-width: 1200px;
 }
-
 
 #details .box .callout {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr max-content;
-    grid-gap: 3em;
-    justify-content: center;
-    justify-items: center;
-    padding: 3em;
-    margin-left: auto;
-    margin-right: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr max-content;
+  grid-gap: 3em;
+  justify-content: center;
+  justify-items: center;
+  padding: 3em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.box p, .box h3, .box a, .box li {
+.box p,
+.box h3,
+.box a,
+.box li {
   color: white;
 }
 
-
 #details #enabling-contactless-payment {
-  background-image: url('../images/section-1-bg.svg');
+  background-image: url("../images/section-1-bg.svg");
 }
 #details #automating-customer-discounts {
-  background-image: url('../images/section-2-bg.svg');
+  background-image: url("../images/section-2-bg.svg");
   margin-bottom: 1.25rem;
 }
 #details #standardizing-trip-quality {
-  background-image: url('../images/section-3-bg.svg');
+  background-image: url("../images/section-3-bg.svg");
 }
 
 .red-link {
-  background-color: #DB5461;
+  background-color: #db5461;
   color: white;
 }
 .blue-link {
-  background-color: #046B99;
+  background-color: #046b99;
   color: white;
 }
 .green-link {
-  background-color: #00775D;
+  background-color: #00775d;
   color: white;
 }
 .purple-link {
-  background-color: #4C387A;
+  background-color: #4c387a;
   color: white;
 }
 .gold-link {
-  background-color: #C8700A;
+  background-color: #c8700a;
   color: white;
 }
 
@@ -241,10 +248,10 @@ p.important {
 }
 
 #lastminute #connect {
-  background-image: url('../images/connect-bg.svg');
+  background-image: url("../images/connect-bg.svg");
 }
 #lastminute #update {
-  background-image: url('../images/update-bg.svg');
+  background-image: url("../images/update-bg.svg");
 }
 
 #lastminute .box {
@@ -338,20 +345,20 @@ p.important {
     margin-bottom: 5em;
   }
   #details #enabling-contactless-payment {
-    background-color: #C64E5A;
+    background-color: #c64e5a;
     background-image: initial;
   }
   #details #automating-customer-discounts {
-    background-color: #046B99;
+    background-color: #046b99;
     background-image: initial;
     margin-bottom: 0;
   }
   #details #standardizing-trip-quality {
-    background-color: #5B559C;
+    background-color: #5b559c;
     background-image: initial;
   }
   #lastminute #connect {
-    background-color: #C64E5A;
+    background-color: #c64e5a;
     background-image: initial;
   }
   #lastminute #update {
@@ -361,7 +368,8 @@ p.important {
 }
 
 @media (max-width: 768px) {
-  header nav, footer nav {
+  header nav,
+  footer nav {
     display: grid;
     grid-template-rows: 1fr min-content;
     grid-template-columns: 1fr 1fr;
@@ -379,7 +387,7 @@ p.important {
     text-align: center;
   }
   footer nav {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
   #details .box .callout {
     grid-template-rows: min-content 1fr;
@@ -401,7 +409,7 @@ p.important {
     text-align: center;
   }
   footer nav {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
   footer nav .links {
     grid-template-rows: repeat(3, min-content);
@@ -452,7 +460,8 @@ p.important {
   }
 }
 @media (min-width: 1024px) {
-  #funfacts, #reachout {
+  #funfacts,
+  #reachout {
     padding-top: 100px;
   }
   header {
