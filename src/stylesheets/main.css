@@ -42,10 +42,16 @@ header {
 }
 
 footer {
-  background-color: #323a45;
+  background-color: #212121;
 }
+
+footer nav {
+  padding: 7.5px 0;
+}
+
 footer nav .links a {
   color: white;
+  text-decoration: none;
 }
 
 nav ul {
@@ -73,7 +79,7 @@ footer nav .links {
   list-style: none;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(4, max-content);
   grid-gap: 5em;
 }
 
@@ -84,7 +90,7 @@ p.important {
 
 .links a {
   color: #323a45;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #triforce {
@@ -388,6 +394,11 @@ p.important {
   }
   footer nav {
     grid-template-columns: 1fr;
+    justify-items: left;
+  }
+  footer nav .links {
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 1em;
   }
   #details .box .callout {
     grid-template-rows: min-content 1fr;
@@ -410,10 +421,10 @@ p.important {
   }
   footer nav {
     grid-template-columns: 1fr;
+    justify-items: left;
   }
   footer nav .links {
-    grid-template-rows: repeat(3, min-content);
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, max-content);
     grid-column: initial;
     grid-gap: initial;
     grid-gap: 1em;
