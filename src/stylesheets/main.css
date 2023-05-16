@@ -14,7 +14,7 @@ h4 {
 h1 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 120%;
 }
 
 h2 {
@@ -29,7 +29,10 @@ p,
 a,
 li {
   font-family: "Poppins", sans-serif;
-  color: #323a45;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #212121;
 }
 
 picture.railway img {
@@ -101,15 +104,6 @@ p.important {
   line-height: 1.1;
   align-items: center;
   padding-bottom: 50px;
-}
-
-.big {
-  font-size: 24px;
-}
-@media (max-width: 540px) {
-  #deck .big {
-    font-size: 18px;
-  }
 }
 
 #details {
