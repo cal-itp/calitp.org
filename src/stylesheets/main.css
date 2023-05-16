@@ -107,13 +107,6 @@ p.important {
   padding-bottom: 50px;
 }
 
-#details {
-  margin-top: 50px;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-}
-
 .box {
   background-repeat: no-repeat;
   background-size: contain;
@@ -121,44 +114,11 @@ p.important {
   border-radius: 15px;
 }
 
-#details .box {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content;
-  width: 100%;
-  max-width: 1200px;
-}
-
-#details .box .callout {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr max-content;
-  grid-gap: 3em;
-  justify-content: center;
-  justify-items: center;
-  padding: 3em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .box p,
 .box h3,
 .box a,
 .box li {
   color: white;
-}
-
-#details #enabling-contactless-payment {
-  background-image: url("../images/section-1-bg.svg");
-}
-#details #automating-customer-discounts {
-  background-image: url("../images/section-2-bg.svg");
-  margin-bottom: 1.25rem;
-}
-#details #standardizing-trip-quality {
-  background-image: url("../images/section-3-bg.svg");
 }
 
 .red-link {
@@ -313,20 +273,6 @@ p.important {
     justify-items: center;
     text-align: center;
   }
-  #details {
-    justify-items: center;
-    grid-template-rows: repeat(3, min-content);
-    grid-gap: 2em;
-  }
-  #details .box {
-    width: 100%;
-  }
-  .right-callout {
-    max-width: 500px;
-  }
-  .callout picture img {
-    width: 100px;
-  }
   #lastminute {
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: 1fr;
@@ -334,19 +280,6 @@ p.important {
     justify-items: center;
     margin-top: 5em;
     margin-bottom: 5em;
-  }
-  #details #enabling-contactless-payment {
-    background-color: #c64e5a;
-    background-image: initial;
-  }
-  #details #automating-customer-discounts {
-    background-color: #046b99;
-    background-image: initial;
-    margin-bottom: 0;
-  }
-  #details #standardizing-trip-quality {
-    background-color: #5b559c;
-    background-image: initial;
   }
   #lastminute #connect {
     background-color: #c64e5a;
@@ -380,10 +313,6 @@ p.important {
   footer nav {
     grid-template-columns: 1fr;
   }
-  #details .box .callout {
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr;
-  }
 }
 @media (max-width: 540px) {
   article {
@@ -408,13 +337,6 @@ p.important {
     grid-column: initial;
     grid-gap: initial;
     grid-gap: 1em;
-  }
-  #details {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  #details .box {
-    width: 100%;
   }
   #lastminute {
     margin-left: 5vw;
