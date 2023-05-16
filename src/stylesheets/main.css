@@ -163,11 +163,7 @@ footer nav .links {
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr;
   grid-gap: 2em;
-}
-
-#funfacts #facts picture {
-  text-align: center;
-  margin-top: 1.5em;
+  align-items: center;
 }
 
 #funfacts picture img {
