@@ -1,7 +1,7 @@
 article {
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
+  width: 76vw;
 }
 h1,
 h2,
@@ -105,10 +105,11 @@ p.important {
 #deck {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1.75fr 1fr;
+  grid-template-columns: .85fr 1fr;
   grid-gap: 3em;
   line-height: 1.1;
   align-items: center;
+  justify-items: center;
   padding-bottom: 50px;
 }
 
