@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h1>Press</h1>
+
+<section id="press">
+  {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+  {% assign all_press = site.press | reverse %}
+  {% for press in all_press %}
+    {% assign url = press.link %}
+    {% unless url contains "https://" %}
+      {% assign url = url | prepend: "/assets/" | prepend: site.baseurl %}
+    {% endunless %}
+
+    <div class="press-item">
+      <a href="{{ url }}" target="_blank">{{ press.title }}</a>
+      <br/>
+      <span class="tags">{{ press.tags | join: ", " }}</span>
+      |
+      <span class="date">{{ press.date | date: "%b %Y" }}</span>
+    </div>
+
+  {% endfor %}
+</section>
