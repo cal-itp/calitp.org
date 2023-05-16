@@ -1,7 +1,7 @@
 analytics: "G-VCVX2DGPPN"
 domain: "www.calitp.org"
 description: "A state government initiative, Cal-ITP is making riding by rail and bus simpler and more cost-effective—for California transit providers and riders."
-google_fonts: "https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:wght@900&display=swap"
+google_fonts: "https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:wght@700&display=swap"
 source: ./src
 theme_background_color: "#b82d28"
 theme_color: "#b82d28"
