@@ -116,11 +116,6 @@ p.important {
 .big {
   font-size: 24px;
 }
-@media (max-width: 540px) {
-  #deck .big {
-    font-size: 18px;
-  }
-}
 
 #details {
   margin-top: 50px;
