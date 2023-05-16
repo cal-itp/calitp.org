@@ -394,6 +394,11 @@ p.important {
   }
   footer nav {
     grid-template-columns: 1fr;
+    justify-items: left;
+  }
+  footer nav .links {
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 1em;
   }
   #details .box .callout {
     grid-template-rows: min-content 1fr;
@@ -416,10 +421,10 @@ p.important {
   }
   footer nav {
     grid-template-columns: 1fr;
+    justify-items: left;
   }
   footer nav .links {
-    grid-template-rows: repeat(4, min-content);
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, max-content);
     grid-column: initial;
     grid-gap: initial;
     grid-gap: 1em;
