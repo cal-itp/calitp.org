@@ -9,17 +9,18 @@ h3,
 h4 {
   font-family: "Raleway", sans-serif;
   color: #212121;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 h1 {
-  font-weight: 700;
   font-size: 40px;
-  line-height: 120%;
   margin-bottom: 19px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -81,11 +82,6 @@ footer nav .links {
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, max-content);
   grid-gap: 5em;
-}
-
-p.important {
-  font-size: 24px;
-  margin-bottom: 50px;
 }
 
 .links a {
