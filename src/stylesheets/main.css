@@ -46,6 +46,10 @@ li {
   --bs-nav-link-color: #212121;
 }
 
+main.container {
+  padding-top: 110px;
+}
+
 picture.railway img {
   width: 100%;
   margin: 7.25rem 0;
