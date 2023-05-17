@@ -1,18 +1,21 @@
 article {
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
+  width: 76vw;
 }
 h1,
 h2,
 h3,
 h4 {
   font-family: "Raleway", sans-serif;
-  color: #323a45;
+  color: #212121;
 }
 
 h1 {
-  font-size: 48.83px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 19px;
 }
 
 h2 {
@@ -27,7 +30,9 @@ p,
 a,
 li {
   font-family: "Poppins", sans-serif;
-  color: #323a45;
+  color: #212121;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 picture.railway img {
@@ -100,26 +105,16 @@ p.important {
 #deck {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1.75fr 1fr;
+  grid-template-columns: .85fr 1fr;
   grid-gap: 3em;
   line-height: 1.1;
   align-items: center;
+  justify-items: center;
   padding-bottom: 50px;
-}
-
-@media (max-width: 540px) {
-  #deck h1 {
-    font-size: 24px;
-  }
 }
 
 .big {
   font-size: 24px;
-}
-@media (max-width: 540px) {
-  #deck .big {
-    font-size: 18px;
-  }
 }
 
 #details {
