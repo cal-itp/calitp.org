@@ -1,5 +1,5 @@
 ---
-date: 2022-09-21
+date: "2022-09-21T17:00:00-07:00"
 title: Cal-ITP Benefits Launch
 heading: |-
   State of California launches Cal-ITP Benefits, the first online tool for transit riders to verify their identity and benefit
