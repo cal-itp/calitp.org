@@ -32,8 +32,7 @@ li {
 
 picture.railway img {
   width: 100%;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin: 7.25rem 0;
 }
 
 header {
@@ -105,7 +104,6 @@ p.important {
   line-height: 1.1;
   align-items: center;
   justify-items: center;
-  padding-bottom: 50px;
 }
 
 .big {
@@ -248,12 +246,10 @@ p.important {
   background: #4c387a;
 }
 
-#about {
-  padding-top: 80px;
-}
 #funfacts {
   padding-top: 80px;
 }
+
 #reachout {
   padding-top: 80px;
 }
@@ -322,10 +318,6 @@ p.important {
 
 .callout picture {
   text-align: right;
-}
-
-#about h2 {
-  margin-top: 50px;
 }
 
 #hamburger {
