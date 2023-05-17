@@ -42,6 +42,10 @@ li {
   --bs-navbar-nav-link-padding-y: 40px;
 }
 
+.navbar-nav {
+  --bs-nav-link-color: #212121;
+}
+
 picture.railway img {
   width: 100%;
   margin: 7.25rem 0;
