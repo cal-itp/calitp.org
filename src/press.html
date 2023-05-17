@@ -12,12 +12,12 @@ layout: default
     {% if press.external %}
       {% assign url = press.external %}
     {% endif %}
-    <div class="press-item">
+    <article class="press-item">
       <a href="{{ url }}" {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
       <br/>
       <span class="tags">{{ press.tags | join: ", " }}</span>
       |
-      <span class="date">{{ press.date | date: "%b %Y" }}</span>
-    </div>
+      {% include date.html date=press.date format = "%b %Y" %}
+    </article>
   {% endfor %}
 </section>
