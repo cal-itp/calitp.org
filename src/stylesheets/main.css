@@ -201,30 +201,11 @@ p.important {
   text-decoration-style: dotted;
 }
 
-<<<<<<< HEAD
-=======
 .constricted {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
 }
-/*
->>>>>>> b4b65cf (refactor(index): use ol, li for numbered section)
-#funfacts #facts {
-  display: grid;
-  grid-template-columns: 1fr 8fr;
-  grid-template-rows: 1fr;
-  grid-gap: 2em;
-}
-
-#funfacts #facts picture {
-  text-align: center;
-  margin-top: 1.5em;
-}
-
-#funfacts picture img {
-  width: 100%;
-} */
 
 #facts ol {
   list-style: none;
@@ -465,17 +446,6 @@ p.important {
     border-radius: 15px;
   }
 
-  /* #funfacts #facts {
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr;
-    grid-gap: 1em;
-  }
-  #funfacts #facts picture {
-    text-align: initial;
-  }
-  #funfacts #facts img {
-    width: 52px;
-  } */
   .blob {
     padding: 1em;
   }
