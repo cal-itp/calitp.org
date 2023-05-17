@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% if page.external %}
+<h1>Redirecting...</h1>
+<a href="{{ page.external }}">Click here if you are not redirected.<a>
+<script>location = '{{ page.external }}'</script>
+{% endif %}
+
+{% capture date %}
+  {% include date.html date=page.date format = "%B %e, %Y, " %}
+{% endcapture %}
+
+{% unless page.external %}
+<article class="press-release">
+  <a href="/press">Press</a>
+  <h1 class="h2">{{ page.heading }}</h1>
+  <p>{{ page.lead }}</p>
+  <p class="immediate-release">For immediate release</p>
+  <p>{{ page.intro | prepend: "—" | prepend: page.location | prepend: date }}</p>
+  {{ page.content }}
+</article>
+{% endunless %}

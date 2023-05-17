@@ -1,9 +1,16 @@
 analytics: "G-VCVX2DGPPN"
 collections:
   press:
-    output: false
-domain: "www.calitp.org"
-description: "A state government initiative, Cal-ITP is making riding by rail and bus simpler and more cost-effective—for California transit providers and riders."
+    output: true
+    permalink: /:collection/:name
+defaults:
+  - scope:
+      path: ""
+      type: press
+    values:
+      layout: press
+description: A state government initiative, Cal-ITP is making riding by rail and bus simpler and more cost-effective—for California transit providers and riders.
+domain: www.calitp.org
 google_fonts: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700&display=swap"
 source: ./src
 title: "Cal-ITP: California Integrated Travel Project"
