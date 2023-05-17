@@ -11,7 +11,6 @@ intro: |-
   The debut of a new web application called <a href="https://benefits.calitp.org/" target="_blank">Cal-ITP Benefits</a> allows
   transit riders to quickly and securely verify their eligibility online for discounted fares and link that discount benefit to
   a contactless debit or credit card to automatically receive reduced fares whenever they tap to pay with the card.
-location: Sacramento, CA
 tags:
   - Benefits
 ---
