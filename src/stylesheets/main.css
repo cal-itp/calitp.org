@@ -224,22 +224,34 @@ p.important {
 #facts ol li:before {
   counter-increment: numList;
   content: counter(numList);
-
   float: left;
   position: absolute;
   left: -20px;
-
   font-weight: 700;
   font-size: 16px;
   text-align: center;
   color: #fff;
-
   line-height: 40px;
   width: 40px;
   height: 40px;
-
   background: #f0f;
   border-radius: 50%;
+}
+
+#facts ol li:nth-child(1):before {
+  background: #046b99;
+}
+
+#facts ol li:nth-child(2):before {
+  background: #c8700a;
+}
+
+#facts ol li:nth-child(3):before {
+  background: #db5461;
+}
+
+#facts ol li:nth-child(4):before {
+  background: #4c387a;
 }
 
 #about {
