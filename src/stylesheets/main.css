@@ -246,10 +246,6 @@ p.important {
   background: #4c387a;
 }
 
-#funfacts {
-  padding-top: 80px;
-}
-
 #reachout {
   padding-top: 80px;
 }
@@ -378,6 +374,11 @@ p.important {
 }
 
 @media (max-width: 768px) {
+  picture.railway img {
+    width: 100%;
+    margin: 4.5rem 0;
+  }
+
   header nav,
   footer nav {
     display: grid;
@@ -409,6 +410,7 @@ p.important {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 540px) {
   header nav .links.visible {
     grid-template-rows: repeat(3, min-content);
@@ -448,13 +450,14 @@ p.important {
     padding: 1em;
   }
 }
+
 @media (min-width: 1441px) {
   #details {
     justify-items: center;
   }
 }
+
 @media (min-width: 1024px) {
-  #funfacts,
   #reachout {
     padding-top: 100px;
   }
