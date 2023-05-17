@@ -21,6 +21,7 @@ layout: default
   {% if page.lead %}
   <p>{{ page.lead }}</p>
   {% endif %}
+  <hr />
   <p class="immediate-release">For immediate release</p>
   <p>{{ page.intro | prepend: "—" | prepend: location | prepend: date }}</p>
   {{ page.content }}
