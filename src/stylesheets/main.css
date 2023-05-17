@@ -214,16 +214,15 @@ p.important {
 
 #facts ol {
   list-style: none;
-  overflow: hidden;
   counter-reset: numList;
 }
 
 #facts ol li {
   position: relative;
   font-weight: 700;
-  line-height: 40px;
   padding-left: 40px;
-  padding-top: 14px;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 #facts ol li:before {
