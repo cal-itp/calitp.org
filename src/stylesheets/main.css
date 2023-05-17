@@ -210,22 +210,17 @@ p.important {
 #facts ol {
   list-style: none;
   counter-reset: numList;
+  gap: 20px;
 }
 
 #facts ol li {
-  position: relative;
   font-weight: 700;
-  padding-left: 40px;
-  padding-top: 20px;
-  margin-top: 20px;
+  gap: 12px;
 }
 
 #facts ol li:before {
   counter-increment: numList;
   content: counter(numList);
-  float: left;
-  position: absolute;
-  left: -20px;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
@@ -234,6 +229,7 @@ p.important {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 #facts ol li:nth-child(1):before {
