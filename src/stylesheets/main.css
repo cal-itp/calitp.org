@@ -201,6 +201,15 @@ p.important {
   text-decoration-style: dotted;
 }
 
+<<<<<<< HEAD
+=======
+.constricted {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+>>>>>>> b4b65cf (refactor(index): use ol, li for numbered section)
 #funfacts #facts {
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -215,6 +224,41 @@ p.important {
 
 #funfacts picture img {
   width: 100%;
+} */
+
+#facts ol {
+  list-style: none;
+  overflow: hidden;
+  counter-reset: numList;
+}
+
+#facts ol li {
+  position: relative;
+  font-weight: 700;
+  line-height: 40px;
+  padding-left: 40px;
+  padding-top: 14px;
+}
+
+#facts ol li:before {
+  counter-increment: numList;
+  content: counter(numList);
+
+  float: left;
+  position: absolute;
+  left: -20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+
+  background: #f0f;
+  border-radius: 50%;
 }
 
 #about {
@@ -421,7 +465,7 @@ p.important {
     border-radius: 15px;
   }
 
-  #funfacts #facts {
+  /* #funfacts #facts {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     grid-gap: 1em;
@@ -431,7 +475,7 @@ p.important {
   }
   #funfacts #facts img {
     width: 52px;
-  }
+  } */
   .blob {
     padding: 1em;
   }
