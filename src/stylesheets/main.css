@@ -113,11 +113,8 @@ p.important {
   line-height: 1.1;
   align-items: center;
   justify-items: center;
-<<<<<<< HEAD
-=======
   padding-top: 88px;
   padding-bottom: 50px;
->>>>>>> 1d752d1 (feat(nav): desktop nav styles)
 }
 
 .big {
