@@ -21,7 +21,7 @@ layout: default
     {% endif %}
     <hr/>
     <p class="immediate-release">For immediate release</p>
-    <p>{{ page.intro | prepend: "—" | prepend: location | prepend: date }}</p>
+    <p>{{ date | append: location | append: "—" | append: page.intro }}</p>
     {{ page.content }}
   </article>
 {% endunless %}
