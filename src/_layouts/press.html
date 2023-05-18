@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% if page.external %}
+  {% include script_redirect.html location=page.external %}
+{% endif %}
+
+{% capture date %}
+  {% include date.html date=page.date format = "%B %e, %Y, " %}
+{% endcapture %}
+
+{% assign location = page.location | default: "Sacramento, CA" %}
+
+{% unless page.external %}
+  <article class="press-release">
+    <a href="/press">Press</a>
+    <h1 class="h2">{{ page.heading }}</h1>
+    {% if page.lead %}
+      <p>{{ page.lead }}</p>
+    {% endif %}
+    <hr/>
+    <p class="immediate-release">For immediate release</p>
+    <p>{{ date | append: location | append: "—" | append: page.intro }}</p>
+    {{ page.content }}
+  </article>
+{% endunless %}
