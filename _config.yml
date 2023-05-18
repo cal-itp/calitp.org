@@ -3,6 +3,8 @@ collections:
   press:
     output: true
     permalink: /:collection/:name
+  resources:
+    output: false
 defaults:
   - scope:
       path: ""
