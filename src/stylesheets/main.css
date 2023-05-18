@@ -21,6 +21,13 @@ h3 {
   font-size: 30px;
 }
 
+h4,
+.h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 22.4px;
+}
+
 p,
 a,
 li {
@@ -28,6 +35,11 @@ li {
   color: #212121;
   font-size: 16px;
   line-height: 140%;
+}
+
+.navbar {
+  --bs-navbar-nav-link-padding-x: 40px;
+  --bs-navbar-nav-link-padding-y: 40px;
 }
 
 picture.railway img {
@@ -299,8 +311,8 @@ p.important {
   text-align: right;
 }
 
-#hamburger {
-  display: none;
+#about h2 {
+  margin-top: 50px;
 }
 
 @media (max-width: 1024px) {
