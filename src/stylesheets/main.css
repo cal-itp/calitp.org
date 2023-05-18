@@ -35,11 +35,6 @@ picture.railway img {
   margin: 7.25rem 0;
 }
 
-header {
-  background-color: white;
-  width: 100vw;
-}
-
 footer {
   background-color: #212121;
 }
@@ -58,7 +53,6 @@ nav ul {
   padding-left: initial;
 }
 
-header nav,
 footer nav {
   margin-left: auto;
   margin-right: auto;
@@ -69,11 +63,6 @@ footer nav {
   align-items: center;
 }
 
-header nav {
-  grid-template-columns: 7fr 1fr;
-}
-
-header nav .links,
 footer nav .links {
   list-style: none;
   display: grid;
@@ -373,23 +362,11 @@ p.important {
     margin: 4.5rem 0;
   }
 
-  header nav,
   footer nav {
     display: grid;
     grid-template-rows: 1fr min-content;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-  }
-  header nav #hamburger {
-    display: initial;
-  }
-  header nav .links {
-    display: none;
-  }
-  header nav .links.visible {
-    display: grid;
-    grid-column: 1/-1;
-    text-align: center;
   }
   footer nav {
     grid-template-columns: 1fr;
@@ -406,14 +383,6 @@ p.important {
 }
 
 @media (max-width: 540px) {
-  header nav .links.visible {
-    grid-template-rows: repeat(3, min-content);
-    grid-template-columns: 1fr;
-    grid-column: initial;
-    grid-gap: initial;
-    grid-column: 1/-1;
-    text-align: center;
-  }
   footer nav {
     grid-template-columns: 1fr;
     justify-items: left;
@@ -454,9 +423,5 @@ p.important {
 @media (min-width: 1024px) {
   #reachout {
     padding-top: 100px;
-  }
-  header {
-    position: fixed;
-    top: 0;
   }
 }
