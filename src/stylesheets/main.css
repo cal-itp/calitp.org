@@ -32,8 +32,7 @@ li {
 
 picture.railway img {
   width: 100%;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin: 7.25rem 0;
 }
 
 header {
@@ -105,7 +104,6 @@ p.important {
   line-height: 1.1;
   align-items: center;
   justify-items: center;
-  padding-bottom: 50px;
 }
 
 .big {
@@ -201,28 +199,47 @@ p.important {
   text-decoration-style: dotted;
 }
 
-#funfacts #facts {
-  display: grid;
-  grid-template-columns: 1fr 8fr;
-  grid-template-rows: 1fr;
-  grid-gap: 2em;
+#facts ol {
+  list-style: none;
+  counter-reset: numList;
+  gap: 20px;
 }
 
-#funfacts #facts picture {
+#facts ol li {
+  font-weight: 700;
+  gap: 12px;
+}
+
+#facts ol li:before {
+  counter-increment: numList;
+  content: counter(numList);
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
-  margin-top: 1.5em;
+  color: #fff;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
-#funfacts picture img {
-  width: 100%;
+#facts ol li:nth-child(1):before {
+  background: #046b99;
 }
 
-#about {
-  padding-top: 80px;
+#facts ol li:nth-child(2):before {
+  background: #c8700a;
 }
-#funfacts {
-  padding-top: 80px;
+
+#facts ol li:nth-child(3):before {
+  background: #db5461;
 }
+
+#facts ol li:nth-child(4):before {
+  background: #4c387a;
+}
+
 #reachout {
   padding-top: 80px;
 }
@@ -293,10 +310,6 @@ p.important {
   text-align: right;
 }
 
-#about h2 {
-  margin-top: 50px;
-}
-
 #hamburger {
   display: none;
 }
@@ -355,6 +368,11 @@ p.important {
 }
 
 @media (max-width: 768px) {
+  picture.railway img {
+    width: 100%;
+    margin: 4.5rem 0;
+  }
+
   header nav,
   footer nav {
     display: grid;
@@ -386,6 +404,7 @@ p.important {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 540px) {
   header nav .links.visible {
     grid-template-rows: repeat(3, min-content);
@@ -421,28 +440,18 @@ p.important {
     border-radius: 15px;
   }
 
-  #funfacts #facts {
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr;
-    grid-gap: 1em;
-  }
-  #funfacts #facts picture {
-    text-align: initial;
-  }
-  #funfacts #facts img {
-    width: 52px;
-  }
   .blob {
     padding: 1em;
   }
 }
+
 @media (min-width: 1441px) {
   #details {
     justify-items: center;
   }
 }
+
 @media (min-width: 1024px) {
-  #funfacts,
   #reachout {
     padding-top: 100px;
   }
