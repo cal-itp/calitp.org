@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /resources
+---
+
+<h1>Resources</h1>
+
+<section id="resources">
+  {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+  {% assign all_resources = site.resources | reverse %}
+  {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment %}
+  {% assign groups = all_resources | group_by: "category" | reverse %}
+
+  {% for group in groups %}
+    <h2>{{ group.name }}</h2>
+    {% for item in group.items %}
+      {% assign url = item.asset %}
+      {% unless url contains "https://" %}
+        {% assign url = "/assets/" | append: url %}
+      {% endunless %}
+      <article class="resource">
+        <a href="{{ url }}" target="_blank">{{ item.title }}</a>
+        <br/>
+        <span class="tags">{{ item.tags | join: ", " }}</span>
+        |
+        {% include date.html date=item.date format = "%b %Y" %}
+      </article>
+    {% endfor %}
+    {% unless forloop.last %}
+      <hr/>
+    {% endunless %}
+  {% endfor %}
+</section>
