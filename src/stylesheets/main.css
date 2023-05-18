@@ -21,6 +21,13 @@ h3 {
   font-size: 30px;
 }
 
+h4,
+.h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 22.4px;
+}
+
 p,
 a,
 li {
@@ -30,14 +37,22 @@ li {
   line-height: 140%;
 }
 
+main.container {
+  padding-top: 110px;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-nav {
+  --bs-nav-link-color: #212121;
+}
+
 picture.railway img {
   width: 100%;
   margin: 7.25rem 0;
-}
-
-header {
-  background-color: white;
-  width: 100vw;
 }
 
 footer {
@@ -53,12 +68,11 @@ footer nav .links a {
   text-decoration: none;
 }
 
-nav ul {
+footer nav ul {
   margin-bottom: initial;
   padding-left: initial;
 }
 
-header nav,
 footer nav {
   margin-left: auto;
   margin-right: auto;
@@ -69,11 +83,6 @@ footer nav {
   align-items: center;
 }
 
-header nav {
-  grid-template-columns: 7fr 1fr;
-}
-
-header nav .links,
 footer nav .links {
   list-style: none;
   display: grid;
@@ -104,6 +113,8 @@ p.important {
   line-height: 1.1;
   align-items: center;
   justify-items: center;
+  padding-top: 88px;
+  padding-bottom: 50px;
 }
 
 .big {
@@ -310,8 +321,8 @@ p.important {
   text-align: right;
 }
 
-#hamburger {
-  display: none;
+#about h2 {
+  margin-top: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -373,23 +384,11 @@ p.important {
     margin: 4.5rem 0;
   }
 
-  header nav,
   footer nav {
     display: grid;
     grid-template-rows: 1fr min-content;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-  }
-  header nav #hamburger {
-    display: initial;
-  }
-  header nav .links {
-    display: none;
-  }
-  header nav .links.visible {
-    display: grid;
-    grid-column: 1/-1;
-    text-align: center;
   }
   footer nav {
     grid-template-columns: 1fr;
@@ -406,14 +405,6 @@ p.important {
 }
 
 @media (max-width: 540px) {
-  header nav .links.visible {
-    grid-template-rows: repeat(3, min-content);
-    grid-template-columns: 1fr;
-    grid-column: initial;
-    grid-gap: initial;
-    grid-column: 1/-1;
-    text-align: center;
-  }
   footer nav {
     grid-template-columns: 1fr;
     justify-items: left;
@@ -455,8 +446,58 @@ p.important {
   #reachout {
     padding-top: 100px;
   }
-  header {
-    position: fixed;
-    top: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    --bs-navbar-nav-link-padding-x: 40px;
+    --bs-navbar-nav-link-padding-y: 0;
+  }
+
+  .navbar-brand {
+    --bs-navbar-brand-padding-x: 32px;
+    --bs-navbar-brand-padding-y: 32px;
+  }
+
+  .navbar-nav {
+    --bs-nav-link-color: #212121;
+    --bs-navbar-nav-link-padding-y: 0;
+    --bs-nav-link-padding-y: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    --bs-navbar-brand-padding-x: 29px;
+    --bs-navbar-brand-padding-y: 29px;
+  }
+
+  #mainNav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 110px;
+    background: white;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 23.8px 0 28.8px 12px;
+    border-bottom: 1px solid #d5eef5;
+  }
+
+  .navbar-nav {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .navbar-nav {
+    max-width: 540px;
   }
 }
