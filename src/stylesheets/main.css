@@ -155,6 +155,10 @@ p.important {
   background-color: #5b559c;
 }
 
+#details .tab-content .tab-list article:nth-child(n + 3) {
+  display: none;
+}
+
 .red-link {
   background-color: var(--calitp-red-5);
   color: var(--bs-white);
