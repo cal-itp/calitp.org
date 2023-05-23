@@ -52,7 +52,50 @@
             </div>
           </div>
         </div>
-
+        <div class="row">
+          <div class="col-12 offset-md-4 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
+            <h4 class="text-white">Recent News</h4>
+            {% assign all_press = site.press | reverse %}
+            {% for press in all_press %}
+              {% assign url = press.url %}
+              {% if press.external %}
+                {% assign url = press.external %}
+              {% endif %}
+              {% if press.tags contains initiative.tag %}
+                <article class="press-item">
+                  <a
+                    class="text-white"
+                    rel="noreferrer"
+                    href="{{ url }}"
+                    {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
+                </article>
+              {% endif %}
+            {% endfor %}
+            <a class="text-white" href="/press">See all</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 offset-md-4 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
+            <h4 class="text-white">Resources</h4>
+            {% assign all_resources = site.resources | reverse %}
+            {% for resource in all_resources %}
+              {% assign url = resource.asset %}
+              {% unless url contains "https://" %}
+                {% assign url = "/assets/" | append: url %}
+              {% endunless %}
+              {% if resource.tags contains initiative.tag %}
+                <article class="resource">
+                  <a
+                    class="text-white"
+                    rel="noreferrer"
+                    href="{{ url }}"
+                    target="_blank">{{ resource.title }}</a>
+                </article>
+              {% endif %}
+            {% endfor %}
+            <a class="text-white" href="/resources">See all</a>
+          </div>
+        </div>
       </div>
     </div>
   {% endfor %}
