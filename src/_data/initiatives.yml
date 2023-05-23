@@ -12,7 +12,7 @@
     - "Adding a contactless payment reader to a bus or train means customers can quickly
       and easily tap to pay as they board with the bank card or smartphone that’s already
       in their pocket—just like they’d tap to buy a coffee."
-    - "Starting with <a href='https://mst.org/news_items/monterey-salinas-transit-announces-launch-of-contactless-fare-payment-demonstration'rel='noreferrer'
+    - "Starting with <a class='text-white' href='https://mst.org/news_items/monterey-salinas-transit-announces-launch-of-contactless-fare-payment-demonstration'rel='noreferrer'
       target='_blank'>Monterey-Salinas Transit</a>, Cal-ITP and partners like Visa
       demonstrated how a transit provider that has traditionally used cash and agency-specific
       fare cards can accept contactless bank card payments like any other merchant. "
@@ -31,10 +31,10 @@
   paragraphs:
     - "Our <a rel='noreferrer' target='_blank' href='https://benefits.calitp.org'>Cal-ITP
       Benefits</a> web application streamlines the process for transit riders to instantly
-      qualify for and receive discounts, starting with <a rel='noreferrer' target='_blank'
+      qualify for and receive discounts, starting with <a class='text-white' rel='noreferrer' target='_blank'
       href='https://mst.org/news_items/monterey-salinas-transit-mst-announces-discount-contactless-fares-for-both-local-and-visiting-riders-65-with-launch-of-new-benefits-eligibility-verification-website'>Monterey-Salinas
       Transit</a> (MST), which offers a half-price Senior Fare. Now older adults (65+)
-      who are able to <a href='https://login.gov/help/verify-your-identity/how-to-verify-your-identity/#requirements-for-identity-verification'
+      who are able to <a class='text-white' href='https://login.gov/help/verify-your-identity/how-to-verify-your-identity/#requirements-for-identity-verification'
       target='_blank'>electronically verify their identity</a> are able to access MST's
       reduced fares without the hassle of paperwork."
     - "We worked with state partners on this product launch, and next we're working to
@@ -57,7 +57,7 @@
     - "Cal-ITP is helping transit providers remove the guesswork for riders wondering
       when the next bus or train will arrive or if they’ll make their connection by
       using the General Transit Feed Specification (GTFS)—the global standard for publishing
-      transit information. Cal-ITP developed <a rel='noreferrer' target='_blank' href='https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines'>California
+      transit information. Cal-ITP developed <a class='text-white' rel='noreferrer' target='_blank' href='https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines'>California
       Minimum GTFS Guidelines</a> and is working to ensure statewide GTFS schedule/static
       coverage and GTFS Realtime. The Cal-ITP team will support transit providers by
       assessing their systems and providing technical assistance so riders can easily
