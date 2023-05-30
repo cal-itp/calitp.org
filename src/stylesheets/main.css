@@ -501,3 +501,15 @@ p.important {
     max-width: 540px;
   }
 }
+
+.nav-pills {
+  --bs-nav-pills-border-radius: 19px;
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: #212121;
+}
+
+.nav-pills .nav-link {
+  padding: 0.23rem;
+  border: 2px solid #212121;
+  color: #212121;
+}
