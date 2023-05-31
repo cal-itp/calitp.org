@@ -1,5 +1,12 @@
 body {
   --bs-body-color: #212121;
+  --calitp-primary-blue: #046b99;
+  --calitp-green-4: #00755b;
+  --calitp-orange-5: #b25600;
+  --calitp-red-4: #c03f4d;
+  --calitp-red-5: #b00719;
+  --calitp-purple-4: #5b559c;
+  --calitp-purple-5: #292278;
 }
 
 h1,
@@ -178,19 +185,15 @@ p.important {
 }
 
 .red-link {
-  background-color: #db5461;
+  background-color: var(--calitp-red-5);
   color: var(--bs-white);
 }
 .blue-link {
-  background-color: #046b99;
+  background-color: var(--calitp-primary-blue);
   color: var(--bs-white);
 }
 .green-link {
-  background-color: #00775d;
-  color: var(--bs-white);
-}
-.gold-link {
-  background-color: #c8700a;
+  background-color: var(--calitp-green-4);
   color: var(--bs-white);
 }
 
@@ -199,9 +202,7 @@ p.important {
 .blue-link:focus,
 .blue-link:hover,
 .green-link:focus,
-.green-link:hover,
-.gold-link:focus,
-.gold-link:hover {
+.green-link:hover {
   color: var(--bs-white);
   text-decoration-style: dotted;
 }
@@ -232,19 +233,19 @@ p.important {
 }
 
 #facts ol li:nth-child(1):before {
-  background: #046b99;
+  background: var(--calitp-primary-blue);
 }
 
 #facts ol li:nth-child(2):before {
-  background: #c8700a;
+  background: var(--calitp-orange-5);
 }
 
 #facts ol li:nth-child(3):before {
-  background: #db5461;
+  background: var(--calitp-red-5);
 }
 
 #facts ol li:nth-child(4):before {
-  background: #4c387a;
+  background: var(--calitp-purple-5);
 }
 
 #reachout {
@@ -352,24 +353,24 @@ p.important {
     margin-bottom: 5em;
   }
   #details #enabling-contactless-payment {
-    background-color: #c64e5a;
+    background-color: var(--calitp-red-4);
     background-image: initial;
   }
   #details #automating-customer-discounts {
-    background-color: #046b99;
+    background-color: var(--calitp-primary-blue);
     background-image: initial;
     margin-bottom: 0;
   }
   #details #standardizing-trip-quality {
-    background-color: #5b559c;
+    background-color: var(--calitp-purple-4);
     background-image: initial;
   }
   #lastminute #connect {
-    background-color: #c64e5a;
+    background-color: var(--calitp-red-4);
     background-image: initial;
   }
   #lastminute #update {
-    background-color: #c8700b;
+    background-color: var(--calitp-orange-5);
     background-image: initial;
   }
 }
