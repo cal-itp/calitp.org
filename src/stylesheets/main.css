@@ -7,6 +7,7 @@ body {
   --calitp-red-5: #b00719;
   --calitp-purple-4: #5b559c;
   --calitp-purple-5: #292278;
+  --calitp-cyan-1: #d5eef5;
 }
 
 h1,
@@ -56,7 +57,7 @@ main.container {
 }
 
 .navbar-nav {
-  --bs-nav-link-color: #212121;
+  --bs-nav-link-color: var(--bs-body-color);
 }
 
 picture.railway img {
@@ -103,11 +104,6 @@ footer nav .links {
 p.important {
   font-size: 24px;
   margin-bottom: 50px;
-}
-
-.links a {
-  color: #323a45;
-  font-size: 16px;
 }
 
 #triforce {
@@ -457,7 +453,7 @@ p.important {
   }
 
   .navbar-nav {
-    --bs-nav-link-color: #212121;
+    --bs-nav-link-color: var(--bs-body-color);
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
   }
@@ -479,7 +475,7 @@ p.important {
 
   .navbar-nav .nav-link {
     padding: 23.8px 0 28.8px 12px;
-    border-bottom: 1px solid #d5eef5;
+    border-bottom: 1px solid var(--calitp-cyan-1);
   }
 
   .navbar-nav {
