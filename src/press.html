@@ -5,11 +5,16 @@ layout: default
 <script>
   function deselect(id) {
     const pills = document.querySelectorAll("button[data-bs-toggle='pill']")
+    const allTab = document.querySelector("#pills-all");
 
     const selectedPill = document.querySelector("#" + id);
     if (!selectedPill.classList.contains("selected")) {
       /* mark it as selected */
       selectedPill.classList.add("selected");
+
+      // hide tab with all articles
+      allTab.classList.remove("show");
+      allTab.classList.remove("active");
     } else {
       /* if we've selected a pill that is currently selected, undo selection for it and its tab */
       selectedPill.classList.remove("selected");
@@ -18,6 +23,10 @@ layout: default
       const selectedTab = document.querySelector("div[aria-labelledby='" + id + "']")
       selectedTab.classList.remove("show");
       selectedTab.classList.remove("active");
+
+      // show tab with all articles
+      allTab.classList.add("show");
+      allTab.classList.add("active");
     }
 
     /* remove "selected" from all other pills */
@@ -40,7 +49,7 @@ layout: default
       type="button"
       role="tab"
       aria-controls="pills-contactless"
-      aria-selected="true"
+      aria-selected="false"
       onclick="deselect('pills-contactless-tab')">Contactless Payments</button>
   </li>
   <li class="nav-item" role="presentation">
@@ -71,6 +80,13 @@ layout: default
 
 <section id="press">
   <div class="tab-content" id="pills-tabContent">
+    <div
+      class="tab-pane fade active show"
+      id="pills-all"
+      role="tabpanel"
+      tabindex="0">
+      {% include press_listing.html tag="" %}
+    </div>
     <div
       class="tab-pane fade"
       id="pills-contactless"
