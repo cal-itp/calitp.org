@@ -2,21 +2,28 @@
 layout: default
 ---
 
+{% comment %} needs to go in head element {% endcomment %}
+<noscript>
+  <style>
+    .hide-if-noscript {
+      display: none;
+    }
+  </style>
+</noscript>
+
 <script>
   function deselect(id) {
     const pills = document.querySelectorAll("button[data-bs-toggle='pill']")
     const allTab = document.querySelector("#pills-all");
 
     const selectedPill = document.querySelector("#" + id);
-    if (!selectedPill.classList.contains("selected")) {
-      /* mark it as selected */
+    if (! selectedPill.classList.contains("selected")) { /* mark it as selected */
       selectedPill.classList.add("selected");
 
-      // hide tab with all articles
+// hide tab with all articles
       allTab.classList.remove("show");
       allTab.classList.remove("active");
-    } else {
-      /* if we've selected a pill that is currently selected, undo selection for it and its tab */
+    } else { /* if we've selected a pill that is currently selected, undo selection for it and its tab */
       selectedPill.classList.remove("selected");
       selectedPill.classList.remove("active");
 
@@ -24,12 +31,12 @@ layout: default
       selectedTab.classList.remove("show");
       selectedTab.classList.remove("active");
 
-      // show tab with all articles
+// show tab with all articles
       allTab.classList.add("show");
       allTab.classList.add("active");
     }
 
-    /* remove "selected" from all other pills */
+/* remove "selected" from all other pills */
     let pillSet = new Set(pills);
     pillSet.delete(selectedPill);
     pillSet.forEach(pill => pill.classList.remove("selected"));
@@ -37,7 +44,7 @@ layout: default
 </script>
 <h1>Press</h1>
 <ul
-  class="nav nav-pills mb-3 gap-2"
+  class="nav nav-pills mb-3 gap-2 hide-if-noscript"
   id="pills-tab"
   role="tablist">
   <li class="nav-item" role="presentation">
@@ -85,7 +92,7 @@ layout: default
       id="pills-all"
       role="tabpanel"
       tabindex="0">
-      {% include press_listing.html tag="" %}
+      {% include press_listing.html tag = "" %}
     </div>
     <div
       class="tab-pane fade"
