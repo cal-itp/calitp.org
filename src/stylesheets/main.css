@@ -1,9 +1,12 @@
+body {
+  --bs-body-color: #212121;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Raleway", sans-serif;
-  color: #212121;
 }
 
 h1 {
@@ -32,7 +35,6 @@ p,
 a,
 li {
   font-family: "Poppins", sans-serif;
-  color: #212121;
   font-size: 16px;
   line-height: 140%;
 }
@@ -56,7 +58,7 @@ picture.railway img {
 }
 
 footer {
-  background-color: #212121;
+  background-color: var(--bs-body-color);
 }
 
 footer nav {
@@ -64,7 +66,7 @@ footer nav {
 }
 
 footer nav .links a {
-  color: white;
+  color: var(--bs-white);
   text-decoration: none;
 }
 
@@ -161,7 +163,7 @@ p.important {
 .box h3,
 .box a,
 .box li {
-  color: white;
+  color: var(--bs-white);
 }
 
 #details #enabling-contactless-payment {
@@ -177,19 +179,19 @@ p.important {
 
 .red-link {
   background-color: #db5461;
-  color: white;
+  color: var(--bs-white);
 }
 .blue-link {
   background-color: #046b99;
-  color: white;
+  color: var(--bs-white);
 }
 .green-link {
   background-color: #00775d;
-  color: white;
+  color: var(--bs-white);
 }
 .gold-link {
   background-color: #c8700a;
-  color: white;
+  color: var(--bs-white);
 }
 
 .red-link:focus,
@@ -200,7 +202,7 @@ p.important {
 .green-link:hover,
 .gold-link:focus,
 .gold-link:hover {
-  color: white;
+  color: var(--bs-white);
   text-decoration-style: dotted;
 }
 
@@ -221,7 +223,7 @@ p.important {
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  color: #fff;
+  color: var(--bs-white);
   line-height: 40px;
   width: 40px;
   height: 40px;
@@ -471,7 +473,7 @@ p.important {
     width: 100%;
     left: 0;
     top: 110px;
-    background: white;
+    background: var(--bs-white);
   }
 
   .navbar-nav .nav-link {
