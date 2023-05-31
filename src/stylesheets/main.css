@@ -187,10 +187,6 @@ p.important {
   background-color: #00775d;
   color: white;
 }
-.purple-link {
-  background-color: #4c387a;
-  color: white;
-}
 .gold-link {
   background-color: #c8700a;
   color: white;
@@ -202,8 +198,6 @@ p.important {
 .blue-link:hover,
 .green-link:focus,
 .green-link:hover,
-.purple-link:focus,
-.purple-link:hover,
 .gold-link:focus,
 .gold-link:hover {
   color: white;
