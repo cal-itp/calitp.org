@@ -91,7 +91,7 @@ Cybersource, a Visa solution, serves as both the gateway and payment management 
 For more information about this project, Cal-ITP’s technical support, or California’s contactless payment MSAs, please email
 [hello@calitp.org](mailto:hello@calitp.org).
 
-## About this project's stakeholders
+## <u>About this project's stakeholders</u>
 
 ### Cal-ITP
 
