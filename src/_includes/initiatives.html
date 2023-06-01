@@ -48,13 +48,13 @@
               </p>
             {% endfor %}
             <div class="d-grid d-md-block">
-              <a href="{{ initiative.button.url }}" class="btn btn-secondary bg-white border-white mt-4 mb-4 {{ initiative.button.class }}">{{ initiative.button.text }}</a>
+              <a href="{{ initiative.button.url }}" class="btn bg-white border-white fw-bolder mt-4 mb-4 text-{{ initiative.class }}">{{ initiative.button.text }}</a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 offset-md-4 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
-            <h4 class="text-white mt-4">Recent News</h4>
+            <h4 class="small-caps text-{{ initiative.class }} border-{{ initiative.class }} mt-4">Recent News</h4>
             <div class="tab-list">
               {% assign all_press = site.press | reverse %}
               {% for press in all_press %}
@@ -65,7 +65,7 @@
                 {% if press.tags contains initiative.tag %}
                   <article class="press-item">
                     <a
-                      class="text-white"
+                      class="text-white fw-bold"
                       rel="noreferrer"
                       href="{{ url }}"
                       {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
@@ -73,12 +73,12 @@
                 {% endif %}
               {% endfor %}
             </div>
-            <a class="text-white" href="/press">See all</a>
+            <a class="text-white fw-bold" href="/press">See all</a>
           </div>
         </div>
         <div class="row">
           <div class="col-12 offset-md-4 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
-            <h4 class="text-white mt-4">Resources</h4>
+            <h4 class="small-caps text-{{ initiative.class }} border-{{ initiative.class }} mt-4">Resources</h4>
             <div class="tab-list">
               {% assign all_resources = site.resources | reverse %}
               {% for resource in all_resources %}
@@ -89,7 +89,7 @@
                 {% if resource.tags contains initiative.tag %}
                   <article class="resource">
                     <a
-                      class="text-white"
+                      class="text-white fw-bold"
                       rel="noreferrer"
                       href="{{ url }}"
                       target="_blank">{{ resource.title }}</a>
@@ -97,7 +97,7 @@
                 {% endif %}
               {% endfor %}
             </div>
-            <a class="text-white" href="/resources">See all</a>
+            <a class="text-white fw-bold" href="/resources">See all</a>
           </div>
         </div>
       </div>
