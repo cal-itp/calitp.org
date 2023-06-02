@@ -55,7 +55,6 @@ main.container {
 
 .navbar {
   --bs-navbar-padding-y: 0;
-  box-shadow: 0px 4px 4px var(--calitp-cyan-1);
 }
 
 .navbar-nav {
