@@ -8,6 +8,7 @@ body {
   --calitp-red-5: #a02e3b;
   --calitp-purple-4: #524c8f;
   --calitp-purple-5: #292278;
+  --calitp-slate-5: #243d51;
   --calitp-cyan-1: #d5eef5;
 }
 
@@ -363,11 +364,11 @@ p.important {
     background-image: initial;
   }
   #lastminute #connect {
-    background-color: var(--calitp-red-4);
+    background-color: var(--calitp-slate-5);
     background-image: initial;
   }
   #lastminute #update {
-    background-color: var(--calitp-orange-5);
+    background-color: var(--calitp-slate-5);
     background-image: initial;
   }
 }
