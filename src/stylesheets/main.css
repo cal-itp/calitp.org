@@ -162,22 +162,6 @@ p.important {
   color: var(--bs-white);
 }
 
-#initiatives #enabling-contactless-payment {
-  background-color: #c64e5a;
-}
-
-#initiatives #automating-customer-discounts {
-  background-color: #046b99;
-}
-
-#initiatives #standardizing-trip-quality {
-  background-color: #5b559c;
-}
-
-#initiatives .tab-content .tab-list article:nth-child(n + 3) {
-  display: none;
-}
-
 .red-link {
   background-color: var(--calitp-red-5);
   color: var(--bs-white);
@@ -254,16 +238,20 @@ p.important {
   color: #212121;
 }
 
+#initiatives .tab-content .tab-list article:nth-child(n + 3) {
+  display: none;
+}
+
 .nav-pills {
   --bs-nav-pills-border-radius: 19px;
-  --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #212121;
+  --bs-nav-pills-link-active-color: var(--bs-white);
+  --bs-nav-pills-link-active-bg: var(--bs-body-color);
 }
 
 .nav-pills .nav-link {
   padding: 0.23rem;
-  border: 2px solid #212121;
-  color: #212121;
+  border: 2px solid var(--bs-body-color);
+  color: var(--bs-body-color);
 }
 
 .right-callout {

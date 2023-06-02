@@ -27,10 +27,11 @@
 <div class="tab-content" id="pills-tabContent">
   {% for initiative in site.data.initiatives %}
     <div
-      class="tab-pane fade {{ initiative.active }}"
+      class="tab-pane fade {{ initiative.active }} rounded rounded-4"
       id="pills-{{ initiative.slug }}"
       role="tabpanel"
       aria-labelledby="pills-{{ initiative.slug }}-tab"
+      style="background-color: var({{ initiative.class }})"
       tabindex="0">
       <div id="{{ initiative.id }}" class="rounded px-3 py-5">
         <div class="row">
@@ -48,7 +49,7 @@
               </p>
             {% endfor %}
             <div class="d-grid d-md-block border-bottom border-white border-2">
-              <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 mb-4 text-{{ initiative.class }}">{{ initiative.button.text }}</a>
+              <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 mb-4">{{ initiative.button.text }}</a>
             </div>
           </div>
         </div>
