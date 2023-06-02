@@ -2,10 +2,11 @@ body {
   --bs-body-color: #212121;
   --calitp-primary-blue: #046b99;
   --calitp-green-4: #00755b;
+  --calitp-green-5: #004939;
   --calitp-orange-5: #b25600;
   --calitp-red-4: #c03f4d;
-  --calitp-red-5: #b00719;
-  --calitp-purple-4: #5b559c;
+  --calitp-red-5: #a02e3b;
+  --calitp-purple-4: #524c8f;
   --calitp-purple-5: #292278;
   --calitp-cyan-1: #d5eef5;
 }
