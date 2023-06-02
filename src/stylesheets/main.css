@@ -1,15 +1,15 @@
 body {
-  --bs-body-color: #212121;
-  --calitp-primary-blue: #046b99;
-  --calitp-green-4: #00755b;
-  --calitp-green-5: #004939;
-  --calitp-orange-5: #b25600;
-  --calitp-red-4: #c03f4d;
-  --calitp-red-5: #a02e3b;
-  --calitp-purple-4: #524c8f;
-  --calitp-purple-5: #292278;
-  --calitp-slate-5: #243d51;
-  --calitp-cyan-1: #d5eef5;
+  --bs-body-color: rgb(33, 33, 33); /* #212121 */
+  --calitp-primary-blue: rgb(4, 107, 153); /* #046b99 */
+  --calitp-cyan-1: rgb(213, 238, 245); /* #d5eef5 */
+  --calitp-green-4: rgb(0, 117, 91); /* #00755b */
+  --calitp-green-5: rgb(0, 73, 57); /* #004939 */
+  --calitp-orange-5: rgb(178, 86, 0); /* #b25600 */
+  --calitp-purple-4: rgb(82, 76, 143); /* #524c8f */
+  --calitp-purple-5: rgb(41, 34, 120); /* #292278 */
+  --calitp-red-4: rgb(192, 63, 77); /* #c03f4d */
+  --calitp-red-5: rgb(160, 46, 59); /* #a02e3b */
+  --calitp-slate-5: rgb(36, 61, 81); /* #243d51 */
 }
 
 h1,
