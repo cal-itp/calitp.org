@@ -462,8 +462,8 @@ p.important {
 
 @media (max-width: 992px) {
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 29px;
-    --bs-navbar-brand-padding-y: 29px;
+    --bs-navbar-brand-padding-x: 32px;
+    --bs-navbar-brand-padding-y: 32px;
   }
 
   #mainNav {
