@@ -31,19 +31,14 @@ h1 {
   margin-bottom: 19px;
 }
 
-/* h2 {
-  font-size: 36px;
-} */
-
 h3 {
   font-size: 24px;
 }
 
 h4,
 .h4 {
-  font-size: 1rem;
   font-weight: 700;
-  line-height: 22.4px;
+  line-height: 140%;
 }
 
 p,
@@ -276,10 +271,6 @@ p.important {
   display: grid;
   justify-content: center;
   align-items: center;
-}
-
-#lastminute h3 {
-  font-size: 25px;
 }
 
 #lastminute ul {
