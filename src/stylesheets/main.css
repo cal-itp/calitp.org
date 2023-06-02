@@ -242,7 +242,7 @@ p.important {
 }
 
 #facts ol li:nth-child(4):before {
-  background: var(--calitp-purple-5);
+  background: var(--calitp-purple-4);
 }
 
 #reachout {
