@@ -162,19 +162,19 @@ p.important {
   color: var(--bs-white);
 }
 
-#details #enabling-contactless-payment {
+#initiatives #enabling-contactless-payment {
   background-color: #c64e5a;
 }
 
-#details #automating-customer-discounts {
+#initiatives #automating-customer-discounts {
   background-color: #046b99;
 }
 
-#details #standardizing-trip-quality {
+#initiatives #standardizing-trip-quality {
   background-color: #5b559c;
 }
 
-#details .tab-content .tab-list article:nth-child(n + 3) {
+#initiatives .tab-content .tab-list article:nth-child(n + 3) {
   display: none;
 }
 
