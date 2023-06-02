@@ -1,3 +1,10 @@
+:root {
+  --bs-font-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --calitp-headline-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 body {
   --bs-body-color: rgb(33, 33, 33); /* #212121 */
   --calitp-primary-blue: rgb(4, 107, 153); /* #046b99 */
@@ -16,7 +23,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--calitp-headline-sans-serif);
 }
 
 h1 {
@@ -44,7 +51,6 @@ h4,
 p,
 a,
 li {
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 140%;
 }
