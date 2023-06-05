@@ -19,8 +19,9 @@
   button:
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
+    class: text-red-4
 - tag: Benefits
-  slug: benefits
+  slug: benefitsd
   id: automating-customer-discounts
   active: ""
   headline: Automating customer discounts
@@ -44,6 +45,7 @@
   button:
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
+    class: text-primary-blue
 - tag: GTFS
   slug: gtfs
   id: standardizing-trip-quality
@@ -65,3 +67,4 @@
   button:
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
+    class: text-purple-4

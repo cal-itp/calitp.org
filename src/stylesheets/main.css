@@ -53,6 +53,18 @@ li {
   line-height: 140%;
 }
 
+.text-red-4 {
+  color: var(--calitp-red-4);
+}
+
+.text-primary-blue {
+  color: var(--calitp-primary-blue);
+}
+
+.text-purple-4 {
+  color: var(--calitp-purple-4);
+}
+
 main.container {
   padding-top: 110px;
 }
