@@ -253,59 +253,7 @@ p.important {
   padding-top: 80px;
 }
 
-<<<<<<< HEAD #lastminute #connect {
-  background-color: #c64e5a;
-  background-image: initial;
-}
-#lastminute #update {
-  background-color: #c8700b;
-  background-image: initial;
-}
-
-/* #lastminute {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: min-content min-content;
-  grid-gap: 2em;
-  justify-content: center;
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-
-#lastminute .box {
-  width: 400px;
-  height: 400px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-#lastminute ul {
-  padding-left: 1rem;
-}
-#lastminute .box picture {
-  justify-self: center;
-  align-self: center;
-}
-#lastminute .box p {
-  margin-bottom: 0;
-}
-#lastminute .box picture img {
-  width: 80px;
-}
-
-#lastminute .box .blob {
-  width: 260px;
-  display: grid;
-  grid-template-rows: 130px min-content auto;
-  height: 350px;
-}
-
-#lastminute #update.box .blob {
-  padding-left: 15px;
-} */
-
-=======>>>>>>>38a8be3 (refactor(home): create bg-slate class, use for sections) .right-callout {
+.right-callout {
   max-width: 700px;
 }
 
