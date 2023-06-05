@@ -1,38 +1,49 @@
+:root {
+  --bs-font-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --calitp-headline-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  --bs-body-color: rgb(33, 33, 33); /* #212121 */
+  --calitp-primary-blue: rgb(4, 107, 153); /* #046b99 */
+  --calitp-cyan-1: rgb(213, 238, 245); /* #d5eef5 */
+  --calitp-green-4: rgb(0, 117, 91); /* #00755b */
+  --calitp-green-5: rgb(0, 73, 57); /* #004939 */
+  --calitp-orange-5: rgb(178, 86, 0); /* #b25600 */
+  --calitp-purple-4: rgb(82, 76, 143); /* #524c8f */
+  --calitp-purple-5: rgb(41, 34, 120); /* #292278 */
+  --calitp-red-4: rgb(192, 63, 77); /* #c03f4d */
+  --calitp-red-5: rgb(160, 46, 59); /* #a02e3b */
+  --calitp-slate-5: rgb(36, 61, 81); /* #243d51 */
+}
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
-  color: #212121;
+  font-family: var(--calitp-headline-sans-serif);
 }
 
 h1 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
   margin-bottom: 19px;
 }
 
-h2 {
-  font-size: 36px;
-}
-
 h3 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 h4,
 .h4 {
-  font-size: 1rem;
   font-weight: 700;
-  line-height: 22.4px;
+  line-height: 140%;
 }
 
 p,
 a,
 li {
-  font-family: "Poppins", sans-serif;
-  color: #212121;
   font-size: 16px;
   line-height: 140%;
 }
@@ -47,7 +58,7 @@ main.container {
 }
 
 .navbar-nav {
-  --bs-nav-link-color: #212121;
+  --bs-nav-link-color: var(--bs-body-color);
 }
 
 picture.railway img {
@@ -56,7 +67,7 @@ picture.railway img {
 }
 
 footer {
-  background-color: #212121;
+  background-color: var(--bs-body-color);
 }
 
 footer nav {
@@ -64,7 +75,7 @@ footer nav {
 }
 
 footer nav .links a {
-  color: white;
+  color: var(--bs-white);
   text-decoration: none;
 }
 
@@ -94,11 +105,6 @@ footer nav .links {
 p.important {
   font-size: 24px;
   margin-bottom: 50px;
-}
-
-.links a {
-  color: #323a45;
-  font-size: 16px;
 }
 
 #triforce {
@@ -161,7 +167,7 @@ p.important {
 .box h3,
 .box a,
 .box li {
-  color: white;
+  color: var(--bs-white);
 }
 
 #details #enabling-contactless-payment {
@@ -176,24 +182,16 @@ p.important {
 }
 
 .red-link {
-  background-color: #db5461;
-  color: white;
+  background-color: var(--calitp-red-5);
+  color: var(--bs-white);
 }
 .blue-link {
-  background-color: #046b99;
-  color: white;
+  background-color: var(--calitp-primary-blue);
+  color: var(--bs-white);
 }
 .green-link {
-  background-color: #00775d;
-  color: white;
-}
-.purple-link {
-  background-color: #4c387a;
-  color: white;
-}
-.gold-link {
-  background-color: #c8700a;
-  color: white;
+  background-color: var(--calitp-green-5);
+  color: var(--bs-white);
 }
 
 .red-link:focus,
@@ -201,12 +199,8 @@ p.important {
 .blue-link:focus,
 .blue-link:hover,
 .green-link:focus,
-.green-link:hover,
-.purple-link:focus,
-.purple-link:hover,
-.gold-link:focus,
-.gold-link:hover {
-  color: white;
+.green-link:hover {
+  color: var(--bs-white);
   text-decoration-style: dotted;
 }
 
@@ -227,7 +221,7 @@ p.important {
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  color: #fff;
+  color: var(--bs-white);
   line-height: 40px;
   width: 40px;
   height: 40px;
@@ -236,19 +230,19 @@ p.important {
 }
 
 #facts ol li:nth-child(1):before {
-  background: #046b99;
+  background: var(--calitp-primary-blue);
 }
 
 #facts ol li:nth-child(2):before {
-  background: #c8700a;
+  background: var(--calitp-orange-5);
 }
 
 #facts ol li:nth-child(3):before {
-  background: #db5461;
+  background: var(--calitp-red-5);
 }
 
 #facts ol li:nth-child(4):before {
-  background: #4c387a;
+  background: var(--calitp-purple-4);
 }
 
 #reachout {
@@ -278,10 +272,6 @@ p.important {
   display: grid;
   justify-content: center;
   align-items: center;
-}
-
-#lastminute h3 {
-  font-size: 25px;
 }
 
 #lastminute ul {
@@ -356,24 +346,24 @@ p.important {
     margin-bottom: 5em;
   }
   #details #enabling-contactless-payment {
-    background-color: #c64e5a;
+    background-color: var(--calitp-red-4);
     background-image: initial;
   }
   #details #automating-customer-discounts {
-    background-color: #046b99;
+    background-color: var(--calitp-primary-blue);
     background-image: initial;
     margin-bottom: 0;
   }
   #details #standardizing-trip-quality {
-    background-color: #5b559c;
+    background-color: var(--calitp-purple-4);
     background-image: initial;
   }
   #lastminute #connect {
-    background-color: #c64e5a;
+    background-color: var(--calitp-slate-5);
     background-image: initial;
   }
   #lastminute #update {
-    background-color: #c8700b;
+    background-color: var(--calitp-slate-5);
     background-image: initial;
   }
 }
@@ -460,7 +450,7 @@ p.important {
   }
 
   .navbar-nav {
-    --bs-nav-link-color: #212121;
+    --bs-nav-link-color: var(--bs-body-color);
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
   }
@@ -468,8 +458,8 @@ p.important {
 
 @media (max-width: 992px) {
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 29px;
-    --bs-navbar-brand-padding-y: 29px;
+    --bs-navbar-brand-padding-x: 32px;
+    --bs-navbar-brand-padding-y: 32px;
   }
 
   #mainNav {
@@ -477,12 +467,12 @@ p.important {
     width: 100%;
     left: 0;
     top: 110px;
-    background: white;
+    background: var(--bs-white);
   }
 
   .navbar-nav .nav-link {
     padding: 23.8px 0 28.8px 12px;
-    border-bottom: 1px solid #d5eef5;
+    border-bottom: 1px solid var(--calitp-cyan-1);
   }
 
   .navbar-nav {
