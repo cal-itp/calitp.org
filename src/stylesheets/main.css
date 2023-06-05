@@ -19,6 +19,10 @@ body {
   --calitp-slate-5: rgb(36, 61, 81); /* #243d51 */
 }
 
+.background-slate-5 {
+  background-color: var(--calitp-slate-5);
+}
+
 h1,
 h2,
 h3,
@@ -249,7 +253,7 @@ p.important {
   padding-top: 80px;
 }
 
-#lastminute #connect {
+<<<<<<< HEAD #lastminute #connect {
   background-color: #c64e5a;
   background-image: initial;
 }
@@ -301,7 +305,7 @@ p.important {
   padding-left: 15px;
 } */
 
-.right-callout {
+=======>>>>>>>38a8be3 (refactor(home): create bg-slate class, use for sections) .right-callout {
   max-width: 700px;
 }
 
@@ -339,14 +343,6 @@ p.important {
   .callout picture img {
     width: 100px;
   }
-  /* #lastminute {
-    grid-template-rows: repeat(2, min-content);
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-    justify-items: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-  } */
   #details #enabling-contactless-payment {
     background-color: var(--calitp-red-4);
     background-image: initial;
@@ -360,17 +356,6 @@ p.important {
     background-color: var(--calitp-purple-4);
     background-image: initial;
   }
-<<<<<<< HEAD
-  #lastminute #connect {
-    background-color: var(--calitp-slate-5);
-    background-image: initial;
-  }
-  #lastminute #update {
-    background-color: var(--calitp-slate-5);
-    background-image: initial;
-  }
-=======
->>>>>>> 9563986 (feat(home): first pass at removing image, css)
 }
 
 @media (max-width: 768px) {
@@ -416,18 +401,6 @@ p.important {
   }
   #details .box {
     width: 100%;
-  }
-  /* #lastminute {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  #lastminute .box {
-    width: 100%;
-    border-radius: 15px;
-  } */
-
-  .blob {
-    padding: 1em;
   }
 }
 
