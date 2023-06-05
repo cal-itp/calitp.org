@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
   --bs-font-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --calitp-headline-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
@@ -17,6 +18,9 @@ body {
   --calitp-red-4: rgb(192, 63, 77); /* #c03f4d */
   --calitp-red-5: rgb(160, 46, 59); /* #a02e3b */
   --calitp-slate-5: rgb(36, 61, 81); /* #243d51 */
+=======
+  --bs-secondary-rgb: 238, 238, 238;
+>>>>>>> 1b3d632 (feat(press): design the press layout)
 }
 
 h1,
@@ -59,6 +63,19 @@ main.container {
 
 .navbar-nav {
   --bs-nav-link-color: var(--bs-body-color);
+}
+
+.press-release a {
+  color: #046b99;
+  font-weight: 600;
+}
+
+.press-release h2,
+.press-release h3 {
+  font-size: 1rem;
+  padding-top: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans serif;
 }
 
 picture.railway img {
