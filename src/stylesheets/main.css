@@ -27,6 +27,10 @@ body {
   background-color: var(--calitp-slate-5);
 }
 
+.btn {
+  --bs-btn-border-width: 2px;
+}
+
 h1,
 h2,
 h3,
@@ -56,40 +60,16 @@ li {
   line-height: 140%;
 }
 
-.text-red-4 {
-  color: var(--calitp-red-4);
-}
-
-.text-primary-blue {
-  color: var(--calitp-primary-blue);
-}
-
-.text-purple-4 {
-  color: var(--calitp-purple-4);
-}
-
-.border-red-4 {
-  border-color: var(--calitp-red-4);
-}
-
-.border-primary-blue {
-  border-color: var(--calitp-primary-blue);
-}
-
-.border-purple-4 {
-  border-color: var(--calitp-purple-4);
-}
-
 .small-caps {
   text-transform: uppercase;
   line-height: 140%;
   letter-spacing: 0.025em;
   display: inline-block;
-  padding: 8px 16px;
-  font-size: 12px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
   font-family: "Poppins";
-  border-width: 1.5px;
-  background-color: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid var(--bs-white);
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 main.container {
@@ -305,23 +285,6 @@ p.important {
     grid-gap: initial;
     justify-items: center;
     text-align: center;
-  }
-  #lastminute {
-    grid-template-rows: repeat(2, min-content);
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-    justify-items: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-  }
-  #lastminute #connect {
-    background-color: var(--calitp-slate-5);
-    background-image: initial;
-  }
-  #lastminute #update {
-    background-color: var(--calitp-slate-5);
-    background-image: initial;
-  }
 }
 
 @media (max-width: 768px) {
@@ -357,15 +320,6 @@ p.important {
     grid-gap: initial;
     grid-gap: 1em;
   }
-  #lastminute {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  #lastminute .box {
-    width: 100%;
-    border-radius: 15px;
-  }
-
   .blob {
     padding: 1em;
   }
