@@ -243,63 +243,8 @@ p.important {
   color: #212121;
 }
 
-#reachout {
-  padding-top: 80px;
-}
-
-<<<<<<< HEAD
 .right-callout {
   max-width: 700px;
-=======
-#lastminute {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: min-content min-content;
-  grid-gap: 2em;
-  justify-content: center;
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-
-#lastminute #connect {
-  background-image: url("../images/connect-bg.svg");
-}
-#lastminute #update {
-  background-image: url("../images/update-bg.svg");
-}
-
-#lastminute .box {
-  width: 400px;
-  height: 400px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-#lastminute ul {
-  padding-left: 1rem;
-}
-#lastminute .box picture {
-  justify-self: center;
-  align-self: center;
-}
-#lastminute .box p {
-  margin-bottom: 0;
-}
-#lastminute .box picture img {
-  width: 80px;
-}
-
-#lastminute .box .blob {
-  width: 260px;
-  display: grid;
-  grid-template-rows: 130px min-content auto;
-  height: 350px;
-}
-
-#lastminute #update.box .blob {
-  padding-left: 15px;
->>>>>>> 27a745e (feat(index): first pass at tabbed interface for Initiatives)
 }
 
 #triforce {
@@ -318,33 +263,6 @@ p.important {
     justify-items: center;
     text-align: center;
   }
-<<<<<<< HEAD
-  #details {
-    justify-items: center;
-    grid-template-rows: repeat(3, min-content);
-    grid-gap: 2em;
-  }
-  #details .box {
-    width: 100%;
-  }
-  .right-callout {
-    max-width: 500px;
-  }
-  .callout picture img {
-    width: 100px;
-  }
-  #details #enabling-contactless-payment {
-    background-color: var(--calitp-red-4);
-    background-image: initial;
-  }
-  #details #automating-customer-discounts {
-    background-color: var(--calitp-primary-blue);
-    background-image: initial;
-    margin-bottom: 0;
-  }
-  #details #standardizing-trip-quality {
-    background-color: var(--calitp-purple-4);
-=======
   #lastminute {
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: 1fr;
@@ -359,7 +277,6 @@ p.important {
   }
   #lastminute #update {
     background-color: var(--calitp-slate-5);
->>>>>>> 27a745e (feat(index): first pass at tabbed interface for Initiatives)
     background-image: initial;
   }
 }
@@ -397,14 +314,6 @@ p.important {
     grid-gap: initial;
     grid-gap: 1em;
   }
-<<<<<<< HEAD
-  #details {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  #details .box {
-    width: 100%;
-=======
   #lastminute {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -416,13 +325,6 @@ p.important {
 
   .blob {
     padding: 1em;
->>>>>>> 27a745e (feat(index): first pass at tabbed interface for Initiatives)
-  }
-}
-
-@media (min-width: 1024px) {
-  #reachout {
-    padding-top: 100px;
   }
 }
 
