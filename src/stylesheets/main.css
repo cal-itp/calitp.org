@@ -19,6 +19,10 @@ body {
   --calitp-slate-5: rgb(36, 61, 81); /* #243d51 */
 }
 
+.background-slate-5 {
+  background-color: var(--calitp-slate-5);
+}
+
 h1,
 h2,
 h3,
@@ -249,56 +253,6 @@ p.important {
   padding-top: 80px;
 }
 
-#lastminute {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: min-content min-content;
-  grid-gap: 2em;
-  justify-content: center;
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-
-#lastminute #connect {
-  background-image: url("../images/connect-bg.svg");
-}
-#lastminute #update {
-  background-image: url("../images/update-bg.svg");
-}
-
-#lastminute .box {
-  width: 400px;
-  height: 400px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-#lastminute ul {
-  padding-left: 1rem;
-}
-#lastminute .box picture {
-  justify-self: center;
-  align-self: center;
-}
-#lastminute .box p {
-  margin-bottom: 0;
-}
-#lastminute .box picture img {
-  width: 80px;
-}
-
-#lastminute .box .blob {
-  width: 260px;
-  display: grid;
-  grid-template-rows: 130px min-content auto;
-  height: 350px;
-}
-
-#lastminute #update.box .blob {
-  padding-left: 15px;
-}
-
 .right-callout {
   max-width: 700px;
 }
@@ -337,14 +291,6 @@ p.important {
   .callout picture img {
     width: 100px;
   }
-  #lastminute {
-    grid-template-rows: repeat(2, min-content);
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-    justify-items: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-  }
   #details #enabling-contactless-payment {
     background-color: var(--calitp-red-4);
     background-image: initial;
@@ -356,14 +302,6 @@ p.important {
   }
   #details #standardizing-trip-quality {
     background-color: var(--calitp-purple-4);
-    background-image: initial;
-  }
-  #lastminute #connect {
-    background-color: var(--calitp-slate-5);
-    background-image: initial;
-  }
-  #lastminute #update {
-    background-color: var(--calitp-slate-5);
     background-image: initial;
   }
 }
@@ -411,18 +349,6 @@ p.important {
   }
   #details .box {
     width: 100%;
-  }
-  #lastminute {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  #lastminute .box {
-    width: 100%;
-    border-radius: 15px;
-  }
-
-  .blob {
-    padding: 1em;
   }
 }
 
