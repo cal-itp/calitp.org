@@ -3,7 +3,7 @@
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --calitp-headline-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-border-radius: 20px;
+  --bs-border-radius: calc(20rem / 16);
   --bs-border-style: dashed;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .btn {
-  --bs-btn-border-width: 2px;
+  --bs-btn-border-width: calc(2rem / 16);
 }
 
 h1,
@@ -42,7 +42,7 @@ h1 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: calc(24rem / 16);
 }
 
 h4,
@@ -54,7 +54,7 @@ h4,
 p,
 a,
 li {
-  font-size: 16px;
+  font-size: var(--bs-body-font-size);
   line-height: 140%;
 }
 
@@ -64,7 +64,7 @@ li {
   letter-spacing: 0.025em;
   display: inline-block;
   padding: 0.5rem 1rem;
-  font-size: 0.75rem;
+  font-size: calc(12rem / 16);
   font-family: var(--bs-font-sans-serif);
   border: 1.5px solid var(--bs-white);
   background-color: rgba(33, 33, 33, 0.2);
@@ -198,7 +198,7 @@ p.important {
   counter-increment: numList;
   content: counter(numList);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   color: var(--bs-white);
   line-height: 40px;
@@ -313,13 +313,13 @@ p.important {
 
 @media (min-width: 992px) {
   .navbar {
-    --bs-navbar-nav-link-padding-x: 40px;
+    --bs-navbar-nav-link-padding-x: calc(40rem / 16);
     --bs-navbar-nav-link-padding-y: 0;
   }
 
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 32px;
-    --bs-navbar-brand-padding-y: 32px;
+    --bs-navbar-brand-padding-x: calc(32rem / 16);
+    --bs-navbar-brand-padding-y: calc(32rem / 16);
   }
 
   .navbar-nav {
@@ -331,8 +331,8 @@ p.important {
 
 @media (max-width: 992px) {
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 32px;
-    --bs-navbar-brand-padding-y: 32px;
+    --bs-navbar-brand-padding-x: calc(32rem / 16);
+    --bs-navbar-brand-padding-y: calc(32rem / 16);
   }
 
   #mainNav {
