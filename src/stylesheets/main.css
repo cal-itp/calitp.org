@@ -25,6 +25,14 @@ body {
   --calitp-font-weight-bold: 700;
 }
 
+.background-calitp-blue {
+  background-color: var(--calitp-primary-blue);
+}
+
+.background-purple-4 {
+  background-color: var(--calitp-purple-4);
+}
+
 .background-slate-5 {
   background-color: var(--calitp-slate-5);
 }
