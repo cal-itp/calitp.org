@@ -4,8 +4,6 @@
   --calitp-headline-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-border-radius: 20px;
-  --bs-font-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans",
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-border-style: dashed;
 }
 
@@ -67,7 +65,7 @@ li {
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
-  font-family: "Poppins";
+  font-family: var(--bs-font-sans-serif);
   border: 1.5px solid var(--bs-white);
   background-color: rgba(33, 33, 33, 0.2);
 }
@@ -232,26 +230,26 @@ p.important {
 
 .nav-pills {
   --bs-nav-pills-border-radius: 19px;
-  --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #212121;
+  --bs-nav-pills-link-active-color: var(--bs-white);
+  --bs-nav-pills-link-active-bg: var(--bs-body-color);
 }
 
 .nav-pills .nav-link {
   padding: 0.23rem;
-  border: 2px solid #212121;
-  color: #212121;
+  border: 2px solid var(--bs-body-color);
+  color: var(--bs-body-color);
 }
 
 .nav-pills {
   --bs-nav-pills-border-radius: 19px;
-  --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #212121;
+  --bs-nav-pills-link-active-color: var(--bs-white);
+  --bs-nav-pills-link-active-bg: var(--bs-body-color);
 }
 
 .nav-pills .nav-link {
   padding: 0.23rem;
-  border: 2px solid #212121;
-  color: #212121;
+  border: 2px solid var(--bs-body-color);
+  color: var(--bs-body-color);
 }
 
 .right-callout {
