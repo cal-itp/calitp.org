@@ -3,6 +3,7 @@
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --calitp-headline-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-border-radius: 20px;
 }
 
 body {
@@ -131,40 +132,8 @@ p.important {
   font-size: 24px;
 }
 
-#details {
-  margin-top: 50px;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-}
-
 .box {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   border-radius: 15px;
-}
-
-#details .box {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content;
-  width: 100%;
-  max-width: 1200px;
-}
-
-#details .box .callout {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr max-content;
-  grid-gap: 3em;
-  justify-content: center;
-  justify-items: center;
-  padding: 3em;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .box p,
@@ -175,14 +144,15 @@ p.important {
 }
 
 #details #enabling-contactless-payment {
-  background-image: url("../images/section-1-bg.svg");
+  background-color: #c64e5a;
 }
+
 #details #automating-customer-discounts {
-  background-image: url("../images/section-2-bg.svg");
-  margin-bottom: 1.25rem;
+  background-color: #046b99;
 }
+
 #details #standardizing-trip-quality {
-  background-image: url("../images/section-3-bg.svg");
+  background-color: #5b559c;
 }
 
 .red-link {
@@ -249,20 +219,91 @@ p.important {
   background: var(--calitp-purple-4);
 }
 
+.nav-pills {
+  --bs-nav-pills-border-radius: 19px;
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: #212121;
+}
+
+.nav-pills .nav-link {
+  padding: 0.23rem;
+  border: 2px solid #212121;
+  color: #212121;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: 19px;
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: #212121;
+}
+
+.nav-pills .nav-link {
+  padding: 0.23rem;
+  border: 2px solid #212121;
+  color: #212121;
+}
+
 #reachout {
   padding-top: 80px;
 }
 
+<<<<<<< HEAD
 .right-callout {
   max-width: 700px;
+=======
+#lastminute {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: min-content min-content;
+  grid-gap: 2em;
+  justify-content: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+#lastminute #connect {
+  background-image: url("../images/connect-bg.svg");
+}
+#lastminute #update {
+  background-image: url("../images/update-bg.svg");
+}
+
+#lastminute .box {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#lastminute ul {
+  padding-left: 1rem;
+}
+#lastminute .box picture {
+  justify-self: center;
+  align-self: center;
+}
+#lastminute .box p {
+  margin-bottom: 0;
+}
+#lastminute .box picture img {
+  width: 80px;
+}
+
+#lastminute .box .blob {
+  width: 260px;
+  display: grid;
+  grid-template-rows: 130px min-content auto;
+  height: 350px;
+}
+
+#lastminute #update.box .blob {
+  padding-left: 15px;
+>>>>>>> 27a745e (feat(index): first pass at tabbed interface for Initiatives)
 }
 
 #triforce {
   max-width: 450px;
-}
-
-.callout picture {
-  text-align: right;
 }
 
 #about h2 {
@@ -277,6 +318,7 @@ p.important {
     justify-items: center;
     text-align: center;
   }
+<<<<<<< HEAD
   #details {
     justify-items: center;
     grid-template-rows: repeat(3, min-content);
@@ -302,6 +344,22 @@ p.important {
   }
   #details #standardizing-trip-quality {
     background-color: var(--calitp-purple-4);
+=======
+  #lastminute {
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    justify-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  #lastminute #connect {
+    background-color: var(--calitp-slate-5);
+    background-image: initial;
+  }
+  #lastminute #update {
+    background-color: var(--calitp-slate-5);
+>>>>>>> 27a745e (feat(index): first pass at tabbed interface for Initiatives)
     background-image: initial;
   }
 }
@@ -326,10 +384,6 @@ p.important {
     grid-template-columns: repeat(2, max-content);
     grid-gap: 1em;
   }
-  #details .box .callout {
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 540px) {
@@ -343,18 +397,26 @@ p.important {
     grid-gap: initial;
     grid-gap: 1em;
   }
+<<<<<<< HEAD
   #details {
     margin-left: 5vw;
     margin-right: 5vw;
   }
   #details .box {
     width: 100%;
+=======
+  #lastminute {
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
-}
+  #lastminute .box {
+    width: 100%;
+    border-radius: 15px;
+  }
 
-@media (min-width: 1441px) {
-  #details {
-    justify-items: center;
+  .blob {
+    padding: 1em;
+>>>>>>> 27a745e (feat(index): first pass at tabbed interface for Initiatives)
   }
 }
 
