@@ -43,6 +43,13 @@ h1 {
   margin-bottom: 19px;
 }
 
+<<<<<<< HEAD
+=======
+h2 {
+  font-size: 32px;
+}
+
+>>>>>>> 6ab9e62 (feat: css for resources, press page, minus filters)
 h3 {
   font-size: 24px;
 }
@@ -60,6 +67,7 @@ li {
   line-height: 140%;
 }
 
+<<<<<<< HEAD
 .small-caps {
   text-transform: uppercase;
   line-height: 140%;
@@ -70,6 +78,14 @@ li {
   font-family: var(--bs-font-sans-serif);
   border: 1.5px solid var(--bs-white);
   background-color: rgba(33, 33, 33, 0.2);
+=======
+.fs-7 {
+  font-size: 14px;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+>>>>>>> 8ddf8a1 (feat: css for resources, press page, minus filters)
 }
 
 main.container {

@@ -3,31 +3,40 @@ layout: default
 permalink: /resources
 ---
 
-<h1>Resources</h1>
+<div class="row justify-content-center mt-5 mb-1" style="background-color: #5B559C">
+  <div class="col-lg-8 col-md-8 py-5">
+    <h1 class="text-white">Resources</h1>
+    <p class="text-white">Below you’ll find information about Cal-ITP and our initiatives, including fact sheets, case studies, and more. Don’t see what you’re looking for? Reach out to us at hello@calitp.org</p>
+  </div>
+</div>
 
-<section id="resources">
-  {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
-  {% assign all_resources = site.resources | reverse %}
-  {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment %}
-  {% assign groups = all_resources | group_by: "category" | reverse %}
+<section class="row justify-content-center" id="resources">
+  <div class="col-lg-8 col-md-8 mb-5 pb-5">
+    {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+    {% assign all_resources = site.resources | reverse %}
+    {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment %}
+    {% assign groups = all_resources | group_by: "category" | reverse %}
 
-  {% for group in groups %}
-    <h2>{{ group.name }}</h2>
-    {% for item in group.items %}
-      {% assign url = item.asset %}
-      {% unless url contains "https://" %}
-        {% assign url = "/assets/" | append: url %}
+    {% for group in groups %}
+      <h2 class="mb-4 mt-5">{{ group.name }}</h2>
+      {% for item in group.items %}
+        {% assign url = item.asset %}
+        {% unless url contains "https://" %}
+          {% assign url = "/assets/" | append: url %}
+        {% endunless %}
+        <article class="d-block mb-4">
+          <a
+            class="fw-bold text-decoration-none"
+            href="{{ url }}"
+            target="_blank">{{ item.title }}</a>
+          <br/>
+          <span class="text-muted font-poppins fs-7">{{ item.tags | join: ", " }} |
+            {% include date.html date=item.date format = "%b %Y" %}</span>
+        </article>
+      {% endfor %}
+      {% unless forloop.last %}
+        <hr class="mt-5" />
       {% endunless %}
-      <article class="resource">
-        <a href="{{ url }}" target="_blank">{{ item.title }}</a>
-        <br/>
-        <span class="tags">{{ item.tags | join: ", " }}</span>
-        |
-        {% include date.html date=item.date format = "%b %Y" %}
-      </article>
     {% endfor %}
-    {% unless forloop.last %}
-      <hr/>
-    {% endunless %}
-  {% endfor %}
+  </div>
 </section>

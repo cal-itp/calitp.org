@@ -3,22 +3,31 @@ layout: default
 permalink: /press
 ---
 
-<h1>Press</h1>
+<div class="row justify-content-center mt-5 mb-5" style="background-color: #046B99">
+  <div class="col-lg-8 col-md-8 py-5">
+    <h1 class="text-white">Press</h1>
+    <p class="text-white">Below you’ll find news about Cal-ITP and our initiatives, including press releases and media coverage about new launches and project milestones. Interested in getting in touch? Reach out to us at hello@calitp.org</p>
+  </div>
+</div>
 
-<section id="press">
-  {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
-  {% assign all_press = site.press | reverse %}
-  {% for press in all_press %}
-    {% assign url = press.url %}
-    {% if press.external %}
-      {% assign url = press.external %}
-    {% endif %}
-    <article class="press-item">
-      <a href="{{ url }}" {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
-      <br/>
-      <span class="tags">{{ press.tags | join: ", " }}</span>
-      |
-      {% include date.html date=press.date format = "%b %Y" %}
-    </article>
-  {% endfor %}
+<section class="row justify-content-center" id="press">
+  <div class="col-lg-8 col-md-8 mb-5 pb-5">
+    {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+    {% assign all_press = site.press | reverse %}
+    {% for press in all_press %}
+      {% assign url = press.url %}
+      {% if press.external %}
+        {% assign url = press.external %}
+      {% endif %}
+      <article class="d-block mb-4">
+        <a
+          class="fw-bold text-decoration-none"
+          href="{{ url }}"
+          {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
+        <br/>
+        <span class="text-muted font-poppins fs-7">{{ press.tags | join: ", " }} |
+          {% include date.html date=press.date format = "%b %Y" %}</span>
+      </article>
+    {% endfor %}
+  </div>
 </section>
