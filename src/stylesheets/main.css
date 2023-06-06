@@ -384,7 +384,7 @@ p.important {
   }
 
   .rhombus-2 {
-    clip-path: polygon(8% 10%, 91% 0, 100% 100%, 0 100%);
+    clip-path: polygon(8% 10%, 91% 2.5%, 100% 100%, 0 100%);
   }
 
   .rhombus-3 {
