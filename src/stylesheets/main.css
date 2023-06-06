@@ -9,6 +9,8 @@
 
 body {
   --bs-body-color: rgb(33, 33, 33); /* #212121 */
+  --bs-link-color: rgb(4, 107, 153); /* #046b99 */
+  --bs-secondary-rgb: 143, 147, 153; /* calitp-gray-3 */
   --calitp-primary-blue: rgb(4, 107, 153); /* #046b99 */
   --calitp-cyan-1: rgb(213, 238, 245); /* #d5eef5 */
   --calitp-green-4: rgb(0, 117, 91); /* #00755b */
@@ -43,13 +45,10 @@ h1 {
   margin-bottom: 19px;
 }
 
-<<<<<<< HEAD
-=======
 h2 {
   font-size: 32px;
 }
 
->>>>>>> 6ab9e62 (feat: css for resources, press page, minus filters)
 h3 {
   font-size: 24px;
 }
@@ -84,8 +83,12 @@ li {
 }
 
 .font-poppins {
+<<<<<<< HEAD
   font-family: "Poppins", sans-serif;
 >>>>>>> 8ddf8a1 (feat: css for resources, press page, minus filters)
+=======
+  font-family: var(--bs-font-sans-serif);
+>>>>>>> 5235dc1 (feat(css): text styling for press)
 }
 
 main.container {

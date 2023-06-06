@@ -19,13 +19,13 @@ permalink: /press
       {% if press.external %}
         {% assign url = press.external %}
       {% endif %}
-      <article class="d-block mb-4">
+      <article class="d-block mb-3 pb-4">
         <a
           class="fw-bold text-decoration-none"
           href="{{ url }}"
           {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
         <br/>
-        <span class="text-muted font-poppins fs-7">{{ press.tags | join: ", " }} |
+        <span class="text-secondary font-poppins fs-7">{{ press.tags | join: ", " }} |
           {% include date.html date=press.date format = "%b %Y" %}</span>
       </article>
     {% endfor %}
