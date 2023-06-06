@@ -17,6 +17,8 @@ body {
   --calitp-red-4: rgb(192, 63, 77); /* #c03f4d */
   --calitp-red-5: rgb(160, 46, 59); /* #a02e3b */
   --calitp-slate-5: rgb(36, 61, 81); /* #243d51 */
+  --bs-secondary-rgb: 238, 238, 238;
+  --calitp-font-weight-bold: 700;
 }
 
 .background-slate-5 {
@@ -31,7 +33,7 @@ h4 {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: var(--calitp-font-weight-bold);
   margin-bottom: 19px;
 }
 
@@ -41,7 +43,7 @@ h3 {
 
 h4,
 .h4 {
-  font-weight: 700;
+  font-weight: var(--calitp-font-weight-bold);
   line-height: 140%;
 }
 
@@ -63,6 +65,23 @@ main.container {
 
 .navbar-nav {
   --bs-nav-link-color: var(--bs-body-color);
+}
+
+.press-release a {
+  color: var(--calitp-primary-blue);
+  font-weight: var(--calitp-font-weight-bold);
+}
+
+.press-release h2,
+.press-release h3 {
+  font-size: var(--bs-body-font-size);
+  padding-top: 20px;
+  font-weight: var(--calitp-font-weight-bold);
+  font-family: var(--bs-font-sans-serif);
+}
+
+.press-release h2:last-of-type {
+  text-decoration: underline;
 }
 
 picture.railway img {
