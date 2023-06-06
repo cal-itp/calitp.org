@@ -3,22 +3,29 @@ layout: default
 permalink: /press
 ---
 
-<h1>Press</h1>
+<div class="rhombus-parent">
+  <div class="row justify-content-center">
+    <div class="background-calitp-blue rhombus-1 mt-5 mb-4 col-10 py-5 px-4 px-md-0">
+      <div class="offset-md-2 col-md-8 py-5 px-4 px-md-0">
+        <h1 class="text-white">Press</h1>
+        <p class="text-white">Below you’ll find news about Cal-ITP and our initiatives, including press releases and media coverage about new launches and project milestones. Interested in getting in touch? Reach out to us at <a
+        rel="noreferrer"
+        target="_blank"
+        class="fw-bolder text-white"
+        href="mailto:hello@calitp.org">hello@calitp.org</a>.</span></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<section id="press">
-  {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
-  {% assign all_press = site.press | reverse %}
-  {% for press in all_press %}
-    {% assign url = press.url %}
-    {% if press.external %}
-      {% assign url = press.external %}
-    {% endif %}
-    <article class="press-item">
-      <a href="{{ url }}" {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
-      <br/>
-      <span class="tags">{{ press.tags | join: ", " }}</span>
-      |
-      {% include date.html date=press.date format = "%b %Y" %}
-    </article>
-  {% endfor %}
+<section class="row justify-content-center" id="press">
+  <div class="col-10">
+    <div class="offset-md-2 col-md-8 mb-5 pb-5 col-10">
+      {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+      {% assign items = site.press | reverse %}
+      {% include articles.html items=items %}
+    </div>
+  </div>
 </section>
+
+{% include rounded.html %}
