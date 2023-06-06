@@ -179,10 +179,6 @@ p.important {
   margin-bottom: 50px;
 }
 
-#triforce {
-  width: 100%;
-}
-
 #deck {
   display: grid;
   grid-template-rows: 1fr;
