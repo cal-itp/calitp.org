@@ -90,6 +90,8 @@ layout: default
 <script>
   const pills = document.querySelectorAll("button[data-bs-toggle='pill']");
   pills.forEach(p => {
+// Bootstrap does not handle un-selecting a tab, so the following listeners are needed:
+
 // mouse-click or Enter key will trigger "click" event and should toggle the pill's state
     p.addEventListener("click", event => toggleSelection(p.id));
 
@@ -102,10 +104,10 @@ layout: default
 
   function toggleSelection(id) {
     const pillToToggle = document.querySelector("#" + id);
-    if (! pillToToggle.classList.contains("selected")) {
+    if (! pillToToggle.classList.contains("cal-itp-selected")) {
       select(pillToToggle);
     } else {
-      pillToToggle.classList.remove("selected");
+      pillToToggle.classList.remove("cal-itp-selected");
       pillToToggle.classList.remove("active");
       hideTab(pillToToggle.id);
 
@@ -114,12 +116,12 @@ layout: default
   }
 
   function select(pill) {
-    pill.classList.add("selected");
+    pill.classList.add("cal-itp-selected");
 
     const pills = document.querySelectorAll("button[data-bs-toggle='pill']");
     let pillSet = new Set(pills);
     pillSet.delete(pill);
-    pillSet.forEach(pill => pill.classList.remove("selected"));
+    pillSet.forEach(pill => pill.classList.remove("cal-itp-selected"));
   }
 
   function hideTab(pillId) {
