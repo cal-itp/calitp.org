@@ -24,21 +24,8 @@ permalink: /resources
 
     {% for group in groups %}
       <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-      {% for item in group.items %}
-        {% assign url = item.asset %}
-        {% unless url contains "https://" %}
-          {% assign url = "/assets/" | append: url %}
-        {% endunless %}
-        <article class="d-block mb-3 pb-4">
-          <a
-            class="fw-bold text-decoration-none"
-            href="{{ url }}"
-            target="_blank">{{ item.title }}</a>
-          <br/>
-          <span class="text-secondary font-poppins fs-7">{{ item.tags | join: ", " }} |
-            {% include date.html date=item.date format = "%b %Y" %}</span>
-        </article>
-      {% endfor %}
+      {% assign items = group.items %}
+      {% include articles.html %}
       {% unless forloop.last %}
         <hr class="mt-5" />
       {% endunless %}

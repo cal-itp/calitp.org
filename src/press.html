@@ -17,21 +17,7 @@ permalink: /press
 <section class="row justify-content-center" id="press">
   <div class="col-lg-8 col-md-8 mb-5 pb-5">
     {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
-    {% assign all_press = site.press | reverse %}
-    {% for press in all_press %}
-      {% assign url = press.url %}
-      {% if press.external %}
-        {% assign url = press.external %}
-      {% endif %}
-      <article class="d-block mb-3 pb-4">
-        <a
-          class="fw-bold text-decoration-none"
-          href="{{ url }}"
-          {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
-        <br/>
-        <span class="text-secondary font-poppins fs-7">{{ press.tags | join: ", " }} |
-          {% include date.html date=press.date format = "%b %Y" %}</span>
-      </article>
-    {% endfor %}
+    {% assign items = site.press | reverse %}
+    {% include articles.html %}
   </div>
 </section>

@@ -1,0 +1,11 @@
+{% for item in items limit: 6 %}
+  {% include article.html %}
+{% endfor %}
+{% if group.size > 6 %}
+  <details>
+    <summary>Show more</summary>
+    {% for item in items offset: 6 %}
+      {% include article.html %}
+    {% endfor %}
+  </details>
+{% endif %}
