@@ -195,17 +195,6 @@ p.important {
   padding-bottom: 50px;
 }
 
-.box {
-  border-radius: 15px;
-}
-
-.box p,
-.box h3,
-.box a,
-.box li {
-  color: var(--bs-white);
-}
-
 #details .tab-content .tab-list article:nth-child(n + 3) {
   display: none;
 }
