@@ -3,7 +3,7 @@
 {% endfor %}
 {% if group.size > 6 %}
   <details>
-    <summary>Show more</summary>
+    <summary class="d-block mb-3 pb-4">Show more</summary>
     {% for item in items offset: 6 %}
       {% include article.html %}
     {% endfor %}
