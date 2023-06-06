@@ -199,10 +199,12 @@ p.important {
   background-color: var(--calitp-red-5);
   color: var(--bs-white);
 }
+
 .blue-link {
   background-color: var(--calitp-primary-blue);
   color: var(--bs-white);
 }
+
 .green-link {
   background-color: var(--calitp-green-5);
   color: var(--bs-white);
@@ -317,10 +319,12 @@ p.important {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
+
   footer nav {
     grid-template-columns: 1fr;
     justify-items: left;
   }
+
   footer nav .links {
     grid-template-columns: repeat(2, max-content);
     grid-gap: 1em;
@@ -332,12 +336,14 @@ p.important {
     grid-template-columns: 1fr;
     justify-items: left;
   }
+
   footer nav .links {
     grid-template-columns: repeat(2, max-content);
     grid-column: initial;
     grid-gap: initial;
     grid-gap: 1em;
   }
+
   .blob {
     padding: 1em;
   }
