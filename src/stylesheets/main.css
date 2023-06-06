@@ -170,10 +170,8 @@ footer nav .links {
   grid-gap: 5em;
 }
 
-.rhombus-parent {
-  filter: url("#rounded");
-  overflow: hidden;
-  z-index: 1;
+.rhombus-1 {
+  clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);
 }
 
 p.important {
@@ -380,6 +378,11 @@ p.important {
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
   }
+  .rhombus-parent {
+    filter: url("#rounded");
+    overflow: hidden;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 992px) {
@@ -403,6 +406,11 @@ p.important {
 
   .navbar-nav {
     margin: 0 auto;
+  }
+
+  .rhombus-1 {
+    clip-path: none;
+    border-radius: 20px;
   }
 }
 

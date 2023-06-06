@@ -24,16 +24,18 @@
   </div>
 </div>
 
-<div class="tab-content rhombus-parent" id="pills-tabContent">
+<div class="tab-content " id="pills-tabContent">
   {% for initiative in site.data.initiatives %}
     <div
-      class="tab-pane fade {{ initiative.active }} rounded rounded-4"
+      class="tab-pane fade rhombus-parent {{ initiative.active }}"
       id="pills-{{ initiative.slug }}"
       role="tabpanel"
       aria-labelledby="pills-{{ initiative.slug }}-tab"
-      style="clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%); background-color: var({{ initiative.class }})"
       tabindex="0">
-      <div id="{{ initiative.id }}" class="rounded px-5 px-md-3 py-5 my-4">
+      <div
+        id="{{ initiative.id }}"
+        class="px-5 px-md-3 py-5 my-4 rhombus-1"
+        style=" background-color: var({{ initiative.class }})">
         <div class="row">
           <picture class="col-12 col-md-2 col-lg-2 offset-md-1 d-flex justify-content-md-end align-self-md-start justify-content-center">
             <img
@@ -48,7 +50,7 @@
                 {{ paragraph }}
               </p>
             {% endfor %}
-            <div class="d-grid d-md-block border-bottom border-white border-2">
+            <div class="d-grid d-md-block rounded-0 bottom border-white border-2">
               <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 mb-4">{{ initiative.button.text }}</a>
             </div>
           </div>
