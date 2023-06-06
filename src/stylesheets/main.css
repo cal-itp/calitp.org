@@ -76,6 +76,10 @@ main.container {
   font-family: var(--bs-font-sans-serif);
 }
 
+.press-release h2:last-of-type {
+  text-decoration: underline;
+}
+
 picture.railway img {
   width: 100%;
   margin: 7.25rem 0;

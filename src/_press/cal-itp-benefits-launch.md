@@ -87,7 +87,7 @@ pleasure.”
 
 For more information about [Cal-ITP Benefits](https://benefits.calitp.org/), contact [hello@calitp.org](mailto:hello@calitp.org).
 
-## <u>About this demonstration project’s stakeholders</u>
+## About this demonstration project’s stakeholders
 
 ### Cal-ITP
 
