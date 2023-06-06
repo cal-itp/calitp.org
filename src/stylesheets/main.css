@@ -21,7 +21,6 @@ body {
   --calitp-red-4: rgb(192, 63, 77); /* #c03f4d */
   --calitp-red-5: rgb(160, 46, 59); /* #a02e3b */
   --calitp-slate-5: rgb(36, 61, 81); /* #243d51 */
-  --bs-secondary-rgb: 238, 238, 238;
   --calitp-font-weight-bold: 700;
 }
 
@@ -74,7 +73,6 @@ li {
   line-height: 140%;
 }
 
-<<<<<<< HEAD
 .small-caps {
   text-transform: uppercase;
   line-height: 140%;
@@ -85,18 +83,14 @@ li {
   font-family: var(--bs-font-sans-serif);
   border: 1.5px solid var(--bs-white);
   background-color: rgba(33, 33, 33, 0.2);
-=======
+}
+
 .fs-7 {
   font-size: 14px;
 }
 
 .font-poppins {
-<<<<<<< HEAD
-  font-family: "Poppins", sans-serif;
->>>>>>> 8ddf8a1 (feat: css for resources, press page, minus filters)
-=======
   font-family: var(--bs-font-sans-serif);
->>>>>>> 5235dc1 (feat(css): text styling for press)
 }
 
 main.container {
@@ -170,8 +164,14 @@ footer nav .links {
   grid-gap: 5em;
 }
 
+.rhombus-parent {
+  filter: url("#rounded");
+  overflow: hidden;
+  z-index: 1;
+}
+
 .rhombus-1 {
-  clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);
+  clip-path: none;
 }
 
 p.important {
@@ -378,10 +378,9 @@ p.important {
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
   }
-  .rhombus-parent {
-    filter: url("#rounded");
-    overflow: hidden;
-    z-index: 1;
+
+  .rhombus-1 {
+    clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);
   }
 }
 
@@ -406,11 +405,6 @@ p.important {
 
   .navbar-nav {
     margin: 0 auto;
-  }
-
-  .rhombus-1 {
-    clip-path: none;
-    border-radius: 20px;
   }
 }
 
