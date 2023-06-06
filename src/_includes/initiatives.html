@@ -1,0 +1,107 @@
+<div class="row d-flex justify-content-between">
+  <div class="col-12 col-lg-6">
+    <h2 class="text-center text-lg-start">Explore our initiatives</h2>
+  </div>
+  <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center">
+    <ul
+      class="nav nav-pills nav-fill mb-3 gap-2"
+      id="pills-tab"
+      role="tablist">
+      {% for initiative in site.data.initiatives %}
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link {{ initiative.active }}"
+            id="pills-{{ initiative.slug }}-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-{{ initiative.slug }}"
+            type="button"
+            role="tab"
+            aria-controls="pills-{{ initiative.slug }}"
+            aria-selected="true">{{ initiative.tag }}</button>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="tab-content rhombus-parent" id="pills-tabContent">
+  {% for initiative in site.data.initiatives %}
+    <div
+      class="tab-pane fade {{ initiative.active }} rounded rounded-4"
+      id="pills-{{ initiative.slug }}"
+      role="tabpanel"
+      aria-labelledby="pills-{{ initiative.slug }}-tab"
+      style="clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%); background-color: var({{ initiative.class }})"
+      tabindex="0">
+      <div id="{{ initiative.id }}" class="rounded px-5 px-md-3 py-5 my-4">
+        <div class="row">
+          <picture class="col-12 col-md-2 col-lg-2 offset-md-1 d-flex justify-content-md-end align-self-md-start justify-content-center">
+            <img
+              src="{{ initiative.image.src }}"
+              alt="{{ initiative.image.alt }}"
+              width="{{ initiative.image.width }}" />
+          </picture>
+          <div class="col-12 col-md-8 col-lg-8 pt-4 pt-md-0">
+            <h3 class="text-white text-center text-md-start pb-2 pb-md-0">{{ initiative.headline }}</h3>
+            {% for paragraph in initiative.paragraphs %}
+              <p class="text-white">
+                {{ paragraph }}
+              </p>
+            {% endfor %}
+            <div class="d-grid d-md-block border-bottom border-white border-2">
+              <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 mb-4">{{ initiative.button.text }}</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 offset-md-3 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
+            <h4 class="small-caps text-white mt-4">Recent News</h4>
+            <div class="tab-list">
+              {% assign all_press = site.press | reverse %}
+              {% for press in all_press %}
+                {% assign url = press.url %}
+                {% if press.external %}
+                  {% assign url = press.external %}
+                {% endif %}
+                {% if press.tags contains initiative.tag %}
+                  <article class="press-item">
+                    <a
+                      class="text-white fw-bold"
+                      rel="noreferrer"
+                      href="{{ url }}"
+                      {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
+                  </article>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <a class="text-white fw-bold" href="/press">See all</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 offset-md-3 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
+            <h4 class="small-caps text-white mt-4">Resources</h4>
+            <div class="tab-list">
+              {% assign all_resources = site.resources | reverse %}
+              {% for resource in all_resources %}
+                {% assign url = resource.asset %}
+                {% unless url contains "https://" %}
+                  {% assign url = "/assets/" | append: url %}
+                {% endunless %}
+                {% if resource.tags contains initiative.tag %}
+                  <article class="resource">
+                    <a
+                      class="text-white fw-bold"
+                      rel="noreferrer"
+                      href="{{ url }}"
+                      target="_blank">{{ resource.title }}</a>
+                  </article>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <a class="text-white fw-bold" href="/resources">See all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
