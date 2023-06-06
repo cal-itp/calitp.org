@@ -24,16 +24,16 @@
   </div>
 </div>
 
-<div class="tab-content" id="pills-tabContent">
+<div class="tab-content rhombus-parent" id="pills-tabContent">
   {% for initiative in site.data.initiatives %}
     <div
       class="tab-pane fade {{ initiative.active }} rounded rounded-4"
       id="pills-{{ initiative.slug }}"
       role="tabpanel"
       aria-labelledby="pills-{{ initiative.slug }}-tab"
-      style="background-color: var({{ initiative.class }})"
+      style="clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%); background-color: var({{ initiative.class }})"
       tabindex="0">
-      <div id="{{ initiative.id }}" class="rounded px-3 py-5">
+      <div id="{{ initiative.id }}" class="rounded px-5 px-md-3 py-5 my-4">
         <div class="row">
           <picture class="col-12 col-md-2 col-lg-2 offset-md-1 d-flex justify-content-md-end align-self-md-start justify-content-center">
             <img
