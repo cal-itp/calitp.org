@@ -91,6 +91,16 @@ layout: default
 </section>
 
 <script>
+  const pills = document.querySelectorAll("button[data-bs-toggle='pill']");
+  pills.forEach(p => {
+    p.addEventListener('shown.bs.tab', event => {
+      const allTab = document.querySelector("#pills-all");
+      allTab.classList.remove("show");
+      allTab.classList.remove("active");
+    });
+  });
+
+
   function deselect(id) {
     const pills = document.querySelectorAll("button[data-bs-toggle='pill']")
     const allTab = document.querySelector("#pills-all");
@@ -98,10 +108,6 @@ layout: default
     const selectedPill = document.querySelector("#" + id);
     if (! selectedPill.classList.contains("selected")) { /* mark it as selected */
       selectedPill.classList.add("selected");
-
-// hide tab with all articles
-      allTab.classList.remove("show");
-      allTab.classList.remove("active");
     } else { /* if we've selected a pill that is currently selected, undo selection for it and its tab */
       selectedPill.classList.remove("selected");
       selectedPill.classList.remove("active");
