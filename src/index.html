@@ -213,10 +213,11 @@ layout: default
   </div>
 </section>
 
-<section class="row justify-content-md-center mt-5 mb-5 pb-5">
-  <div class="background-slate-5 shadow p-3 p-md-4 col-md-4 col-12 rounded rounded-4 text-center">
+<section class="row justify-content-md-center mt-5 mb-5 pb-5 rhombus-parent">
+  <div class="background-slate-5 shadow p-3 p-md-4 col-md-4 col-12 rounded rounded-4 text-center" style="clip-path: polygon(8% 10%, 91% 0, 100% 100%, 0 100%);">
     <picture><img
         src="images/connect.png"
+        class="pt-2"
         alt="Two thought bubbles with dashes of various lengths, meant to represent words in a conversation"
         width="80" /></picture>
     <h3 class="text-white d-block my-4">Connect with Cal-ITP</h3>
@@ -237,13 +238,14 @@ layout: default
   <div class="col-md-auto">
     &nbsp;
   </div>
-  <div class="background-slate-5 shadow p-4 col-md-4 col-12 rounded rounded-4 text-center">
+  <div class="background-slate-5 shadow p-4 col-md-4 col-12 rounded rounded-4 text-center" style="clip-path: polygon(0 0, 100% 9%, 100% 100%, 7% 100%);">
     <picture><img
         src="images/stay-up-to-date.png"
+        class="pt-2"
         alt="A bus nearly surrounded by a semicircular arrow, meant to indicate that transit content is being refreshed"
         width="80" /></picture>
     <h3 class="text-white d-block my-4">Stay up to date</h3>
-    <p class="text-white text-start">
+    <p class="text-white text-start ps-4">
       See our
       <a
         class="text-white"
@@ -258,3 +260,27 @@ layout: default
     </p>
   </div>
 </section>
+
+<svg
+  style="visibility: hidden; position: absolute;"
+  width="0"
+  height="0"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1">
+  <defs>
+    <filter id="rounded"><feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="8"
+        result="blur" />
+      <feColorMatrix
+        in="blur"
+        mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+        result="rounded" />
+      <feComposite
+        in="SourceGraphic"
+        in2="rounded"
+        operator="atop" />
+    </filter>
+  </defs>
+</svg>

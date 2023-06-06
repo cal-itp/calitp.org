@@ -106,6 +106,12 @@ footer nav .links {
   grid-gap: 5em;
 }
 
+.rhombus-parent {
+  filter: url("#rounded");
+  overflow: hidden;
+  z-index: 1;
+}
+
 p.important {
   font-size: 24px;
   margin-bottom: 50px;
