@@ -3,21 +3,29 @@ layout: default
 permalink: /press
 ---
 
-<div class="row justify-content-center mt-5 mb-5 rounded rounded-4 background-calitp-blue">
-  <div class="col-lg-8 col-md-8 py-5 px-4 px-md-0">
-    <h1 class="text-white">Press</h1>
-    <p class="text-white">Below you’ll find news about Cal-ITP and our initiatives, including press releases and media coverage about new launches and project milestones. Interested in getting in touch? Reach out to us at <a
-    rel="noreferrer"
-    target="_blank"
-    class="fw-bolder text-white"
-    href="mailto:hello@calitp.org">hello@calitp.org</a>.</span></p>
+<div class="rhombus-parent">
+  <div class="row justify-content-center">
+    <div class="background-calitp-blue mt-5 mb-4 col-10 py-5 px-4 px-md-0" style="clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);">
+      <div class="offset-md-2 col-md-8 py-5 px-4 px-md-0">
+        <h1 class="text-white">Press</h1>
+        <p class="text-white">Below you’ll find news about Cal-ITP and our initiatives, including press releases and media coverage about new launches and project milestones. Interested in getting in touch? Reach out to us at <a
+        rel="noreferrer"
+        target="_blank"
+        class="fw-bolder text-white"
+        href="mailto:hello@calitp.org">hello@calitp.org</a>.</span></p>
+      </div>
+    </div>
   </div>
 </div>
 
 <section class="row justify-content-center" id="press">
-  <div class="col-lg-8 col-md-8 mb-5 pb-5">
-    {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
-    {% assign items = site.press | reverse %}
-    {% include articles.html %}
+  <div class="col-10">
+    <div class="offset-md-2 col-md-8 mb-5 pb-5 col-10">
+      {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+      {% assign items = site.press | reverse %}
+      {% include articles.html %}
+    </div>
   </div>
 </section>
+
+{% include rounded.html %}

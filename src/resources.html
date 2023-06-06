@@ -3,32 +3,40 @@ layout: default
 permalink: /resources
 ---
 
-<div class="row justify-content-center mt-5 mb-1 rounded rounded-4 background-purple-4">
-  <div class="col-lg-8 col-md-8 py-5 px-4 px-md-0">
-    <h1 class="text-white">Resources</h1>
-    <p class="text-white">Below you’ll find information about Cal-ITP and our initiatives, including fact sheets, case studies, and more. Don’t see what you’re looking for? Reach out to us at
-      <a
-        rel="noreferrer"
-        target="_blank"
-        class="fw-bolder text-white"
-        href="mailto:hello@calitp.org">hello@calitp.org</a>.</p>
+<div class="rhombus-parent">
+  <div class="row justify-content-center">
+    <div class="background-purple-4 mt-5 mb-4 col-10 py-5 px-4 px-md-0" style="clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);">
+      <div class="offset-md-2 col-md-8 py-5 px-4 px-md-0">
+        <h1 class="text-white">Resources</h1>
+        <p class="text-white">Below you’ll find information about Cal-ITP and our initiatives, including fact sheets, case studies, and more. Don’t see what you’re looking for? Reach out to us at
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="fw-bolder text-white"
+            href="mailto:hello@calitp.org">hello@calitp.org</a>.</p>
+      </div>
+    </div>
   </div>
 </div>
 
 <section class="row justify-content-center" id="resources">
-  <div class="col-lg-8 col-md-8 mb-5 pb-5">
-    {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
-    {% assign all_resources = site.resources | reverse %}
-    {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment %}
-    {% assign groups = all_resources | group_by: "category" | reverse %}
+  <div class="col-10">
+    <div class="offset-md-2 col-md-8 mb-5 pb-5">
+      {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+      {% assign all_resources = site.resources | reverse %}
+      {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment %}
+      {% assign groups = all_resources | group_by: "category" | reverse %}
 
-    {% for group in groups %}
-      <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-      {% assign items = group.items %}
-      {% include articles.html %}
-      {% unless forloop.last %}
-        <hr class="mt-5" />
-      {% endunless %}
-    {% endfor %}
+      {% for group in groups %}
+        <h2 class="mb-4 mt-5">{{ group.name }}</h2>
+        {% assign items = group.items %}
+        {% include articles.html %}
+        {% unless forloop.last %}
+          <hr class="mt-5" />
+        {% endunless %}
+      {% endfor %}
+    </div>
   </div>
 </section>
+
+{% include rounded.html %}
