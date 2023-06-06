@@ -30,7 +30,7 @@ permalink: /resources
       {% for group in groups %}
         <h2 class="mb-4 mt-5">{{ group.name }}</h2>
         {% assign items = group.items %}
-        {% include articles.html %}
+        {% include articles.html items=items %}
         {% unless forloop.last %}
           <hr class="mt-5" />
         {% endunless %}

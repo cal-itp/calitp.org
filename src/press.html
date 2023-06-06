@@ -23,7 +23,7 @@ permalink: /press
     <div class="offset-md-2 col-md-8 mb-5 pb-5 col-10">
       {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
       {% assign items = site.press | reverse %}
-      {% include articles.html %}
+      {% include articles.html items=items %}
     </div>
   </div>
 </section>
