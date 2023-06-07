@@ -172,11 +172,6 @@ footer nav .links {
   clip-path: none;
 }
 
-p.important {
-  font-size: 24px;
-  margin-bottom: 50px;
-}
-
 #deck {
   display: grid;
   grid-template-rows: 1fr;
@@ -221,19 +216,11 @@ p.important {
 #facts ol {
   list-style: none;
   counter-reset: numList;
-  gap: 20px;
-}
-
-#facts ol li {
-  font-weight: 700;
-  gap: 12px;
 }
 
 #facts ol li:before {
   counter-increment: numList;
   content: counter(numList);
-  font-weight: 700;
-  font-size: 16px;
   text-align: center;
   color: var(--bs-white);
   line-height: 40px;
@@ -283,16 +270,8 @@ p.important {
   color: var(--bs-body-color);
 }
 
-.right-callout {
-  max-width: 700px;
-}
-
 #triforce {
   max-width: 450px;
-}
-
-#about h2 {
-  margin-top: 50px;
 }
 
 @media (max-width: 1024px) {
