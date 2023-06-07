@@ -308,7 +308,7 @@ footer nav .links {
 }
 
 .white-on-color .nav-pills .nav-link:hover {
-  border-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(var(--bs-white-rgb), 0.8);
 }
 
 @media (max-width: 768px) {
