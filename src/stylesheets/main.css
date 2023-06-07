@@ -382,6 +382,14 @@ p.important {
   .rhombus-1 {
     clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);
   }
+
+  .rhombus-2 {
+    clip-path: polygon(8% 10%, 91% 2.5%, 100% 100%, 0 100%);
+  }
+
+  .rhombus-3 {
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 7% 100%);
+  }
 }
 
 @media (max-width: 992px) {
