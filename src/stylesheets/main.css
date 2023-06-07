@@ -16,6 +16,7 @@ body {
   --bs-secondary-rgb: 143, 147, 153; /* calitp-gray-3 */
   --calitp-primary-blue: rgb(4, 107, 153); /* #046b99 */
   --calitp-primary-dark-blue: rgb(34, 81, 115); /* #225173 */
+  --calitp-background-blue: rgb(245, 249, 251); /* #F5F9FB */
   --calitp-cyan-1: rgb(213, 238, 245); /* #d5eef5 */
   --calitp-gray-2: rgb(200, 200, 201); /* #C8C8C9 */
   --calitp-green-4: rgb(0, 117, 91); /* #00755b */
@@ -141,6 +142,16 @@ a:hover {
 
 .navbar-nav {
   --bs-nav-link-color: var(--bs-body-color);
+  --bs-navbar-active-color: var(--calitp-primary-blue);
+  --bs-nav-link-hover-color: var(--calitp-primary-blue);
+}
+
+.nav-link {
+  padding: 31.4px 0 31.4px 0;
+}
+
+.nav-link:hover {
+  background-color: var(--calitp-background-blue);
 }
 
 main.container {
