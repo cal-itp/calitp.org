@@ -1,5 +1,5 @@
 {% for item in items %}
-  {% if include.tag == empty or include.tag and press.tags contains include.tag %}
+  {% if include.tag == empty or include.tag and item.tags contains include.tag %}
     {% include article.html item=item %}
   {% endif %}
 {% endfor %}
