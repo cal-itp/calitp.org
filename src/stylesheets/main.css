@@ -291,7 +291,7 @@ footer nav .links {
 }
 
 .black-on-white .nav-pills .nav-link:hover {
-  border-color: rgba(33, 33, 33, 0.8) !important;
+  border-color: rgba(33, 33, 33, 0.8);
 }
 
 .white-on-color .nav-pills {
@@ -308,7 +308,7 @@ footer nav .links {
 }
 
 .white-on-color .nav-pills .nav-link:hover {
-  border-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 768px) {
