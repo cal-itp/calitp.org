@@ -21,9 +21,17 @@ permalink: /press
 <section class="row justify-content-center" id="press">
   <div class="col-10">
     <div class="offset-md-2 col-md-8 mb-5 pb-5 col-10">
-      {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
-      {% assign items = site.press | reverse %}
-      {% include articles.html items=items %}
+      <div class="tab-content" id="pills-tabContent">
+        {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+        {% assign items = site.press | reverse %}
+        <div
+          class="tab-pane fade active show"
+          id="pills-all"
+          role="tabpanel"
+          tabindex="0">
+        {% include articles.html items=items tag = "" %}
+        </div>
+      </div>
     </div>
   </div>
 </section>

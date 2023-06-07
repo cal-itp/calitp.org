@@ -27,14 +27,22 @@ permalink: /resources
       {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment %}
       {% assign groups = all_resources | group_by: "category" | reverse %}
 
-      {% for group in groups %}
-        <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-        {% assign items = group.items %}
-        {% include articles.html items=items %}
-        {% unless forloop.last %}
-          <hr class="mt-5" />
-        {% endunless %}
-      {% endfor %}
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade active show"
+          id="pills-all"
+          role="tabpanel"
+          tabindex="0">
+          {% for group in groups %}
+            <h2 class="mb-4 mt-5">{{ group.name }}</h2>
+            {% assign items = group.items %}
+            {% include articles.html items=items tag = "" %}
+            {% unless forloop.last %}
+              <hr class="mt-5" />
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 </section>
