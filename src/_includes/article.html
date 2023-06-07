@@ -11,10 +11,7 @@
 {% endif %}
 
 <article class="d-block mb-3 pb-4">
-  <a
-    class="fw-bold text-decoration-none"
-    href="{{ url }}"
-    {% if item.external %}target="_blank"{% endif %}>{{ item.title }}</a>
+  <a href="{{ url }}" {% if item.external %}target="_blank"{% endif %}>{{ item.title }}</a>
   <br/>
   <span class="text-secondary font-poppins fs-7">{{ item.tags | join: ", " }} |
     {% include date.html date=item.date format = "%b %Y" %}</span>
