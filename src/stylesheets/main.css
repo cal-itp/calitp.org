@@ -226,6 +226,10 @@ footer nav .links {
 
 /* Home Page */
 
+.hero-header {
+  max-width: 441px;
+}
+
 #details .tab-content .tab-list article:nth-child(n + 3) {
   display: none;
 }
