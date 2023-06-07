@@ -259,24 +259,15 @@ footer nav .links {
 }
 
 #deck {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 0.85fr 1fr;
-  grid-gap: 3em;
-  line-height: 1.1;
-  align-items: center;
-  justify-items: center;
+  /* line-height: 1.1;
   padding-top: 88px;
-  padding-bottom: 50px;
+  padding-bottom: 50px; */
 }
 
 @media (max-width: 1024px) {
   #deck {
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: initial;
-    justify-items: center;
-    text-align: center;
+    /* justify-items: center;
+    text-align: center; */
   }
 }
 
