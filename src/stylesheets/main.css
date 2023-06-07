@@ -336,10 +336,6 @@ p.important {
     grid-gap: initial;
     grid-gap: 1em;
   }
-
-  .blob {
-    padding: 1em;
-  }
 }
 
 @media (min-width: 992px) {
