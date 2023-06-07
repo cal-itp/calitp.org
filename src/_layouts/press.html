@@ -21,7 +21,8 @@ layout: default
         {% if page.lead %}
           <p>{{ page.lead }}</p>
         {% endif %}
-        <p class="d-block border-top border-secondary pt-5 mt-5 pb-2 text-uppercase fw-semibold">For immediate release</p>
+        <hr class="mt-5 pb-5">
+        <p class="d-block pb-2 text-uppercase fw-semibold">For immediate release</p>
         <p>{{ date | append: location | append: "—" | append: page.intro }}</p>
         {{ page.content }}
       </article>
