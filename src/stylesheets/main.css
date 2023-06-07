@@ -47,12 +47,15 @@ h4 {
   font-family: var(--calitp-headline-sans-serif);
 }
 
-h1 {
+h1,
+.h1 {
+  font-size: 40px;
   font-weight: var(--calitp-font-weight-bold);
   margin-bottom: 19px;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 32px;
 }
 
@@ -78,7 +81,7 @@ li {
   line-height: 140%;
   letter-spacing: 0.025em;
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.35rem 1rem;
   font-size: 0.75rem;
   font-family: var(--bs-font-sans-serif);
   border: 1.5px solid var(--bs-white);
@@ -121,11 +124,6 @@ main.container {
 
 .press-release h2:last-of-type {
   text-decoration: underline;
-}
-
-picture.railway img {
-  width: 100%;
-  margin: 7.25rem 0;
 }
 
 footer {
@@ -308,11 +306,6 @@ p.important {
 }
 
 @media (max-width: 768px) {
-  picture.railway img {
-    width: 100%;
-    margin: 4.5rem 0;
-  }
-
   footer nav {
     display: grid;
     grid-template-rows: 1fr min-content;
