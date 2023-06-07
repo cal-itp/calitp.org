@@ -17,6 +17,7 @@ body {
   --calitp-primary-blue: rgb(4, 107, 153); /* #046b99 */
   --calitp-primary-dark-blue: rgb(34, 81, 115); /* #225173 */
   --calitp-cyan-1: rgb(213, 238, 245); /* #d5eef5 */
+  --calitp-gray-2: rgb(200, 200, 201); /* #C8C8C9 */
   --calitp-green-4: rgb(0, 117, 91); /* #00755b */
   --calitp-green-5: rgb(0, 73, 57); /* #004939 */
   --calitp-orange-5: rgb(178, 86, 0); /* #b25600 */
@@ -154,9 +155,8 @@ footer nav {
   padding: 7.5px 0;
 }
 
-footer nav .links a {
-  color: var(--bs-white);
-  text-decoration: none;
+footer nav .links a:hover {
+  color: var(--calitp-gray-2) !important;
 }
 
 footer nav ul {
