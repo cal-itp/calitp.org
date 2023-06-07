@@ -172,18 +172,6 @@ footer nav .links {
   clip-path: none;
 }
 
-#deck {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 0.85fr 1fr;
-  grid-gap: 3em;
-  line-height: 1.1;
-  align-items: center;
-  justify-items: center;
-  padding-top: 88px;
-  padding-bottom: 50px;
-}
-
 #details .tab-content .tab-list article:nth-child(n + 3) {
   display: none;
 }
@@ -213,12 +201,12 @@ footer nav .links {
   text-decoration-style: dotted;
 }
 
-#facts ol {
+.rainbow-list ol {
   list-style: none;
   counter-reset: numList;
 }
 
-#facts ol li:before {
+.rainbow-list ol li:before {
   counter-increment: numList;
   content: counter(numList);
   text-align: center;
@@ -230,19 +218,19 @@ footer nav .links {
   flex-shrink: 0;
 }
 
-#facts ol li:nth-child(1):before {
+.rainbow-list ol li:nth-child(1):before {
   background: var(--calitp-primary-blue);
 }
 
-#facts ol li:nth-child(2):before {
+.rainbow-list ol li:nth-child(2):before {
   background: var(--calitp-orange-5);
 }
 
-#facts ol li:nth-child(3):before {
+.rainbow-list ol li:nth-child(3):before {
   background: var(--calitp-red-5);
 }
 
-#facts ol li:nth-child(4):before {
+.rainbow-list ol li:nth-child(4):before {
   background: var(--calitp-purple-4);
 }
 
@@ -270,8 +258,16 @@ footer nav .links {
   color: var(--bs-body-color);
 }
 
-#triforce {
-  max-width: 450px;
+#deck {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.85fr 1fr;
+  grid-gap: 3em;
+  line-height: 1.1;
+  align-items: center;
+  justify-items: center;
+  padding-top: 88px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1024px) {
