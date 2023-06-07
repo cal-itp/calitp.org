@@ -5,6 +5,7 @@
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-border-radius: 20px;
   --bs-border-style: dashed;
+  --bs-body-line-height: 1.4;
 }
 
 body {
@@ -49,36 +50,35 @@ h4 {
 
 h1,
 .h1 {
-  font-size: 40px;
+  font-size: calc(40rem / 16);
   font-weight: var(--calitp-font-weight-bold);
   margin-bottom: 19px;
 }
 
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: calc(24rem / 16);
 }
 
 h4,
 .h4 {
   font-weight: var(--calitp-font-weight-bold);
-  line-height: 140%;
+  line-height: var(--bs-body-line-height);
 }
 
 p,
 a,
 li {
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 1rem;
 }
 
 .small-caps {
   text-transform: uppercase;
-  line-height: 140%;
+  line-height: var(--bs-body-line-height);
   letter-spacing: 0.025em;
   display: inline-block;
   padding: 0.35rem 1rem;
@@ -89,7 +89,7 @@ li {
 }
 
 .fs-7 {
-  font-size: 14px;
+  font-size: calc(14rem / 16);
 }
 
 .font-poppins {
@@ -256,19 +256,6 @@ footer nav .links {
   padding: 0.23rem;
   border: 2px solid var(--bs-body-color);
   color: var(--bs-body-color);
-}
-
-#deck {
-  /* line-height: 1.1;
-  padding-top: 88px;
-  padding-bottom: 50px; */
-}
-
-@media (max-width: 1024px) {
-  #deck {
-    /* justify-items: center;
-    text-align: center; */
-  }
 }
 
 @media (max-width: 768px) {
