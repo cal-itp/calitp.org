@@ -146,11 +146,11 @@ a:hover {
   --bs-nav-link-hover-color: var(--calitp-primary-blue);
 }
 
-.nav-link {
+header .nav-link {
   padding: 31.4px 0 31.4px 0;
 }
 
-.nav-link:hover {
+header .nav-link:hover {
   background-color: var(--calitp-background-blue);
 }
 
@@ -269,26 +269,46 @@ footer nav .links {
 
 .nav-pills {
   --bs-nav-pills-border-radius: 19px;
-  --bs-nav-pills-link-active-color: var(--bs-white);
-  --bs-nav-pills-link-active-bg: var(--bs-body-color);
 }
 
 .nav-pills .nav-link {
   padding: 0.23rem;
-  border: 2px solid var(--bs-body-color);
-  color: var(--bs-body-color);
+  border-width: 2px;
+  border-style: solid;
 }
 
-.nav-pills {
-  --bs-nav-pills-border-radius: 19px;
+.black-on-white .nav-pills {
   --bs-nav-pills-link-active-color: var(--bs-white);
   --bs-nav-pills-link-active-bg: var(--bs-body-color);
 }
 
-.nav-pills .nav-link {
-  padding: 0.23rem;
-  border: 2px solid var(--bs-body-color);
+.black-on-white .nav-pills .nav-link {
+  border-color: var(--bs-body-color);
+}
+
+.black-on-white .nav-pills .nav-link:not(.active) {
   color: var(--bs-body-color);
+}
+
+.black-on-white .nav-pills .nav-link:hover {
+  border-color: rgba(33, 33, 33, 0.8);
+}
+
+.white-on-color .nav-pills {
+  --bs-nav-pills-link-active-color: var(--bs-body-color);
+  --bs-nav-pills-link-active-bg: var(--bs-white);
+}
+
+.white-on-color .nav-pills .nav-link {
+  border-color: var(--bs-white);
+}
+
+.white-on-color .nav-pills .nav-link:not(.active) {
+  color: var(--bs-white);
+}
+
+.white-on-color .nav-pills .nav-link:hover {
+  border-color: rgba(var(--bs-white-rgb), 0.8);
 }
 
 @media (max-width: 768px) {
