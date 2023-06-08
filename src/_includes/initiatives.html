@@ -1,6 +1,6 @@
 <div class="row d-flex justify-content-between">
   <div class="col-12 col-lg-6">
-    <h2 class="text-center text-lg-start">Explore our initiatives</h2>
+    <h2 class="h1 text-center text-lg-start">Explore our initiatives</h2>
   </div>
   <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center">
     <ul
@@ -36,28 +36,29 @@
         id="{{ initiative.id }}"
         class="px-5 px-md-3 py-5 my-4 rhombus-1"
         style=" background-color: var({{ initiative.class }})">
-        <div class="row">
+        <div class="row pt-5">
           <picture class="col-12 col-md-2 col-lg-2 offset-md-1 d-flex justify-content-md-end align-self-md-start justify-content-center">
             <img
+              class="pt-2"
               src="{{ initiative.image.src }}"
               alt="{{ initiative.image.alt }}"
               width="{{ initiative.image.width }}" />
           </picture>
           <div class="col-12 col-md-8 col-lg-8 pt-4 pt-md-0">
-            <h3 class="text-white text-center text-md-start pb-2 pb-md-0">{{ initiative.headline }}</h3>
+            <h3 class="h2 text-white text-center text-md-start pb-4">{{ initiative.headline }}</h3>
             {% for paragraph in initiative.paragraphs %}
               <p class="text-white">
                 {{ paragraph }}
               </p>
             {% endfor %}
-            <div class="d-grid d-md-block rounded-0 bottom border-white border-2">
-              <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 mb-4">{{ initiative.button.text }}</a>
+            <div class="d-grid d-md-block rounded-0 border-bottom border-white border-2">
+              <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 mb-5">{{ initiative.button.text }}</a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 offset-md-3 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
-            <h4 class="small-caps text-white mt-4">Recent News</h4>
+            <h4 class="small-caps text-white mt-5 mb-3">Recent News</h4>
             <div class="tab-list">
               {% assign all_press = site.press | reverse %}
               {% for press in all_press %}
@@ -68,7 +69,7 @@
                 {% if press.tags contains initiative.tag %}
                   <article class="press-item">
                     <a
-                      class="text-white fw-bold"
+                      class="text-white fw-bold mb-2"
                       rel="noreferrer"
                       href="{{ url }}"
                       {% if press.external %}target="_blank"{% endif %}>{{ press.title }}</a>
@@ -81,7 +82,7 @@
         </div>
         <div class="row">
           <div class="col-12 offset-md-3 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
-            <h4 class="small-caps text-white mt-4">Resources</h4>
+            <h4 class="small-caps text-white mt-4 mb-3">Resources</h4>
             <div class="tab-list">
               {% assign all_resources = site.resources | reverse %}
               {% for resource in all_resources %}
@@ -92,7 +93,7 @@
                 {% if resource.tags contains initiative.tag %}
                   <article class="resource">
                     <a
-                      class="text-white fw-bold"
+                      class="text-white fw-bold mb-2 d-block"
                       rel="noreferrer"
                       href="{{ url }}"
                       target="_blank">{{ resource.title }}</a>
