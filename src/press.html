@@ -60,7 +60,7 @@ permalink: /press
         {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
         {% assign items = site.press | reverse %}
         <div
-          class="tab-pane fade"
+          class="tab-pane fade active show"
           id="pills-all"
           role="tabpanel"
           tabindex="0">
@@ -94,5 +94,7 @@ permalink: /press
     </div>
   </div>
 </section>
+
+<script src="/scripts/pill-behavior.js"></script>
 
 {% include rounded.html %}
