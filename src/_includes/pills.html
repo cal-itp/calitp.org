@@ -4,7 +4,7 @@
     class="nav nav-pills gap-2"
     id="pills-tab"
     role="tablist">
-    {% for tag in site.data.resource_tags %}
+    {% for tag in include.tags %}
       <li class="nav-item" role="presentation">
         <button
           class="nav-link"
