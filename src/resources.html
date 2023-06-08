@@ -18,39 +18,19 @@ permalink: /resources
           class="nav nav-pills mb-3 gap-2"
           id="pills-tab"
           role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contactless-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contactless"
-              type="button"
-              role="tab"
-              aria-controls="pills-contactless"
-              aria-selected="false">Contactless Payments</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-benefits-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-benefits"
-              type="button"
-              role="tab"
-              aria-controls="pills-benefits"
-              aria-selected="false">Benefits</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-gtfs-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-gtfs"
-              type="button"
-              role="tab"
-              aria-controls="pills-gtfs"
-              aria-selected="false">GTFS</button>
-          </li>
+          {% for tag in site.data.resource_tags %}
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-{{ tag.id }}-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-{{ tag.id  }}"
+                type="button"
+                role="tab"
+                aria-controls="pills-{{ tag.id }}"
+                aria-selected="false">{{ tag.name }}</button>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -80,51 +60,23 @@ permalink: /resources
             {% endunless %}
           {% endfor %}
         </div>
-        <div
+        {% for tag in site.data.resource_tags %}
+          <div
           class="tab-pane fade"
-          id="pills-contactless"
+          id="pills-{{ tag.id }}"
           role="tabpanel"
-          aria-labelledby="pills-contactless-tab"
+          aria-labelledby="pills-{{ tag.id }}-tab"
           tabindex="0">
           {% for group in groups %}
             <h2 class="mb-4 mt-5">{{ group.name }}</h2>
             {% assign items = group.items %}
-            {% include articles.html items=items tag = "Contactless Payments" %}
+            {% include articles.html items=items tag = tag.name %}
             {% unless forloop.last %}
               <hr class="mt-5" />
             {% endunless %}
           {% endfor %}
         </div>
-        <div
-          class="tab-pane fade"
-          id="pills-benefits"
-          role="tabpanel"
-          aria-labelledby="pills-benefits-tab"
-          tabindex="0">
-          {% for group in groups %}
-            <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-            {% assign items = group.items %}
-            {% include articles.html items=items tag = "Benefits" %}
-            {% unless forloop.last %}
-              <hr class="mt-5" />
-            {% endunless %}
-          {% endfor %}
-        </div>
-        <div
-          class="tab-pane fade"
-          id="pills-gtfs"
-          role="tabpanel"
-          aria-labelledby="pills-gtfs-tab"
-          tabindex="0">
-          {% for group in groups %}
-            <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-            {% assign items = group.items %}
-            {% include articles.html items=items tag = "GTFS" %}
-            {% unless forloop.last %}
-              <hr class="mt-5" />
-            {% endunless %}
-          {% endfor %}
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
