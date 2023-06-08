@@ -1,0 +1,34 @@
+<script>
+  const pills = document.querySelectorAll("button[data-bs-toggle='pill']");
+  pills.forEach(p => {
+
+// mouse-click or Enter key will trigger "click" event and should toggle the pill's state
+    p.addEventListener("click", event => toggleSelection(p.id));
+  });
+
+  function toggleSelection(id) {
+    const pillToToggle = document.querySelector("#" + id);
+    if (! pillToToggle.classList.contains("cal-itp-selected")) {
+      select(pillToToggle);
+    } else {
+      pillToToggle.classList.remove("cal-itp-selected");
+      pillToToggle.classList.remove("active");
+      hideTab(pillToToggle.id);
+    }
+  }
+
+  function select(pill) {
+    pill.classList.add("cal-itp-selected");
+
+    const pills = document.querySelectorAll("button[data-bs-toggle='pill']");
+    let pillSet = new Set(pills);
+    pillSet.delete(pill);
+    pillSet.forEach(pill => pill.classList.remove("cal-itp-selected"));
+  }
+
+  function hideTab(pillId) {
+    const selectedTab = document.querySelector("div[aria-labelledby='" + pillId + "']")
+    selectedTab.classList.remove("show");
+    selectedTab.classList.remove("active");
+  }
+</script>
