@@ -13,21 +13,7 @@ permalink: /press
         target="_blank"
         class="fw-bolder text-white"
         href="mailto:hello@calitp.org">hello@calitp.org</a>.</span></p>
-        <ul class="nav nav-pills mb-3 gap-2" id="pills-tab" role="tablist">
-          {% for tag in site.data.press_tags %}
-            <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-{{ tag.id }}-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-{{ tag.id }}"
-              type="button"
-              role="tab"
-              aria-controls="pills-{{ tag.id }}"
-              aria-selected="false">{{ tag.name }}</button>
-          </li>
-          {% endfor %}
-        </ul>
+        {% include pills.html %}
       </div>
     </div>
   </div>
@@ -46,7 +32,7 @@ permalink: /press
           tabindex="0">
         {% include articles.html items=items tag = "" %}
         </div>
-        {% for tag in site.data.press_tags %}
+        {% for tag in press_tags %}
           <div
             class="tab-pane fade"
             id="pills-{{ tag.id }}"

@@ -1,0 +1,21 @@
+<div class="d-flex flex-column flex-md-row align-items-md-center white-on-color mt-md-4">
+  <span class="me-2 mb-3 mt-4 my-md-0 text-white">Filter by:</span>
+  <ul
+    class="nav nav-pills gap-2"
+    id="pills-tab"
+    role="tablist">
+    {% for tag in site.data.resource_tags %}
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="pills-{{ tag.id }}-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-{{ tag.id }}"
+          type="button"
+          role="tab"
+          aria-controls="pills-{{ tag.id }}"
+          aria-selected="false">{{ tag.name }}</button>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

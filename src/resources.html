@@ -14,24 +14,7 @@ permalink: /resources
             target="_blank"
             class="fw-bolder text-white"
             href="mailto:hello@calitp.org">hello@calitp.org</a>.</p>
-        <ul
-          class="nav nav-pills mb-3 gap-2"
-          id="pills-tab"
-          role="tablist">
-          {% for tag in site.data.resource_tags %}
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-{{ tag.id }}-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-{{ tag.id  }}"
-                type="button"
-                role="tab"
-                aria-controls="pills-{{ tag.id }}"
-                aria-selected="false">{{ tag.name }}</button>
-            </li>
-          {% endfor %}
-        </ul>
+        {% include pills.html %}
       </div>
     </div>
   </div>
@@ -62,20 +45,20 @@ permalink: /resources
         </div>
         {% for tag in site.data.resource_tags %}
           <div
-          class="tab-pane fade"
-          id="pills-{{ tag.id }}"
-          role="tabpanel"
-          aria-labelledby="pills-{{ tag.id }}-tab"
-          tabindex="0">
-          {% for group in groups %}
-            <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-            {% assign items = group.items %}
-            {% include articles.html items=items tag = tag.name %}
-            {% unless forloop.last %}
-              <hr class="mt-5" />
-            {% endunless %}
-          {% endfor %}
-        </div>
+            class="tab-pane fade"
+            id="pills-{{ tag.id }}"
+            role="tabpanel"
+            aria-labelledby="pills-{{ tag.id }}-tab"
+            tabindex="0">
+            {% for group in groups %}
+              <h2 class="mb-4 mt-5">{{ group.name }}</h2>
+              {% assign items = group.items %}
+              {% include articles.html items=items tag = tag.name %}
+              {% unless forloop.last %}
+                <hr class="mt-5" />
+              {% endunless %}
+            {% endfor %}
+          </div>
         {% endfor %}
       </div>
     </div>
