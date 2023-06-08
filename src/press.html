@@ -14,39 +14,19 @@ permalink: /press
         class="fw-bolder text-white"
         href="mailto:hello@calitp.org">hello@calitp.org</a>.</span></p>
         <ul class="nav nav-pills mb-3 gap-2" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
+          {% for tag in site.data.press_tags %}
+            <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="pills-contactless-tab"
+              id="pills-{{ tag.id }}-tab"
               data-bs-toggle="pill"
-              data-bs-target="#pills-contactless"
+              data-bs-target="#pills-{{ tag.id }}"
               type="button"
               role="tab"
-              aria-controls="pills-contactless"
-              aria-selected="false">Contactless Payments</button>
+              aria-controls="pills-{{ tag.id }}"
+              aria-selected="false">{{ tag.name }}</button>
           </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-benefits-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-benefits"
-              type="button"
-              role="tab"
-              aria-controls="pills-benefits"
-              aria-selected="false">Benefits</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-gtfs-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-gtfs"
-              type="button"
-              role="tab"
-              aria-controls="pills-gtfs"
-              aria-selected="false">GTFS</button>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -66,29 +46,16 @@ permalink: /press
           tabindex="0">
         {% include articles.html items=items tag = "" %}
         </div>
-        <div
-          class="tab-pane fade"
-          id="pills-contactless"
-          role="tabpanel"
-          aria-labelledby="pills-contactless-tab"
-          tabindex="0">
-        {% include articles.html items=items tag = "Contactless Payments" %}
-        </div>
-        <div
-          class="tab-pane fade"
-          id="pills-benefits"
-          role="tabpanel"
-          aria-labelledby="pills-benefits-tab"
-          tabindex="0">
-        {% include articles.html items=items tag = "Benefits" %}
-        </div>
-        <div
-          class="tab-pane fade"
-          id="pills-gtfs"
-          role="tabpanel"
-          aria-labelledby="pills-gtfs-tab"
-          tabindex="0">
-        {% include articles.html items=items tag = "GTFS" %}
+        {% for tag in site.data.press_tags %}
+          <div
+            class="tab-pane fade"
+            id="pills-{{ tag.id }}"
+            role="tabpanel"
+            aria-labelledby="pills-{{ tag.id }}-tab"
+            tabindex="0">
+          {% include articles.html items=items tag = tag.name %}
+          </div>
+        {% endfor %}
         </div>
       </div>
     </div>
