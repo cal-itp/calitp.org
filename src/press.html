@@ -26,20 +26,21 @@ permalink: /press
         {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
         {% assign items = site.press | reverse %}
         <div
-          class="tab-pane fade active show"
-          id="pills-all"
-          role="tabpanel"
-          tabindex="0">
-        {% include articles.html items=items tag = "" %}
+        class="tab-pane fade active show"
+        id="pills-all"
+        role="tabpanel"
+        tabindex="0">
+        {% include articles.html items=items %}
         </div>
         {% for tag in site.data.press_tags %}
+          {% assign items = site.press | reverse | where_exp: "item", "item.tags contains tag.name" %}
           <div
             class="tab-pane fade"
             id="pills-{{ tag.id }}"
             role="tabpanel"
             aria-labelledby="pills-{{ tag.id }}-tab"
             tabindex="0">
-          {% include articles.html items=items tag = tag.name %}
+          {% include articles.html items=items %}
           </div>
         {% endfor %}
         </div>
