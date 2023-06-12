@@ -37,7 +37,7 @@ permalink: /resources
           {% for group in groups %}
             <h2 class="mb-4 mt-5">{{ group.name }}</h2>
             {% assign items = group.items %}
-            {% include articles.html items=items tag = "" %}
+            {% include articles.html items=items %}
             {% unless forloop.last %}
               <hr class="mt-5" />
             {% endunless %}
@@ -51,11 +51,13 @@ permalink: /resources
             aria-labelledby="pills-{{ tag.id }}-tab"
             tabindex="0">
             {% for group in groups %}
-              <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-              {% assign items = group.items %}
-              {% include articles.html items=items tag = tag.name %}
-              {% unless forloop.last %}
-                <hr class="mt-5" />
+              {% assign items = group.items | where_exp: "item", "item.tags contains tag.name" %}
+              {% unless items.size == 0 %}
+                <h2 class="mb-4 mt-5">{{ group.name }}</h2>
+                {% include articles.html items=items %}
+                {% unless forloop.last %}
+                  <hr class="mt-5" />
+                {% endunless %}
               {% endunless %}
             {% endfor %}
           </div>
