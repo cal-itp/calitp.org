@@ -7,6 +7,13 @@
   --bs-border-style: dashed;
   --bs-body-line-height: 1.4;
   --header-nav-height: 110px;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
 }
 
 body {
@@ -109,6 +116,8 @@ a {
 
 a:hover {
   text-decoration-style: dotted;
+  filter: none;
+  -webkit-filter: none;
 }
 
 .red-link {
@@ -166,6 +175,7 @@ footer nav .links a:hover {
 
 .rhombus-parent {
   filter: none;
+  -webkit-filter: none;
   clip-path: none;
 }
 
@@ -300,8 +310,13 @@ footer nav .links a:hover {
 
   .rhombus-parent {
     filter: url("#rounded");
+    -webkit-filter: url("#rounded");
     overflow: hidden;
     z-index: 1;
+    transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+      skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    -webkit-transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate))
+      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .rhombus-1 {
