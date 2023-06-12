@@ -241,7 +241,7 @@ footer nav .links a:hover {
 }
 
 .nav-pills .nav-link {
-  padding: 0.23rem;
+  padding: 4px 8px;
   border-width: 2px;
   border-style: solid;
 }
