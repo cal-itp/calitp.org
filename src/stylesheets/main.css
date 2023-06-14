@@ -167,19 +167,6 @@ footer nav .links a:hover {
   color: var(--calitp-gray-2) !important;
 }
 
-/* Shared */
-
-.rhombus-parent {
-  filter: none;
-  clip-path: none;
-}
-
-.rhombus-1,
-.rhombus-2,
-.rhombus-3 {
-  border-radius: 1.25rem;
-}
-
 /* Press Release */
 
 .press-release h2,
@@ -281,6 +268,23 @@ footer nav .links a:hover {
   border-color: rgba(var(--bs-white-rgb), 0.8);
 }
 
+.clipped,
+.clipped-start,
+.clipped-end {
+  -webkit-clip-path: none;
+  clip-path: none;
+  border-radius: 1.25rem;
+}
+
+.clipped-start,
+.clipped-end {
+  min-height: 100%;
+}
+
+.clipped-shadow {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
 @media (min-width: 992px) {
   .navbar {
     --bs-navbar-nav-link-padding-x: 40px;
@@ -298,22 +302,25 @@ footer nav .links a:hover {
     --bs-nav-link-padding-y: 0;
   }
 
-  .rhombus-parent {
-    filter: url("#rounded");
-    overflow: hidden;
-    z-index: 1;
+  .clipped,
+  .clipped-start,
+  .clipped-end {
+    border-radius: 0;
   }
 
-  .rhombus-1 {
-    clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);
+  .clipped {
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
   }
 
-  .rhombus-2 {
-    clip-path: polygon(8% 10%, 91% 2.5%, 100% 100%, 0 100%);
+  .clipped-start {
+    -webkit-clip-path: url(#my-clip-path-start);
+    clip-path: url(#my-clip-path-start);
   }
 
-  .rhombus-3 {
-    clip-path: polygon(0 0, 100% 9%, 100% 100%, 7% 100%);
+  .clipped-end {
+    -webkit-clip-path: url(#my-clip-path-end);
+    clip-path: url(#my-clip-path-end);
   }
 }
 

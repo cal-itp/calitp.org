@@ -1,3 +1,7 @@
+<svg class="position-absolute">
+  <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,0.048 C0,0.036,0.008,0.025,0.018,0.025 L0.982,0 C0.992,0,1,0.011,1,0.023 L0.979,0.931 C0.979,0.942,0.972,0.952,0.962,0.953 L0.048,1 C0.038,1,0.029,0.991,0.029,0.979 L0,0.048"></path></clipPath>
+</svg>
+
 <div class="row d-flex justify-content-between">
   <div class="col-12 col-lg-6">
     <h2 class="h1 text-center text-lg-start">Explore our initiatives</h2>
@@ -27,14 +31,14 @@
 <div class="tab-content " id="pills-tabContent">
   {% for initiative in site.data.initiatives %}
     <div
-      class="tab-pane fade rhombus-parent {{ initiative.active }}"
+      class="tab-pane fade {{ initiative.active }}"
       id="pills-{{ initiative.slug }}"
       role="tabpanel"
       aria-labelledby="pills-{{ initiative.slug }}-tab"
       tabindex="0">
       <div
         id="{{ initiative.id }}"
-        class="px-5 px-md-3 py-5 my-4 rhombus-1"
+        class="px-5 px-md-3 py-5 my-4 clipped"
         style=" background-color: var({{ initiative.class }})">
         <div class="row pt-5">
           <picture class="col-12 col-md-2 col-lg-2 d-flex justify-content-md-end align-self-md-start justify-content-center">
