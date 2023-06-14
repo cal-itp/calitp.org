@@ -276,6 +276,11 @@ footer nav .links a:hover {
   border-radius: 1.25rem;
 }
 
+.clipped-start,
+.clipped-end {
+  min-height: 100%;
+}
+
 .clipped-shadow {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
