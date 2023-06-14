@@ -39,7 +39,7 @@ permalink: /resources
             {% assign items = group.items %}
             {% include articles.html items=items %}
             {% unless forloop.last %}
-              <hr class="mt-5" />
+              <hr/>
             {% endunless %}
           {% endfor %}
         </div>
@@ -56,7 +56,7 @@ permalink: /resources
                 <h2 class="mb-4 mt-5">{{ group.name }}</h2>
                 {% include articles.html items=items %}
                 {% unless forloop.last %}
-                  <hr class="mt-5" />
+                  <hr/>
                 {% endunless %}
               {% endunless %}
             {% endfor %}
