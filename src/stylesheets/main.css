@@ -332,7 +332,7 @@ footer nav .links a:hover {
   }
 
   .navbar-nav .nav-link {
-    padding: 23.8px 0 28.8px 12px;
+    padding: 23.8px 0 23.8px 12px;
     border-bottom: 1px solid var(--calitp-cyan-1);
   }
 
