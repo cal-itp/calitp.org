@@ -276,6 +276,10 @@ footer nav .links a:hover {
   border-radius: 1.25rem;
 }
 
+.clipped-shadow {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
 @media (min-width: 992px) {
   .navbar {
     --bs-navbar-nav-link-padding-x: 40px;
