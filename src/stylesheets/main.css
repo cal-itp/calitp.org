@@ -81,10 +81,6 @@ li {
   font-size: 1rem;
 }
 
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
 .small-caps {
   text-transform: uppercase;
   line-height: var(--bs-body-line-height);
@@ -113,8 +109,6 @@ a {
 
 a:hover {
   text-decoration-style: dotted;
-  filter: none;
-  -webkit-filter: none;
 }
 
 .red-link {
@@ -255,7 +249,6 @@ footer nav .links a:hover {
 
 .black-on-white .nav-pills .nav-link:hover {
   border-color: rgba(33, 33, 33, 0.8);
-  filter: none;
 }
 
 .white-on-color .nav-pills {
@@ -265,17 +258,14 @@ footer nav .links a:hover {
 
 .white-on-color .nav-pills .nav-link {
   border-color: var(--bs-white);
-  filter: none;
 }
 
 .white-on-color .nav-pills .nav-link:not(.active) {
   color: var(--bs-white);
-  filter: none;
 }
 
 .white-on-color .nav-pills .nav-link:hover {
   border-color: rgba(var(--bs-white-rgb), 0.8);
-  filter: none;
 }
 
 .clipped,
