@@ -290,6 +290,10 @@ footer nav .links a:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
+.mb-28 {
+  margin-bottom: 28px;
+}
+
 @media (min-width: 992px) {
   .navbar {
     --bs-navbar-nav-link-padding-x: 40px;
@@ -354,6 +358,10 @@ footer nav .links a:hover {
 }
 
 @media (min-width: 768px) {
+  .mb-md-40 {
+    margin-bottom: 40px;
+  }
+
   .navbar-nav {
     max-width: 720px;
   }
