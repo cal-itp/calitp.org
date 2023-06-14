@@ -7,13 +7,6 @@
   --bs-border-style: dashed;
   --bs-body-line-height: 1.4;
   --header-nav-height: 110px;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
 }
 
 body {
@@ -86,6 +79,10 @@ p,
 a,
 li {
   font-size: 1rem;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .small-caps {
@@ -169,20 +166,6 @@ main.container {
 
 footer nav .links a:hover {
   color: var(--calitp-gray-2) !important;
-}
-
-/* Shared */
-
-.rhombus-parent {
-  filter: none;
-  -webkit-filter: none;
-  clip-path: none;
-}
-
-.rhombus-1,
-.rhombus-2,
-.rhombus-3 {
-  border-radius: 1.25rem;
 }
 
 /* Press Release */
@@ -272,6 +255,7 @@ footer nav .links a:hover {
 
 .black-on-white .nav-pills .nav-link:hover {
   border-color: rgba(33, 33, 33, 0.8);
+  filter: none;
 }
 
 .white-on-color .nav-pills {
@@ -281,14 +265,25 @@ footer nav .links a:hover {
 
 .white-on-color .nav-pills .nav-link {
   border-color: var(--bs-white);
+  filter: none;
 }
 
 .white-on-color .nav-pills .nav-link:not(.active) {
   color: var(--bs-white);
+  filter: none;
 }
 
 .white-on-color .nav-pills .nav-link:hover {
   border-color: rgba(var(--bs-white-rgb), 0.8);
+  filter: none;
+}
+
+.clipped,
+.clipped-start,
+.clipped-end {
+  -webkit-clip-path: none;
+  clip-path: none;
+  border-radius: 1.25rem;
 }
 
 @media (min-width: 992px) {
@@ -308,27 +303,25 @@ footer nav .links a:hover {
     --bs-nav-link-padding-y: 0;
   }
 
-  .rhombus-parent {
-    filter: url("#rounded");
-    -webkit-filter: url("#rounded");
-    overflow: hidden;
-    z-index: 1;
-    transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
-      skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    -webkit-transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate))
-      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .clipped,
+  .clipped-start,
+  .clipped-end {
+    border-radius: 0;
   }
 
-  .rhombus-1 {
-    clip-path: polygon(0 3%, 100% 0, 96% 98%, 3% 100%);
+  .clipped {
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
   }
 
-  .rhombus-2 {
-    clip-path: polygon(8% 10%, 91% 2.5%, 100% 100%, 0 100%);
+  .clipped-start {
+    -webkit-clip-path: url(#my-clip-path-start);
+    clip-path: url(#my-clip-path-start);
   }
 
-  .rhombus-3 {
-    clip-path: polygon(0 0, 100% 9%, 100% 100%, 7% 100%);
+  .clipped-end {
+    -webkit-clip-path: url(#my-clip-path-end);
+    clip-path: url(#my-clip-path-end);
   }
 }
 

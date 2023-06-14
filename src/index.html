@@ -141,8 +141,16 @@ layout: default
   </div>
 </section>
 
-<section class="row justify-content-md-center mt-5 mb-5 pb-5 rhombus-parent">
-  <div class="background-slate-5 shadow pt-3 pt-md-5 px-3 col-md-4 col-12 text-center rhombus-2">
+<svg class="position-absolute">
+  <clipPath id="my-clip-path-start" clipPathUnits="objectBoundingBox"><path d="M0.004,0.075 C0,0.034,0.029,0,0.066,0.002 L0.947,0.051 C0.979,0.052,1,0.081,1,0.116 V0.936 C1,0.973,0.977,1,0.944,1 H0.147 C0.117,1,0.091,0.977,0.088,0.943 L0.004,0.075"></path></clipPath>
+</svg>
+
+<svg class="position-absolute">
+  <clipPath id="my-clip-path-end" clipPathUnits="objectBoundingBox"><path d="M0.041,0.125 C0.043,0.092,0.066,0.066,0.096,0.063 L0.878,0 C0.91,-0.003,0.939,0.024,0.941,0.06 L1,0.929 C1,0.967,0.977,1,0.942,1 H0.061 C0.027,1,0,0.968,0.002,0.931 L0.041,0.125"></path></clipPath>
+</svg>
+
+<section class="row justify-content-md-center mt-5 mb-5 pb-5 ">
+  <div class="background-slate-5 shadow pt-3 pt-md-5 px-3 col-md-4 col-12 text-center clipped-start">
     <picture><img
         src="images/connect.png"
         alt="Two thought bubbles with dashes of various lengths, meant to represent words in a conversation"
@@ -165,7 +173,7 @@ layout: default
   <div class="col-md-auto">
     &nbsp;
   </div>
-  <div class="background-slate-5 shadow pt-3 pt-md-5 px-md-5 px-3 col-md-4 col-12 text-center rhombus-3">
+  <div class="background-slate-5 shadow pt-3 pt-md-5 px-md-5 px-3 col-md-4 col-12 text-center clipped-end">
     <picture><img
         src="images/stay-up-to-date.png"
         alt="A bus nearly surrounded by a semicircular arrow, meant to indicate that transit content is being refreshed"
@@ -186,5 +194,3 @@ layout: default
     </p>
   </div>
 </section>
-
-{% include rounded.html %}
