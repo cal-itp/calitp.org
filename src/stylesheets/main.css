@@ -165,13 +165,14 @@ footer nav .links a:hover {
 /* Shared */
 
 .rhombus-parent {
-  filter: url("#rounded");
-  overflow: hidden;
-  z-index: 1;
+  filter: none;
+  clip-path: none;
 }
 
-.rhombus-1 {
-  clip-path: none;
+.rhombus-1,
+.rhombus-2,
+.rhombus-3 {
+  border-radius: 1.25rem;
 }
 
 /* Press Release */
@@ -295,6 +296,12 @@ footer nav .links a:hover {
     --bs-nav-link-color: var(--bs-body-color);
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
+  }
+
+  .rhombus-parent {
+    filter: url("#rounded");
+    overflow: hidden;
+    z-index: 1;
   }
 
   .rhombus-1 {
