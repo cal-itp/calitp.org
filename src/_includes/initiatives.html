@@ -48,7 +48,7 @@
               alt="{{ initiative.image.alt }}"
               width="{{ initiative.image.width }}" />
           </picture>
-          <div class="col-12 col-md-8 col-lg-8 initiatives-section-mb">
+          <div class="col-12 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h3 class="h2 text-white text-center text-md-start pb-4">{{ initiative.headline }}</h3>
             {% for paragraph in initiative.paragraphs %}
               <p class="text-white">
@@ -56,12 +56,12 @@
               </p>
             {% endfor %}
             <div class="d-grid d-md-block rounded-0 border-bottom border-white border-2">
-              <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 initiatives-section-mb">{{ initiative.button.text }}</a>
+              <a href="{{ initiative.button.url }}" class="btn btn-outline-light fw-bolder mt-2 mb-28 mb-md-40">{{ initiative.button.text }}</a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 offset-md-2 col-md-8 col-lg-8 initiatives-section-mb">
+          <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="small-caps text-white mb-3">Recent News</h4>
             <div class="tab-list">
               {% assign all_press = site.press | reverse %}
@@ -85,7 +85,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 offset-md-2 col-md-8 col-lg-8 initiatives-section-mb">
+          <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="small-caps text-white mb-3">Resources</h4>
             <div class="tab-list">
               {% assign all_resources = site.resources | reverse %}
