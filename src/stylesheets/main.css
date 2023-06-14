@@ -163,6 +163,11 @@ main.container {
   padding-top: var(--header-nav-height);
 }
 
+section#about {
+  padding-top: var(--header-nav-height);
+  margin-top: calc(-1 * var(--header-nav-height));
+}
+
 footer nav .links a:hover {
   color: var(--calitp-gray-2) !important;
 }
