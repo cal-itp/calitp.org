@@ -37,7 +37,7 @@
         class="px-5 px-md-3 py-5 my-4 rhombus-1"
         style=" background-color: var({{ initiative.class }})">
         <div class="row pt-5">
-          <picture class="col-12 col-md-2 col-lg-2 offset-md-1 d-flex justify-content-md-end align-self-md-start justify-content-center">
+          <picture class="col-12 col-md-2 col-lg-2 d-flex justify-content-md-end align-self-md-start justify-content-center">
             <img
               class="pt-2"
               src="{{ initiative.image.src }}"
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 offset-md-3 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
+          <div class="col-12 offset-md-2 col-md-8 col-lg-8 pt-4 pt-md-0">
             <h4 class="small-caps text-white mt-5 mb-3">Recent News</h4>
             <div class="tab-list">
               {% assign all_press = site.press | reverse %}
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 offset-md-3 offset-lg-3 col-md-8 col-lg-8 pt-4 pt-md-0">
+          <div class="col-12 offset-md-2 col-md-8 col-lg-8 pt-4 pt-md-0">
             <h4 class="small-caps text-white mt-4 mb-3">Resources</h4>
             <div class="tab-list">
               {% assign all_resources = site.resources | reverse %}
