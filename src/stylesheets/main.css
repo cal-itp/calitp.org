@@ -7,6 +7,7 @@
   --bs-border-style: dashed;
   --bs-body-line-height: 1.4;
   --header-nav-height: 110px;
+  --footer-nav-height: 39px;
 }
 
 body {
@@ -168,7 +169,7 @@ section#about {
   margin-top: calc(-1 * var(--header-nav-height));
 }
 
-footer nav .links a:hover {
+footer a:hover {
   color: var(--calitp-gray-2) !important;
 }
 
@@ -309,6 +310,14 @@ footer nav .links a:hover {
     --bs-nav-link-color: var(--bs-body-color);
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
+  }
+
+  main.container {
+    min-height: calc(100vh - var(--footer-nav-height));
+  }
+
+  footer a {
+    line-height: var(--footer-nav-height);
   }
 
   .clipped,
