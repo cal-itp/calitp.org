@@ -1,7 +1,7 @@
 ---
 date: "2022-06-02T17:00:00-07:00"
-title: Cal-ITP Unveils New Open Data Standard to Improve Transit Agency Operations
-heading: Cal-ITP Unveils New Open Data Standard to Improve Transit Agency Operations
+title: ODS—New open data standard helps improve transit agency operations
+heading: ODS—New open data standard helps improve transit agency operations
 intro: |-
   Caltrans’ California Integrated Travel Project (Cal-ITP) today launched a new open data standard to capture and integrate
   more information impacting transit agency operations. The Operational Data Standard (ODS) leverages the existing GTFS
@@ -62,7 +62,7 @@ The California Integrated Travel Project (Cal-ITP) was established by the Califo
 California Department of Transportation (Caltrans) to simplify travel on public transit throughout California. Cal-ITP is
 working with transit providers to build a modern and consistent travel experience for Californians of all incomes, ages, and
 abilities—by enabling contactless, open-loop payments, automating customer discounts, and standardizing
-information for easy multimodal trip planning. Learn more at [calitp.org](https://calitp.org). And visit Cal-ITP's
+information for easy multimodal trip planning. Learn more at [calitp.org](https://calitp.org). And visit Cal-ITP’s
 [CAMobilityMarketplace.org](https://camobilitymarketplace.org) for a catalog of code-compliant products and services for
 transit agencies.
 
