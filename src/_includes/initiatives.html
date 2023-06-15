@@ -8,7 +8,7 @@
   </div>
   <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center black-on-white">
     <ul
-      class="nav nav-pills nav-fill mb-3 gap-2"
+      class="nav nav-pills nav-fill mb-md-3 gap-2 flex-shrink-0"
       id="pills-tab"
       role="tablist">
       {% for initiative in site.data.initiatives %}
@@ -38,18 +38,18 @@
       tabindex="0">
       <div
         id="{{ initiative.id }}"
-        class="px-5 px-md-3 py-5 my-4 clipped"
+        class="px-4 px-md-3 py-3 py-md-5 my-4 clipped"
         style=" background-color: var({{ initiative.class }})">
-        <div class="row pt-5">
+        <div class="row px-2 px-md-0 pt-3 pt-md-5">
           <picture class="col-12 col-md-2 col-lg-2 d-flex justify-content-md-end align-self-md-start justify-content-center">
             <img
-              class="pt-2"
+              class="pt-2 pb-4 pb-md-0"
               src="{{ initiative.image.src }}"
               alt="{{ initiative.image.alt }}"
               width="{{ initiative.image.width }}" />
           </picture>
           <div class="col-12 col-md-8 col-lg-8 mb-28 mb-md-40">
-            <h3 class="h2 text-white text-center text-md-start pb-4">{{ initiative.headline }}</h3>
+            <h3 class="h2 text-white text-center text-md-start pb-2 pb-md-4 pt-2 pt-md-0">{{ initiative.headline }}</h3>
             {% for paragraph in initiative.paragraphs %}
               <p class="text-white">
                 {{ paragraph }}
@@ -60,7 +60,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row px-2 px-md-0">
           <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="small-caps text-white mb-3">Recent News</h4>
             <div class="tab-list">
@@ -84,7 +84,7 @@
             <a class="text-white fw-bold" href="/press">See all</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row px-2 px-md-0">
           <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="small-caps text-white mb-3">Resources</h4>
             <div class="tab-list">
