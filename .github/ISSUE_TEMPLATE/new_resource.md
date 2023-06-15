@@ -1,7 +1,7 @@
 ---
 name: Request to add a new resource
 about: Use this issue to request to add a new resource to calitp.org/resources
-title: "[DATE]: [FEATURE NAME]"
+title: "New resource request"
 labels: resource
 ---
 
