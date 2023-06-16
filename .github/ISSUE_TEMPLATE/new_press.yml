@@ -1,7 +1,9 @@
 name: Request to add a new press release or press link
 description: Use this issue to request to add a new press release or press link to Calitp.org
 title: "New press request"
-labels: press
+labels:
+  - content
+  - press
 body:
   - type: input
     id: title
