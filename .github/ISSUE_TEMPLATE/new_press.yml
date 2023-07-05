@@ -7,11 +7,11 @@ labels:
 body:
   - type: input
     id: title
+    validations:
+      required: true
     attributes:
       label: Title
       description: The title is used in list views on the home page and [https://calitp.org/press](https://calitp.org/press)
-    validations:
-      required: true
   - type: input
     id: heading
     attributes:
@@ -19,12 +19,15 @@ body:
       description: Optional heading if different from the title, used on the page for this press release
   - type: input
     id: link
+    validations:
+      required: true
     attributes:
       label: Asset URL
       description: "The URL of the resource: link to Google Drive content of press release, or external link to a press item outside of Cal-ITP"
+  - type: dropdown
+    id: tag
     validations:
       required: true
-  - type: dropdown
     attributes:
       label: Tag
       description: What tag is this press item in?
@@ -33,12 +36,13 @@ body:
         - Contactless payments
         - Benefits
         - GTFS
+  - type: dropdown
+    id: date_year
     validations:
       required: true
-  - type: dropdown
     attributes:
       label: Date - Year
-      description: The date is used for press releases. Not required for external press links.
+      description: The date is used for both internal and external press releases.
       multiple: false
       options:
         - 2023
@@ -46,9 +50,12 @@ body:
         - 2021
         - 2020
   - type: dropdown
+    id: date_month
+    validations:
+      required: true
     attributes:
       label: Date - Month
-      description: The date is used for press releases. Not required for external press links.
+      description: The date is used for press releases.
       multiple: false
       options:
         - "01"
@@ -64,12 +71,9 @@ body:
         - "11"
         - "12"
   - type: input
-    id: date
-    attributes:
-      label: Date
-      description: The date is used for press releases. Not required for external press links.
-  - type: input
     id: location
+    validations:
+      required: true
     attributes:
       label: Location
       description: The location is used for press releases. The default is Sacramento, CA
