@@ -73,7 +73,6 @@ body:
   - type: input
     id: location
     validations:
-      required: true
     attributes:
       label: Location
       description: The location is used for press releases. The default is Sacramento, CA
