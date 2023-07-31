@@ -13,6 +13,7 @@ intro: |-
   payments.
 tags:
   - Contactless Payments
+outlet: "Cal-ITP"
 ---
 
 Cal-ITP—Caltrans’ California Integrated Travel Project—supported Coast RTA through the process of purchasing open-loop payment

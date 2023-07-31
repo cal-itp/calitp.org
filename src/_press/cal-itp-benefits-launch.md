@@ -13,6 +13,7 @@ intro: |-
   a contactless debit or credit card to automatically receive reduced fares whenever they tap to pay with the card.
 tags:
   - Benefits
+outlet: "Cal-ITP"
 ---
 
 Cal-ITP Benefits is initially available for people 65 and older who ride Monterey-Salinas Transit (MST) buses, with plans to
