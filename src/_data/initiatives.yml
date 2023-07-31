@@ -16,6 +16,7 @@
       target='_blank'>Monterey-Salinas Transit</a>, Cal-ITP and partners like Visa
       demonstrated how a transit provider that has traditionally used cash and agency-specific
       fare cards can accept contactless bank card payments like any other merchant. "
+    - "For more information about the products available to support this initiative, please visit the California Mobility Marketplace."
   button:
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
@@ -45,6 +46,7 @@
   button:
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
+    class: d-none
   class: --calitp-red-5
 - tag: GTFS
   slug: gtfs
@@ -67,4 +69,5 @@
   button:
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
+    class: d-none
   class: --calitp-purple-4
