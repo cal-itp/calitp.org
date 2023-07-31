@@ -1,8 +1,8 @@
 ---
 date: "2022-10-14T17:00:00-07:00"
-title: South Carolina transit agency taps California’s contracts for competively priced contactless fare payment system
+title: South Carolina transit agency taps California’s contracts for competitively priced contactless fare payment system
 heading: |-
-  South Carolina transit agency taps California’s contracts for competively priced contactless fare payment system
+  South Carolina transit agency taps California’s contracts for competitively priced contactless fare payment system
 lead: |-
   Coast RTA leverages California’s approved vendors for a modern fare system that accepts riders’ mobile wallets and bank
   cards—including the free Cash App Card, a Visa debit card for all riders that provides unbanked riders with a financial account
