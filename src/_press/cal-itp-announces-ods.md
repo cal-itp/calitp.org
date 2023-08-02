@@ -9,6 +9,7 @@ intro: |-
   information and extends it to include data about personnel, scheduled maintenance, and non-revenue service.
 tags:
   - GTFS
+outlet: "Cal-ITP"
 ---
 
 The ODS specification is a product of the Operational Data Standard Working Group, a coalition of more than 40 transit
