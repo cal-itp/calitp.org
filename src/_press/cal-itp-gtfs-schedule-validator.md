@@ -4,5 +4,5 @@ title: New web tool makes GTFS validation easier for transit agency producers an
 external: https://mobilitydata.org/new-web-based-version-of-gtfs-schedule-validator-released/
 tags:
   - GTFS
-outlet: "MobilityData.org"
+outlet: "Mobility Data"
 ---
