@@ -2,3 +2,4 @@
 .bundle
 .netlify
 _site
+.DS_Store

@@ -1,0 +1,52 @@
+---
+layout: default
+permalink: /press
+---
+
+{% include clipped.html %}
+
+<div class="row justify-content-center">
+  <div class="clipped background-calitp-blue rhombus-1 col-11 col-md-10 mt-4 mt-md-5 mb-4 py-4 py-md-5 px-4 px-md-0">
+    <div class="offset-md-2 col-md-8 py-3 py-md-5 px-2 px-md-2">
+      <h1 class="text-white mb-2">Press</h1>
+      <p class="text-white mb-3 pb-3">Below you’ll find news about Cal-ITP and our initiatives, including press releases and media coverage about new launches and project milestones. Interested in getting in touch? Reach out to us at <a
+      rel="noreferrer"
+      target="_blank"
+      class="fw-bolder text-white"
+      href="mailto:hello@calitp.org">hello@calitp.org</a>.</span></p>
+      {% include pills.html tags=site.data.press_tags %}
+    </div>
+  </div>
+</div>
+
+<section class="row justify-content-center" id="press">
+  <div class="col-10">
+    <div class="offset-md-2 col-md-8 mt-5 mb-5 pb-5">
+      <div class="tab-content" id="pills-tabContent">
+        {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+        {% assign items = site.press | reverse %}
+        <div
+        class="tab-pane fade active show"
+        id="pills-all"
+        role="tabpanel"
+        tabindex="0">
+        {% include articles.html items=items %}
+        </div>
+        {% for tag in site.data.press_tags %}
+          {% assign items = site.press | reverse | where_exp: "item", "item.tags contains tag.name" %}
+          <div
+            class="tab-pane fade"
+            id="pills-{{ tag.id }}"
+            role="tabpanel"
+            aria-labelledby="pills-{{ tag.id }}-tab"
+            tabindex="0">
+          {% include articles.html items=items %}
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/scripts/pill-behavior.js"></script>

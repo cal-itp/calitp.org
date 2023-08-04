@@ -13,7 +13,7 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'dependencies') # See https://git.io/JsVv1
     steps:
       - name: Checkout Pull Request Branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: true
@@ -21,7 +21,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
+          ruby-version: 3.1
           bundler-cache: true
 
       - name: Build Pull Request Version of Website
@@ -31,9 +31,9 @@ jobs:
           mv _site _site-pr
 
       - name: Checkout Default Branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
-          ref: core
+          ref: staging
           clean: false
           submodules: true
 
@@ -70,7 +70,7 @@ jobs:
           echo "::set-output name=pr-comment::$PR_COMMENT"
 
       - name: Comment on the Pull Request
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: ${{ steps.site-diff.outputs.pr-comment }}

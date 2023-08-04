@@ -1,0 +1,73 @@
+- tag: Contactless Payments
+  slug: contactless-payments
+  id: enabling-contactless-payment
+  active: "show active"
+  headline: Enabling contactless payments
+  image:
+    src: images/enabling-contactless-payment.png
+    alt: "A trio of images, from left to right: a contactless-enabled bank card, a
+      mobile wallet on a smartphone, and a mobile wallet on a smartwatch"
+    width: "78"
+  paragraphs:
+    - "Adding a contactless payment reader to a bus or train means customers can quickly
+      and easily tap to pay as they board with the bank card or smartphone that’s already
+      in their pocket—just like they’d tap to buy a coffee."
+    - "Starting with <a class='text-white' href='https://mst.org/news_items/monterey-salinas-transit-announces-launch-of-contactless-fare-payment-demonstration' rel='noreferrer'
+      target='_blank'>Monterey-Salinas Transit</a>, Cal-ITP and partners like Visa
+      demonstrated how a transit provider that has traditionally used cash and agency-specific
+      fare cards can accept contactless bank card payments like any other merchant. "
+    - "For more information about the products available to support this initiative, please visit the California Mobility Marketplace."
+  button:
+    text: Explore Mobility Marketplace
+    url: https://camobilitymarketplace.org
+  class: --calitp-primary-blue
+- tag: Benefits
+  slug: benefits
+  id: automating-customer-discounts
+  active: ""
+  headline: Automating customer discounts
+  image:
+    src: images/automating-customer-discounts.png
+    alt: Checking a state-issued identification
+    width: "78"
+  paragraphs:
+    - "Our <a class='text-white' rel='noreferrer' target='_blank' href='https://benefits.calitp.org'>Cal-ITP
+      Benefits</a> web application streamlines the process for transit riders to instantly
+      qualify for and receive discounts, starting with <a class='text-white' rel='noreferrer' target='_blank'
+      href='https://mst.org/news_items/monterey-salinas-transit-mst-announces-discount-contactless-fares-for-both-local-and-visiting-riders-65-with-launch-of-new-benefits-eligibility-verification-website'>Monterey-Salinas
+      Transit</a> (MST), which offers a half-price Senior Fare. Now older adults (65+)
+      who are able to <a class='text-white' rel='noreferrer' href='https://login.gov/help/verify-your-identity/how-to-verify-your-identity/#requirements-for-identity-verification'
+      target='_blank'>electronically verify their identity</a> are able to access MST’s
+      reduced fares without the hassle of paperwork."
+    - "We worked with state partners on this product launch, and next we’re working to
+      bring youth, lower-income riders, veterans, people with disabilities, and others
+      the same instant access to free or reduced fares across all California transit
+      providers, without having to prove eligibility to each agency."
+  button:
+    text: Explore Mobility Marketplace
+    url: https://camobilitymarketplace.org
+    class: d-none
+  class: --calitp-red-5
+- tag: GTFS
+  slug: gtfs
+  id: standardizing-trip-quality
+  active: ""
+  headline: Standardizing information for easy trip planning
+  image:
+    src: images/standardizing-trip-quality.png
+    alt: A bus that transmits real-time arrival and departure information
+    width: "78"
+  paragraphs:
+    - "Cal-ITP is helping transit providers remove the guesswork for riders wondering
+      when the next bus or train will arrive or if they’ll make their connection by
+      using the General Transit Feed Specification (GTFS)—the global standard for publishing
+      transit information. Cal-ITP developed <a class='text-white' rel='noreferrer' target='_blank' href='https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines'>California
+      Minimum GTFS Guidelines</a> and is working to ensure statewide GTFS schedule/static
+      coverage and GTFS Realtime. The Cal-ITP team will support transit providers by
+      assessing their systems and providing technical assistance so riders can easily
+      access complete, accurate, consistent, and timely mobility data for their journey."
+  button:
+    text: Explore Mobility Marketplace
+    url: https://camobilitymarketplace.org
+    class: d-none
+  class: --calitp-purple-4
