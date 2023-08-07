@@ -63,7 +63,7 @@
         <div class="row px-2 px-md-0">
           <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="small-caps text-white mb-3">Recent News</h4>
-            <div class="tab-list">
+            <div class="tab-list pb-2">
               {% assign all_press = site.press | reverse %}
               {% for press in all_press %}
                 {% assign url = press.url %}
@@ -87,7 +87,7 @@
         <div class="row px-2 px-md-0">
           <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="small-caps text-white mb-3">Resources</h4>
-            <div class="tab-list">
+            <div class="tab-list pb-2">
               {% assign all_resources = site.resources | reverse %}
               {% for resource in all_resources %}
                 {% assign url = resource.asset %}
