@@ -193,7 +193,8 @@ footer a:hover {
   max-width: 441px;
 }
 
-#details .tab-content .tab-list article:nth-child(n + 3) {
+.tab-list .press-item:nth-child(n + 4),
+.tab-list .resource:nth-child(n + 4) {
   display: none;
 }
 
