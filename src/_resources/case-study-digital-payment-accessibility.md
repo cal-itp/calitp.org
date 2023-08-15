@@ -4,5 +4,5 @@ title: "Case study: Digital payment accounts appeal to cash-based transit custom
 asset: Cal-ITP.Contactless.Payments.Digital.Account.CaseStudy.2023.pdf
 category: Case studies
 tags:
-  - Contactless payment
+  - Contactless Payments
 ---
