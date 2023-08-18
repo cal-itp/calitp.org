@@ -1,5 +1,5 @@
 ---
-date: "2023-08-18T17:00:00-07:00"
+date: "2023-08-18T00:00:00-07:00"
 title: Four Northern California transit agencies join forces to buy contactless open-loop fare payment systems off of California’s purchasing agreements
 heading: Four Northern California transit agencies join forces to buy contactless open-loop fare payment systems off of California’s purchasing agreements
 lead: |-
