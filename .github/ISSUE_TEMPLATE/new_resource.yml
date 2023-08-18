@@ -5,6 +5,17 @@ labels:
   - content
   - resources
 body:
+  - type: dropdown
+    id: approval
+    validations:
+      required: true
+    attributes:
+      label: Approved?
+      description: Has your content (document and headline) been approved by @esquared415? If No, please allow 3-5 business days for review by Erika.
+      multiple: false
+      options:
+        - No
+        - Yes
   - type: input
     id: title
     attributes:
