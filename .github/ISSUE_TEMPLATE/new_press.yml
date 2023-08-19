@@ -14,8 +14,8 @@ body:
       description: Has your content (document and headline) been approved by @esquared415? If No, please allow 3-5 business days for review by Erika.
       multiple: false
       options:
-        - No
-        - Yes
+        - 'No'
+        - 'Yes'
   - type: input
     id: title
     validations:
