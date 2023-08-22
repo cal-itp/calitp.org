@@ -16,30 +16,34 @@
   {%- assign description = site.description -%}
 {%- endif -%}
 {%- assign description = description | normalize_whitespace -%}
-
+{%- assign is_article = page.date and page.tags -%}
 <meta charset="utf-8" />
 <title>{{ title }}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="{{ description }}" />
-{%- if page.date and page.tags -%}
+{%- if is_article -%}
   {%- for tag in page.tags -%}
     <meta property="article:tag" content="{{ tag }}" />
   {%- endfor -%}
   <meta property="article:published_time" content="{{ page.date | date: "%FT%T%z" }}" />
+{%- endif -%}
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="{{ site.url | absolute_url }}/images/og-image.png" />
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page_title }}" />
+{%- if is_article -%}
   <meta property="og:type" content="article">
 {%- else -%}
   <meta property="og:type" content="website">
 {%- endif -%}
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ page_title }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
-<meta property="og:image" content="{{ site.url | absolute_url }}/images/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="@California_ITP">
-<meta name="twitter:description" content="{{description}}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta name="twitter:domain" content="{{ site.domain }}" />
 <meta name="twitter:image" content="{{ site.url | absolute_url }}/images/og-image.png" />
 <meta name="twitter:site" content="@California_ITP">
 <meta name="twitter:title" content="{{ page_title }}" />
