@@ -6,10 +6,12 @@
   {%- assign title = site.title -%}
 {%- endif -%}
 
-{%- if page.description -%}
-  {%- assign description = page.description -%}
+{%- if page.lead -%}
+  {%- assign description = page.lead -%}
 {%- elsif page.intro -%}
   {%- assign description = page.intro -%}
+{%- elsif page.description -%}
+  {%- assign description = page.description -%}
 {%- else -%}
   {%- assign description = site.description -%}
 {%- endif -%}
