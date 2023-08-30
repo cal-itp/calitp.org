@@ -9,13 +9,8 @@
       mobile wallet on a smartphone, and a mobile wallet on a smartwatch"
     width: "78"
   paragraphs:
-    - "Adding a contactless payment reader to a bus or train means customers can quickly
-      and easily tap to pay as they board with the bank card or smartphone that’s already
-      in their pocket—just like they’d tap to buy a coffee."
-    - "Starting with <a class='text-white' href='https://mst.org/news_items/monterey-salinas-transit-announces-launch-of-contactless-fare-payment-demonstration' rel='noreferrer'
-      target='_blank'>Monterey-Salinas Transit</a>, Cal-ITP and partners like Visa
-      demonstrated how a transit provider that has traditionally used cash and agency-specific
-      fare cards can accept contactless bank card payments like any other merchant. "
+    - "Riding transit should be as easy as buying a cup of coffee! Adding a contactless payment reader to a bus or train means customers can quickly and easily tap to pay as they board with the debit or credit card or smartphone that’s already in their pocket—just like they’d tap to buy a coffee."
+    - "Cal-ITP is making it easier for public transit providers to purchase the key hardware and software needed to accept contactless payments through statewide contracts established by the California Department of General Services (DGS). In addition, the Cal-ITP team provides resource materials and technical assistance throughout the process."
     - "For more information about the products available to support this initiative, please visit the California Mobility Marketplace."
   button:
     text: Explore Mobility Marketplace
@@ -61,8 +56,7 @@
     - "Cal-ITP is helping transit providers remove the guesswork for riders wondering
       when the next bus or train will arrive or if they’ll make their connection by
       using the General Transit Feed Specification (GTFS)—the global standard for publishing
-      transit information. Cal-ITP developed <a class='text-white' rel='noreferrer' target='_blank' href='https://dot.ca.gov/cal-itp/california-minimum-general-transit-feed-specification-gtfs-guidelines'>California
-      Minimum GTFS Guidelines</a> and is working to ensure statewide GTFS schedule/static
+      transit information. Cal-ITP developed <a class='text-white' rel='noreferrer' target='_blank' href='https://dot.ca.gov/cal-itp/california-transit-data-guidelines'>California Transit Data Guidelines</a> and is working to ensure statewide GTFS schedule/static
       coverage and GTFS Realtime. The Cal-ITP team will support transit providers by
       assessing their systems and providing technical assistance so riders can easily
       access complete, accurate, consistent, and timely mobility data for their journey."
