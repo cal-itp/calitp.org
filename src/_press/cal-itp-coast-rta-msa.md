@@ -18,7 +18,7 @@ outlet: "Cal-ITP"
 
 Cal-ITP—Caltrans’ California Integrated Travel Project—supported Coast RTA through the process of purchasing open-loop payment
 acceptance devices and fare calculation software from the State of California’s competitively awarded
-[Master Service Agreements](https://www.calitp.org/assets/Contactless.Payments.MSA.pdf?utm_source=Coast+RTA+Press+Release&utm_medium=pr+email+social) (MSAs),
+[Master Service Agreements](/press/cal-itp-dgs-rfp-msa?utm_source=Coast+RTA+Press+Release&utm_medium=pr+email+social) (MSAs),
 contracts that allow U.S. transit agencies to purchase hardware and software services directly from vendors without further
 competitive bidding.
 

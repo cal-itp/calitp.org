@@ -101,9 +101,7 @@ air quality in the United States. Valley CAN seeks to improve public health and 
 disadvantaged communities by qualifying low-income residents for multiple incentive-based
 programs, including vehicle repair and replacement programs that aim to reduce air pollution,
 address climate issues, and reduce transportation costs. In 10 years, Valley CAN has helped
-110,000 valley families repair and replace cars.
-
-[valleycan.org](valleycan.org)
+110,000 valley families repair and replace cars. [valleycan.org](valleycan.org)
 
 **GO-Biz**
 
@@ -112,9 +110,7 @@ California’s leader for job growth, economic development, and business assista
 Biz has a team dedicated to cultivating opportunities that accelerate zero-emission vehicle
 (ZEV) market growth to meet the state’s ambitious climate goals and deliver benefits to all
 Californians. You can follow the GO-Biz ZEV team’s efforts by [subscribing to their newsletter](https://business.ca.gov/zev-newsletter-sign-up/),
-following [@CAGoBiz](https://twitter.com/cagobiz) on Twitter, and searching for #GOBiz across social media platforms.
-
-[business.ca.gov/zev](business.ca.gov/zev)
+following [@CAGoBiz](https://twitter.com/cagobiz) on Twitter, and searching for #GOBiz across social media platforms. [business.ca.gov/zev](business.ca.gov/zev)
 
 **CARB**
 
