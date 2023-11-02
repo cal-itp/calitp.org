@@ -1,8 +1,12 @@
 {% if item.category %}
-  {% assign url = item.asset %}
-  {% unless url contains "https://" %}
-    {% assign url = "/assets/" | append: url %}
-  {% endunless %}
+  {% if item.asset %}
+    {% assign url = item.asset %}
+    {% unless url contains "https://" %}
+      {% assign url = "/assets/" | append: url %}
+    {% endunless %}
+  {% else %}
+    {% assign url = item.url %}
+  {% endif %}
 {% else %}
   {% assign url = item.url %}
   {% if item.external %}
