@@ -1,6 +1,6 @@
 ---
 date: "2023-08-01T17:00:00-07:00"
-title: "Fact Sheet: Merchant Category Codes in Mobility"
+title: "Fact sheet: Merchant category codes in mobility"
 category: Fact sheets & overviews
 tags:
   - Contactless Payments
