@@ -24,24 +24,17 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: file-name-check-1
-    attributes: Did you start the filename with `Cal-ITP`?
-    options:
-      - label: Yes
-        required: true
-    - type: checkboxes
-    id: file-name-check-2
-    attributes: There are no spaces between words in the filename. The only characters in the filename are: letters, numbers, `-`, `.` and `_`.
-    options:
-      - label: Yes
-        required: true
-    - type: checkboxes
-    id: file-name-check-3
-    attributes:  There are no revision dates in filenames. Limit usage of revision numbers unless commonly understood and expected by audience.
-    description: Avoid: `report-june-2024.pdf`, `file-v1.3.pdf` (random files with versions devoid of context). OK: `GTFS-guidelines-v3.pdf` (v3 of the GTFS Guidelines, a well-know and ever-evolving document)
-    options:
-      - label: Yes
-        required: true
+    id: cat-preferences
+    attributes:
+      label: Is the document correctly named and formatted?
+      description: Ensure each of the following requirements are met for your file.
+      options:
+        - label: Did you start the filename with `Cal-ITP`?
+          required: true
+        - label: Did you remove all spaces between words in the filename? The only acceptable characters in the filename are letters, numbers, `-`, `.` and `_`.
+          required: true
+        - label: Did you ensure there are no revision dates or numbers in the filename. Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidlines-v3.pdf`, as version 3 is an official version number.
+          required: true
   - type: input
     id: link
     attributes:
@@ -77,6 +70,7 @@ body:
       description: What year did this resource get published?
       multiple: false
       options:
+        - 2024
         - 2023
         - 2022
         - 2021
