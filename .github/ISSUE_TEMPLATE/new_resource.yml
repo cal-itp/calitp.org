@@ -23,6 +23,25 @@ body:
       description: The title is used in list views on the home page and [https://calitp.org/resources](https://calitp.org/resources)
     validations:
       required: true
+  - type: checkboxes
+    id: file-name-check-1
+    attributes: Did you start the filename with `Cal-ITP`?
+    options:
+      - label: Yes
+        required: true
+    - type: checkboxes
+    id: file-name-check-2
+    attributes: There are no spaces between words in the filename. The only characters in the filename are: letters, numbers, `-`, `.` and `_`.
+    options:
+      - label: Yes
+        required: true
+    - type: checkboxes
+    id: file-name-check-3
+    attributes:  There are no revision dates in filenames. Limit usage of revision numbers unless commonly understood and expected by audience.
+    description: Avoid: `report-june-2024.pdf`, `file-v1.3.pdf` (random files with versions devoid of context). OK: `GTFS-guidelines-v3.pdf` (v3 of the GTFS Guidelines, a well-know and ever-evolving document)
+    options:
+      - label: Yes
+        required: true
   - type: input
     id: link
     attributes:
