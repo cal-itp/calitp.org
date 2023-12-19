@@ -33,7 +33,7 @@ body:
           required: true
         - label: Did you remove all spaces between words in the filename? The only acceptable characters in the filename are letters, numbers, `-`, `.` and `_`.
           required: true
-        - label: Did you ensure there are no revision dates or numbers in the filename. Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidlines-v3.pdf`, as version 3 is an official version number.
+        - label: Did you ensure there are no revision dates or numbers in the filename? Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidlines-v3.pdf`, as version 3 is an official version number.
           required: true
   - type: input
     id: link
