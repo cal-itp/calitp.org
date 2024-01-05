@@ -35,6 +35,8 @@ body:
           required: true
         - label: Did you ensure there are no revision dates or numbers in the filename? Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidlines-v3.pdf`, as version 3 is an official version number.
           required: true
+        - label: Did you run this PDF through Adobe Acrobat's Accessibility Checker, and ensure the PDF passes all accessibility checks?
+          required: true
   - type: input
     id: link
     attributes:
