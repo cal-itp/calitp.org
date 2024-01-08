@@ -23,6 +23,20 @@ body:
       description: The title is used in list views on the home page and [https://calitp.org/resources](https://calitp.org/resources)
     validations:
       required: true
+  - type: checkboxes
+    id: cat-preferences
+    attributes:
+      label: Is the document correctly named and formatted?
+      description: Ensure each of the following requirements are met for your file.
+      options:
+        - label: Did you start the filename with `Cal-ITP`?
+          required: true
+        - label: Did you remove all spaces between words in the filename? The only acceptable characters in the filename are letters, numbers, `-`, `.` and `_`.
+          required: true
+        - label: Did you ensure there are no revision dates or numbers in the filename? Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidlines-v3.pdf`, as version 3 is an official version number.
+          required: true
+        - label: Did you run this PDF through Adobe Acrobat's Accessibility Checker, and ensure the PDF passes all accessibility checks?
+          required: true
   - type: input
     id: link
     attributes:
@@ -58,6 +72,7 @@ body:
       description: What year did this resource get published?
       multiple: false
       options:
+        - 2024
         - 2023
         - 2022
         - 2021
