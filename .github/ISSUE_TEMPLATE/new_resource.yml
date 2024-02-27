@@ -91,7 +91,7 @@ body:
     attributes:
       label: Tag
       description: What tag is this resource in?
-      multiple: false
+      multiple: true
       options:
         - Contactless payments
         - Benefits
