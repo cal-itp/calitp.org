@@ -11,18 +11,10 @@ body:
       required: true
     attributes:
       label: Approved?
-      description: Has your content (document and headline) been approved by @esquared415? If No, please allow 3-5 business days for review by Erika.
-      multiple: false
+      description: Has your content (document and headline) been approved been approved for publication? If not, please confirm approval in #comms-and-content.
       options:
-        - 'No'
-        - 'Yes'
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: The title is used in list views on the home page and [https://calitp.org/resources](https://calitp.org/resources)
-    validations:
-      required: true
+        - "No"
+        - "Yes"
   - type: checkboxes
     id: cat-preferences
     attributes:
@@ -35,37 +27,8 @@ body:
           required: true
         - label: Did you ensure there are no revision dates or numbers in the filename? Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidlines-v3.pdf`, as version 3 is an official version number.
           required: true
-        - label: Did you run this PDF through Adobe Acrobat's Accessibility Checker, and ensure the PDF passes all accessibility checks?
+        - label: Did you run this PDF through Adobe Acrobat's Accessibility Checker, and ensure the PDF passes all accessibility checks? Please review [this checklist](https://docs.google.com/document/d/1CkXfHDuJ4fR2wikGrsgyt4Dib6YdY3AhFmYtsk4kQXg/edit#heading=h.ecbzu7qezn59) to get more information on accessibility and how to run accessibility checks.
           required: true
-  - type: input
-    id: link
-    attributes:
-      label: Asset URL
-      description: The URL of the resource
-      placeholder: ex. link to a PDF from Google Drive
-    validations:
-      required: true
-  - type: dropdown
-    attributes:
-      label: Category
-      description: What category is this resource in?
-      multiple: false
-      options:
-        - Case studies
-        - Fact sheets & overviews
-    validations:
-      required: true
-  - type: dropdown
-    attributes:
-      label: Tag
-      description: What tag is this resource in?
-      multiple: false
-      options:
-        - Contactless payments
-        - Benefits
-        - GTFS
-    validations:
-      required: true
   - type: dropdown
     attributes:
       label: Date - Year
@@ -97,5 +60,41 @@ body:
         - "10"
         - "11"
         - "12"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: The title is used in list views on the home page and [https://calitp.org/resources](https://calitp.org/resources)
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Asset URL
+      description: The URL of the resource
+      placeholder: ex. link to a PDF from Google Drive
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Category
+      description: What category is this resource in?
+      multiple: false
+      options:
+        - Case studies
+        - Fact sheets & overviews
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Tag
+      description: What tag is this resource in?
+      multiple: false
+      options:
+        - Contactless payments
+        - Benefits
+        - GTFS
     validations:
       required: true
