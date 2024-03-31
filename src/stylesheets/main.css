@@ -202,6 +202,42 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.press-release img {
+  display: block;
+  max-width: 100%;
+}
+
+.press-release figcaption p {
+  font-size: 0.875em;
+  font-style: italic;
+  text-align: center;
+}
+
+.press-release sup a {
+  font-size: 1em;
+  margin: 0 0.15em;
+}
+
+.footnotes li:target {
+  animation: footnoteFade 5s 1;
+}
+
+*[role="doc-noteref"],
+*[role="doc-endnote"] {
+  /* Magic calculation that is the header's height and some extra padding */
+  scroll-margin-top: calc(110px + 20px);
+}
+
+@keyframes footnoteFade {
+  0% {
+    background-color: rgb(255 255 185 / 1);
+  }
+
+  100% {
+    background-color: rgb(255 255 185 / 0);
+  }
+}
+
 /* Home Page */
 
 .hero-header {

@@ -26,9 +26,12 @@ There are around 6 million unbanked and 18.5 million underbanked households in t
 2. **Lack of trust in banks:** Some people do not trust banks due to previous experience or because they perceive them as untrustworthy.
 3. **Privacy concerns** associated with being banked.
 
-![](./images/resources/fact-sheet-minimum-account-requirements-for-transit-riders.image-01.jpg)
-
-Unbanked households' Reasons for not Having a Bank Account, 2021 (%)[^4]
+<figure>
+  <img src="/images/resources/fact-sheet-minimum-account-requirements-for-transit-riders.image-01.jpg" alt="Bar chart displaying the reasons for households not having bank accounts">
+  <figcaption markdown="1">
+  Unbanked households' Reasons for not Having a Bank Account, 2021 (%)[^4]
+  </figcaption>
+</figure>
 
 Additionally, older FDIC surveys of un and underbanked households also cited bank locations as being a more prevalent issue. However, with the rise of online and neobanking offerings, this is becoming less of a barrier with time.
 
