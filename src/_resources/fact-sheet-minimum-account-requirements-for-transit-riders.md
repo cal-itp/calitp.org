@@ -1,7 +1,7 @@
 ---
 date: "2023-08-01T17:00:00-07:00"
 title: "Fact Sheet: Minimum Account Requirements for Transit Riders"
-category: Case studies
+category: Fact sheets & overviews
 tags:
   - Contactless Payments
 ---
