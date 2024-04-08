@@ -3,7 +3,7 @@ date: "2023-10-01T17:00:00-07:00"
 title: "Fact sheet: Enhancing the transit experience with Bank On accounts"
 category: Fact sheets & overviews
 tags:
-  - Contactless payments
+  - Contactless Payments
 ---
 
 The California Integrated Travel Project (Cal-ITP), in its continuous effort to improve transit experiences for all Californians, is excited to introduce transit agencies to the Bank On Initiative. Bank On accounts, specifically designed to serve the unbanked and underbanked, are bank and credit union accounts that can be used on transit along with any other type of everyday purchase.

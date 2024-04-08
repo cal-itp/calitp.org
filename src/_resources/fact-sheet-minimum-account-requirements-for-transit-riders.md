@@ -1,9 +1,9 @@
 ---
 date: "2023-08-01T17:00:00-07:00"
 title: "Fact Sheet: Minimum Account Requirements for Transit Riders"
-category: Case studies
+category: Fact sheets & overviews
 tags:
-  - Contactless payments
+  - Contactless Payments
 ---
 
 This memo summarizes barriers to getting banked in California, features of accessible banking, and highlights traditional and non-traditional banking products available to transit riders. These digital payment options are being highlighted by the California Integrated Travel Project (Cal-ITP) and/or transit providers as an option for customers who wish to pay using contactless options but do not currently have one.

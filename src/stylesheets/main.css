@@ -218,6 +218,24 @@ footer a:hover {
   margin: 0 0.15em;
 }
 
+.footnotes ol {
+  padding-left: 1rem;
+}
+
+.footnotes ol::before {
+  content: "Footnotes";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: -1rem;
+}
+
+.footnotes a,
+.footnotes li,
+.footnotes p {
+  font-size: 0.85rem;
+}
+
 .footnotes li:target {
   animation: footnoteFade 5s 1;
 }
