@@ -3,7 +3,7 @@ date: "2023-09-01T17:00:00-07:00"
 title: "Fact Sheet: Improving Financial Access through Secured Credit Cards"
 category: Fact sheets & overviews
 tags:
-  - Contactless payments
+  - Contactless Payments
 ---
 
 To advance financial inclusion, numerous stakeholders in the payments and credit card sector have been offering solutions that allow individuals to tap into the broader financial ecosystem. One of those instruments is the secured credit card. This tool not only facilitates users in (re) building their credit profiles but also enables them to gradually qualify for a myriad of other financial advantages, including lower interest rates and significant purchases. This document provides an overview of the multifaceted benefits of such cards, their main characteristics, evidence of their success, and the potential synergies with the Cal-ITP and CARB initiatives.
