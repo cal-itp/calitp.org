@@ -4,5 +4,5 @@ title: "Fact sheet: Prepaid card recommendations"
 asset: "Cal-ITP.Prepaid.Card.Recommendations.pdf"
 category: Fact sheets & overviews
 tags:
-  - Contactless payments
+  - Contactless Payments
 ---
