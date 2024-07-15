@@ -121,7 +121,7 @@ a {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 1px;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
 }
 
 a:hover {
