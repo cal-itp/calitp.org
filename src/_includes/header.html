@@ -19,13 +19,8 @@
       <div class="navbar-collapse collapse justify-content-end" id="mainNav">
         <ul class="navbar-nav mb-0">
           <li class="nav-item">
-            <a class="h4 mb-0 nav-link d-block" href="{% link resources.html %}">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="h4 mb-0 nav-link d-block" href="{% link press.html %}">Press</a>
-          </li>
-          <li class="nav-item">
-            <a class="h4 mb-0 nav-link d-block" href="/#reachout">Reach out</a>
+            {% include link_repeater.html menu_items=site.navigation.header anchor_class="dropdown-item h4 mb-0 nav-link d-block"
+            %}
           </li>
         </ul>
       </div>
