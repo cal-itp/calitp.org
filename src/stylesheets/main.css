@@ -166,11 +166,10 @@ a:hover {
   --bs-nav-link-color: var(--bs-body-color);
   --bs-navbar-active-color: var(--calitp-primary-blue);
   --bs-nav-link-hover-color: var(--calitp-primary-blue);
-  gap: 32px;
 }
 
 header .nav-link {
-  padding: 31.4px 0 31.4px 0;
+  padding: 2rem 0;
 }
 
 header .nav-link[aria-current="page"] {
@@ -379,14 +378,15 @@ footer a:hover {
   }
 
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 4rem;
-    --bs-navbar-brand-padding-y: 4rem;
+    --bs-navbar-brand-padding-x: 2rem;
+    --bs-navbar-brand-padding-y: 2rem;
   }
 
   .navbar-nav {
     --bs-nav-link-color: var(--bs-body-color);
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
+    gap: 2rem;
   }
 
   main.container {
@@ -421,8 +421,8 @@ footer a:hover {
 
 @media (max-width: 992px) {
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 32px;
-    --bs-navbar-brand-padding-y: 32px;
+    --bs-navbar-brand-padding-x: 2rem;
+    --bs-navbar-brand-padding-y: 2rem;
   }
 
   #mainNav {
