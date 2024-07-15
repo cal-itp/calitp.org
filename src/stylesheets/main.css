@@ -176,12 +176,10 @@ header .nav-link {
 header .nav-link[aria-current="page"] {
   color: var(--calitp-primary-blue);
   background-color: var(--calitp-background-light-blue);
-  /* border-radius: 3px; */
 }
 
 header .nav-link:hover {
   background-color: var(--calitp-background-light-blue);
-  /* border-radius: 3px; */
 }
 
 main.container {
