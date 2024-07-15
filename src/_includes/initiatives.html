@@ -35,7 +35,7 @@
 <div class="tab-content" id="pills-tabContent">
   {% for initiative in site.data.initiatives %}
   <div
-    class="tab-pane fade {{ initiative.active }}"
+    class="tab-pane fade scroll-link {{ initiative.active }}"
     id="pills-{{ initiative.slug }}"
     role="tabpanel"
     aria-labelledby="pills-{{ initiative.slug }}-tab"
@@ -116,3 +116,5 @@
   </div>
   {% endfor %}
 </div>
+
+<script src="/scripts/initiatives.js"></script>
