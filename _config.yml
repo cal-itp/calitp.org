@@ -27,7 +27,7 @@ navigation:
     - name: Press
       url: /press
     - name: Reach out
-      url: /#reachout
+      url: mailto:hello@calitp.org
 source: ./src
 timezone: America/Los_Angeles
 title: "Cal-ITP: California Integrated Travel Project"
