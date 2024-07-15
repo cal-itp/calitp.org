@@ -166,6 +166,7 @@ a:hover {
   --bs-nav-link-color: var(--bs-body-color);
   --bs-navbar-active-color: var(--calitp-primary-blue);
   --bs-nav-link-hover-color: var(--calitp-primary-blue);
+  gap: 32px;
 }
 
 header .nav-link {
@@ -175,11 +176,12 @@ header .nav-link {
 header .nav-link[aria-current="page"] {
   color: var(--calitp-primary-blue);
   background-color: var(--calitp-background-light-blue);
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 header .nav-link:hover {
   background-color: var(--calitp-background-light-blue);
+  /* border-radius: 3px; */
 }
 
 main.container {
