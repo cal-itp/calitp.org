@@ -379,8 +379,8 @@ footer a:hover {
   }
 
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 32px;
-    --bs-navbar-brand-padding-y: 32px;
+    --bs-navbar-brand-padding-x: 4rem;
+    --bs-navbar-brand-padding-y: 4rem;
   }
 
   .navbar-nav {
