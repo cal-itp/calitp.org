@@ -172,7 +172,7 @@ header .nav-link {
   padding: 31.4px 0 31.4px 0;
 }
 
-.dropdown-item[aria-current="page"] {
+header .nav-link[aria-current="page"] {
   color: var(--calitp-primary-blue);
   background-color: var(--calitp-background-light-blue);
   border-radius: 3px;
