@@ -55,8 +55,3 @@ function hideAllTab() {
   allTab.classList.remove("show");
   allTab.classList.remove("active");
 }
-
-if (window.location.hash.startsWith("#pills")) {
-  const triggerEl = document.querySelector("button[data-bs-target='" + window.location.hash + "']");
-  bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
-}
