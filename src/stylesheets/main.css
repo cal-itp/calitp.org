@@ -329,44 +329,24 @@ footer a:hover {
 }
 
 .clipped,
-.clipped-start,
-.clipped-end {
+.clipped-contact-start,
+.clipped-contact-end,
+.clipped-stat-start,
+.clipped-stat-end,
+.clipped-stat-start-2,
+.clipped-stat-end-2 {
   -webkit-clip-path: none;
   clip-path: none;
   border-radius: 1.25rem;
 }
 
-.clipped-start,
-.clipped-end {
-  min-height: 100%;
-}
-
-.clipped-stat-start {
-  min-height: 100%;
-  -webkit-clip-path: url(#my-clip-path-1);
-  clip-path: url(#my-clip-path-1);
-  border-radius: 1.25rem;
-}
-
-.clipped-stat-end {
-  min-height: 100%;
-  -webkit-clip-path: url(#my-clip-path-2);
-  clip-path: url(#my-clip-path-2);
-  border-radius: 1.25rem;
-}
-
-.clipped-stat-start-2 {
-  min-height: 100%;
-  -webkit-clip-path: url(#my-clip-path-3);
-  clip-path: url(#my-clip-path-3);
-  border-radius: 1.25rem;
-}
-
+.clipped-contact-start,
+.clipped-contact-end,
+.clipped-stat-start,
+.clipped-stat-end,
+.clipped-stat-start-2,
 .clipped-stat-end-2 {
   min-height: 100%;
-  -webkit-clip-path: url(#my-clip-path-4);
-  clip-path: url(#my-clip-path-4);
-  border-radius: 1.25rem;
 }
 
 .mb-28 {
@@ -400,24 +380,52 @@ footer a:hover {
   }
 
   .clipped,
-  .clipped-start,
-  .clipped-end {
+  .clipped-contact-start,
+  .clipped-contact-end,
+  .clipped-stat-start,
+  .clipped-stat-end,
+  .clipped-stat-start-2,
+  .clipped-stat-end-2 {
     border-radius: 0;
   }
 
   .clipped {
-    -webkit-clip-path: url(#my-clip-path);
-    clip-path: url(#my-clip-path);
+    -webkit-clip-path: url(#path-header);
+    clip-path: url(#path-header);
   }
 
-  .clipped-start {
-    -webkit-clip-path: url(#my-clip-path-start);
-    clip-path: url(#my-clip-path-start);
+  .clipped-contact-start {
+    -webkit-clip-path: url(#path-contact-start);
+    clip-path: url(#path-contact-start);
   }
 
-  .clipped-end {
-    -webkit-clip-path: url(#my-clip-path-end);
-    clip-path: url(#my-clip-path-end);
+  .clipped-contact-end {
+    -webkit-clip-path: url(#path-contact-end);
+    clip-path: url(#path-contact-end);
+  }
+
+  .clipped-stat-start {
+    min-height: 100%;
+    -webkit-clip-path: url(#path-stat-1);
+    clip-path: url(#path-stat-1);
+  }
+
+  .clipped-stat-end {
+    min-height: 100%;
+    -webkit-clip-path: url(#path-stat-2);
+    clip-path: url(#path-stat-2);
+  }
+
+  .clipped-stat-start-2 {
+    min-height: 100%;
+    -webkit-clip-path: url(#path-stat-3);
+    clip-path: url(#path-stat-3);
+  }
+
+  .clipped-stat-end-2 {
+    min-height: 100%;
+    -webkit-clip-path: url(#path-stat-4);
+    clip-path: url(#path-stat-4);
   }
 }
 
