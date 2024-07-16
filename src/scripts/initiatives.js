@@ -9,10 +9,8 @@ window.addEventListener("load", () => {
     });
   });
 
-  if (window.location.hash.startsWith("#pills")) {
-    console.log(window.location.hash);
+  if (window.location.hash.startsWith("#initiatives")) {
     const triggerEl = document.querySelector("button[data-bs-target='" + window.location.hash + "']");
-    console.log(triggerEl);
     bootstrap.Tab.getInstance(triggerEl).show();
   }
 });

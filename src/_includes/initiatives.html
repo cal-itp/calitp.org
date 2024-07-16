@@ -18,10 +18,10 @@
           class="nav-link {{ initiative.active }}"
           id="pills-{{ initiative.slug }}-tab"
           data-bs-toggle="pill"
-          data-bs-target="#pills-{{ initiative.slug }}"
+          data-bs-target="#initiatives-{{ initiative.slug }}"
           type="button"
           role="tab"
-          aria-controls="pills-{{ initiative.slug }}"
+          aria-controls="initiatives-{{ initiative.slug }}"
           aria-selected="true"
         >
           {{ initiative.tag }}
@@ -36,9 +36,9 @@
   {% for initiative in site.data.initiatives %}
   <div
     class="tab-pane fade scroll-link {{ initiative.active }}"
-    id="pills-{{ initiative.slug }}"
+    id="initiatives-{{ initiative.slug }}"
     role="tabpanel"
-    aria-labelledby="pills-{{ initiative.slug }}-tab"
+    aria-labelledby="initiatives-{{ initiative.slug }}-tab"
     tabindex="0"
   >
     <div
