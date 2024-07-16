@@ -341,6 +341,34 @@ footer a:hover {
   min-height: 100%;
 }
 
+.clipped-stat-start {
+  min-height: 100%;
+  -webkit-clip-path: url(#my-clip-path);
+  clip-path: url(#my-clip-path);
+  border-radius: 1.25rem;
+}
+
+.clipped-stat-end {
+  min-height: 100%;
+  -webkit-clip-path: url(#my-clip-path-2);
+  clip-path: url(#my-clip-path-2);
+  border-radius: 1.25rem;
+}
+
+.clipped-stat-start-2 {
+  min-height: 100%;
+  -webkit-clip-path: url(#my-clip-path-3);
+  clip-path: url(#my-clip-path-3);
+  border-radius: 1.25rem;
+}
+
+.clipped-stat-end-2 {
+  min-height: 100%;
+  -webkit-clip-path: url(#my-clip-path-4);
+  clip-path: url(#my-clip-path-4);
+  border-radius: 1.25rem;
+}
+
 .mb-28 {
   margin-bottom: 28px;
 }
