@@ -311,6 +311,10 @@ footer a:hover {
   border-style: solid;
 }
 
+.scroll-link {
+  scroll-margin-top: 240px;
+}
+
 .black-on-white .nav-pills {
   --bs-nav-pills-link-active-color: var(--bs-white);
   --bs-nav-pills-link-active-bg: var(--bs-body-color);
