@@ -343,8 +343,8 @@ footer a:hover {
 
 .clipped-stat-start {
   min-height: 100%;
-  -webkit-clip-path: url(#my-clip-path);
-  clip-path: url(#my-clip-path);
+  -webkit-clip-path: url(#my-clip-path-1);
+  clip-path: url(#my-clip-path-1);
   border-radius: 1.25rem;
 }
 
