@@ -2,10 +2,7 @@
   <nav class="navbar navbar-expand-lg fixed-top bg-white" aria-label="Navigation">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img
-          src="/images/cal-itp-logo.svg"
-          alt="Cal-ITP: California Integrated Travel Project"
-          width="119" />
+        <img src="/images/cal-itp-logo.svg" alt="Cal-ITP: California Integrated Travel Project" width="119" />
       </a>
       <button
         class="navbar-toggler collapsed"
@@ -14,24 +11,15 @@
         data-bs-target="#mainNav"
         aria-controls="mainNav"
         aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="navbar-collapse collapse justify-content-end" id="mainNav">
         <ul class="navbar-nav mb-0">
-          <li class="nav-item">
-            <a class="h4 mb-0 nav-link d-block" href="/#about">About the project</a>
-          </li>
-          <li class="nav-item">
-            <a class="h4 mb-0 nav-link d-block" href="{% link resources.html %}">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="h4 mb-0 nav-link d-block" href="{% link press.html %}">Press</a>
-          </li>
-          <li class="nav-item">
-            <a class="h4 mb-0 nav-link d-block" href="/#reachout">Reach out</a>
-          </li>
+          {% include link_repeater.html list_class="nav-item" menu_items=site.navigation.header anchor_class="nav-link h4 mb-0
+          d-block rounded-1" %}
         </ul>
       </div>
     </div>
@@ -42,4 +30,5 @@
   class="d-none d-print-block"
   src="/images/cal-itp-logo.svg"
   alt="Cal-ITP: California Integrated Travel Project"
-  width="119" />
+  width="119"
+/>

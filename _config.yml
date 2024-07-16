@@ -20,6 +20,14 @@ defaults:
 description: A state government initiative, Cal-ITP is making riding by rail and bus simpler and more cost-effective—for California transit providers and riders.
 domain: www.calitp.org
 google_fonts: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700&display=swap"
+navigation:
+  header:
+    - name: Resources
+      url: /resources
+    - name: Press
+      url: /press
+    - name: Reach out
+      url: mailto:hello@calitp.org
 source: ./src
 timezone: America/Los_Angeles
 title: "Cal-ITP: California Integrated Travel Project"

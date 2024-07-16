@@ -18,6 +18,7 @@ body {
   --calitp-primary-blue: rgb(4, 107, 153); /* #046b99 */
   --calitp-primary-dark-blue: rgb(34, 81, 115); /* #225173 */
   --calitp-background-blue: rgb(245, 249, 251); /* #F5F9FB */
+  --calitp-background-light-blue: rgb(223, 242, 242); /* #DFF2F2 */
   --calitp-cyan-1: rgb(213, 238, 245); /* #d5eef5 */
   --calitp-gray-2: rgb(200, 200, 201); /* #C8C8C9 */
   --calitp-green-4: rgb(0, 117, 91); /* #00755b */
@@ -163,11 +164,16 @@ a:hover {
 }
 
 header .nav-link {
-  padding: 31.4px 0 31.4px 0;
+  padding: 2rem 0;
+}
+
+header .nav-link[aria-current="page"] {
+  color: var(--calitp-primary-blue);
+  background-color: var(--calitp-background-light-blue);
 }
 
 header .nav-link:hover {
-  background-color: var(--calitp-background-blue);
+  background-color: var(--calitp-background-light-blue);
 }
 
 main.container {
@@ -363,14 +369,15 @@ footer a:hover {
   }
 
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 32px;
-    --bs-navbar-brand-padding-y: 32px;
+    --bs-navbar-brand-padding-x: 2rem;
+    --bs-navbar-brand-padding-y: 2rem;
   }
 
   .navbar-nav {
     --bs-nav-link-color: var(--bs-body-color);
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
+    gap: 2rem;
   }
 
   main.container {
@@ -405,8 +412,8 @@ footer a:hover {
 
 @media (max-width: 992px) {
   .navbar-brand {
-    --bs-navbar-brand-padding-x: 32px;
-    --bs-navbar-brand-padding-y: 32px;
+    --bs-navbar-brand-padding-x: 2rem;
+    --bs-navbar-brand-padding-y: 2rem;
   }
 
   #mainNav {
