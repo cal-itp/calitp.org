@@ -377,6 +377,10 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
+  .h1-md {
+    font-size: calc(40rem / 16);
+  }
+
   .navbar {
     --bs-navbar-nav-link-padding-x: 40px;
     --bs-navbar-nav-link-padding-y: 0;
