@@ -351,7 +351,8 @@ footer a:hover {
   border-color: rgba(var(--bs-white-rgb), 0.8);
 }
 
-.clipped,
+.clipped-header,
+.clipped-initiatives,
 .clipped-contact-start,
 .clipped-contact-end,
 .clipped-stat-start,
@@ -406,7 +407,8 @@ footer a:hover {
     line-height: var(--footer-nav-height);
   }
 
-  .clipped,
+  .clipped-header,
+  .clipped-initatives,
   .clipped-contact-start,
   .clipped-contact-end,
   .clipped-stat-start,
@@ -416,7 +418,12 @@ footer a:hover {
     border-radius: 0;
   }
 
-  .clipped {
+  .clipped-initiatives {
+    -webkit-clip-path: url(#path-initiatives);
+    clip-path: url(#path-initiatives);
+  }
+
+  .clipped-header {
     -webkit-clip-path: url(#path-header);
     clip-path: url(#path-header);
   }
