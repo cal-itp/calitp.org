@@ -328,7 +328,8 @@ footer a:hover {
 
 .clipped,
 .clipped-start,
-.clipped-end {
+.clipped-end,
+.clipped-stories-contact {
   -webkit-clip-path: none;
   clip-path: none;
   border-radius: 1.25rem;
@@ -371,7 +372,8 @@ footer a:hover {
 
   .clipped,
   .clipped-start,
-  .clipped-end {
+  .clipped-end,
+  .clipped-stories-contact {
     border-radius: 0;
   }
 
@@ -388,6 +390,11 @@ footer a:hover {
   .clipped-end {
     -webkit-clip-path: url(#my-clip-path-end);
     clip-path: url(#my-clip-path-end);
+  }
+
+  .clipped-stories-contact {
+    -webkit-clip-path: url(#stories-contact-path);
+    clip-path: url(#stories-contact-path);
   }
 }
 
