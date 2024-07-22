@@ -131,6 +131,20 @@ a:hover {
   text-decoration-style: dotted;
 }
 
+figure.quote {
+  border-left: 3px solid var(--calitp-purple-4);
+  padding-left: 2rem;
+}
+
+figure.quote blockquote {
+  font-size: calc(24rem / 16);
+}
+
+figure.quote figcaption {
+  font-size: calc(16rem / 16);
+  font-style: italic;
+}
+
 .navbar {
   --bs-navbar-padding-y: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
