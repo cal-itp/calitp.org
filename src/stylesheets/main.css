@@ -450,6 +450,10 @@ footer a:hover {
     -webkit-clip-path: url(#path-stat-4);
     clip-path: url(#path-stat-4);
   }
+
+  figure.quote blockquote {
+    font-size: calc(24rem / 16);
+  }
 }
 
 @media (max-width: 992px) {
@@ -473,6 +477,10 @@ footer a:hover {
 
   .navbar-nav {
     margin: 0 auto;
+  }
+
+  figure.quote blockquote {
+    font-size: calc(20rem / 16);
   }
 }
 
