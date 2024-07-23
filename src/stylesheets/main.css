@@ -378,6 +378,11 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
+  small,
+  .small {
+    font-size: calc(12rem / 16);
+  }
+
   .h1-md {
     font-size: calc(40rem / 16);
   }
