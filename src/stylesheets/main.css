@@ -410,6 +410,11 @@ footer a:hover {
   figure.quote blockquote {
     font-size: calc(24rem / 16);
   }
+
+  small,
+  .small {
+    font-size: calc(12rem / 16);
+  }
 }
 
 @media (max-width: 992px) {
@@ -437,6 +442,11 @@ footer a:hover {
 
   figure.quote blockquote {
     font-size: calc(20rem / 16);
+  }
+
+  small,
+  .small {
+    font-size: calc(10rem / 16);
   }
 }
 
