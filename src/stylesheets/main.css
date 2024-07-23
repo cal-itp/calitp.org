@@ -14,9 +14,14 @@ body {
   --bs-primary: #045b86;
   --bs-primary-rgb: 4, 91, 134;
   --bs-body-color: rgb(33, 33, 33); /* #212121 */
+  --bs-dark-rgb: 33, 33, 33; /* #212121 */
+  --bs-emphasis-color-rgb: rgb(33, 33, 33); /* #212121 */
   --bs-link-color: rgb(4, 91, 134); /* #045B86, calitp-primary-blue */
+  --bs-link-color-rgb: 4, 91, 134; /* #045B86, calitp-primary-blue */
   --bs-link-hover-color: rgb(4, 72, 105); /* #044869, calitp-primary-dark-blue */
+  --bs-link-hover-color-rgb: 4, 72, 105; /* #044869, calitp-primary-dark-blue */
   --bs-secondary-rgb: 143, 147, 153; /* calitp-gray-3 */
+  --bs-tertiary-color: rgb(96, 101, 107); /* calitp-scales-gray-4 */
   --calitp-primary-blue: rgb(4, 91, 134); /* #045B86 */
   --calitp-primary-dark-blue: rgb(4, 72, 105); /* #044869, , calitp-primary-dark-blue */
   --calitp-background-blue: rgb(245, 249, 251); /* #F5F9FB */
