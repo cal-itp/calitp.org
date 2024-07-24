@@ -328,7 +328,7 @@ footer a:hover {
   border-color: rgba(var(--bs-white-rgb), 0.8);
 }
 
-.clipped,
+.clipped-initiative,
 .clipped-header,
 .clipped-start,
 .clipped-end {
@@ -372,16 +372,16 @@ footer a:hover {
     line-height: var(--footer-nav-height);
   }
 
-  .clipped,
+  .clipped-initiative,
   .clipped-header,
   .clipped-start,
   .clipped-end {
     border-radius: 0;
   }
 
-  .clipped {
-    -webkit-clip-path: url(#my-clip-path);
-    clip-path: url(#my-clip-path);
+  .clipped-initiative {
+    -webkit-clip-path: url(#path-initiative);
+    clip-path: url(#path-initiative);
   }
 
   .clipped-header {
