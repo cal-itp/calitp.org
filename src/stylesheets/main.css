@@ -329,6 +329,7 @@ footer a:hover {
 }
 
 .clipped,
+.clipped-header,
 .clipped-start,
 .clipped-end {
   -webkit-clip-path: none;
@@ -372,6 +373,7 @@ footer a:hover {
   }
 
   .clipped,
+  .clipped-header,
   .clipped-start,
   .clipped-end {
     border-radius: 0;
@@ -380,6 +382,11 @@ footer a:hover {
   .clipped {
     -webkit-clip-path: url(#my-clip-path);
     clip-path: url(#my-clip-path);
+  }
+
+  .clipped-header {
+    -webkit-clip-path: url(#path-header);
+    clip-path: url(#path-header);
   }
 
   .clipped-start {
