@@ -328,16 +328,17 @@ footer a:hover {
   border-color: rgba(var(--bs-white-rgb), 0.8);
 }
 
-.clipped,
-.clipped-start,
-.clipped-end {
+.clipped-initiative,
+.clipped-header,
+.clipped-contact-start,
+.clipped-contact-end {
   -webkit-clip-path: none;
   clip-path: none;
   border-radius: 1.25rem;
 }
 
-.clipped-start,
-.clipped-end {
+.clipped-contact-start,
+.clipped-contact-end {
   min-height: 100%;
 }
 
@@ -371,25 +372,31 @@ footer a:hover {
     line-height: var(--footer-nav-height);
   }
 
-  .clipped,
-  .clipped-start,
-  .clipped-end {
+  .clipped-initiative,
+  .clipped-header,
+  .clipped-contact-start,
+  .clipped-contact-end {
     border-radius: 0;
   }
 
-  .clipped {
-    -webkit-clip-path: url(#my-clip-path);
-    clip-path: url(#my-clip-path);
+  .clipped-initiative {
+    -webkit-clip-path: url(#path-initiative);
+    clip-path: url(#path-initiative);
   }
 
-  .clipped-start {
-    -webkit-clip-path: url(#my-clip-path-start);
-    clip-path: url(#my-clip-path-start);
+  .clipped-header {
+    -webkit-clip-path: url(#path-header);
+    clip-path: url(#path-header);
   }
 
-  .clipped-end {
-    -webkit-clip-path: url(#my-clip-path-end);
-    clip-path: url(#my-clip-path-end);
+  .clipped-contact-start {
+    -webkit-clip-path: url(#path-contact-start);
+    clip-path: url(#path-contact-start);
+  }
+
+  .clipped-contact-end {
+    -webkit-clip-path: url(#path-contact-end);
+    clip-path: url(#path-contact-end);
   }
 }
 
