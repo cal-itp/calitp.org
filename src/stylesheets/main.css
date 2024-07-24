@@ -130,6 +130,11 @@ hr {
   font-size: calc(14rem / 16);
 }
 
+.fs-stats {
+  font-size: calc(64rem / 16);
+  font-family: var(--calitp-headline-sans-serif);
+}
+
 .font-poppins {
   font-family: var(--bs-font-sans-serif);
 }
