@@ -330,15 +330,15 @@ footer a:hover {
 
 .clipped-initiative,
 .clipped-header,
-.clipped-start,
-.clipped-end {
+.clipped-contact-start,
+.clipped-contact-end {
   -webkit-clip-path: none;
   clip-path: none;
   border-radius: 1.25rem;
 }
 
-.clipped-start,
-.clipped-end {
+.clipped-contact-start,
+.clipped-contact-end {
   min-height: 100%;
 }
 
@@ -374,8 +374,8 @@ footer a:hover {
 
   .clipped-initiative,
   .clipped-header,
-  .clipped-start,
-  .clipped-end {
+  .clipped-contact-start,
+  .clipped-contact-end {
     border-radius: 0;
   }
 
@@ -389,14 +389,14 @@ footer a:hover {
     clip-path: url(#path-header);
   }
 
-  .clipped-start {
-    -webkit-clip-path: url(#my-clip-path-start);
-    clip-path: url(#my-clip-path-start);
+  .clipped-contact-start {
+    -webkit-clip-path: url(#path-contact-start);
+    clip-path: url(#path-contact-start);
   }
 
-  .clipped-end {
-    -webkit-clip-path: url(#my-clip-path-end);
-    clip-path: url(#my-clip-path-end);
+  .clipped-contact-end {
+    -webkit-clip-path: url(#path-contact-end);
+    clip-path: url(#path-contact-end);
   }
 }
 
