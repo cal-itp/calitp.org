@@ -361,14 +361,18 @@ footer a:hover {
 .clipped-initiative,
 .clipped-header,
 .clipped-contact-start,
-.clipped-contact-end {
+.clipped-contact-end,
+.clipped-stat-start,
+.clipped-stat-end {
   -webkit-clip-path: none;
   clip-path: none;
   border-radius: 1.25rem;
 }
 
 .clipped-contact-start,
-.clipped-contact-end {
+.clipped-contact-end,
+.clipped-stat-start,
+.clipped-stat-end {
   min-height: 100%;
 }
 
@@ -409,7 +413,9 @@ footer a:hover {
   .clipped-initiative,
   .clipped-header,
   .clipped-contact-start,
-  .clipped-contact-end {
+  .clipped-contact-end,
+  .clipped-stat-start,
+  .clipped-stat-end {
     border-radius: 0;
   }
 
@@ -431,6 +437,16 @@ footer a:hover {
   .clipped-contact-end {
     -webkit-clip-path: url(#path-contact-end);
     clip-path: url(#path-contact-end);
+  }
+
+  .clipped-stat-start {
+    -webkit-clip-path: url(#path-stat-start);
+    clip-path: url(#path-stat-start);
+  }
+
+  .clipped-stat-end {
+    -webkit-clip-path: url(#path-stat-end);
+    clip-path: url(#path-stat-end);
   }
 
   figure.quote blockquote {
