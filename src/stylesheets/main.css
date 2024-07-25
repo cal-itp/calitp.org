@@ -62,6 +62,10 @@ body {
   background-color: var(--calitp-purple-4);
 }
 
+.background-yellow-4 {
+  background-color: var(--calitp-yellow-4);
+}
+
 .border-purple-4 {
   border-color: var(--calitp-purple-4);
 }
