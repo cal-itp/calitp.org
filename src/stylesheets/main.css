@@ -14,9 +14,14 @@ body {
   --bs-primary: #045b86;
   --bs-primary-rgb: 4, 91, 134;
   --bs-body-color: rgb(33, 33, 33); /* #212121 */
+  --bs-dark-rgb: 33, 33, 33; /* #212121 */
+  --bs-emphasis-color-rgb: rgb(33, 33, 33); /* #212121 */
   --bs-link-color: rgb(4, 91, 134); /* #045B86, calitp-primary-blue */
+  --bs-link-color-rgb: 4, 91, 134; /* #045B86, calitp-primary-blue */
   --bs-link-hover-color: rgb(4, 72, 105); /* #044869, calitp-primary-dark-blue */
+  --bs-link-hover-color-rgb: 4, 72, 105; /* #044869, calitp-primary-dark-blue */
   --bs-secondary-rgb: 143, 147, 153; /* calitp-gray-3 */
+  --bs-tertiary-color: rgb(96, 101, 107); /* calitp-scales-gray-4 */
   --calitp-primary-blue: rgb(4, 91, 134); /* #045B86 */
   --calitp-primary-dark-blue: rgb(4, 72, 105); /* #044869, , calitp-primary-dark-blue */
   --calitp-background-blue: rgb(245, 249, 251); /* #F5F9FB */
@@ -30,6 +35,7 @@ body {
   --calitp-purple-5: rgb(41, 34, 120); /* #292278 */
   --calitp-red-4: rgb(192, 63, 77); /* #c03f4d */
   --calitp-red-5: rgb(160, 46, 59); /* #a02e3b */
+  --calitp-yellow-4: rgb(253, 183, 20); /* #FDB714 */
   --calitp-font-weight-bold: 700;
 }
 
@@ -54,6 +60,14 @@ body {
 
 .background-purple-4 {
   background-color: var(--calitp-purple-4);
+}
+
+.border-purple-4 {
+  border-color: var(--calitp-purple-4);
+}
+
+.border-yellow-4 {
+  border-color: var(--calitp-yellow-4);
 }
 
 .btn {
@@ -116,6 +130,11 @@ hr {
   font-size: calc(14rem / 16);
 }
 
+.fs-stats {
+  font-size: calc(64rem / 16);
+  font-family: var(--calitp-headline-sans-serif);
+}
+
 .font-poppins {
   font-family: var(--bs-font-sans-serif);
 }
@@ -129,6 +148,17 @@ a {
 
 a:hover {
   text-decoration-style: dotted;
+}
+
+figure.quote {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 2rem;
+}
+
+figure.quote figcaption {
+  font-size: calc(16rem / 16);
+  font-style: italic;
 }
 
 .navbar {
@@ -398,6 +428,15 @@ footer a:hover {
     -webkit-clip-path: url(#path-contact-end);
     clip-path: url(#path-contact-end);
   }
+
+  figure.quote blockquote {
+    font-size: calc(24rem / 16);
+  }
+
+  small,
+  .small {
+    font-size: calc(12rem / 16);
+  }
 }
 
 @media (max-width: 992px) {
@@ -421,6 +460,15 @@ footer a:hover {
 
   .navbar-nav {
     margin: 0 auto;
+  }
+
+  figure.quote blockquote {
+    font-size: calc(20rem / 16);
+  }
+
+  small,
+  .small {
+    font-size: calc(10rem / 16);
   }
 }
 
