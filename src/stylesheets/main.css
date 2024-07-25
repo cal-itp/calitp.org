@@ -465,6 +465,10 @@ footer a:hover {
   .small {
     font-size: calc(12rem / 16);
   }
+
+  .stories-map {
+    height: 150px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -497,6 +501,11 @@ footer a:hover {
   small,
   .small {
     font-size: calc(10rem / 16);
+  }
+
+  .stories-map {
+    width: 100%;
+    height: auto;
   }
 }
 
