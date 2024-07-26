@@ -502,6 +502,10 @@ footer a:hover {
     margin-left: -190px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0.16%, #fff 30.54%);
   }
+
+  .stories-toc {
+    top: calc(var(--header-nav-height) + 1.5rem);
+  }
 }
 
 @media (max-width: 992px) {
