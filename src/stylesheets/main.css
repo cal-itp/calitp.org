@@ -490,10 +490,10 @@ footer a:hover {
     left: 0;
   }
 
-  .monterey-and-contact {
+  .monterey-and-contact,
+  .footer-container {
     position: relative;
-    top: 640px;
-    z-index: 1000;
+    top: 620px; /* Height of the absolutely-positioned Impact section */
   }
 
   .impact-stats-parent {
