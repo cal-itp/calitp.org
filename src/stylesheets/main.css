@@ -483,6 +483,25 @@ footer a:hover {
   .stories-map {
     height: 150px;
   }
+
+  .impact {
+    z-index: 1025;
+    position: absolute;
+    max-width: 1320px;
+    left: 0;
+    margin-left: 8%;
+  }
+
+  .monterey-and-contact {
+    position: relative;
+    top: 640px;
+    z-index: 1000;
+  }
+
+  .impact-stats-parent {
+    margin-left: -190px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0.16%, #fff 30.54%);
+  }
 }
 
 @media (max-width: 992px) {
