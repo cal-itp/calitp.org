@@ -487,9 +487,7 @@ footer a:hover {
   .impact {
     z-index: 1025;
     position: absolute;
-    max-width: 1320px;
     left: 0;
-    margin-left: 8%;
   }
 
   .monterey-and-contact {
