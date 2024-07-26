@@ -391,6 +391,11 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
+  .fs-0 {
+    font-size: calc(64rem / 16);
+    font-family: var(--calitp-headline-sans-serif);
+  }
+
   .h1-md {
     font-size: calc(40rem / 16);
   }
@@ -507,6 +512,11 @@ footer a:hover {
 }
 
 @media (max-width: 992px) {
+  .fs-0 {
+    font-size: calc(40rem / 16);
+    font-family: var(--calitp-headline-sans-serif);
+  }
+
   .navbar-brand {
     --bs-navbar-brand-padding-x: 2rem;
     --bs-navbar-brand-padding-y: 2rem;
