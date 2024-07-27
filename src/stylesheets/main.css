@@ -527,7 +527,8 @@ footer a:hover {
 
   .impact-stats-parent {
     margin-left: -190px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0.16%, #fff 30.54%);
+    background: transparent url(/images/stories-bg-gradient.png) repeat-y right / contain;
+    padding: 60px 0;
   }
 
   .stories-toc {
