@@ -70,6 +70,10 @@ body {
   border-color: var(--calitp-yellow-4);
 }
 
+.min-w-0 {
+  min-width: 0;
+}
+
 .btn {
   --bs-btn-border-width: 2px;
 }
