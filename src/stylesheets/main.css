@@ -210,11 +210,6 @@ main.container {
   padding-top: var(--header-nav-height);
 }
 
-section#about {
-  padding-top: var(--header-nav-height);
-  margin-top: calc(-1 * var(--header-nav-height));
-}
-
 [id] {
   scroll-margin-top: var(--header-nav-height);
 }
