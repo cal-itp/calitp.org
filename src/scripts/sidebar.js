@@ -8,4 +8,15 @@ window.addEventListener("load", () => {
       linkPair.forEach((link) => link.classList.add("active"));
     });
   });
+
+  // if a user enters page with an anchor tag hash
+  function checkStoriesHash() {
+    if (window.location.hash.startsWith("#stories")) {
+      linkPair = document.querySelectorAll("a[href='" + window.location.hash + "']");
+      linkPair.forEach((link) => link.classList.add("active"));
+    }
+  }
+
+  // call the function once on page load to check for the initial hash
+  checkStoriesHash();
 });
