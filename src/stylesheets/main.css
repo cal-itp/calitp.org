@@ -518,7 +518,7 @@ footer a:hover {
 
   small,
   .small {
-    font-size: calc(12rem / 16);
+    font-size: calc(12rem / 16) !important;
   }
 
   .stories-map {
@@ -582,7 +582,7 @@ footer a:hover {
 
   small,
   .small {
-    font-size: calc(10rem / 16);
+    font-size: calc(10rem / 16) !important;
   }
 
   .stories-map {
