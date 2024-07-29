@@ -3,8 +3,8 @@ window.addEventListener("load", () => {
   sidebarLinks.forEach((link) => {
     link.addEventListener("click", (clicked) => {
       sidebarLinks.forEach((link) => link.classList.remove("active"));
-      category = clicked.target.getAttribute("data-category");
-      linkPair = document.querySelectorAll('[data-category="' + category + '"]');
+      href = clicked.target.attributes.href.nodeValue;
+      linkPair = document.querySelectorAll("a[href='" + href + "']");
       linkPair.forEach((link) => link.classList.add("active"));
     });
   });
