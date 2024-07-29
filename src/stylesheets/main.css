@@ -158,6 +158,18 @@ a:hover {
   text-decoration-style: dotted;
 }
 
+.link-tertiary {
+  color: var(--bs-tertiary-color);
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.link-tertiary:hover {
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
 figure.quote {
   border-left-width: 3px;
   border-left-style: solid;
@@ -200,6 +212,10 @@ main.container {
 section#about {
   padding-top: var(--header-nav-height);
   margin-top: calc(-1 * var(--header-nav-height));
+}
+
+[id] {
+  scroll-margin-top: var(--header-nav-height);
 }
 
 footer a:hover {
