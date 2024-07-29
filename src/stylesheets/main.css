@@ -164,7 +164,8 @@ a:hover {
   font-weight: normal;
 }
 
-.link-tertiary:hover {
+.link-tertiary:hover,
+.link-tertiary.active {
   color: var(--bs-primary);
   text-decoration: none;
   font-weight: 700;
