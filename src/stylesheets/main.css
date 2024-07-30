@@ -372,7 +372,8 @@ footer a:hover {
 .clipped-contact-end,
 .clipped-stat-start,
 .clipped-stat-end,
-.clipped-stories-contact {
+.clipped-stories-contact,
+.clipped-stories-impact {
   -webkit-clip-path: none;
   clip-path: none;
   border-radius: 1.25rem;
@@ -425,7 +426,8 @@ footer a:hover {
   .clipped-contact-end,
   .clipped-stat-start,
   .clipped-stat-end,
-  .clipped-stories-contact {
+  .clipped-stories-contact,
+  .clipped-stories-impact {
     border-radius: 0;
   }
 
@@ -462,6 +464,11 @@ footer a:hover {
   .clipped-stories-contact {
     -webkit-clip-path: url(#path-stories-contact);
     clip-path: url(#path-stories-contact);
+  }
+
+  .clipped-stories-impact {
+    -webkit-clip-path: url(#path-stories-impact);
+    clip-path: url(#path-stories-impact);
   }
 
   figure.quote blockquote {
@@ -513,6 +520,10 @@ footer a:hover {
   .stories-map {
     width: 100%;
     height: auto;
+  }
+
+  .impact-stats {
+    margin: -80px auto 0 auto;
   }
 }
 
