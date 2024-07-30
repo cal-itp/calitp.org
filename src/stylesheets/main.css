@@ -373,7 +373,10 @@ footer a:hover {
 .clipped-stat-start,
 .clipped-stat-end,
 .clipped-stories-contact,
-.clipped-stories-impact {
+.clipped-stories-impact,
+.clipped-home-stat-1,
+.clipped-home-stat-2,
+.clipped-home-stat-3 {
   -webkit-clip-path: none;
   clip-path: none;
   border-radius: 1.25rem;
@@ -382,7 +385,10 @@ footer a:hover {
 .clipped-contact-start,
 .clipped-contact-end,
 .clipped-stat-start,
-.clipped-stat-end {
+.clipped-stat-end,
+.clipped-home-stat-1,
+.clipped-home-stat-2,
+.clipped-home-stat-3 {
   min-height: 100%;
 }
 
@@ -432,7 +438,10 @@ footer a:hover {
   .clipped-stat-start,
   .clipped-stat-end,
   .clipped-stories-contact,
-  .clipped-stories-impact {
+  .clipped-stories-impact,
+  .clipped-home-stat-1,
+  .clipped-home-stat-2,
+  .clipped-home-stat-3 {
     border-radius: 0;
   }
 
@@ -474,6 +483,21 @@ footer a:hover {
   .clipped-stories-impact {
     -webkit-clip-path: url(#path-stories-impact);
     clip-path: url(#path-stories-impact);
+  }
+
+  .clipped-home-stat-1 {
+    -webkit-clip-path: url(#path-home-stat-1);
+    clip-path: url(#path-home-stat-1);
+  }
+
+  .clipped-home-stat-2 {
+    -webkit-clip-path: url(#path-home-stat-2);
+    clip-path: url(#path-home-stat-2);
+  }
+
+  .clipped-home-stat-3 {
+    -webkit-clip-path: url(#path-home-stat-3);
+    clip-path: url(#path-home-stat-3);
   }
 
   figure.quote blockquote {
