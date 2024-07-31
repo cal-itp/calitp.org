@@ -4,24 +4,22 @@ window.addEventListener("load", () => {
   sidebarLinks.forEach((link) => {
     link.addEventListener("click", (clicked) => {
       sidebarLinks.forEach((link) => link.classList.remove("active"));
-      findPairAndToggleActive(clicked.target.attributes.href.nodeValue);
+      // update the window.location.hash with the clicked link's anchor target
+      window.location.hash = clicked.target.attributes.href.nodeValue;
     });
   });
 
-  // if a user enters page with an anchor tag hash
+  // watch for changes to window.location.hash value that start with #stories
+  // add active class on the sidebar target anchor
   function checkStoriesHash() {
     if (window.location.hash.startsWith("#stories")) {
-      findPairAndToggleActive(window.location.hash);
+      sidebarLinks.forEach((link) => link.classList.remove("active"));
+      linkPair = document.querySelectorAll("a[href='" + window.location.hash + "']");
+      linkPair.forEach((link) => link.classList.add("active"));
     }
   }
 
-  // find link pair and add active class to both links
-  // remove active from previously active class, if any
-  function findPairAndToggleActive(hash) {
-    sidebarLinks.forEach((link) => link.classList.remove("active"));
-    linkPair = document.querySelectorAll("a[href='" + hash + "']");
-    linkPair.forEach((link) => link.classList.add("active"));
-  }
+  window.onhashchange = checkStoriesHash;
 
   // call the function once on page load to check for the initial hash
   checkStoriesHash();
