@@ -16,6 +16,7 @@ window.addEventListener("load", () => {
   }
 
   // find link pair and add active class to both links
+  // remove active from previously active class, if any
   function findPairAndAddActive(hash) {
     sidebarLinks.forEach((link) => link.classList.remove("active"));
     linkPair = document.querySelectorAll("a[href='" + hash + "']");
