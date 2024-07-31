@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
   const sidebarLinks = document.querySelectorAll(".link-sidebar");
+
   sidebarLinks.forEach((link) => {
     link.addEventListener("click", (clicked) => {
       sidebarLinks.forEach((link) => link.classList.remove("active"));
@@ -16,6 +17,7 @@ window.addEventListener("load", () => {
 
   // find link pair and add active class to both links
   function findPairAndAddActive(hash) {
+    sidebarLinks.forEach((link) => link.classList.remove("active"));
     linkPair = document.querySelectorAll("a[href='" + hash + "']");
     linkPair.forEach((link) => link.classList.add("active"));
   }
