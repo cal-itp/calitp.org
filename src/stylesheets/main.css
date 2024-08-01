@@ -264,6 +264,10 @@ footer a:hover {
   margin-left: -1rem;
 }
 
+.footnotes.no-title ol::before {
+  content: "";
+}
+
 .footnotes a,
 .footnotes li,
 .footnotes p {
