@@ -1,12 +1,6 @@
 window.addEventListener("load", () => {
   const sidebarLinks = document.querySelectorAll(".link-sidebar");
 
-  sidebarLinks.forEach((link) => {
-    link.addEventListener("click", (clicked) => {
-      sidebarLinks.forEach((link) => link.classList.remove("active"));
-    });
-  });
-
   // watch for changes to window.location.hash value that start with #stories
   // add active class on the sidebar target anchor
   // else, reset the table of contents
