@@ -8,23 +8,28 @@
     {% assign url = item.url %}
   {% endif %}
 {% else %}
-  {% assign url = item.url %}
-  {% if item.external %} {% assign url = item.external %} {% endif %}
+  {% assign url = item.url
+  %}
+  {% if item.external %}
+    {% assign url = item.external %}
+  {% endif %}
 {% endif %}
 
 <article class="d-block mb-3 pb-4">
   <a
     href="{{ url }}"
     {% if item.external %}
-      target="_blank"
-    {% endif %}
-  >
+    target="_blank"
+    {% endif %}>
     {{- item.title -}}
   </a>
-  <br>
+  <br/>
   <span class="text-body-tertiary font-poppins fs-7">
-    {% if item.outlet %} {{ item.outlet }} |{% endif %}
-    {% if item.tags.size > 0 %} {{ item.tags | join: ', ' }} |{% endif %}
-    {% include date.html date=item.date format = "%b %Y" -%}
+    {% if item.outlet %}
+      {{ item.outlet }} |{% endif %}
+    {% if item.tags.size > 0 %}
+      {{ item.tags | join: ', ' }} |{% endif %}
+    {%
+      include date.html date=item.date format = "%b %Y" -%}
   </span>
 </article>
