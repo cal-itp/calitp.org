@@ -68,9 +68,11 @@ Cal-ITP Benefits also embraces California Governor Gavin Newsom’s equity and i
 **How Cal-ITP Benefits works:** A user visits the Cal-ITP Benefits web app, either directly or linked from a transit agency.
 They then [verify their identity via Login.gov](https://www.login.gov/help/verify-your-identity/how-to-verify-your-identity/),
 and the Cal-ITP Benefits web app links the customer’s fare discount benefit to the contactless Visa or Mastercard debit or
-credit card of the user’s choosing. See this process in action in [this GIF](https://docs.calitp.org/benefits/use-cases/img/senior-success.gif).
+credit card of the user’s choosing. See this process in action in [this walkthrough video on the Cal-ITP YouTube channel](https://www.youtube.com/watch?v=vAJ_3lTeWJU).
 
-<img alt="Animated walkthrough of the Cal-ITP Benefits application enrollment process" src="https://docs.calitp.org/benefits/use-cases/img/senior-success.gif" height="500" class="mx-auto d-block" />
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/vAJ_3lTeWJU?si=mkBvcqehziSGN7kU&amp;controls=0" title="Video walkthrough of the Cal-ITP Benefits application enrollment process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 The payment processing and discount groups are handled by Littlepay, a U.K.- and Australia-based provider of payment
 infrastructure for transit and mobility. The Benefits web app was designed and developed for Cal-ITP by Compiler, a
