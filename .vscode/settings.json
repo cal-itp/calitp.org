@@ -9,5 +9,9 @@
   "editor.tabSize": 2,
   "files.associations": {
     "*.html": "liquid"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
   }
 }
