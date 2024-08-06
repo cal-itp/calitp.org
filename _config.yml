@@ -22,6 +22,8 @@ domain: www.calitp.org
 google_fonts: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700&display=swap"
 navigation:
   header:
+    - name: Customer stories
+      url: /customer-stories
     - name: Resources
       url: /resources
     - name: Press
