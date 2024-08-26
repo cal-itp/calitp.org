@@ -33,4 +33,5 @@ timezone: America/Los_Angeles
 title: "Cal-ITP: California Integrated Travel Project"
 url: "https://www.calitp.org"
 plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
