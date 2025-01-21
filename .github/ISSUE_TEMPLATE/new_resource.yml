@@ -35,6 +35,7 @@ body:
       description: What year did this resource get published?
       multiple: false
       options:
+        - 2025
         - 2024
         - 2023
         - 2022
