@@ -56,6 +56,7 @@ body:
       description: The date is used for both internal and external press releases.
       multiple: false
       options:
+        - 2025
         - 2024
         - 2023
         - 2022
