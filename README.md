@@ -22,6 +22,10 @@ Once inside the devcontainer, you have the manually start the site:
 The site is running on <http://127.0.0.1>; check the VS Code _Ports_ tab for the exact port. Auto rebuild/reload will be active
 and will watch the site files for changes.
 
+## Analytics
+
+Site analytics is tracked by Google Analytics, version 4. Ask an administrator to grant you access.
+
 ## License
 
 Content (including graphics, images, video, documents, and text) in this repository is licensed under [CC-BY 4.0][content-license].
