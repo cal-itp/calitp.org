@@ -26,6 +26,14 @@ and will watch the site files for changes.
 
 Site analytics is tracked by Google Analytics, version 4. Ask an administrator to grant you access.
 
+## Resource Requests
+
+We have a semi-automated way of handling resource requests via a Python script combind with the [`gh`](http://cli.github.com/) command.
+
+```bash
+gh issue view <issue num> --json body | python .github/scripts/resource-template.py
+```
+
 ## License
 
 Content (including graphics, images, video, documents, and text) in this repository is licensed under [CC-BY 4.0][content-license].
