@@ -1,6 +1,8 @@
 import json
+import os
 import re
 import sys
+import uuid
 
 #
 # Parse the issue body into JSON
@@ -64,6 +66,21 @@ def parse_issue_body(body):
 
   return result
 
+def is_ci():
+  return os.getenv('CI', 'false') == 'true'
+
+def set_gha_output(name, value):
+  # Utility function to set the output for GitHub Actions, with support for
+  # multi-line values.
+  #
+  # https://github.com/orgs/community/discussions/28146#discussioncomment-5638014
+
+  with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+    delimiter = uuid.uuid1()
+    print(f'{name}<<{delimiter}', file=fh)
+    print(value, file=fh)
+    print(delimiter, file=fh)
+
 #
 # Utility functions for I/O operations
 #
@@ -111,20 +128,24 @@ def main():
 ---
 date: "{issue['date_year']}-{issue['date_month']}-01T00:00:00-07:00"
 title: "{issue['title']}"
-asset: ~
+asset: "{issue['asset_url']}"
 category: "{issue['category']}"
 tags:
 {NEWLINE.join(f'  - {tag}' for tag in issue['tag'])}
 ---
-""".strip()
+""".lstrip()
 
   create_resource(filename, content)
-  print(f'Created resource: {filename}')
-  print('')
-  print(f'Follow the instructions in the file to complete the resource creation.')
-  print(f'  1. Download the following file: {issue["asset_url"]}')
-  print(f'  2. Add the downloaded file to the `src/assets/` directory')
-  print(f'  3. Update the `asset` field in the created resource (above) to the filename of the newly added resource')
+
+  if not is_ci():
+    print(f'Created resource: {filename}')
+    print('')
+    print(f'Follow the instructions in the file to complete the resource creation.')
+    print(f'  1. Download the following file: {issue["asset_url"]}')
+    print(f'  2. Add the downloaded file to the `src/assets/` directory')
+    print(f'  3. Update the `asset` field in the created resource (above) to the filename of the newly added resource')
+  else:
+    set_gha_output('resource_filename', filename)
 
 if __name__ == '__main__':
   main()
