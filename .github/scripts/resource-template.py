@@ -123,6 +123,34 @@ def main():
   json_data = json.loads(input_str)
   issue = parse_issue_body(json_data['body'])
 
+  # If the resource hasn't been approved yet, skip creation
+  if issue['approved'].strip().lower() != 'yes':
+    message = 'Resource has not been approved, skipping creation'
+
+    if is_ci():
+      set_gha_output('success', 'false')
+      set_gha_output('message', message)
+    else:
+      print(message)
+
+    return
+
+  # Ensure all required keys are present, we support multiple issue templates so
+  # by checking the keys, we're ensuring we have the right template
+  required_issue_keys = ['approved', 'date_year', 'date_month', 'title', 'asset_url', 'category', 'tag']
+  if not all(key in issue for key in required_issue_keys):
+    missing_keys = [key for key in required_issue_keys if key not in issue]
+    message = f'Issue body is missing one or more of the following keys: {missing_keys}'
+
+    if is_ci():
+      set_gha_output('success', 'false')
+      set_gha_output('message', message)
+    else:
+      print(message)
+
+    return
+
+
   filename = build_filename(get_file_prefix(issue['category']), issue['title'])
   content = f"""
 ---
@@ -137,15 +165,17 @@ tags:
 
   create_resource(filename, content)
 
-  if not is_ci():
+  if is_ci():
+    set_gha_output('success', 'true')
+    set_gha_output('resource_filename', filename)
+    set_gha_output('message', f'Created resource: {filename}')
+  else:
     print(f'Created resource: {filename}')
     print('')
     print(f'Follow the instructions in the file to complete the resource creation.')
     print(f'  1. Download the following file: {issue["asset_url"]}')
     print(f'  2. Add the downloaded file to the `src/assets/` directory')
     print(f'  3. Update the `asset` field in the created resource (above) to the filename of the newly added resource')
-  else:
-    set_gha_output('resource_filename', filename)
 
 if __name__ == '__main__':
   main()
