@@ -1,0 +1,69 @@
+name: Auto-Create PRs for Resource Requests
+on:
+  issues:
+    types: [opened, transferred]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number'
+        required: true
+        default: '1'
+        type: number
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-resource:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        name: Set up Python
+        with:
+          python-version: '3.13'
+
+      - name: Configure State
+        id: workflow_state
+        run: |
+          echo "issue_number=${{ github.event.issue.number || github.event.inputs.issue_number }}" >> "$GITHUB_OUTPUT"
+
+      - name: Run the script
+        id: resource_gen
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue view ${{ steps.workflow_state.outputs.issue_number }} --json body | python .github/scripts/resource-template.py
+
+      - name: Check if Supported Template
+        if: steps.resource_gen.outputs.failure_reason == 'missing_keys'
+        run: |
+          echo "This issue does not have the expected keys, it's likely not a resource request."
+
+      - name: Warn about unapproved resource
+        if: steps.resource_gen.outputs.failure_reason == 'not_approved'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ steps.workflow_state.outputs.issue_number }}
+          body: |
+            Your resource request was marked as not approved, therefore I have
+            not created a PR for it. Once it's approved, we can rerun this
+            process.
+
+      - name: Create the Pull Request
+        if: steps.resource_gen.outputs.success == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Auto-PR for Resource Request #${{ steps.workflow_state.outputs.issue_number }}"
+          draft: true
+          body: >
+            This PR is created automatically from a resource request. Please
+            review the changes and merge when ready.
+
+            Closes #${{ steps.workflow_state.outputs.issue_number }}
+          add-paths: "src/_resources/"
+          commit-message: "feat: start resource for req #${{ steps.workflow_state.outputs.issue_number }}"
+          branch: "chore/resource-${{ steps.workflow_state.outputs.issue_number }}"
