@@ -28,7 +28,7 @@ Site analytics is tracked by Google Analytics, version 4. Ask an administrator t
 
 ## Resource Requests
 
-We have a semi-automated way of handling resource requests via a Python script combind with the [`gh`](http://cli.github.com/) command.
+We have a semi-automated way of handling resource requests via a Python script combined with the [`gh`](http://cli.github.com/) command.
 
 ```bash
 gh issue view <issue num> --json body | python .github/scripts/resource-template.py
