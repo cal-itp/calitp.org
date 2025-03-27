@@ -54,7 +54,7 @@ jobs:
 
       - name: Create the Pull Request
         if: steps.resource_gen.outputs.success == 'true'
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "Auto-PR for Resource Request #${{ steps.workflow_state.outputs.issue_number }}"
