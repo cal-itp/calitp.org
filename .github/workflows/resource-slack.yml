@@ -1,0 +1,21 @@
+name: Notify Slack for Press/Resource Requests
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'press') || contains(github.event.issue.labels.*.name, 'resources')
+    steps:
+      - name: Slack notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_USERNAME: cal-itp-bot
+          SLACK_MSG_AUTHOR: cal-itp-bot
+          SLACK_ICON: https://github.com/cal-itp-bot.png?size=48
+          SLACK_MESSAGE: "A new press or resource request has been submitted: ${{ github.event.issue.html_url }}"
+          SLACK_FOOTER: ""
+          MSG_MINIMAL: true
