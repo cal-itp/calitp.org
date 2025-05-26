@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import os
+import re
 
 def validate_date_format(file_path, regex):
     """
@@ -26,8 +27,6 @@ def main():
     parser.add_argument('--regex', nargs='?', default=r'^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$', help='Regex pattern for date validation')
 
     args = parser.parse_args()
-
-    import re
     regex = re.compile(args.regex)
 
     for file_path in args.files:
