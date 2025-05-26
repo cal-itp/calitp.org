@@ -30,3 +30,11 @@ repos:
         args: ["--unsafe"]
       - id: check-added-large-files
         args: ["--maxkb=2500"]
+
+  - repo: local
+    hooks:
+      - id: frontmatter-timestamp
+        name: frontmatter timestamp
+        entry: bin/timestamp-format-pre-commit.py
+        language: python
+        files: \.md$
