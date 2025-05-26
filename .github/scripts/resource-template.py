@@ -146,6 +146,10 @@ def main():
   issue = parse_issue_body(json_data['body'])
   write_debug(f'Parsed issue body: {json.dumps(issue, indent=2)}')
 
+  if issue == {}:
+    write_debug('Issue body could not be parsed, skipping creation')
+    return
+
   # If the resource hasn't been approved yet, skip creation
   if issue['approved'].strip().lower() != 'yes':
     write_debug('Resource has not been approved, skipping creation')
