@@ -1,5 +1,5 @@
 ---
-date: "2023-08-22T09:00:00-07:00"
+date: "2023-08-22 09:00:00"
 title: Cal-ITP and partners celebrate major milestones in implementation of Operational Data Standard (ODS) for transit
 heading: Cal-ITP and partners celebrate major milestones in implementation of Operational Data Standard (ODS) for transit
 intro: |-

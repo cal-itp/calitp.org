@@ -1,5 +1,5 @@
 ---
-date: "2022-11-3T17:00:00-07:00"
+date: "2022-11-03 17:00:00"
 title: Discounted cellular data plans now available for U.S. public transportation providers via California Mobility Marketplace
 heading: |-
   Discounted cellular data plans now available for U.S. public transportation providers via California Mobility Marketplace
