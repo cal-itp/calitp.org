@@ -2,13 +2,9 @@
   {% assign current_page = page.url | replace: '/', '' %}
   {% assign menu_url = menu_item.url | replace: '/', '' %}
   <li class="{{ include.list_class | default: '' }}">
-    <a
-      href="{{ menu_item.url }}"
-      class="{{ include.anchor_class | default: '' }}"
-      {% if menu_item.target %}target="{{ menu_item.target }}"{% endif %}
-      {% if menu_url == current_page %}aria-current="page"{% endif %}
-    >
-      {{ menu_item.name }}
-    </a>
+    <a href="{{ menu_item.url }}"
+       class="{{ include.anchor_class | default: '' }}"
+       {% if menu_item.target %}target="{{ menu_item.target }}"{% endif %}
+       {% if menu_url == current_page %}aria-current="page"{% endif %}>{{ menu_item.name }}</a>
   </li>
 {% endfor %}
