@@ -27,7 +27,7 @@ description: >
   <div class="col-10">
     <div class="offset-md-2 col-md-8 mb-5 pb-5">
       {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %} {% assign all_resources =
-      site.resources | reverse %} {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment
+      site.resources | sort: 'date' | reverse %} {% comment %} one more reverse when creating the groups to order ascending by name {% endcomment
       %} {% assign groups = all_resources | group_by: "category" | reverse %}
 
       <div class="tab-content" id="pills-tabContent">
