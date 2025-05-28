@@ -7,7 +7,7 @@ layout: default
 {% endif %}
 
 {% capture date %}
-{% include date.html date=page.date format = "%B %e, %Y, " %}
+  {% include date.html date=page.date format = "%B %e, %Y, " %}
 {% endcapture %}
 
 {% assign location = page.location | default: "Sacramento, CA" %}

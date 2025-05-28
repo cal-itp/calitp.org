@@ -29,7 +29,7 @@ description: >
 <section class="row justify-content-center" id="resources">
   <div class="col-10">
     <div class="offset-md-2 col-md-8 mb-5 pb-5">
-      {% comment %} Jekyll sorts by the date field in ascending order by default {% endcomment %}
+      {% comment %} Sort explicitly to avoid https://github.com/cal-itp/calitp.org/issues/457 {% endcomment %}
       {% assign all_resources = site.resources | sort: 'date' | reverse %}
 
       {% comment %}one more reverse when creating the groups to order ascending by name {% endcomment %}
