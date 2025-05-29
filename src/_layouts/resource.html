@@ -2,12 +2,15 @@
 layout: default
 ---
 
-{% capture date %} {% include date.html date=page.date format = "%B %e, %Y" %} {% endcapture %}
+{% capture date %}
+  {% include date.html date=page.date format = "%B %e, %Y" %}
+{% endcapture %}
 
 <div class="row justify-content-center">
   <div class="col-lg-8 col-md-8">
     <article class="press-release pb-5 mb-5">
-      <a class="d-block text-decoration-none mb-2 pt-3 mt-5 text-primary-blue" href="/resources">Resource</a>
+      <a class="d-block text-decoration-none mb-2 pt-3 mt-5 text-primary-blue"
+         href="/resources">Resource</a>
       <h1 class="h2">{{ page.title }}</h1>
       <hr />
       <p>{{ date }}</p>

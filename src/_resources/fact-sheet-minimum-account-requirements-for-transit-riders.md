@@ -1,5 +1,5 @@
 ---
-date: "2023-08-01T17:00:00-07:00"
+date: "2023-08-01 17:00:00"
 title: "Fact Sheet: Minimum Account Requirements for Transit Riders"
 category: Fact sheets & overviews
 tags:

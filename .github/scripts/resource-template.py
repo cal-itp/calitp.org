@@ -146,6 +146,10 @@ def main():
   issue = parse_issue_body(json_data['body'])
   write_debug(f'Parsed issue body: {json.dumps(issue, indent=2)}')
 
+  if issue == {}:
+    write_debug('Issue body could not be parsed, skipping creation')
+    return
+
   # If the resource hasn't been approved yet, skip creation
   if issue['approved'].strip().lower() != 'yes':
     write_debug('Resource has not been approved, skipping creation')
@@ -176,7 +180,7 @@ def main():
   tags = issue['tag'] if isinstance(issue['tag'], list) else [issue['tag']]
   content = f"""
 ---
-date: "{issue['date_year']}-{issue['date_month']}-01T00:00:00-07:00"
+date: "{issue['date_year']}-{issue['date_month']}-01 00:00:00"
 title: "{issue['title']}"
 asset: "{issue['asset_url']}"
 category: "{issue['category']}"

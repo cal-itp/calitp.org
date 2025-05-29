@@ -1,5 +1,5 @@
 ---
-date: "2022-08-1T17:00:00-07:00"
+date: "2022-08-01 17:00:00"
 title: Valley CAN and the State of California issue preloaded, reloadable contactless debit cards for low-income EV owners to use at any charging station
 heading: |-
   Valley CAN and the State of California issue preloaded, reloadable contactless debit cards for low-income EV owners to use at any charging station

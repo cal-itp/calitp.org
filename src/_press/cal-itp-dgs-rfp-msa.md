@@ -1,5 +1,5 @@
 ---
-date: "2022-03-9T17:00:00-07:00"
+date: "2022-03-09 17:00:00"
 title: State of California’s purchasing agreements allow public transit agencies across U.S. to skip procurement and quickly modernize fare collection systems
 heading: |-
   State of California’s purchasing agreements allow public transit agencies across U.S. to skip procurement and quickly modernize fare collection systems

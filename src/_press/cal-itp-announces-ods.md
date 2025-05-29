@@ -1,5 +1,5 @@
 ---
-date: "2022-06-02T17:00:00-07:00"
+date: "2022-06-02 17:00:00"
 title: ODS—New open data standard helps improve transit agency operations
 heading: ODS—New open data standard helps improve transit agency operations
 intro: |-

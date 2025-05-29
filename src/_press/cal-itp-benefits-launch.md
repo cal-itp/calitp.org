@@ -1,5 +1,5 @@
 ---
-date: "2022-09-21T17:00:00-07:00"
+date: "2022-09-21 17:00:00"
 title: Cal-ITP Benefits is first web tool to enable transit riders to verify identity and benefit eligibility, link fare discounts to bank cards
 heading: |-
   State of California launches Cal-ITP Benefits, the first online tool for transit riders to verify their identity and benefit

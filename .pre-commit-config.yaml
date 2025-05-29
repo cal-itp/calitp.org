@@ -30,3 +30,18 @@ repos:
         args: ["--unsafe"]
       - id: check-added-large-files
         args: ["--maxkb=2500"]
+
+  - repo: https://github.com/djlint/djLint
+    rev: v1.36.4
+    hooks:
+      - id: djlint-reformat-jinja
+        files: \.html$
+        types_or: ["html"]
+
+  - repo: local
+    hooks:
+      - id: frontmatter-timestamp
+        name: frontmatter timestamp
+        entry: bin/timestamp-format-pre-commit.py
+        language: python
+        files: \.md$

@@ -1,5 +1,5 @@
 ---
-date: "2023-09-30T17:00:00-07:00"
+date: "2023-09-30 17:00:00"
 title: |-
   Universal Equity Zero Emission Vehicle Charging Card: Project Demonstration Report
 asset: Cal-ITP.Universal.Equity.Zero.Emission.Vehicle.Charging.Card.Report.pdf

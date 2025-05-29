@@ -1,5 +1,5 @@
 ---
-date: "2023-08-01T17:00:00-07:00"
+date: "2023-08-01 17:00:00"
 title: "Fact sheet: Merchant category codes in mobility"
 category: Fact sheets & overviews
 tags:

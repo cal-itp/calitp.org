@@ -1,5 +1,5 @@
 ---
-date: "2022-10-14T17:00:00-07:00"
+date: "2022-10-14 17:00:00"
 title: South Carolina transit agency taps California’s contracts for competitively priced contactless fare payment system
 heading: |-
   South Carolina transit agency taps California’s contracts for competitively priced contactless fare payment system
