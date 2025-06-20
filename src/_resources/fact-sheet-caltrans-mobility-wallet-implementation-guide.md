@@ -4,5 +4,5 @@ title: "Caltrans Mobility Wallet Implementation Guide"
 asset: "Cal-ITP.Caltrans.Mobility.Wallet.Implementation.Guide.pdf"
 category: "Fact sheets & overviews"
 tags:
-  - Contactless payments
+  - Contactless Payments
 ---

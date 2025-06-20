@@ -94,7 +94,7 @@ body:
       description: What tag is this resource in? (You may select more than one.)
       multiple: true
       options:
-        - Contactless payments
+        - Contactless Payments
         - Benefits
         - GTFS
     validations:
