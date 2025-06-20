@@ -44,7 +44,7 @@ body:
       description: What tag is this press item in?
       multiple: false
       options:
-        - Contactless payments
+        - Contactless Payments
         - Benefits
         - GTFS
   - type: dropdown

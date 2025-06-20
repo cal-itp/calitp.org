@@ -4,5 +4,5 @@ title: "Distributing Mobility Subsidies on Prepaid Cards"
 asset: "https://resources.calitp.org/calitp/Cal-ITP.Prepaid.Card.Recommendations.pdf"
 category: "Case studies"
 tags:
-  - Contactless payments
+  - Contactless Payments
 ---
