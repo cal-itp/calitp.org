@@ -2,7 +2,7 @@
 
 A brief explainer website for the California Integrated Travel Project (Cal-ITP) <https://calitp.org>.
 
-Deployed via [Netlify](https://www.netlify.com/) 
+Deployed via [Netlify](https://www.netlify.com/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/71c28b11-ddb3-4a83-b4e7-04e77c918372/deploy-status)](https://app.netlify.com/projects/cal-itp-website/deploys)
 
 ## Development
