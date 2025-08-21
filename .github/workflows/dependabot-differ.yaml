@@ -13,7 +13,7 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'dependencies') # See https://git.io/JsVv1
     steps:
       - name: Checkout Pull Request Branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: true
@@ -31,7 +31,7 @@ jobs:
           mv _site _site-pr
 
       - name: Checkout Default Branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           clean: false
           submodules: true
