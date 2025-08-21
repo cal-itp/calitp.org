@@ -7,7 +7,7 @@ on:
 jobs:
   notify-slack:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.labels.*.name, 'press') || contains(github.event.issue.labels.*.name, 'resources')
+    if: github.event.label.name == 'press' || github.event.label.name == 'resources'
     steps:
       - name: Slack notification
         uses: rtCamp/action-slack-notify@v2

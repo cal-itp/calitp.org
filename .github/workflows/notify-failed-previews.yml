@@ -1,0 +1,39 @@
+name: On Netlify Check Failure (PR only)
+
+on:
+  status:
+
+jobs:
+  notify-slack-on-failure:
+    if: (github.event.state == 'failure' || github.event.state == 'error') && endsWith(github.event.context, '/deploy-preview')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install GitHub CLI
+        uses: cli/cli@v2
+
+      - name: Check if commit is part of a PR
+        id: prcheck
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          prs=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            repos/${{ github.repository }}/commits/${{ github.event.sha }}/pulls)
+
+          if [ "$(echo "$prs" | jq 'length')" -gt 0 ]; then
+            echo "isPR=true" >> $GITHUB_OUTPUT
+          else
+            echo "isPR=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Slack notification
+        uses: rtCamp/action-slack-notify@v2
+        if: steps.prcheck.outputs.isPR == 'true'
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_USERNAME: cal-itp-bot
+          SLACK_MSG_AUTHOR: cal-itp-bot
+          SLACK_ICON: https://github.com/cal-itp-bot.png?size=48
+          SLACK_MESSAGE: ""
+          SLACK_FOOTER: ""
+          MSG_MINIMAL: true
