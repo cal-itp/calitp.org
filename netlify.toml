@@ -1,0 +1,6 @@
+# https://docs.netlify.com/manage/routing/redirects/overview/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "/assets/Cal-ITP.Remix.One.Pager.pdf"
+  to = "https://www.camobilitymarketplace.org/how-to/route-planning-scheduling"
+  status = 301
+  force = false
