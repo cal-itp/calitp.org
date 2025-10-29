@@ -41,3 +41,6 @@
 <meta name="twitter:domain" content="{{ site.domain }}" />
 
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
+{% if page.asset -%}
+  <meta name="robots" content="noindex">
+{%- endif -%}
