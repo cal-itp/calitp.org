@@ -2,6 +2,7 @@
 date: "2023-12-01 17:00:00"
 title: "Fact sheet: Prepaid card recommendations"
 asset: "Cal-ITP.Prepaid.Card.Recommendations.pdf"
+last_modified_at: 2025-11-03T08:00:00-08:00
 category: Fact sheets & overviews
 tags:
   - Contactless Payments
