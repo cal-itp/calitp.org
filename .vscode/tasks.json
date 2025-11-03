@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Jekyll: Build Dev",
+      "label": "Jekyll: Build and Serve Locally",
       "type": "shell",
       "command": [
         "bundle",
