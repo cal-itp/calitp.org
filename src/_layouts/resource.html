@@ -2,6 +2,14 @@
 layout: default
 ---
 
+{% if page.asset %}
+  {% assign url = page.asset %}
+  {% unless page.asset contains "https://" %}
+    {% assign url = "/assets/" | append: url %}
+  {% endunless %}
+  {% include script_redirect.html location=url %}
+{% endif %}
+
 {% capture date %}
   {% include date.html date=page.date format = "%B %e, %Y" %}
 {% endcapture %}
