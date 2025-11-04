@@ -6,7 +6,7 @@ heading: |-
 intro: |-
   California is making it easier and more affordable for public transportation providers anywhere in the U.S. to acquire the tools to allow riders a convenient option to pay their fare using a contactless credit/debit/prepaid card or mobile wallet on a smart device.
 tags:
-  - Contactless Payment
+  - Contactless Payments
 outlet: "Cal-ITP"
 ---
 
