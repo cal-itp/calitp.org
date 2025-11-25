@@ -3,7 +3,6 @@
   "dockerComposeFile": "compose.yml",
   "service": "site",
   "runServices": ["site", "docs"],
-  "forwardPorts": [4000, "docs:8001"],
   "otherPortsAttributes": { "onAutoForward": "ignore" },
   "workspaceFolder": "/usr/src/calitp",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
