@@ -2,6 +2,8 @@
   "name": "cal-itp/calitp.org",
   "dockerComposeFile": "compose.yml",
   "service": "site",
+  "runServices": ["site", "docs"],
+  "otherPortsAttributes": { "onAutoForward": "ignore" },
   "workspaceFolder": "/usr/src/calitp",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
