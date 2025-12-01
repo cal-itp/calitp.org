@@ -46,7 +46,7 @@ We have a semi-automated way of handling resource requests that come in via GitH
 gh issue view <issue num> --json body | python .github/scripts/resource-template.py
 ```
 
-We have a GitHub Actions workflow that runs this script against all new issues and will automatically open a PR to add the requested resource, if the issue in fact appears to be a resource request and it is said to be approved. If an issue is opened initially for a resource that is not yet approved, the PR can be created automatically once the resource has been approved by going to [the workflow's page](https://github.com/cal-itp/calitp.org/actions/workflows/resource-template.yml) and using the **Run workflow** button.
+We have a GitHub Actions workflow that runs this script against all new issues and will automatically open a PR to add the requested resource, if the issue in fact appears to be a resource request and it is said to be approved. If an issue is opened initially for a resource that is not yet approved, the PR can be created automatically once the resource has been approved by going to [the workflow's page](./actions/workflows/resource-template.yml) and using the **Run workflow** button.
 
 ### Press
 

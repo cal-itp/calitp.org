@@ -1,7 +1,7 @@
-site_name: "cal-itp/calitp-dot-org: documentation"
+site_name: "cal-itp/calitp.org: documentation"
 repo_url: https://github.com/cal-itp/calitp.org
 edit_uri: edit/dev/docs
-site_url: https://docs.calitp.org/calitp-dot-org
+site_url: https://docs.calitp.org/calitp.org
 exclude_docs: |
   **/inc/*.md
 
@@ -26,7 +26,6 @@ plugins:
 
 extra_css:
   - styles/theme.css
-  - https://use.fontawesome.com/releases/v5.13.0/css/all.css
 
 markdown_extensions:
   - admonition
