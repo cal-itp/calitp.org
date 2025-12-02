@@ -1,0 +1,27 @@
+.press-release h2,
+.press-release h3 {
+  font-size: var(--bs-body-font-size);
+  padding-top: 20px;
+  font-weight: var(--calitp-font-weight-bold);
+  font-family: var(--bs-font-sans-serif);
+}
+
+.press-release h2:last-of-type {
+  text-decoration: underline;
+}
+
+.press-release img {
+  display: block;
+  max-width: 100%;
+}
+
+.press-release figcaption p {
+  font-size: 0.875em;
+  font-style: italic;
+  text-align: center;
+}
+
+.press-release sup a {
+  font-size: 1em;
+  margin: 0 0.15em;
+}
