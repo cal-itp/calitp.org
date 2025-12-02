@@ -1,3 +1,7 @@
+---
+# Empty front matter to enable Liquid processing
+---
+
 /*
  * Cal-ITP Digital Services Design Language
  * Design Tokens
@@ -36,117 +40,11 @@
 /* COLORS */
 
 :root {
+  {% for color in site.data.dsdl_colors -%}
+  --calitp-{{ color.group }}-{{ color.level }}: {{ color.value }};
+  {% endfor %}
+
   --calitp-brand-blue: var(--calitp-blue-70);  /* #045b86 */
   --calitp-brand-cyan: var(--calitp-cyan-40);  /* #38abd0 */
   --calitp-brand-yellow: var(--calitp-yellow-30);  /* #febd28 */
-  --calitp-red-10: #fef5f5;
-  --calitp-red-20: #fbd6d6;
-  --calitp-red-30: #f9b7b7;
-  --calitp-red-40: #f37a7b;
-  --calitp-red-50: #ee4142;
-  --calitp-red-60: #de0e10;
-  --calitp-red-70: #980a0b;
-  --calitp-red-80: #750809;
-  --calitp-red-90: #540506;
-  --calitp-red-100: #300304;
-  --calitp-orange-10: #fff4ef;
-  --calitp-orange-20: #fed6c4;
-  --calitp-orange-30: #fcb89a;
-  --calitp-orange-40: #fa7941;
-  --calitp-orange-50: #e54f0e;
-  --calitp-orange-60: #c3440c;
-  --calitp-orange-70: #852e08;
-  --calitp-orange-80: #662306;
-  --calitp-orange-90: #471804;
-  --calitp-orange-100: #260d02;
-  --calitp-yellow-10: #fff6de;
-  --calitp-yellow-20: #ffda84;
-  --calitp-yellow-30: #febd28;
-  --calitp-yellow-40: #ce9411;
-  --calitp-yellow-50: #a97a0e;
-  --calitp-yellow-60: #90680c;
-  --calitp-yellow-70: #614608;
-  --calitp-yellow-80: #4a3506;
-  --calitp-yellow-90: #332404;
-  --calitp-yellow-100: #1b1402;
-  --calitp-green-10: #f1f7f5;
-  --calitp-green-20: #cde3da;
-  --calitp-green-30: #abd0c0;
-  --calitp-green-40: #6bab90;
-  --calitp-green-50: #3b916c;
-  --calitp-green-60: #1b7e54;
-  --calitp-green-70: #105538;
-  --calitp-green-80: #0c412a;
-  --calitp-green-90: #092c1d;
-  --calitp-green-100: #05170f;
-  --calitp-cyan-10: #dff3fe;
-  --calitp-cyan-20: #bfe4f0;
-  --calitp-cyan-30: #91d1e5;
-  --calitp-cyan-40: #38abd0;
-  --calitp-cyan-50: #258cad;
-  --calitp-cyan-60: #207894;
-  --calitp-cyan-70: #155163;
-  --calitp-cyan-80: #103d4c;
-  --calitp-cyan-90: #0b2b34;
-  --calitp-cyan-100: #06161c;
-  --calitp-blue-10: #f2f8f9;
-  --calitp-blue-20: #cbe2e7;
-  --calitp-blue-30: #82b9c6;
-  --calitp-blue-40: #6ca7b8;
-  --calitp-blue-50: #488aa2;
-  --calitp-blue-60: #307693;
-  --calitp-blue-70: #045b86;
-  --calitp-blue-80: #044869;
-  --calitp-blue-90: #022a3d;
-  --calitp-blue-100: #011621;
-  --calitp-purple-10: #f7f7fa;
-  --calitp-purple-20: #deddea;
-  --calitp-purple-30: #c7c5db;
-  --calitp-purple-40: #9e9ac2;
-  --calitp-purple-50: #817caf;
-  --calitp-purple-60: #6d68a3;
-  --calitp-purple-70: #47418b;
-  --calitp-purple-80: #332d7e;
-  --calitp-purple-90: #211b61;
-  --calitp-purple-100: #120f33;
-  --calitp-indigo-10: #f7f7ff;
-  --calitp-indigo-20: #dddbff;
-  --calitp-indigo-30: #c4c1ff;
-  --calitp-indigo-40: #9792ff;
-  --calitp-indigo-50: #756fff;
-  --calitp-indigo-60: #645ddf;
-  --calitp-indigo-70: #433f96;
-  --calitp-indigo-80: #333072;
-  --calitp-indigo-90: #23214f;
-  --calitp-indigo-100: #13112a;
-  --calitp-pink-10: #fcf4f8;
-  --calitp-pink-20: #f3d7e5;
-  --calitp-pink-30: #ebb9d2;
-  --calitp-pink-40: #db83b0;
-  --calitp-pink-50: #ce5894;
-  --calitp-pink-60: #c4367e;
-  --calitp-pink-70: #901052;
-  --calitp-pink-80: #6f0c3f;
-  --calitp-pink-90: #4e082c;
-  --calitp-pink-100: #2c0519;
-  --calitp-gray-10: #f7f7f7;
-  --calitp-gray-20: #dedede;
-  --calitp-gray-30: #c7c7c7;
-  --calitp-gray-40: #9e9e9e;
-  --calitp-gray-50: #828282;
-  --calitp-gray-60: #6e6e6e;
-  --calitp-gray-70: #4a4a4a;
-  --calitp-gray-80: #383838;
-  --calitp-gray-90: #262626;
-  --calitp-gray-100: #141414;
-  --calitp-slate-10: #edf0f4;
-  --calitp-slate-20: #dadee1;
-  --calitp-slate-30: #c1c8cc;
-  --calitp-slate-40: #94a0a8;
-  --calitp-slate-50: #75848e;
-  --calitp-slate-60: #62717b;
-  --calitp-slate-70: #424c53;
-  --calitp-slate-80: #313a3e;
-  --calitp-slate-90: #22272b;
-  --calitp-slate-100: #121416;
 }
