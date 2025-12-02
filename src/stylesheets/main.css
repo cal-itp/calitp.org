@@ -631,7 +631,8 @@ footer a:hover {
 .dsdl-demo h2,
 .dsdl-demo h3,
 .dsdl-demo h4 {
-  font-family: var(--calitp-font-stack);
+  /* TODO: Remove when it's not necessary to override the styles above. */
+  font-family: var(--dsdl-font-stack);
 }
 
 .dsdl-demo h2,
@@ -674,7 +675,7 @@ footer a:hover {
 .dsdl-core-type-matrix th,
 .dsdl-core-type-matrix td {
   padding: 0.5rem;
-  border: 1px solid var(--calitp-gray-20);
+  border: 1px solid var(--dsdl-gray-20);
 }
 .dsdl-core-type-matrix th {
   background: var(--calitp-brand-blue);

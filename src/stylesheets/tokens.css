@@ -17,8 +17,8 @@
 
 :root {
   /* Fonts */
-  --calitp-font-stack: 'Space Grotesk', system-ui;
-  --monospace-font-stack: 'Source Code Pro', 'Cascadia Code', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --dsdl-font-stack: 'Space Grotesk', system-ui;
+  --dsdl-monospace-font-stack: 'Source Code Pro', 'Cascadia Code', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   /* Size */
   --text-xxs: calc(10rem / 16);
   --text-xs: calc(12rem / 16);
@@ -41,10 +41,10 @@
 
 :root {
   {% for color in site.data.dsdl_colors -%}
-  --calitp-{{ color.group }}-{{ color.level }}: {{ color.value }};
+  --dsdl-{{ color.group }}-{{ color.level }}: {{ color.value }};
   {% endfor %}
 
-  --calitp-brand-blue: var(--calitp-blue-70);  /* #045b86 */
-  --calitp-brand-cyan: var(--calitp-cyan-40);  /* #38abd0 */
-  --calitp-brand-yellow: var(--calitp-yellow-30);  /* #febd28 */
+  --calitp-brand-blue: var(--dsdl-blue-70);  /* #045b86 */
+  --calitp-brand-cyan: var(--dsdl-cyan-40);  /* #38abd0 */
+  --calitp-brand-yellow: var(--dsdl-yellow-30);  /* #febd28 */
 }

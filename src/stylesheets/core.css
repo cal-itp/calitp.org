@@ -5,8 +5,8 @@
 
 
 body {
-  color: var(--calitp-gray-100);
-  font-family: var(--calitp-font-stack);
+  color: var(--dsdl-gray-100);
+  font-family: var(--dsdl-font-stack);
   line-height: var(--line-height-normal);
 }
 
@@ -110,9 +110,14 @@ h1 {
 
 a:link,
 a:visited {
-  color: var(--calitp-blue-70);
+  color: var(--dsdl-blue-70);
 }
 a:hover,
 a:focus {
-  color: var(--calitp-blue-80);
+  color: var(--dsdl-blue-80);
+}
+
+code,
+pre {
+  font-family: var(--dsdl-monospace-font-stack);
 }
