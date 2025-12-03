@@ -1,0 +1,51 @@
+.link-tertiary {
+  color: var(--bs-tertiary-color);
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.link-tertiary:hover,
+.link-tertiary.active {
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .stories-map {
+    height: 150px;
+  }
+
+  .stories-toc {
+    top: calc(var(--header-nav-height) + 1.5rem);
+  }
+
+  .impact {
+    z-index: 1025;
+    position: absolute;
+    left: 0;
+  }
+
+  .monterey-and-contact,
+  .absolute-footer {
+    position: relative;
+    top: 620px; /* Height of the absolutely-positioned Impact section */
+  }
+
+  .impact-stats-parent {
+    margin-left: -190px;
+    background: transparent url(/images/stories-bg-gradient.png) repeat-y right / contain;
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .stories-map {
+    width: 100%;
+    height: auto;
+  }
+
+  .impact-stats {
+    margin: -80px auto 0 auto;
+  }
+}

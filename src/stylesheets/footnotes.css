@@ -1,0 +1,41 @@
+.footnotes ol {
+  padding-left: 1rem;
+}
+
+.footnotes ol::before {
+  content: "Footnotes";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: -1rem;
+}
+
+.footnotes.no-title ol::before {
+  content: "";
+}
+
+.footnotes a,
+.footnotes li,
+.footnotes p {
+  font-size: 0.85rem;
+}
+
+.footnotes li:target {
+  animation: footnoteFade 5s 1;
+}
+
+*[role="doc-noteref"],
+*[role="doc-endnote"] {
+  /* Magic calculation that is the header's height and some extra padding */
+  scroll-margin-top: calc(110px + 20px);
+}
+
+@keyframes footnoteFade {
+  0% {
+    background-color: rgb(255 255 185 / 1);
+  }
+
+  100% {
+    background-color: rgb(255 255 185 / 0);
+  }
+}
