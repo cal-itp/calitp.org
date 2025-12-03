@@ -84,7 +84,7 @@ jobs:
   docs-publish:
     runs-on: ubuntu-latest
     # don't publish for pull requests
-    # if: github.event.pull_request == null
+    if: github.event.pull_request == null
     steps:
       - name: Checkout
         uses: actions/checkout@v6
