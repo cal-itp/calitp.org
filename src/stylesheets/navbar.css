@@ -4,9 +4,9 @@
 }
 
 .navbar-nav {
-  --bs-nav-link-color: var(--bs-body-color);
-  --bs-navbar-active-color: var(--calitp-primary-blue);
-  --bs-nav-link-hover-color: var(--calitp-primary-blue);
+  --bs-nav-link-color: var(--dsdl-body-color);
+  --bs-navbar-active-color: var(--calitp-brand-blue);
+  --bs-nav-link-hover-color: var(--calitp-brand-blue);
 }
 
 header .nav-link {
@@ -14,12 +14,12 @@ header .nav-link {
 }
 
 header .nav-link[aria-current="page"] {
-  color: var(--calitp-primary-blue);
-  background-color: var(--calitp-background-light-blue);
+  color: var(--calitp-brand-blue);
+  background-color: var(--calitp-background-blue);
 }
 
 header .nav-link:hover {
-  background-color: var(--calitp-background-light-blue);
+  background-color: var(--calitp-background-blue);
 }
 
 main.container {
@@ -42,7 +42,7 @@ main.container {
   }
 
   .navbar-nav {
-    --bs-nav-link-color: var(--bs-body-color);
+    --bs-nav-link-color: var(--dsdl-body-color);
     --bs-navbar-nav-link-padding-y: 0;
     --bs-nav-link-padding-y: 0;
     gap: 2rem;
@@ -73,7 +73,7 @@ main.container {
 
   .navbar-nav .nav-link {
     padding: 23.8px 0 23.8px 12px;
-    border-bottom: 1px solid var(--calitp-cyan-1);
+    border-bottom: 1px solid var(--dsdl-cyan-20);
   }
 
   .navbar-nav {

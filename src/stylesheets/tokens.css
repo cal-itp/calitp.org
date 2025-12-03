@@ -19,6 +19,7 @@
   /* Fonts */
   --dsdl-font-stack: 'Space Grotesk', system-ui;
   --dsdl-monospace-font-stack: 'Source Code Pro', 'Cascadia Code', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
   /* Size */
   --text-xxs: calc(10rem / 16);
   --text-xs: calc(12rem / 16);
@@ -29,11 +30,15 @@
   --text-xxl: calc(32rem / 16);
   --text-xxxl: calc(40rem / 16);
   --text-display: calc(64rem / 16);
+
   /* Line height */
   --line-height-extra-tight: 1.125;
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
   --line-height-loose: 1.625;
+
+  /* Colors */
+  --dsdl-body-color: var(--dsdl-gray-100);
 }
 
 
