@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/mkdocs.yml"
   pull_request:
     branches:
       - main
@@ -80,17 +84,17 @@ jobs:
   docs-publish:
     runs-on: ubuntu-latest
     # don't publish for pull requests
-    if: github.event.pull_request == null
+    # if: github.event.pull_request == null
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v6
+      - name: Setup python
+        uses: actions/setup-python@v6
         with:
           python-version-file: .github/workflows/.python-version
           cache: pip
-          cache-dependency-path: |
-            "docs/requirements.txt"
+          cache-dependency-path: "docs/requirements.txt"
 
       - name: Install MkDocs requirements
         run: |
