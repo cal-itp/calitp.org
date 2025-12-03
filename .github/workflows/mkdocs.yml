@@ -1,5 +1,8 @@
 name: Publish docs
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -73,3 +76,26 @@ jobs:
               repo: context.repo.repo,
               body: `Preview url: https://${hostnamePrefix}-${{ github.event.number }}--${hostnameSuffix}`,
             })
+
+  docs-publish:
+    runs-on: ubuntu-latest
+    # don't publish for pull requests
+    if: github.event.pull_request == null
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version-file: .github/workflows/.python-version
+          cache: pip
+          cache-dependency-path: |
+            "docs/requirements.txt"
+
+      - name: Install MkDocs requirements
+        run: |
+          pip install -r docs/requirements.txt
+
+      - name: Deploy MkDocs website
+        run: |
+          mkdocs gh-deploy --force
