@@ -1,5 +1,8 @@
 name: Publish docs
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -73,3 +76,18 @@ jobs:
               repo: context.repo.repo,
               body: `Preview url: https://${hostnamePrefix}-${{ github.event.number }}--${hostnameSuffix}`,
             })
+
+  docs-publish:
+    runs-on: ubuntu-latest
+    # don't publish for pull requests
+    if: github.event.pull_request == null
+    name: Publish docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          REQUIREMENTS: docs/requirements.txt
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
