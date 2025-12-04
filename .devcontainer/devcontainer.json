@@ -17,10 +17,10 @@
       },
       "extensions": [
         "eamodio.gitlens",
-        "esbenp.prettier-vscode",
+        "prettier.prettier-vscode",
         "mhutchie.git-graph",
         "redhat.vscode-xml",
-        "sissel.shopify-liquid",
+        "shopify.theme-check-vscode",
         "streetsidesoftware.code-spell-checker",
         "tombi-toml.tombi"
       ]
