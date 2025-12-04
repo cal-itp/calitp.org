@@ -15,7 +15,7 @@
   button:
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
-  class: --calitp-primary-blue
+  class: --calitp-brand-blue
 - tag: Benefits
   slug: benefits
   id: automating-customer-discounts
@@ -43,7 +43,7 @@
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
     class: d-none
-  class: --calitp-red-5
+  class: --dsdl-red-80
 - tag: GTFS
   slug: gtfs
   id: standardizing-trip-quality
@@ -65,4 +65,4 @@
     text: Explore Mobility Marketplace
     url: https://camobilitymarketplace.org
     class: d-none
-  class: --calitp-purple-4
+  class: --dsdl-purple-70

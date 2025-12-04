@@ -20,19 +20,19 @@
 }
 
 .rainbow-list ol li:nth-child(1):before {
-  background: var(--calitp-primary-blue);
+  background: var(--calitp-brand-blue);
 }
 
 .rainbow-list ol li:nth-child(2):before {
-  background: var(--calitp-orange-5);
+  background: var(--dsdl-orange-80);
 }
 
 .rainbow-list ol li:nth-child(3):before {
-  background: var(--calitp-red-5);
+  background: var(--dsdl-red-80);
 }
 
 .rainbow-list ol li:nth-child(4):before {
-  background: var(--calitp-purple-4);
+  background: var(--dsdl-purple-70);
 }
 
 /* Initiatives */

@@ -10,23 +10,23 @@
 
 .black-on-white .nav-pills {
   --bs-nav-pills-link-active-color: var(--bs-white);
-  --bs-nav-pills-link-active-bg: var(--bs-body-color);
+  --bs-nav-pills-link-active-bg: var(--dsdl-body-color);
 }
 
 .black-on-white .nav-pills .nav-link {
-  border-color: var(--bs-body-color);
+  border-color: var(--dsdl-body-color);
 }
 
 .black-on-white .nav-pills .nav-link:not(.active) {
-  color: var(--bs-body-color);
+  color: var(--dsdl-body-color);
 }
 
 .black-on-white .nav-pills .nav-link:hover {
-  border-color: rgba(33, 33, 33, 0.8);
+  border-color: rgba(38, 38, 38, 0.8);  /* gray 80 at 80% opacity */
 }
 
 .white-on-color .nav-pills {
-  --bs-nav-pills-link-active-color: var(--bs-body-color);
+  --bs-nav-pills-link-active-color: var(--dsdl-body-color);
   --bs-nav-pills-link-active-bg: var(--bs-white);
 }
 

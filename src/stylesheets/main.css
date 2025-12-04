@@ -1,3 +1,4 @@
+@import 'dsdl/dsdl.css';
 @import 'variables.css';
 @import 'clipped-containers.css';
 @import 'footnotes.css';
@@ -7,23 +8,23 @@
 
 
 .background-calitp-blue {
-  background-color: var(--calitp-primary-blue);
+  background-color: var(--calitp-brand-blue);
 }
 
-.background-purple-4 {
-  background-color: var(--calitp-purple-4);
+.background-purple-70 {
+  background-color: var(--dsdl-purple-70);
 }
 
-.background-yellow-4 {
-  background-color: var(--calitp-yellow-4);
+.background-yellow-30 {
+  background-color: var(--dsdl-yellow-30);
 }
 
-.border-purple-4 {
-  border-color: var(--calitp-purple-4);
+.border-purple-70 {
+  border-color: var(--dsdl-purple-70);
 }
 
-.border-yellow-4 {
-  border-color: var(--calitp-yellow-4);
+.border-yellow-30 {
+  border-color: var(--dsdl-yellow-30);
 }
 
 .min-w-0 {
@@ -92,7 +93,7 @@ hr {
   font-size: 0.75rem;
   font-family: var(--bs-font-sans-serif);
   border: 1.5px solid var(--bs-white);
-  background-color: rgba(33, 33, 33, 0.2);
+  background-color: rgba(38, 38, 38, 0.2);  /* gray 80 at 20% opacity */
 }
 
 .fs-7 {
@@ -131,7 +132,7 @@ figure.quote figcaption {
 }
 
 footer a:hover {
-  color: var(--calitp-gray-2) !important;
+  color: var(--dsdl-gray-30) !important;
 }
 
 .mb-28 {

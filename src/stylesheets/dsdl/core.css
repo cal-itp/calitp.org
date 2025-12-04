@@ -5,7 +5,7 @@
 
 
 body {
-  color: var(--dsdl-gray-100);
+  color: var(--dsdl-body-color);
   font-family: var(--dsdl-font-stack);
   line-height: var(--line-height-normal);
 }
@@ -108,8 +108,7 @@ h1 {
   font-weight: 400;
 }
 
-a:link,
-a:visited {
+a {
   color: var(--dsdl-blue-70);
 }
 a:hover,
