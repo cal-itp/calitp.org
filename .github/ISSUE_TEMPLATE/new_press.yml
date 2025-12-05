@@ -11,7 +11,7 @@ body:
       required: true
     attributes:
       label: Approved?
-      description: Has your content (document and headline) been approved been approved for publication? If not, please confirm approval in [#comms-and-content](https://cal-itp.slack.com/archives/C01LVK0C4NS).
+      description: Has your content (document and headline) been approved for publication? If not, please confirm approval in [#comms-and-content](https://cal-itp.slack.com/archives/C01LVK0C4NS).
       multiple: false
       options:
         - 'No'
