@@ -1,12 +1,4 @@
 :root {
-  /* Typography */
-  --bs-font-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
-    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --calitp-headline-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
-    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-body-line-height: 1.4;
-  --calitp-font-weight-bold: 700;
-
   /* Magic numbers for layout adjustments */
   --header-nav-height: 110px;
   --footer-nav-height: 39px;
@@ -19,6 +11,6 @@
   --calitp-background-blue: var(--dsdl-cyan-10);
   --bs-primary: var(--calitp-brand-blue);
   --bs-secondary-color: var(--dsdl-gray-80);
-  --bs-tertiary-color: var(--dsdl-slate-60);
+  --bs-tertiary-color: var(--dsdl-slate-70);
   --bs-nav-link-color: var(--dsdl-gray-90);
 }

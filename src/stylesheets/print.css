@@ -9,6 +9,6 @@
 
   .press-release p,
   .press-release a {
-    font-size: 0.875rem !important;
+    font-size: var(--text-s) !important;
   }
 }

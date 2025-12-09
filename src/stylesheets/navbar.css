@@ -1,6 +1,6 @@
 .navbar {
   --bs-navbar-padding-y: 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 0.04);
 }
 
 .navbar-nav {
@@ -68,7 +68,7 @@ main.container {
     width: 100%;
     left: 0;
     top: var(--header-nav-height);
-    background: var(--bs-white);
+    background: white;
   }
 
   .navbar-nav .nav-link {

@@ -9,7 +9,7 @@
 }
 
 .black-on-white .nav-pills {
-  --bs-nav-pills-link-active-color: var(--bs-white);
+  --bs-nav-pills-link-active-color: white;
   --bs-nav-pills-link-active-bg: var(--dsdl-body-color);
 }
 
@@ -22,22 +22,22 @@
 }
 
 .black-on-white .nav-pills .nav-link:hover {
-  border-color: rgba(38, 38, 38, 0.8);  /* gray 80 at 80% opacity */
+  border-color: rgb(38  38  38 / 0.8);  /* dsdl-gray-80 at 80% opacity */
 }
 
 .white-on-color .nav-pills {
   --bs-nav-pills-link-active-color: var(--dsdl-body-color);
-  --bs-nav-pills-link-active-bg: var(--bs-white);
+  --bs-nav-pills-link-active-bg: white;
 }
 
 .white-on-color .nav-pills .nav-link {
-  border-color: var(--bs-white);
+  border-color: white;
 }
 
 .white-on-color .nav-pills .nav-link:not(.active) {
-  color: var(--bs-white);
+  color: white;
 }
 
 .white-on-color .nav-pills .nav-link:hover {
-  border-color: rgba(var(--bs-white-rgb), 0.8);
+  border-color: rgb(255 255 255 / 0.8);
 }
