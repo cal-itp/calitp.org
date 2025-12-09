@@ -33,7 +33,7 @@ tiered in three cellular data levels to accommodate transit providers’ varying
   operations. With this plan, transit agencies will be able to afford the data plans
   necessary to continue bringing the best service to their riders into the future.
 
-_(\* None of these plans includes customer WiFi, as only transit operational needs qualify for the first-responder network. If customer-facing WiFi is desired, commercial plans through CALNET are also available on the [California Mobility Marketplace](https://www.camobilitymarketplace.org/contracts/).)_
+(* None of these plans includes customer WiFi, as only transit operational needs qualify for the first-responder network. If customer-facing WiFi is desired, commercial plans through CALNET are also available on the [California Mobility Marketplace](https://www.camobilitymarketplace.org/contracts/).)
 
 The monthly pricing for each of these FirstNet plans is based on which data level an
 agency selects as well as the cumulative total number of SIMs (subscriber identity
@@ -42,27 +42,27 @@ modules, the smart cards that store identification information to pinpoint a dev
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><em>Tier</em><br># of SIMs</th>
-      <th><em>Tier 1</em><br>(&lt; 2,999 SIMs)</th>
-      <th><em>Tier 2</em><br>(3,000-9,999 SIMs)</th>
-      <th><em>Tier 3</em><br>(&gt; 10,000 SIMs)</th>
+      <th>Tier<br><span class="fw-normal"># of SIMs</span></th>
+      <th>Tier 1<br><span class="fw-normal">(&lt; 2,999 SIMs)</span></th>
+      <th>Tier 2<br><span class="fw-normal">(3,000-9,999 SIMs)</span></th>
+      <th>Tier 3<br><span class="fw-normal">(&gt; 10,000 SIMs)</span></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>1GB Plan<br><em>(monthly cost per SIM)</em></th>
+      <th>1GB Plan<br><span class="fw-normal">(monthly cost per SIM)</span></th>
       <td>$10.00</td>
       <td>$7.50</td>
       <td>$4.99</td>
     </tr>
     <tr>
-      <th>3GB Plan<br><em>(monthly cost per SIM)</em></th>
+      <th>3GB Plan<br><span class="fw-normal">(monthly cost per SIM)</span></th>
       <td>$25.00</td>
       <td>$20.00</td>
       <td>$14.99</td>
     </tr>
     <tr>
-      <th>Unlimited Plan<br><em>(monthly cost per SIM)</em></th>
+      <th>Unlimited Plan<br><span class="fw-normal">(monthly cost per SIM)</span></th>
       <td>$35.00</td>
       <td>$35.00</td>
       <td>$29.99</td>

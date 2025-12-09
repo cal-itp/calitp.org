@@ -91,7 +91,7 @@ the build-out of infrastructure across the state.
 
 For more information about this demonstration project, contact [Alexander.Guendulain@valleycan.org](mailto:Alexander.Guendulain@valleycan.org).
 
-<strong><u>About this demonstration project’s stakeholders</u></strong>
+## About this demonstration project’s stakeholders
 
 **Valley CAN**
 
