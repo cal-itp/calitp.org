@@ -26,14 +26,16 @@ body {
   font-weight: 400;
 }
 
-.text-subtitle-s,
-h6 {
+h6,
+.h6,
+.text-subtitle-s {
   font-size: var(--text-m);
   line-height: var(--line-height-normal);
   font-weight: 500;
 }
-.text-subtitle-m,
-h4 {
+h4,
+.h4,
+.text-subtitle-m {
   font-size: var(--text-l);
   line-height: var(--line-height-normal);
   font-weight: 500;
@@ -44,14 +46,16 @@ h4 {
   font-weight: 500;
 }
 
-.text-title-s,
-h5 {
+h5,
+.h5,
+.text-title-s {
   font-size: var(--text-m);
   line-height: var(--line-height-normal);
   font-weight: 600;
 }
-.text-title-m,
-h3 {
+h3,
+.h3,
+.text-title-m {
   font-size: var(--text-xl);
   line-height: var(--line-height-tight);
   font-weight: 600;
@@ -67,14 +71,16 @@ h3 {
   line-height: var(--line-height-tight);
   font-weight: 700;
 }
-.text-headline-m,
-h2 {
+h2,
+.h2,
+.text-headline-m {
   font-size: var(--text-xxl);
   line-height: var(--line-height-tight);
   font-weight: 700;
 }
-.text-headline-l,
-h1 {
+h1,
+.h1,
+.text-headline-l {
   font-size: var(--text-xxxl);
   line-height: var(--line-height-tight);
   font-weight: 700;
@@ -85,12 +91,17 @@ h1 {
   line-height: var(--line-height-extra-tight);
   font-weight: 600;
 }
-.text-smallcaps {
+.text-small-caps {
+  /* TODO: Consider eliminating this as its own core style, making it more of a utility,
+     because sometimes we want to apply smallcaps to other styles,
+     e.g.: calitp.org homepage initiatives Recent News and Resources h4 elements. */
   font-size: var(--text-xs);
   line-height: var(--line-height-loose);
   font-weight: 400;
   text-transform: uppercase;
 }
+small,
+.small,
 .text-caption {
   font-size: var(--text-xs);
   line-height: var(--line-height-loose);

@@ -5,7 +5,7 @@
 .footnotes ol::before {
   content: "Footnotes";
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   margin-left: -1rem;
 }
@@ -17,7 +17,7 @@
 .footnotes a,
 .footnotes li,
 .footnotes p {
-  font-size: 0.85rem;
+  font-size: var(--text-xs);
 }
 
 .footnotes li:target {
@@ -32,10 +32,10 @@
 
 @keyframes footnoteFade {
   0% {
-    background-color: rgb(255 255 185 / 1);
+    background-color: var(--dsdl-yellow-20);
   }
 
   100% {
-    background-color: rgb(255 255 185 / 0);
+    background-color: transparent;
   }
 }

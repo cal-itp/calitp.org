@@ -1,14 +1,15 @@
 .link-tertiary {
   color: var(--bs-tertiary-color);
+  font-size: var(--text-s);
+  font-weight: 400;
   text-decoration: underline;
-  font-weight: normal;
 }
 
 .link-tertiary:hover,
 .link-tertiary.active {
   color: var(--bs-primary);
-  text-decoration: none;
   font-weight: 700;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
