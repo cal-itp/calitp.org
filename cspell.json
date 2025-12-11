@@ -16,7 +16,8 @@
   "flagWords": [
     "CalITP->Cal-ITP",
     "cal-itp.org->calitp.org",
-    "ITP" // Looking for 'Cal ITP' (without hyphen)
+    "ITP", // Looking for 'Cal ITP' (without hyphen)
+    "LittlePay->Littlepay"
   ],
   "ignorePaths": [
     "cspell.json",
