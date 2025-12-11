@@ -9,6 +9,7 @@ calitp-
 cli
 codehilite
 devcontainers
+DSDL
 fnref
 frontmatter
 gha
