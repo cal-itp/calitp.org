@@ -11,13 +11,13 @@ CARB
 CCJPA
 CDT
 cdt.ca.gov
+cEMV
 CFPB
 CFSI
-cEMV
-EBT
 coastrta.com
 Cybersource
 DGS
+EBT
 Elavon
 elavon.com
 EMV
@@ -49,8 +49,8 @@ mst.org
 MTA
 multimodal
 neobank
-neobanks
 neobanking
+neobanks
 Newsom
 ODS
 ods.calitp.org
