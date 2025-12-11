@@ -113,7 +113,7 @@ small,
   font-weight: 400;
 }
 .text-code {
-  font-family: var(--monospace-font-stack);
+  font-family: var(--dsdl-monospace-font-stack);
   font-size: var(--text-m);
   line-height: var(--line-height-loose);
   font-weight: 400;
