@@ -22,15 +22,16 @@
   --dsdl-monospace-font-stack: 'Source Code Pro', 'Cascadia Code', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
   /* Size */
-  --text-xxs: calc(10rem / 16);
-  --text-xs: calc(12rem / 16);
-  --text-s: calc(14rem / 16);
-  --text-m: calc(16rem / 16);
-  --text-l: calc(20rem / 16);
-  --text-xl: calc(24rem / 16);
-  --text-xxl: calc(32rem / 16);
-  --text-xxxl: calc(40rem / 16);
-  --text-display: calc(64rem / 16);
+  --text-base: 16;
+  --text-xxs: calc(10rem / var(--text-base));
+  --text-xs: calc(12rem / var(--text-base));
+  --text-s: calc(14rem / var(--text-base));
+  --text-m: calc(16rem / var(--text-base));
+  --text-l: calc(20rem / var(--text-base));
+  --text-xl: calc(24rem / var(--text-base));
+  --text-xxl: calc(32rem / var(--text-base));
+  --text-xxxl: calc(40rem / var(--text-base));
+  --text-display: calc(64rem / var(--text-base));
 
   /* Line height */
   --line-height-extra-tight: 1.125;
@@ -53,4 +54,27 @@
   --calitp-brand-blue: var(--dsdl-blue-70);  /* #045b86 */
   --calitp-brand-cyan: var(--dsdl-cyan-40);  /* #38abd0 */
   --calitp-brand-yellow: var(--dsdl-yellow-30);  /* #febd28 */
+}
+
+
+/* SPACING */
+
+:root {
+  --spacing-1px: 1px;  /* Non-relative unit for when we don't want a single pixel stroke to scale */
+
+  --spacing-base: 8;  /* Calculated pixel sizes based on this base →→→→→→→→→→→→→ ↓↓↓↓↓ */
+  --spacing-05:   calc(var(--spacing-base) * 0.5 / var(--text-base) * 1rem);  /* 4px   */
+  --spacing-1:    calc(var(--spacing-base) * 1   / var(--text-base) * 1rem);  /* 8px   */
+  --spacing-2:    calc(var(--spacing-base) * 2   / var(--text-base) * 1rem);  /* 16px  */
+  --spacing-2-05: calc(var(--spacing-base) * 2.5 / var(--text-base) * 1rem);  /* 20px  */
+  --spacing-3:    calc(var(--spacing-base) * 3   / var(--text-base) * 1rem);  /* 24px  */
+  --spacing-4:    calc(var(--spacing-base) * 4   / var(--text-base) * 1rem);  /* 32px  */
+  --spacing-5:    calc(var(--spacing-base) * 5   / var(--text-base) * 1rem);  /* 40px  */
+  --spacing-6:    calc(var(--spacing-base) * 6   / var(--text-base) * 1rem);  /* 48px  */
+  --spacing-7:    calc(var(--spacing-base) * 7   / var(--text-base) * 1rem);  /* 56px  */
+  --spacing-8:    calc(var(--spacing-base) * 8   / var(--text-base) * 1rem);  /* 64px  */
+  --spacing-9:    calc(var(--spacing-base) * 9   / var(--text-base) * 1rem);  /* 72px  */
+  --spacing-10:   calc(var(--spacing-base) * 10  / var(--text-base) * 1rem);  /* 80px  */
+  --spacing-15:   calc(var(--spacing-base) * 15  / var(--text-base) * 1rem);  /* 120px */
+  --spacing-20:   calc(var(--spacing-base) * 20  / var(--text-base) * 1rem);  /* 160px */
 }

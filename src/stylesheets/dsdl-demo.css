@@ -1,5 +1,9 @@
 /* DSDL demo page */
 
+.dsdl-demo {
+  padding-bottom: var(--spacing-10);
+}
+
 .dsdl-demo h2,
 .dsdl-demo h3,
 .dsdl-demo h4 {
@@ -37,16 +41,16 @@
   text-align: center;
 }
 
-.dsdl-core-type-matrix th,
-.dsdl-core-type-matrix td {
+.dsdl-demo table th,
+.dsdl-demo table td {
   padding: 0.5rem;
   border: 1px solid var(--dsdl-gray-20);
 }
-.dsdl-core-type-matrix th {
+.dsdl-demo table th {
   background: var(--calitp-brand-blue);
   color: white;
 }
-.dsdl-core-type-matrix thead th {
+.dsdl-demo table thead th {
   text-align: center;
 }
 .dsdl-core-type-matrix td {
@@ -63,4 +67,12 @@
 .dsdl-extra-type-styles {
   list-style: none;
   padding: 0;
+}
+
+.spacing-demo td {
+  font-family: var(--dsdl-monospace-font-stack);
+}
+.spacing-sample {
+  background: var(--calitp-brand-cyan);
+  width: var(--spacing-20);
 }
