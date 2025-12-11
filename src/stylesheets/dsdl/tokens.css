@@ -53,3 +53,26 @@
   --calitp-brand-cyan: var(--dsdl-cyan-40);  /* #38abd0 */
   --calitp-brand-yellow: var(--dsdl-yellow-30);  /* #febd28 */
 }
+
+
+/* SPACING */
+
+:root {
+  --spacing-1px: 1px;  /* Non-relative unit for when we don't want a single pixel stroke to scale */
+
+  --spacing-base: 8;  /* Calculated pixel sizes based on this base →→→→→→→→→→→→→ ↓↓↓↓↓ */
+  --spacing-05:   calc(var(--spacing-base) * 0.5 / var(--text-base) * 1rem);  /* 4px   */
+  --spacing-1:    calc(var(--spacing-base) * 1   / var(--text-base) * 1rem);  /* 8px   */
+  --spacing-2:    calc(var(--spacing-base) * 2   / var(--text-base) * 1rem);  /* 16px  */
+  --spacing-2-05: calc(var(--spacing-base) * 2.5 / var(--text-base) * 1rem);  /* 20px  */
+  --spacing-3:    calc(var(--spacing-base) * 3   / var(--text-base) * 1rem);  /* 24px  */
+  --spacing-4:    calc(var(--spacing-base) * 4   / var(--text-base) * 1rem);  /* 32px  */
+  --spacing-5:    calc(var(--spacing-base) * 5   / var(--text-base) * 1rem);  /* 40px  */
+  --spacing-6:    calc(var(--spacing-base) * 6   / var(--text-base) * 1rem);  /* 48px  */
+  --spacing-7:    calc(var(--spacing-base) * 7   / var(--text-base) * 1rem);  /* 56px  */
+  --spacing-8:    calc(var(--spacing-base) * 8   / var(--text-base) * 1rem);  /* 64px  */
+  --spacing-9:    calc(var(--spacing-base) * 9   / var(--text-base) * 1rem);  /* 72px  */
+  --spacing-10:   calc(var(--spacing-base) * 10  / var(--text-base) * 1rem);  /* 80px  */
+  --spacing-15:   calc(var(--spacing-base) * 15  / var(--text-base) * 1rem);  /* 120px */
+  --spacing-20:   calc(var(--spacing-base) * 20  / var(--text-base) * 1rem);  /* 160px */
+}
