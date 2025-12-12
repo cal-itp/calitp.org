@@ -24,3 +24,7 @@
 .line-height-loose { line-height: 1.625 !important; }
 
 .text-brand-blue { color: var(--calitp-brand-blue); }
+
+.font-heading { font-family: var(--dsdl-heading-font-stack); }
+.font-body { font-family: var(--dsdl-body-font-stack); }
+.font-monospace { font-family: var(--dsdl-monospace-font-stack); }

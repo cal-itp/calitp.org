@@ -1,13 +1,5 @@
 /* DSDL demo page */
 
-.dsdl-demo h1,
-.dsdl-demo h2,
-.dsdl-demo h3,
-.dsdl-demo h4 {
-  /* TODO: Remove when it's not necessary to override the styles above. */
-  font-family: var(--dsdl-font-stack);
-}
-
 .dsdl-demo h2,
 .dsdl-demo h3,
 .dsdl-demo h4 {
