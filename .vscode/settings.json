@@ -3,7 +3,7 @@
   "cSpell.diagnosticLevelFlaggedWords": "Error",
   "cSpell.suggestionMenuType": "quickFix",
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "prettier.prettier-vscode",
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -14,7 +14,7 @@
     "*.html": "liquid"
   },
   "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
     "editor.formatOnSave": true
   }
 }
