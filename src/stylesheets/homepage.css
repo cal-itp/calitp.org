@@ -1,0 +1,57 @@
+.hero-header {
+  max-width: 441px;
+}
+
+.rainbow-list ol {
+  list-style: none;
+  counter-reset: numList;
+}
+
+.rainbow-list ol li:before {
+  counter-increment: numList;
+  content: counter(numList);
+  text-align: center;
+  color: white;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rainbow-list ol li:nth-child(1):before {
+  background: var(--calitp-brand-blue);
+}
+
+.rainbow-list ol li:nth-child(2):before {
+  background: var(--dsdl-orange-60);
+}
+
+.rainbow-list ol li:nth-child(3):before {
+  background: var(--dsdl-red-70);
+}
+
+.rainbow-list ol li:nth-child(4):before {
+  background: var(--dsdl-purple-70);
+}
+
+/* Initiatives */
+
+.scroll-link {
+  scroll-margin-top: 240px;
+}
+
+.tab-list .press-item:nth-child(n + 4),
+.tab-list .resource:nth-child(n + 4) {
+  display: none;
+}
+
+.tab-content h4 {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border: 1.5px solid white;
+  margin-bottom: 1rem;
+  background-color: rgb(38 38 38 / 0.2);  /* gray 80 at 20% opacity */
+  color: white;
+  font-weight: 700;  /* overrides .text-small-caps weight assignment */
+}

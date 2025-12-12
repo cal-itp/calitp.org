@@ -1,0 +1,56 @@
+---
+# Empty front matter to enable Liquid processing
+---
+
+/*
+ * Cal-ITP Digital Services Design Language
+ * Design Tokens
+ */
+
+
+/* TYPOGRAPHY */
+
+/* Import webfonts */
+/* Space Grotesk: Variable weight, 400–700 */
+/* Source Code Pro: 400 only */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400..800;1,400..800&family=Source+Code+Pro&family=Space+Grotesk:wght@400..700&display=swap');
+
+:root {
+  /* Fonts */
+  --dsdl-heading-font-stack: 'Space Grotesk', system-ui;
+  --dsdl-body-font-stack: 'Noto Sans', system-ui;
+  --dsdl-monospace-font-stack: 'Source Code Pro', 'Cascadia Code', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+  /* Size */
+  --text-xxs: calc(10rem / 16);
+  --text-xs: calc(12rem / 16);
+  --text-s: calc(14rem / 16);
+  --text-m: calc(16rem / 16);
+  --text-l: calc(20rem / 16);
+  --text-xl: calc(24rem / 16);
+  --text-xxl: calc(32rem / 16);
+  --text-xxxl: calc(40rem / 16);
+  --text-display: calc(64rem / 16);
+
+  /* Line height */
+  --line-height-extra-tight: 1.125;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.625;
+
+  /* Colors */
+  --dsdl-body-color: var(--dsdl-gray-100);
+}
+
+
+/* COLORS */
+
+:root {
+  {% for color in site.data.dsdl_colors -%}
+  --dsdl-{{ color.group }}-{{ color.level }}: {{ color.value }};
+  {% endfor %}
+
+  --calitp-brand-blue: var(--dsdl-blue-70);  /* #045b86 */
+  --calitp-brand-cyan: var(--dsdl-cyan-40);  /* #38abd0 */
+  --calitp-brand-yellow: var(--dsdl-yellow-30);  /* #febd28 */
+}

@@ -1,0 +1,14 @@
+@media print {
+  main.container {
+    padding-top: 1rem !important;
+  }
+
+  .col-lg-8 {
+    width: 100% !important;
+  }
+
+  .press-release p,
+  .press-release a {
+    font-size: var(--text-s) !important;
+  }
+}

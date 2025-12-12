@@ -1,0 +1,25 @@
+.press-release h2,
+.press-release h3 {
+  font-size: var(--bs-body-font-size);
+  padding-top: 20px;
+}
+
+.press-release h2:last-of-type {
+  text-decoration: underline;
+}
+
+.press-release img {
+  display: block;
+  max-width: 100%;
+}
+
+.press-release figcaption p {
+  font-size: var(--text-s);
+  /* TODO: Revisit use of faux italics with Space Grotesk */
+  font-style: italic;
+  text-align: center;
+}
+
+.press-release sup a {
+  margin: 0 0.15em;
+}

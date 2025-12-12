@@ -1,0 +1,30 @@
+/*
+ * Cal-ITP Digital Services Design Language
+ * Utility Classes
+ */
+
+.font-size-xxs { font-size: var(--text-xxs) !important; }
+.font-size-xs { font-size: var(--text-xs) !important; }
+.font-size-s { font-size: var(--text-s) !important; }
+.font-size-m { font-size: var(--text-m) !important; }
+.font-size-l { font-size: var(--text-l) !important; }
+.font-size-xl { font-size: var(--text-xl) !important; }
+.font-size-xxl { font-size: var(--text-xxl) !important; }
+.font-size-xxxl { font-size: var(--text-xxxl) !important; }
+.font-size-display { font-size: var(--text-display) !important; }
+
+.font-weight-normal { font-weight: 400 !important; }
+.font-weight-semi-bold { font-weight: 500 !important; }
+.font-weight-bold { font-weight: 600 !important; }
+.font-weight-extra-bold { font-weight: 700 !important; }
+
+.line-height-extra-tight { line-height: 1.125 !important; }
+.line-height-tight { line-height: 1.25 !important; }
+.line-height-normal { line-height: 1.5 !important; }
+.line-height-loose { line-height: 1.625 !important; }
+
+.text-brand-blue { color: var(--calitp-brand-blue); }
+
+.font-heading { font-family: var(--dsdl-heading-font-stack); }
+.font-body { font-family: var(--dsdl-body-font-stack); }
+.font-monospace { font-family: var(--dsdl-monospace-font-stack); }

@@ -1,0 +1,16 @@
+:root {
+  /* Magic numbers for layout adjustments */
+  --header-nav-height: 110px;
+  --footer-nav-height: 39px;
+
+  /* Bootstrap border overrides */
+  --bs-border-radius: 20px;
+  --bs-border-style: dashed;
+
+  /* Colors */
+  --calitp-background-blue: var(--dsdl-cyan-10);
+  --bs-primary: var(--calitp-brand-blue);
+  --bs-secondary-color: var(--dsdl-gray-80);
+  --bs-tertiary-color: var(--dsdl-slate-70);
+  --bs-nav-link-color: var(--dsdl-gray-90);
+}
