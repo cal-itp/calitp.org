@@ -337,16 +337,6 @@ stylesheet: dsdl-demo.css
     <tbody>
       <tr>
         <td>
-          <div class="spacing-sample" style="height: var(--spacing-1px);">
-            <span class="visually-hidden">A box illustrating the size of something using spacing 1px</span>
-          </div>
-        </td>
-        <td>--spacing-1px</td>
-        <td>1px</td>
-        <td>N/A</td>
-      </tr>
-      <tr>
-        <td>
           <div class="spacing-sample" style="height: var(--spacing-05);">
             <span class="visually-hidden">A box illustrating the size of something using spacing 05 (half)</span>
           </div>
@@ -488,5 +478,7 @@ stylesheet: dsdl-demo.css
     </tbody>
     <caption class="visually-hidden">Chart of our spacing variables with visual reference</caption>
   </table>
+
+  <p>Note: For lines we want to be exactly 1 logical pixel without scaling, we use a <code>1px</code> value directly.</p>
 
 </div>

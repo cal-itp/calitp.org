@@ -60,8 +60,6 @@
 /* SPACING */
 
 :root {
-  --spacing-1px: 1px;  /* Non-relative unit for when we don't want a single pixel stroke to scale */
-
   --spacing-base: calc(8 / var(--text-base) * 1rem);  /* 8px → 0.5rem */
   --spacing-05:   calc(var(--spacing-base) * 0.5);  /* 0.25rem (4px)   */
   --spacing-1:    calc(var(--spacing-base) * 1  );  /* 0.5rem  (8px)   */

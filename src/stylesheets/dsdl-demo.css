@@ -41,10 +41,13 @@
   text-align: center;
 }
 
+.dsdl-demo table {
+  margin: var(--spacing-2) 0;
+}
 .dsdl-demo table th,
 .dsdl-demo table td {
   padding: var(--spacing-1);
-  border: var(--spacing-1px) solid var(--dsdl-gray-20);
+  border: 1px solid var(--dsdl-gray-20);
 }
 .dsdl-demo table th {
   background: var(--calitp-brand-blue);
