@@ -62,19 +62,19 @@
 :root {
   --spacing-1px: 1px;  /* Non-relative unit for when we don't want a single pixel stroke to scale */
 
-  --spacing-base: 8;  /* Calculated pixel sizes based on this base →→→→→→→→→→→→→ ↓↓↓↓↓ */
-  --spacing-05:   calc(var(--spacing-base) * 0.5 / var(--text-base) * 1rem);  /* 4px   */
-  --spacing-1:    calc(var(--spacing-base) * 1   / var(--text-base) * 1rem);  /* 8px   */
-  --spacing-2:    calc(var(--spacing-base) * 2   / var(--text-base) * 1rem);  /* 16px  */
-  --spacing-2-05: calc(var(--spacing-base) * 2.5 / var(--text-base) * 1rem);  /* 20px  */
-  --spacing-3:    calc(var(--spacing-base) * 3   / var(--text-base) * 1rem);  /* 24px  */
-  --spacing-4:    calc(var(--spacing-base) * 4   / var(--text-base) * 1rem);  /* 32px  */
-  --spacing-5:    calc(var(--spacing-base) * 5   / var(--text-base) * 1rem);  /* 40px  */
-  --spacing-6:    calc(var(--spacing-base) * 6   / var(--text-base) * 1rem);  /* 48px  */
-  --spacing-7:    calc(var(--spacing-base) * 7   / var(--text-base) * 1rem);  /* 56px  */
-  --spacing-8:    calc(var(--spacing-base) * 8   / var(--text-base) * 1rem);  /* 64px  */
-  --spacing-9:    calc(var(--spacing-base) * 9   / var(--text-base) * 1rem);  /* 72px  */
-  --spacing-10:   calc(var(--spacing-base) * 10  / var(--text-base) * 1rem);  /* 80px  */
-  --spacing-15:   calc(var(--spacing-base) * 15  / var(--text-base) * 1rem);  /* 120px */
-  --spacing-20:   calc(var(--spacing-base) * 20  / var(--text-base) * 1rem);  /* 160px */
+  --spacing-base: calc(8 / var(--text-base) * 1rem);  /* 8px → 0.5rem */
+  --spacing-05:   calc(var(--spacing-base) * 0.5);  /* 0.25rem (4px)   */
+  --spacing-1:    calc(var(--spacing-base) * 1  );  /* 0.5rem  (8px)   */
+  --spacing-2:    calc(var(--spacing-base) * 2  );  /* 1rem    (16px)  */
+  --spacing-2-05: calc(var(--spacing-base) * 2.5);  /* 1.25rem (20px)  */
+  --spacing-3:    calc(var(--spacing-base) * 3  );  /* 1.5rem  (24px)  */
+  --spacing-4:    calc(var(--spacing-base) * 4  );  /* 2rem    (32px)  */
+  --spacing-5:    calc(var(--spacing-base) * 5  );  /* 2.5rem  (40px)  */
+  --spacing-6:    calc(var(--spacing-base) * 6  );  /* 3rem    (48px)  */
+  --spacing-7:    calc(var(--spacing-base) * 7  );  /* 3.5rem  (56px)  */
+  --spacing-8:    calc(var(--spacing-base) * 8  );  /* 4rem    (64px)  */
+  --spacing-9:    calc(var(--spacing-base) * 9  );  /* 4.5rem  (72px)  */
+  --spacing-10:   calc(var(--spacing-base) * 10 );  /* 5rem    (80px)  */
+  --spacing-15:   calc(var(--spacing-base) * 15 );  /* 7.5rem  (120px) */
+  --spacing-20:   calc(var(--spacing-base) * 20 );  /* 10rem   (160px) */
 }
