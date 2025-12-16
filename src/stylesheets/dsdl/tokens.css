@@ -13,7 +13,7 @@
 /* Import webfonts */
 /* Space Grotesk: Variable weight, 400–700 */
 /* Source Code Pro: 400 only */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400..800;1,400..800&family=Source+Code+Pro&family=Space+Grotesk:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400..600;1,400..600&family=Source+Code+Pro&family=Space+Grotesk:wght@400..700&display=swap');
 
 :root {
   /* Fonts */

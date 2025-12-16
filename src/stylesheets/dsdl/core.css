@@ -10,15 +10,6 @@ body {
   line-height: var(--line-height-normal);
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: var(--dsdl-heading-font-stack);
-}
-
 .text-body-s {
   font-size: var(--text-xs);
   line-height: var(--line-height-loose);
@@ -144,11 +135,6 @@ a {
 a:hover,
 a:focus {
   color: var(--dsdl-blue-80);
-}
-
-b,
-strong {
-  font-weight: 600;
 }
 
 code,
