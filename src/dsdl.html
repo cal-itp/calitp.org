@@ -27,24 +27,24 @@ stylesheet: dsdl-demo.css
   <h2>Color palette</h2>
 
   <h3>Brand colors</h3>
-
+  <p>These colors are canonized as CSS variables. Example: <code>--calitp-brand-blue</code></p>
   <ul class="brand-colors">
     <li style="background: var(--calitp-brand-blue); color: #fff">
       <h4>Cal-ITP Blue</h4>
-      <div>(blue 70)</div>
+      <div>(blue-70)</div>
     </li>
     <li style="background: var(--calitp-brand-cyan); color: #000">
       <h4>Cal-ITP Cyan</h4>
-      <div>(cyan 40)</div>
+      <div>(cyan-40)</div>
     </li>
     <li style="background: var(--calitp-brand-yellow); color: #000">
       <h4>Cal-ITP Yellow</h4>
-      <div>(yellow 30)</div>
+      <div>(yellow-30)</div>
     </li>
   </ul>
 
   <h3>Full range</h3>
-
+  <p>These CSS variables take the form <code>--dsdl-{color}-{number}</code>. Example: <code>--dsdl-red-40</code></p>
   <div class="dsdl-colors">
     {% comment %} Start the first color group's list, storing its group name in current_group {% endcomment %}
     {% assign current_group = site.data.dsdl_colors[0].group %}
@@ -62,7 +62,8 @@ stylesheet: dsdl-demo.css
         {% comment %} Output the individual color swatch {% endcomment %}
         <li style="background: {{ color.value }};
                    color: {% if color.level <= 50 %}#000{% else %}#fff{% endif %}">
-          {{ color.group }} {{ color.level }}
+          {{ color.group }}-{{ color.level }}
+          {% if color.level == 100 and color.group == 'slate' %}(black){% endif %}
         </li>
 
       {% endfor %}
