@@ -25,7 +25,7 @@ body:
           required: true
         - label: Did you remove all spaces between words in the filename? The only acceptable characters in the filename are letters, numbers, `-`, `.` and `_`.
           required: true
-        - label: Did you ensure there are no revision dates or numbers in the filename? Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidlines-v3.pdf`, as version 3 is an official version number.
+        - label: Did you ensure there are no revision dates or numbers in the filename? Limit usage of revision numbers or dates unless commonly understood and expected by the audience. Avoid `report-june-2024.pdf`, `file-v1.2.pdf`. Allowed `GTFS-guidelines-v3.pdf`, as version 3 is an official version number.
           required: true
         - label: Did you run this PDF through Adobe Acrobat's Accessibility Checker, and ensure the PDF passes all accessibility checks? Please review [this checklist](https://docs.google.com/document/d/1CkXfHDuJ4fR2wikGrsgyt4Dib6YdY3AhFmYtsk4kQXg/edit#heading=h.ecbzu7qezn59) to get more information on accessibility and how to run accessibility checks.
           required: true
