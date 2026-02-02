@@ -30,3 +30,162 @@ a.md-tabs__link {
 .clear {
   clear: both;
 }
+
+.list-style-none {
+  list-style-type: none !important;
+  margin-left: 0 !important;
+}
+
+.vertical-align-baseline {
+  vertical-align: baseline !important;
+}
+
+
+/* Material for MkDocs overrides */
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  padding: .9375rem 1.25rem;  /* Original ems caused problems for table of type styles. */
+}
+
+
+/* TEMPORARY COPY OF typography.css UNTIL THAT'S ON PRODUCTION */
+
+/*
+ * Cal-ITP Digital Services Design Language
+ * Core Typography Styles
+ */
+
+
+.text-body-s {
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-body-m {
+  font-size: var(--text-s);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-body-l {
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 400;
+}
+
+.text-subtitle-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 500;
+}
+.text-subtitle-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-l);
+  line-height: var(--line-height-normal);
+  font-weight: 500;
+}
+.text-subtitle-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 500;
+}
+
+.text-title-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-normal);
+  font-weight: 600;
+}
+.text-title-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 600;
+}
+.text-title-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxl);
+  line-height: var(--line-height-tight);
+  font-weight: 600;
+}
+
+.text-headline-s {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+.text-headline-m {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+.text-headline-l {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-xxxl);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+
+.text-display {
+  font-family: var(--dsdl-heading-font-stack);
+  font-size: var(--text-display);
+  line-height: var(--line-height-extra-tight);
+  font-weight: 600;
+}
+.text-small-caps {
+  /* TODO: Consider eliminating this as its own core style, making it more of a utility,
+     because sometimes we want to apply smallcaps to other styles,
+     e.g.: calitp.org homepage initiatives Recent News and Resources h4 elements. */
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.small,
+.text-caption {
+  font-size: var(--text-xs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+.text-footnote {
+  font-size: var(--text-xxs);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
+
+
+/* COPY OF PARTS OF dsdl-demo.css TO OVERRIDE MATERIAL STYLES */
+
+
+.brand-colors h4 {
+  margin-top: 0;
+}
+ul.brand-colors,
+.dsdl-colors {
+  display: flex !important;
+}
+ul.brand-colors,
+.dsdl-colors ol {
+  list-style: none;
+  margin: 0.625em 0 !important;
+}
+.brand-colors li,
+.dsdl-colors ol {
+  margin: 0 var(--spacing-1) 0 0 !important;
+  flex: 1 1 auto;
+}
+.dsdl-colors li {
+  margin: 0 !important;
+}
+.brand-colors li {
+  padding: var(--spacing-3);
+  text-align: center;
+}
+.dsdl-colors li {
+  padding: var(--spacing-1);
+  text-align: center;
+}

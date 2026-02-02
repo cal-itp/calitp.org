@@ -9,11 +9,15 @@ calitp-
 cli
 codehilite
 devcontainers
+dsdl
 DSDL
+endfor
+endif
 fnref
 frontmatter
 gha
 gtag
+Grotesk
 inlinehilite
 jekyll
 linenums
@@ -22,8 +26,10 @@ msg
 noopener
 noreferrer
 noteref
+Noto
 numList
 peter-evans
+previtem
 pymdownx
 seo
 smartsymbols
@@ -33,3 +39,4 @@ superfences
 toc
 twemoji
 utf-8
+WCAG
