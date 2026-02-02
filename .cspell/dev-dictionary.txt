@@ -17,7 +17,8 @@ DSDL
 eamodio
 EDITMSG
 endcapture
-endunless
+endfor
+endif
 endunless
 env
 eol
@@ -30,6 +31,7 @@ frontmatter
 gha
 github
 gpg
+Grotesk
 gtag
 gtfs
 headerlink
@@ -44,9 +46,11 @@ msg
 noopener
 noreferrer
 noteref
+Noto
 numList
 peter-evans
 prcheck
+previtem
 pymdownx
 recv
 redhat
@@ -65,6 +69,7 @@ twemoji
 usr
 utf-8
 vnd
+WCAG
 webfonts
 xmlschema
 xxl
