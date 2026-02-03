@@ -21,6 +21,7 @@ Grotesk
 inlinehilite
 jekyll
 linenums
+markdownextradata
 mkdocs
 msg
 noopener
