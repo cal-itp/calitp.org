@@ -24,6 +24,8 @@ theme:
 plugins:
   - search
   - awesome-pages
+  - markdownextradata:
+      data: src/_data
 
 extra_css:
   - styles/theme.css
