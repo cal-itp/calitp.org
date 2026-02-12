@@ -19,7 +19,7 @@ outlet: "Cal-ITP"
 Cal-ITP Benefits is initially available for people 65 and older who ride Monterey-Salinas Transit (MST) buses, with plans to
 expand the service to other transit agencies— including ones outside of California. The web application is available in
 multiple languages and uses Login.gov as a secure sign-in service to verify a transit customer’s age for a “senior fare”
-discount. This removes the need for someone to appear inperson at a transit agency to apply for the discount-fare
+discount. This removes the need for someone to appear in person at a transit agency to apply for the discount-fare
 benefit—saving time, money, and paper.
 
 “Cal-ITP Benefits can help decrease the administrative burden on transit agencies and remove barriers for riders to receive
@@ -98,7 +98,7 @@ The California Integrated Travel Project (Cal-ITP) was established by the Califo
 California Department of Transportation (Caltrans) to both improve and encourage the use of multimodal travel throughout
 California—by enabling contactless open-loop payments, standardizing information for easy multimodal trip planning, and
 automating customer discounts (Cal-ITP Benefits). Prior to launching Cal-ITP Benefits, the Cal-ITP team successfully led
-contactless openloop payment demonstrations with Monterey-Salinas Transit (MST) as well as public transit agencies in
+contactless open-loop payment demonstrations with Monterey-Salinas Transit (MST) as well as public transit agencies in
 Sacramento and Santa Barbara County. Learn more at [calitp.org](https://calitp.org) and on [@California_ITP](https://twitter.com/california_itp)
 on Twitter, or by subscribing to the [Caltrans Mobility Newsletter](https://lp.constantcontactpages.com/su/eLbtFoE/calitp?VCPR).
 And visit Cal-ITP’s [CAMobilityMarketplace.org](https://camobilitymarketplace.org) for a catalog of code-compliant products and

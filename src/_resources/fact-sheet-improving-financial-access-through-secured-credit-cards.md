@@ -22,9 +22,9 @@ Secured credit cards offer a unique solution to the millions of unbanked and und
 
 Attributes of secured credit cards can differ among credit card providers. While the main objective of these cards is to help users (re) establish their credit, it's worth noting that some cards come with associated fees, such as late payment charges, yearly membership costs, and more. Below are some of the main features of secured credit cards:
 
-* **Initial Deposit**: A defining feature of secured credit cards is the need for a cash deposit to act as collateral in case of default and typically determines the credit limit. Minimum initial deposit requirements vary across issuers. While some have set initial deposit amounts, others offer more flexibility, allowing for users to increase it, and along with it their credit limit.  For the latter, deposits range from $200 to $2,500.
-* **Credit Limit**: The credit ceiling of a secured credit card is equivalent to the cash deposit made. As cardholders show they can manage credit responsibly, this limit may be adjusted upward - in correspondence with deposit increases.
-* **Interest and Fees**: Similarly to their unsecured counterparts, secured credit cards have interest rates and fees. Interest rates account for the anticipated higher default risk among users; even with the collateral in place. Meanwhile, fees are typically levied to cover processing and administrative tasks. However, many newer establishments, like [Chime](https://www.chime.com/), are introducing such cards without these added fees.
+- **Initial Deposit**: A defining feature of secured credit cards is the need for a cash deposit to act as collateral in case of default and typically determines the credit limit. Minimum initial deposit requirements vary across issuers. While some have set initial deposit amounts, others offer more flexibility, allowing for users to increase it, and along with it their credit limit. For the latter, deposits range from $200 to $2,500.
+- **Credit Limit**: The credit ceiling of a secured credit card is equivalent to the cash deposit made. As cardholders show they can manage credit responsibly, this limit may be adjusted upward - in correspondence with deposit increases.
+- **Interest and Fees**: Similarly to their unsecured counterparts, secured credit cards have interest rates and fees. Interest rates account for the anticipated higher default risk among users; even with the collateral in place. Meanwhile, fees are typically levied to cover processing and administrative tasks. However, many newer establishments, like [Chime](https://www.chime.com/), are introducing such cards without these added fees.
 
 For the underbanked or those with compromised credit histories, this product serves as an (re) entry point into the world of credit. It's not just about borrowing but rather **creating a financial footprint that can be recognized by lenders, landlords, employers, and others** who often assess creditworthiness in their evaluations; and data further support this. A 2021 Consumer Financial Protection Bureau (CFPB) report[^2] states that in 2020, nearly one-third of consumers with subprime credit scores (below 600) in the U.S. have at least one secured credit card account.
 
@@ -41,37 +41,39 @@ Secured credit cards appear to be effectively fulfilling their intended role. Wh
 </figure>
 
 [^2]: [Consumer Financial Protection Bureau, The Consumer Credit Card Market](https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2021.pdf)
+
 [^4]: [Center for Financial Services Innovation, Secured Credit Cards: Innovating at the Intersection of Savings and Credit](https://medasf.org/redesign2/wp-content/uploads/2016/12/2016-Secured-Credit-Cards-Full-Report_FINALMay.pdf)
 
 ## Secured Credit Cards & Financial Inclusion
 
 Financial inclusion signifies more than just the ability to access banking services; **it means being able to fully participate in the economic activities that most take for granted**. In the US, one key aspect of this inclusion lies the power of credit. Without credit, individuals find themselves barred from crucial milestones, whether it's renting a home, securing a car loan, or even starting a business. These missed opportunities don’t only impact individuals, but also local economies and, by extension, national economic health. When looking into the current demographics of secured credit cards users, the 2016 CFSI survey[^5] mentioned earlier sheds light into the profile of a typical secured card user:
 
-* the majority of them is aged between 25-34 (25% of respondents),
-* the vast majority has received higher education (some college education, bachelor degree or higher, 67% of respondents),
-* the majority of them is has an annual income of less than USD 40,000 / year (27% of respondents),
-* the majority of them is white (53% of respondents), with Hispanic (22% of respondents) following.
+- the majority of them is aged between 25-34 (25% of respondents),
+- the vast majority has received higher education (some college education, bachelor degree or higher, 67% of respondents),
+- the majority of them is has an annual income of less than USD 40,000 / year (27% of respondents),
+- the majority of them is white (53% of respondents), with Hispanic (22% of respondents) following.
 
 Another important finding of that survey is the sheer value users see in secured credit cards. Contrary to the perception that these cards are mere stepping stones to unsecured credit, many users, especially students on the cusp of graduation, find them so reliable and user-friendly that they remain ambivalent about transitioning to unsecured options.
 
 Beyond just credit, financial inclusion is also about empowerment. Often, individuals with limited access to credit hail from backgrounds marked by socio-economic challenges. This might mean they're from lower-income families, inhabit urban centers, or come from demographics historically sidelined from mainstream banking. To underscore the impact and potential of secured credit cards, a 2017 CFSI report[^6] provides compelling insights. It categorizes three primary groups that could benefit from such cards:
 
-* **New Immigrants**: Representing a sizeable portion of the U.S. population, immigrants often grapple with barriers like proving their credit history. Despite their number, they frequently have inferior financial health metrics when compared against native-born citizens, affecting their ability to access pivotal financial products.
-* **People of Color**: A sizable segment of the U.S. demographic, individuals identifying as people of color, often exhibit lower financial health scores compared to their white counterparts. These disparities extend to average credit scores, indicating a pressing need for tools that help bridge this gap.
-* **Rural Americans**: Living far from urban centers, many rural Americans find themselves in 'bank deserts', where access to traditional banking services is limited. A large fraction struggles financially, underscoring the need for inclusion tools.
+- **New Immigrants**: Representing a sizeable portion of the U.S. population, immigrants often grapple with barriers like proving their credit history. Despite their number, they frequently have inferior financial health metrics when compared against native-born citizens, affecting their ability to access pivotal financial products.
+- **People of Color**: A sizable segment of the U.S. demographic, individuals identifying as people of color, often exhibit lower financial health scores compared to their white counterparts. These disparities extend to average credit scores, indicating a pressing need for tools that help bridge this gap.
+- **Rural Americans**: Living far from urban centers, many rural Americans find themselves in 'bank deserts', where access to traditional banking services is limited. A large fraction struggles financially, underscoring the need for inclusion tools.
 
 [^5]: [Center for Financial Services Innovation, Secured Credit Cards: Innovating at the Intersection of Savings and Credit](https://medasf.org/redesign2/wp-content/uploads/2016/12/2016-Secured-Credit-Cards-Full-Report_FINALMay.pdf)
+
 [^6]: [Center for Financial Services Innovation, The Secured Credit Card Pathway: Opportunities in Serving Key Demographics](https://s3.amazonaws.com/cfsi-innovation-files/wp-content/uploads/2017/07/06210343/2017_Secured-Credit-Card-Pathway_Serving-Key-Demographics_Full.pdf)
 
 ## Conclusions & Opportunities for Cal-ITP and CARB
 
 Secured credit cards serve as this critical bridge to financial inclusion, offering a feasible pathway for those sidelined by traditional credit systems and democratizing financial access. At the same time, there's an opportunity in using the current distribution of sustainable transportation subsidies to assist users in establishing credit. This approach moves beyond just credit-building to include features like emergency funds, online transactions, and rewards.
 
-Despite their undeniable benefits, for States agencies considering the inclusion of secured credit cards in their offerings, there are a few things to keep in mind. As secured credit cards require cardholders to carefully manage their payments, it’s necessary to ensure that end users are educated about their terms and how to trully make the best of these products. As with all financial tools, transparent communication about these aspects can optimize the benefits of secured credit cards while mitigating potential challenges.
+Despite their undeniable benefits, for States agencies considering the inclusion of secured credit cards in their offerings, there are a few things to keep in mind. As secured credit cards require cardholders to carefully manage their payments, it’s necessary to ensure that end users are educated about their terms and how to truly make the best of these products. As with all financial tools, transparent communication about these aspects can optimize the benefits of secured credit cards while mitigating potential challenges.
 
 Moving forward, Cal-ITP and CARB might consider the following two-pronged approach:
 
-* In the short term, engage proactively with banks or financial institutions that are at the forefront of offering secured credit cards or similar credit-building products. The aim is to delve deeper, understand the nuances, and facilitate discussions where Cal-ITP and CARB can gain valuable insights to further refine and tailor their approaches to building a cohesive set of program recommendations.
-* In the long term, prioritize and embed the concept of secured credit cards into the Incentive Strategy and Demonstration projects currently in the pipeline, to the extend that secured credit cards might be a feasible option to include.
+- In the short term, engage proactively with banks or financial institutions that are at the forefront of offering secured credit cards or similar credit-building products. The aim is to delve deeper, understand the nuances, and facilitate discussions where Cal-ITP and CARB can gain valuable insights to further refine and tailor their approaches to building a cohesive set of program recommendations.
+- In the long term, prioritize and embed the concept of secured credit cards into the Incentive Strategy and Demonstration projects currently in the pipeline, to the extend that secured credit cards might be a feasible option to include.
 
 On the latter, an immediate opportunity could lie in linking mobility benefits with the advantages of secured credit cards. By using benefits as the collateral for these cards, recipients opting into this product option would not only gain immediate financial assistance but also get introduced to credit-building tools. Further to instilling financial responsibility, Cal-ITP and CARB could use secured credit cards to promote on-time payments, widen access to various financial products, and enable themselves to build a deeper understanding of the complexities of running such a program at scale, including regulatory, administrative or even technological aspects.
