@@ -18,7 +18,7 @@ theme:
 # extra:
 #   analytics:
 #   provider: google
-#   property: G-SZB...
+#   property: G-SZB... cspell:disable-line
 
 plugins:
   - search
