@@ -28,7 +28,6 @@ Enghouse
 EPAY
 EQUANS
 establishers
-establishers
 fintech
 fintechs
 Fitbit
