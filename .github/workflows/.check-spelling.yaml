@@ -12,4 +12,4 @@ jobs:
           persist-credentials: false
       - uses: streetsidesoftware/cspell-action@v8
         with:
-          config: "."
+          config: "cspell.json"
