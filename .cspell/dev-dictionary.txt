@@ -9,13 +9,16 @@ calitp-
 cli
 codehilite
 devcontainers
+djlint
 DSDL
+EDITMSG
 fnref
 frontmatter
 gha
 gtag
 inlinehilite
 jekyll
+jinja
 linenums
 mkdocs
 msg
