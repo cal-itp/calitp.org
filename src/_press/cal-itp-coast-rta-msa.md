@@ -26,7 +26,7 @@ competitive bidding.
 tools that allow riders to buy a bus ride the same way that they buy their groceries or a cup of coffee: with the credit or
 debit card or mobile device that’s already in their pocket or on their wrist,” says Gillian Gillett, Caltrans’ California
 Integrated Mobility Program Manager. Gillett leads [Cal-ITP](https://www.calitp.org/?utm_source=Coast+RTA+Press+Release&utm_medium=pr+email+social),
-a California-based initiative to make riding by bus and rail simpler and more costeffective—for public transportation providers
+a California-based initiative to make riding by bus and rail simpler and more cost-effective—for public transportation providers
 and riders—by standardizing trip-planning information and modernizing fare collection systems.
 
 “California’s contracts enabled us to purchase contactless open-loop payment acceptance devices and fare calculation
@@ -40,7 +40,7 @@ then ride for free the rest of the day when tapping with the same contactless pa
 
 “Within days of launching our new fare payment system,” Piascik adds, “we could see that 15% of riders had already switched to
 contactless to take advantage of Tap to Cap, which lets them pay as they go instead of locking up their money in a prepaid
-farecard.”
+fare card.”
 
 Because a large percentage of Coast RTA’s rider base was paying in cash before the transition to a contactless system, Cal-ITP
 worked with the transit agency and Visa to ensure that anyone, including riders who may be unbanked (no bank account) or
@@ -135,7 +135,7 @@ cuts dwell times by speeding up boarding with tap to pay. [kubapay.com](https://
 
 Littlepay launched in 2017 to provide contactless payment acceptance on public transit. The U.K.- and Australia-based company
 works with more than 250 transportation and mobility providers around the world—powering payments on local buses, city networks,
-and national public transportation systems. By creating a universal experience of tap-toride around the globe, Littlepay
+and national public transportation systems. By creating a universal experience of tap-to-ride around the globe, Littlepay
 supports more people in choosing public transportation for their journeys instead of cars. [littlepay.com](https://littlepay.com)
 
 ### Cash App

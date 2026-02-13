@@ -47,7 +47,7 @@ vehicle location (CAD/AVL) software. Because of their commitments to this projec
 optimize their services and improve decision-making.
 
 “EQUANS fully supports the development of open standards such as ODS,” said Kilian Ollivier, Business Development Manager for
-EQUANS. “As part of our standard offering with our CAD/AVL system, GTFS and ODS datasets together will be a gamechanger for
+EQUANS. “As part of our standard offering with our CAD/AVL system, GTFS and ODS datasets together will be a game-changer for
 Operations and Scheduling integration, to handle non-revenue operations such as deadheading, personnel runs, and bus facility
 locations with ease.”
 

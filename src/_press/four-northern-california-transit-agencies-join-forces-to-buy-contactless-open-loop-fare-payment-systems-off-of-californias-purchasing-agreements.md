@@ -5,7 +5,7 @@ heading: Four Northern California transit agencies join forces to buy contactles
 lead: |-
   Humboldt Transit Authority, Lake Transit Authority, Mendocino Transit Authority, and Redwood Coast Transit Authority install a modern fare system that accepts riders’ bank cards and mobile wallets
 intro: |-
-  Transit riders in four counties north of the San Francisco Bay Area can now tap to ride the bus on four public transit agencies—and seamlessly transfer between the agencies’ dial-a-ride vehicles or local and regional lines at shared bus stops—without stopping to download any apps, purchase or reload multiple agency farecards, or juggle exact change.
+  Transit riders in four counties north of the San Francisco Bay Area can now tap to ride the bus on four public transit agencies—and seamlessly transfer between the agencies’ dial-a-ride vehicles or local and regional lines at shared bus stops—without stopping to download any apps, purchase or reload multiple agency fare cards, or juggle exact change.
 tags:
   - Contactless Payments
 outlet: "Cal-ITP"

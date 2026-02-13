@@ -19,10 +19,7 @@
     "ITP", // Looking for 'Cal ITP' (without hyphen)
     "LittlePay->Littlepay"
   ],
-  "ignorePaths": [
-    "cspell.json",
-    "Gemfile.lock"
-  ],
+  "ignorePaths": ["cspell.json", "Gemfile.lock"],
   "ignoreRegExpList": [
     "/[\\-/]cal-itp/",
     "/cal-itp[\\-/]/",
@@ -50,9 +47,7 @@
         "HTML-IDREF-aria-owns",
         "HTML-IDREF-for"
       ],
-      "dictionaries": [
-        "html"
-      ]
+      "dictionaries": ["html"]
     }
   ],
   "minWordLength": 3,
@@ -62,5 +57,5 @@
       "description": "Matches everything in a Liquid template tag until the first string",
       "pattern": "/{%[^\"']+/g"
     }
-  ],
+  ]
 }
