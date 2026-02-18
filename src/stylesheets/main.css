@@ -1,11 +1,10 @@
-@import 'dsdl/dsdl.css';
-@import 'variables.css';
-@import 'clipped-containers.css';
-@import 'footnotes.css';
-@import 'nav-pills.css';
-@import 'navbar.css';
-@import 'print.css';
-
+@import "dsdl/dsdl.css";
+@import "variables.css";
+@import "clipped-containers.css";
+@import "footnotes.css";
+@import "nav-pills.css";
+@import "navbar.css";
+@import "print.css";
 
 .background-calitp-blue {
   background-color: var(--calitp-brand-blue);
@@ -52,7 +51,7 @@ hr {
 
 a {
   /* TODO: Probably stop setting this font-weight, given that we override it half the time? */
-  font-weight: 700;
+  /* font-weight: 700; */
   text-decoration: underline;
   text-underline-offset: 1px;
   text-decoration-thickness: 2px;
@@ -83,7 +82,6 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
-
   .h1-md {
     font-size: var(--text-xxxl);
   }
