@@ -23,3 +23,7 @@
 .press-release sup a {
   margin: 0 0.15em;
 }
+
+.press-release a {
+  font-weight: 700;
+}
