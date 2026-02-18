@@ -50,8 +50,6 @@ hr {
 }
 
 a {
-  /* TODO: Probably stop setting this font-weight, given that we override it half the time? */
-  /* font-weight: 700; */
   text-decoration: underline;
   text-underline-offset: 1px;
   text-decoration-thickness: 2px;

@@ -16,7 +16,9 @@
 {% endif %}
 
 <article class="mb-3 pb-4">
-  <a href="{{ url }}" {% if item.external %}target="_blank"{% endif %}>{{- item.title -}}</a>
+  <a href="{{ url }}"
+     {% if item.external %}target="_blank"{% endif %}
+     class="fw-bold">{{- item.title -}}</a>
   <br />
   <span class="text-body-tertiary text-body-m">
     {% if item.outlet %}{{ item.outlet }} |{% endif %}
