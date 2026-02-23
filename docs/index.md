@@ -9,17 +9,6 @@ Our product roadmap captures what we’re currently building, what we’ve built
     %% Websites Epics (2025)
     section 2025
 
-    Q2<br>Complete
-    : GTFS Realtime product pages (product, design + dev)
-
-    Q3<br>Complete
-    : Remix pilot product pages live on MobiMart (design + dev)
-    : MobiMart information architecture (design)
-    : Review of Calitp.org resources section (product)
-    : MobiMart design explorations (design)
-    : Google analytics research (product)
-
-
     Q4<br>Complete
     : Confirm product requirements for calitp.org in 2025+ (product)
     : Implement Digital Services Design Language (DSDL) across Cal-ITP websites (dev)
