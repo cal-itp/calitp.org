@@ -6,7 +6,8 @@
 
 .dsdl-demo h2,
 .dsdl-demo h3,
-.dsdl-demo h4 {
+.dsdl-demo h4,
+.dsdl-demo h5 {
   margin-top: var(--spacing-4);
   margin-bottom: var(--spacing-2);
 }

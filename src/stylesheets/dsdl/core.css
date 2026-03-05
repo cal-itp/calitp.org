@@ -95,6 +95,25 @@ h1,
   font-weight: 700;
 }
 
+@media (min-width: 992px) {
+  h1,
+  .h1 {
+    font-size: var(--text-xxxxl);
+  }
+  h2,
+  .h2 {
+    font-size: var(--text-xxxl);
+  }
+  h3,
+  .h3 {
+    font-size: var(--text-xxl);
+  }
+  h4,
+  .h4 {
+    font-size: var(--text-xl);
+  }
+}
+
 .text-display {
   font-family: var(--dsdl-heading-font-stack);
   font-size: var(--text-display);

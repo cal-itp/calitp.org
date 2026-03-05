@@ -2,6 +2,7 @@
 
 --calitp
 .tasklist
+Alvergue
 aria-labelledby
 autoplay
 backlink
@@ -10,6 +11,7 @@ btn
 calitp-
 cli
 codehilite
+Cranfill
 devcontainers
 djlint
 dsdl
@@ -17,7 +19,8 @@ DSDL
 eamodio
 EDITMSG
 endcapture
-endunless
+endfor
+endif
 endunless
 env
 eol
@@ -30,23 +33,31 @@ frontmatter
 gha
 github
 gpg
+Gravois
+Grotesk
 gtag
 gtfs
 headerlink
 inlinehilite
 jekyll
 jinja
+Kegan
 keyserver
 linenums
+Machiko
+Maher
+markdownextradata
 mhutchie
 mkdocs
 msg
 noopener
 noreferrer
 noteref
+Noto
 numList
 peter-evans
 prcheck
+previtem
 pymdownx
 recv
 redhat
@@ -65,6 +76,7 @@ twemoji
 usr
 utf-8
 vnd
+WCAG
 webfonts
 xmlschema
 xxl
