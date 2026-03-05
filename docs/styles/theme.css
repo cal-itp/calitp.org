@@ -48,6 +48,9 @@ a.md-tabs__link {
   padding: .9375rem 1.25rem;  /* Original ems caused problems for table of type styles. */
 }
 
+.md-code__button {
+  color: rgb(0 0 0 / 0.4);
+}
 
 /* TEMPORARY COPY OF typography.css UNTIL THAT'S ON PRODUCTION */
 
@@ -160,8 +163,8 @@ a.md-tabs__link {
 
 /* COPY OF PARTS OF dsdl-demo.css TO OVERRIDE MATERIAL STYLES */
 
-
-.brand-colors h4 {
+.brand-colors h3 /* Reference */,
+.brand-colors h4 /* Explanation */ {
   margin-top: 0;
 }
 ul.brand-colors,
@@ -188,4 +191,39 @@ ul.brand-colors,
 .dsdl-colors li {
   padding: var(--spacing-1);
   text-align: center;
+}
+
+.brand-colors pre {
+  margin-bottom: 0;
+  text-align: left;
+}
+.brand-colors pre > code {
+  padding-left: var(--spacing-1);
+  background: rgb(255 255 255 / 0.75);
+  color: var(--dsdl-black);
+  font-size: 0.825em;
+}
+
+.color-reference tr:hover {
+  background-color: transparent !important;
+}
+.color-reference td {
+  font-size: 0.8rem !important;
+  vertical-align: middle !important;
+}
+.color-reference .swatch,
+.color-reference .name {
+  width: var(--spacing-15);
+}
+.color-reference .hex {
+  width: calc(var(--spacing-base) * 16);
+}
+.color-reference .rgb {
+  width: var(--spacing-20);
+}
+.color-reference .css {
+  width: calc(var(--spacing-base) * 28);
+}
+.color-reference .css pre {
+  margin: 0;
 }

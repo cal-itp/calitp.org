@@ -57,7 +57,7 @@ stylesheet: dsdl-demo.css
         {% assign current_group = color.group %}
 
         {% comment %} Output the individual color swatch {% endcomment %}
-        <li style="background: {{ color.value }};
+        <li style="background: {{ color.hex }};
                    color: {% if color.level <= 50 %}#000{% else %}#fff{% endif %}">
           {{ color.group }}-{{ color.level }}
           {% if color.level == 100 and color.group == 'slate' %}(black){% endif %}

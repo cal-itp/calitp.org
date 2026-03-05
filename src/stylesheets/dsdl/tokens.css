@@ -49,7 +49,7 @@
 
 :root {
   {% for color in site.data.dsdl_colors -%}
-  --dsdl-{{ color.group }}-{{ color.level }}: {{ color.value }};
+  --dsdl-{{ color.group }}-{{ color.level }}: {{ color.hex }};
   {% endfor %}
 
   --calitp-brand-blue:   var(--dsdl-blue-70);    /* #045b86 */
