@@ -60,6 +60,8 @@ To maintain flexibility across products, we use a set scale with multiple typefa
 
 calitp.org and MobiMart use Space Grotesk as their brand typeface and Noto Sans as their base typeface. Cal-ITP Benefits (including the back-end admin interface) uses Noto Sans as both brand and base typeface.
 
+![The MobiMart hero with Space Grotesk and Noto Sans fonts labeled on it](../images/mobimart-hero-fonts.png)
+
 #### Space Grotesk {: .font-heading }
 
 Space Grotesk is a proportional sans-serif typeface with modern feeling and strong readability. It has a sense of urbanity and trustworthiness, with strong, clean lines.
@@ -68,8 +70,6 @@ Space Grotesk is a proportional sans-serif typeface with modern feeling and stro
 [See it on Google Fonts](https://fonts.google.com/specimen/Space+Grotesk)
 {: .font-heading }
 
-_TODO: Show example screenshot._
-
 #### Noto Sans {: .font-body }
 
 Noto is designed specifically for accessibility and global communication, offering high-quality fonts with various weights and widths in sans, serif, mono, and other styles. This font family supports over 1,000 languages and 150 scripts. It’s a contemporary, aesthetic font with high legibility. It supports scripts of California’s main languages: English, Spanish, Mandarin + Cantonese, Tagalog, Vietnamese, Korean, Armenian, Arabic, Russian, Farsi, Hindi, and Japanese.
@@ -77,8 +77,6 @@ Noto is designed specifically for accessibility and global communication, offeri
 
 [See it on Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans)
 {: .font-body }
-
-_TODO: Show example screenshot._
 
 #### Source Code Pro {: .font-monospace }
 
