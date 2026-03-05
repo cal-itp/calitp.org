@@ -6,7 +6,50 @@ End users will benefit from a consistent feeling across each product, increasing
 
 For our own efforts in maintaining these products, using a unified structure of color, spacing, type, and components will reduce error and increase speed for both design and dev, while including flexibility to meet specific product needs.
 
-For example, there is a comprehensive color palette from which each product can draw on different parts of it and feel unified while maintaining their own individual identity. Similarly, we have base styles and sizes for typography, but can use different font stacks to adapt to each product.
+For example, a comprehensive color palette is included. Each product can draw on different parts of it and feel unified while maintaining its own individual identity. Similarly, we have base styles and sizes for typography, but can use different font stacks to adapt to each product.
+
+
+## Color
+
+### Brand colors
+
+<ul class="brand-colors">
+  <li style="background: var(--calitp-brand-blue); color: #fff">
+    <h4>Cal-ITP Blue</h4>
+    <div>(blue 70)</div>
+  </li>
+  <li style="background: var(--calitp-brand-cyan); color: #000">
+    <h4>Cal-ITP Cyan</h4>
+    <div>(cyan 40)</div>
+  </li>
+  <li style="background: var(--calitp-brand-yellow); color: #000">
+    <h4>Cal-ITP Yellow</h4>
+    <div>(yellow 30)</div>
+  </li>
+</ul>
+
+### Full palette
+
+When paired with black, the values of the colors in the 10–50 range have been selected to have a color contrast that complies with WCAG 2.2 Level AA (at least 4.5:1), and the values in the 60–100 range have compliant contrast when paired with white.
+
+<div class="dsdl-colors">
+  {# Start the first color group's list #}
+  <ol>
+    {% for color in dsdl_colors %}{# Loop through every color in _data/dsdl_colors.yml #}
+      {% if loop.previtem is defined and color.group != loop.previtem.group %}
+        {# If we have changed groups, start a new list #}
+  </ol>
+  <ol>
+      {% endif %}
+      {# Output the individual color swatch #}
+      <li style="background: {{ color.value }};
+                color: {{"#000" if color.level <= 50 else "#fff" }}">
+        {{ color.group }}<br>{{ color.level }}
+        {{ "<br>(DSDL Black)" if color.level == 100 and color.group == 'slate' }}
+      </li>
+    {% endfor %}
+  </ol> {# Close the last color group's list #}
+</div>
 
 
 ## Typography
@@ -78,46 +121,3 @@ Headline S {: .text-headline-s .vertical-align-baseline } | Title S {: .text-tit
 {: .text-footnote .list-style-none }
 - Code
 {: .text-code .list-style-none }
-
-
-## Color
-
-### Brand colors
-
-<ul class="brand-colors">
-  <li style="background: var(--calitp-brand-blue); color: #fff">
-    <h4>Cal-ITP Blue</h4>
-    <div>(blue 70)</div>
-  </li>
-  <li style="background: var(--calitp-brand-cyan); color: #000">
-    <h4>Cal-ITP Cyan</h4>
-    <div>(cyan 40)</div>
-  </li>
-  <li style="background: var(--calitp-brand-yellow); color: #000">
-    <h4>Cal-ITP Yellow</h4>
-    <div>(yellow 30)</div>
-  </li>
-</ul>
-
-### Full palette
-
-When paired with black, the values of the colors in the 10–50 range have been selected to have a color contrast that complies with WCAG 2.2 Level AA (at least 4.5:1), and the values in the 60–100 range have compliant contrast when paired with white.
-
-<div class="dsdl-colors">
-  {# Start the first color group's list #}
-  <ol>
-    {% for color in dsdl_colors %}{# Loop through every color in _data/dsdl_colors.yml #}
-      {% if loop.previtem is defined and color.group != loop.previtem.group %}
-        {# If we have changed groups, start a new list #}
-  </ol>
-  <ol>
-      {% endif %}
-      {# Output the individual color swatch #}
-      <li style="background: {{ color.value }};
-                color: {{"#000" if color.level <= 50 else "#fff" }}">
-        {{ color.group }}<br>{{ color.level }}
-        {{ "<br>(DSDL Black)" if color.level == 100 and color.group == 'slate' }}
-      </li>
-    {% endfor %}
-  </ol> {# Close the last color group's list #}
-</div>
