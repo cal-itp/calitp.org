@@ -61,6 +61,7 @@ previtem
 pymdownx
 recv
 redhat
+rgb
 robotstxt
 rvm
 seo

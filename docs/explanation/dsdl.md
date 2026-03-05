@@ -1,4 +1,4 @@
-# Digital Services Design Language
+# Digital Services Design Language overview
 
 The Digital Services Design Language is an ongoing effort to unify the user experience across all of Cal-ITP's websites and applications – calitp.org, [California Mobility Marketplace](https://camobilitymarketplace.com) (MobiMart), and [Cal-ITP Benefits](https://benefits.calitp.org).
 
@@ -42,7 +42,7 @@ When paired with black, the values of the colors in the 10–50 range have been 
   <ol>
       {% endif %}
       {# Output the individual color swatch #}
-      <li style="background: {{ color.value }};
+      <li style="background: {{ color.hex }};
                 color: {{"#000" if color.level <= 50 else "#fff" }}">
         {{ color.group }}<br>{{ color.level }}
         {{ "<br>(DSDL Black)" if color.level == 100 and color.group == 'slate' }}
