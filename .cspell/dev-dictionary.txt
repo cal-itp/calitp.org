@@ -2,6 +2,7 @@
 
 --calitp
 .tasklist
+Alvergue
 aria-labelledby
 autoplay
 backlink
@@ -10,6 +11,7 @@ btn
 calitp-
 cli
 codehilite
+Cranfill
 devcontainers
 djlint
 dsdl
@@ -31,6 +33,7 @@ frontmatter
 gha
 github
 gpg
+Gravois
 Grotesk
 gtag
 gtfs
@@ -38,8 +41,11 @@ headerlink
 inlinehilite
 jekyll
 jinja
+Kegan
 keyserver
 linenums
+Machiko
+Maher
 markdownextradata
 mhutchie
 mkdocs
