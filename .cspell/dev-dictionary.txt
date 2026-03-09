@@ -84,4 +84,6 @@ WCAG
 webfonts
 xmlschema
 xxl
+xxxl
+xxxxl
 xxs
