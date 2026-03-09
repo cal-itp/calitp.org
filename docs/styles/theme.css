@@ -52,6 +52,21 @@ a.md-tabs__link {
   color: rgb(0 0 0 / 0.4);
 }
 
+/* Absolute sizes to deal with MkDoc's font-size shenanigans */
+:root {
+  --text-xxs:     10px;
+  --text-xs:      12px;
+  --text-s:       14px;
+  --text-m:       16px;
+  --text-l:       20px;
+  --text-xl:      24px;
+  --text-xxl:     32px;
+  --text-xxxl:    40px;
+  --text-xxxxl:   48px;
+  --text-display: 64px;
+}
+
+
 /* TEMPORARY COPY OF typography.css UNTIL THAT'S ON PRODUCTION */
 
 /*
@@ -234,15 +249,19 @@ ul.brand-colors,
   margin: 0;
 }
 
-.dsdl-core-type-matrix {
-  margin: var(--spacing-2) 0;
+.dsdl-core-type-matrix,
+.dsdl-spacing-reference {
+margin: var(--spacing-2) 0;
   border-collapse: collapse;
 }
 .dsdl-core-type-matrix th,
-.dsdl-core-type-matrix td {
+.dsdl-core-type-matrix td,
+.dsdl-spacing-reference th,
+.dsdl-spacing-reference td {
   border: 1px solid var(--dsdl-gray-50);
 }
-.dsdl-core-type-matrix th {
+.dsdl-core-type-matrix th,
+.dsdl-spacing-reference th {
   padding: var(--spacing-1);
   background: var(--dsdl-cyan-20);
   font-weight: bold;
@@ -287,17 +306,28 @@ ul.brand-colors,
   margin-left: 0 !important;
 }
 
+.dsdl-spacing-reference td {
+  padding: var(--spacing-2);
+  font-family: var(--dsdl-monospace-font-stack);
+  vertical-align: middle;
+}
+.spacing-sample {
+  background: var(--calitp-brand-cyan);
+  width: var(--spacing-20);
+}
+.dsdl-spacing-reference pre > code {
+  padding-right: 2.5em;
+}
 
-/* Absolute sizes to deal with MkDoc's font-size shenanigans */
-:root {
-  --text-xxs:     10px;
-  --text-xs:      12px;
-  --text-s:       14px;
-  --text-m:       16px;
-  --text-l:       20px;
-  --text-xl:      24px;
-  --text-xxl:     32px;
-  --text-xxxl:    40px;
-  --text-xxxxl:   48px;
-  --text-display: 64px;
+/* Copied from Bootstrap */
+.visually-hidden {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  margin: -1px !important;
+  position: absolute;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
 }
