@@ -9,8 +9,10 @@ backlink
 bigdecimal
 btn
 calitp-
+Cascadia
 cli
 codehilite
+Consolas
 Cranfill
 devcontainers
 djlint
@@ -47,6 +49,7 @@ linenums
 Machiko
 Maher
 markdownextradata
+Menlo
 mhutchie
 mkdocs
 msg

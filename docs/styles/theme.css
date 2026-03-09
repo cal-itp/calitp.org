@@ -159,6 +159,12 @@ a.md-tabs__link {
   line-height: var(--line-height-loose);
   font-weight: 400;
 }
+.text-code {
+  font-family: var(--dsdl-monospace-font-stack);
+  font-size: var(--text-m);
+  line-height: var(--line-height-loose);
+  font-weight: 400;
+}
 
 
 /* COPY OF PARTS OF dsdl-demo.css TO OVERRIDE MATERIAL STYLES */
@@ -226,4 +232,72 @@ ul.brand-colors,
 }
 .color-reference .css pre {
   margin: 0;
+}
+
+.dsdl-core-type-matrix {
+  margin: var(--spacing-2) 0;
+  border-collapse: collapse;
+}
+.dsdl-core-type-matrix th,
+.dsdl-core-type-matrix td {
+  border: 1px solid var(--dsdl-gray-50);
+}
+.dsdl-core-type-matrix th {
+  padding: var(--spacing-1);
+  background: var(--dsdl-cyan-20);
+  font-weight: bold;
+}
+.dsdl-core-type-matrix thead th {
+  text-align: center;
+}
+.dsdl-core-type-matrix tbody th {
+  text-align: center !important;
+  writing-mode: sideways-lr;
+}
+.dsdl-core-type-matrix td {
+  vertical-align: top;
+  padding: var(--spacing-2);
+}
+
+.dsdl-core-type-matrix pre {
+  margin-top: 0;
+}
+.dsdl-core-type-matrix .dsdl-type-specs,
+.dsdl-extra-type-styles .dsdl-type-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 0;
+  font-family: var(--dsdl-monospace-font-stack);
+}
+.dsdl-core-type-matrix .dsdl-type-specs dt,
+.dsdl-extra-type-styles .dsdl-type-specs dt {
+  font-weight: 400;
+}
+.dsdl-core-type-matrix .dsdl-type-specs dd,
+.dsdl-extra-type-styles .dsdl-type-specs dd {
+  margin: 0 0 0 var(--spacing-1);
+}
+.dsdl-extra-type-styles {
+  list-style: none !important;
+  padding: 0;
+  margin-left: 0 !important;
+}
+.dsdl-extra-type-styles li {
+  margin-top: 2em;
+  margin-left: 0 !important;
+}
+
+
+/* Absolute sizes to deal with MkDoc's font-size shenanigans */
+:root {
+  --text-xxs:     10px;
+  --text-xs:      12px;
+  --text-s:       14px;
+  --text-m:       16px;
+  --text-l:       20px;
+  --text-xl:      24px;
+  --text-xxl:     32px;
+  --text-xxxl:    40px;
+  --text-xxxxl:   48px;
+  --text-display: 64px;
 }
