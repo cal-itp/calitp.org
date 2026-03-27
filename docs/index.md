@@ -5,7 +5,7 @@ Our product roadmap captures what we’re currently building, what we’ve built
 ```mermaid
   timeline
     title Cal-ITP Websites Product Roadmap
-   
+
     %% Websites Epics (2025)
     section 2025
 
@@ -18,7 +18,7 @@ Our product roadmap captures what we’re currently building, what we’ve built
     : Review of Calitp.org resources section (product)
     : MobiMart design explorations (design)
     : Google analytics research (product)
-  
+
 
     Q4<br>Complete
     : Confirm product requirements for calitp.org in 2025+ (product)
@@ -35,7 +35,7 @@ Our product roadmap captures what we’re currently building, what we’ve built
     : Additional post-launch content updates to MobiMart (product + design + dev)
 
     Q2<br>Future
-    : Begin outreach and set up for usability testing (product + design) 
+    : Begin outreach and set up for usability testing (product + design)
     : Conduct usability testing (product + design)
     : Draft Customer Success content (product)
     : Design for Customer Success page (design)
@@ -47,7 +47,7 @@ Our product roadmap captures what we’re currently building, what we’ve built
     : Calitp.org content refresh and prep for transition (product + design)
 
     Q4<br>Future
-    : Additional transition activities TBD 
+    : Additional transition activities TBD
    %%{
         init: {
             'logLevel': 'debug',
