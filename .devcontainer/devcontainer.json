@@ -4,6 +4,9 @@
   "service": "site",
   "runServices": ["site", "docs"],
   "workspaceFolder": "/usr/src/calitp",
+  "remoteEnv": {
+    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/usr/src/calitp"
+  },
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
     "vscode": {
