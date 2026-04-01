@@ -59,9 +59,11 @@ noteref
 Noto
 numList
 peter-evans
+pipefail
 prcheck
 previtem
 pymdownx
+quasibit
 recv
 redhat
 rgb
