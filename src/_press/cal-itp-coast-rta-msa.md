@@ -95,10 +95,15 @@ For more information about this project, Cal-ITP’s technical support, or Calif
 
 ### Cal-ITP
 
+{% comment %}
+TODO: what is the equivalent link syntax in 11ty?
+{% link _press/cal-itp-benefits-launch.md %}
+{% endcomment %}
+
 The California Integrated Travel Project (Cal-ITP) was established by the California State Transportation Agency (CalSTA) and
 California Department of Transportation (Caltrans) to both improve and encourage the use of multimodal travel throughout
 California—by enabling contactless open-loop payments, standardizing information for easy multimodal trip planning, and
-automating customer discounts ([Cal-ITP Benefits]({% link _press/cal-itp-benefits-launch.md %})). Over the past year, Cal-ITP
+automating customer discounts ([Cal-ITP Benefits](placeholder)). Over the past year, Cal-ITP
 successfully led contactless open-loop contactless payment implementations in California on Monterey-Salinas and Santa Barbara
 buses; Sacramento light rail; on-demand van ride service in San Diego; and LAX’s FlyAway bus, which connects airport passengers
 to commuter rail.
