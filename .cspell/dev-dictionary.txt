@@ -21,6 +21,7 @@ DSDL
 eamodio
 EDITMSG
 endcapture
+endcomment
 endfor
 endif
 endunless
