@@ -1,5 +1,5 @@
 ---
-date: "2025-10-31 17:00:00"
+date: "2025-10-31T17:00:00"
 title: "Cal-ITP Expands Contactless Payment Options: Transit Riders Can Now Pay with Discover® Network"
 heading: |-
   Cal-ITP Expands Contactless Payment Options: Transit Riders Can Now Pay with Discover® Network

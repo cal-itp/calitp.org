@@ -24,7 +24,7 @@ def validate_date_format(file_path, regex):
 def main():
     parser = argparse.ArgumentParser(description="Validate date format in files.")
     parser.add_argument('files', nargs='+', help='List of files to validate')
-    parser.add_argument('--regex', nargs='?', default=r'^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$', help='Regex pattern for date validation')
+    parser.add_argument('--regex', nargs='?', default=r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$', help='Regex pattern for date validation')
 
     args = parser.parse_args()
     regex = re.compile(args.regex)

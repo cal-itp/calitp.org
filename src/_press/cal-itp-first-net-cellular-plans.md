@@ -1,5 +1,5 @@
 ---
-date: "2022-11-03 17:00:00"
+date: "2022-11-03T17:00:00"
 title: Discounted cellular data plans now available for U.S. public transportation providers via California Mobility Marketplace
 heading: |-
   Discounted cellular data plans now available for U.S. public transportation providers via California Mobility Marketplace
@@ -33,7 +33,7 @@ tiered in three cellular data levels to accommodate transit providers’ varying
   operations. With this plan, transit agencies will be able to afford the data plans
   necessary to continue bringing the best service to their riders into the future.
 
-(* None of these plans includes customer WiFi, as only transit operational needs qualify for the first-responder network. If customer-facing WiFi is desired, commercial plans through CALNET are also available on the [California Mobility Marketplace](https://www.camobilitymarketplace.org/contracts/).)
+(\* None of these plans includes customer WiFi, as only transit operational needs qualify for the first-responder network. If customer-facing WiFi is desired, commercial plans through CALNET are also available on the [California Mobility Marketplace](https://www.camobilitymarketplace.org/contracts/).)
 
 The monthly pricing for each of these FirstNet plans is based on which data level an
 agency selects as well as the cumulative total number of SIMs (subscriber identity
