@@ -23,7 +23,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+{% comment %}
+TODO: figure out 11ty equivalent to seo tag
+
 {% seo title=title description=description %}
+
+{% endcomment %}
 
 {%- if is_article -%}
   {%- for tag in page.tags -%}
