@@ -1,13 +1,12 @@
 ---
 layout: default
-permalink: /press
 
 title: Press
 description: >
   News about Cal-ITP and our initiatives, including press releases and media coverage about new launches and project milestones.
 ---
 
-{% include clipped-header.html %}
+{% include "clipped-header.html" %}
 
 <div class="row justify-content-center">
   <div class="clipped-header background-calitp-blue col-11 col-md-10 mt-4 mt-md-5 mb-4 py-4 py-md-5 px-4 px-md-0">
@@ -19,7 +18,7 @@ description: >
     class="fw-bold text-white"
     href="mailto:hello@calitp.org">hello@calitp.org</a>.</span>
     </p>
-    {% include pills.html tags=site.data.press_tags %}
+    {% include "pills.html" tags: site.data.press_tags %}
   </div>
 </div>
 </div>
@@ -33,14 +32,14 @@ description: >
         <div class="tab-pane fade active show"
              id="pills-all"
              role="tabpanel"
-             tabindex="0">{% include articles.html items=items %}</div>
+             tabindex="0">{% include "articles.html" items: items %}</div>
         {% for tag in site.data.press_tags %}
           {% assign items = site.press | sort: "date" | reverse | where_exp: "item", "item.tags contains tag.name" %}
           <div class="tab-pane fade"
                id="pills-{{ tag.id }}"
                role="tabpanel"
                aria-labelledby="pills-{{ tag.id }}-tab"
-               tabindex="0">{% include articles.html items=items %}</div>
+               tabindex="0">{% include "articles.html" items: items %}</div>
         {% endfor %}
       </div>
     </div>
