@@ -1,0 +1,2 @@
+# this file has custom formatting we don't want prettier to revert
+src/stylesheets/dsdl/tokens.css.liquid

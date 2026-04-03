@@ -77,6 +77,8 @@ smallcaps
 smartsymbols
 stylesheet
 superfences
+tbody
+thead
 toc
 tombi
 twemoji
