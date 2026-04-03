@@ -1,5 +1,5 @@
 ---
-# Empty front matter to enable Liquid processing
+permalink: /stylesheets/dsdl/tokens.css
 ---
 
 /*
@@ -48,10 +48,12 @@
 /* COLORS */
 
 :root {
-  {% for color in site.data.dsdl_colors -%}
+  {% for color in dsdlColors -%}
   --dsdl-{{ color.group }}-{{ color.level }}: {{ color.hex }};
   {% endfor %}
+}
 
+:root {
   --calitp-brand-blue:   var(--dsdl-blue-70);    /* #045b86 */
   --calitp-brand-cyan:   var(--dsdl-cyan-40);    /* #38abd0 */
   --calitp-brand-yellow: var(--dsdl-yellow-30);  /* #febd28 */
