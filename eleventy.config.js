@@ -2,7 +2,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setLayoutsDirectory("_layouts");
 
-  eleventyConfig.addPassthroughCopy("src/stylesheets/");
+  eleventyConfig.addPassthroughCopy("src/stylesheets/**/*.css");
   eleventyConfig.addWatchTarget("src/stylesheets/");
 
   eleventyConfig.addPassthroughCopy("src/scripts/");
