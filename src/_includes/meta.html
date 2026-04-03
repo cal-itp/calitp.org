@@ -38,14 +38,14 @@ TODO: figure out 11ty equivalent to seo tag
         content="{{ page.date | date: "%FT%T%z" }}" />
 {%- endif -%}
 
+{% comment %} TODO: replace absolute_url filter? {% endcomment %}
 {% comment %} OpenGraph fields that won't be rendered by the jekyll-seo plugin {% endcomment %}
-<meta property="og:image"
-      content="{{ site.url | absolute_url }}/images/og-image.png" />
+{% comment %} <meta property="og:image" content="{{ site.url | absolute_url }}/images/og-image.png" /> {% endcomment %}
 <meta name="twitter:site" content="@California_ITP">
 <meta name="twitter:creator" content="@California_ITP">
 <meta name="twitter:domain" content="{{ site.domain }}" />
 
-<link rel="canonical" href="{{ page.url | absolute_url }}" />
+{% comment %} <link rel="canonical" href="{{ page.url | absolute_url }}" /> {% endcomment %}
 {% if page.asset or page.external -%}
   <meta name="robots" content="noindex">
 {%- endif -%}
