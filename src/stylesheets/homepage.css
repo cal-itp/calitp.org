@@ -51,7 +51,7 @@
   padding: 0.35rem 1rem;
   border: 1.5px solid white;
   margin-bottom: 1rem;
-  background-color: rgb(38 38 38 / 0.2);  /* gray 80 at 20% opacity */
+  background-color: rgb(38 38 38 / 0.2); /* gray 80 at 20% opacity */
   color: white;
-  font-weight: 700;  /* overrides .text-small-caps weight assignment */
+  font-weight: 700; /* overrides .text-small-caps weight assignment */
 }

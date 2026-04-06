@@ -31,7 +31,7 @@
 }
 .brand-colors li:last-child,
 .dsdl-colors ol:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 .brand-colors li {
   padding: var(--spacing-4);
