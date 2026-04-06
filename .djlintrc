@@ -1,6 +1,0 @@
-{
-  "custom_blocks": "unless,capture",
-  "format_attribute_template_tags": true,
-  "indent": 2,
-  "max_blank_lines": 1
-}
