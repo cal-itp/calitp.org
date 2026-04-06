@@ -3,11 +3,11 @@ layout: default
 ---
 
 {% if page.external %}
-  {% include "script_redirect.html" location=page.external %}
+  {% include "script_redirect" location=page.external %}
 {% endif %}
 
 {% capture date %}
-  {% include "date.html" date: page.date format: "%B %e, %Y, " %}
+  {% include "date" date: page.date format: "%B %e, %Y, " %}
 {% endcapture %}
 {% assign location = page.location | default: "Sacramento, CA" %}
 

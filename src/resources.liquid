@@ -20,7 +20,7 @@ description: >
            class="fw-bold text-white"
            href="mailto:hello@calitp.org">hello@calitp.org</a>.
       </p>
-      {% include "pills.html" tags: site.data.resource_tags %}
+      {% include "pills" tags: site.data.resource_tags %}
     </div>
   </div>
 </div>
@@ -43,7 +43,7 @@ description: >
             <h2 class="mb-4 mt-5">{{ group.name }}</h2>
             {% assign items = group.items %}
 
-            {% include "articles.html" items: items %}
+            {% include "articles" items: items %}
 
             {% unless forloop.last %}
               <hr />
@@ -62,7 +62,7 @@ description: >
               {% unless items.size == 0 %}
                 <h2 class="mb-4 mt-5">{{ group.name }}</h2>
 
-                {% include "articles.html" items: items %}
+                {% include "articles" items: items %}
 
                 {% unless forloop.last %}
                   <hr />

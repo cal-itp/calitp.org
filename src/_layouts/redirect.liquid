@@ -5,7 +5,7 @@
 <html>
 
   <head>
-    {% include "meta.html" %}
+    {% include "meta" %}
     {% include "styles.html" %}
     {% include "analytics.html" %}
     <link rel="canonical" href="{{ page.redirect_to }}" />
@@ -17,7 +17,7 @@
     {% include "header" %}
     <article>
       <section id="deck">
-        {% include "script_redirect.html" location: page.redirect_to %}
+        {% include "script_redirect" location: page.redirect_to %}
       </section>
     </article>
   </body>
