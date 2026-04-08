@@ -76,4 +76,4 @@ for a full list of members.
 
 ## Questions? In need of free support?
 
-For additional information, please email [hello@calitp.org](mailto:hello@calitp.org?subject=Attn: Scott Frazier) Attn: Scott Frazier.
+For additional information, please email [hello@calitp.org](mailto:hello@calitp.org?subject=Attn:%20Scott%20Frazier) Attn: Scott Frazier.

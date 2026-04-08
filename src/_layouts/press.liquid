@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-{% if page.external %}
-  {% include "script_redirect" location=page.external %}
+{% if external %}
+  {% include 'script_redirect', location: external %}
 {% endif %}
 
 {% capture date %}
-  {% include "date" date: page.date format: "%B %e, %Y, " %}
+  {% include "date" date: date format: "%B %e, %Y, " %}
 {% endcapture %}
-{% assign location = page.location | default: 'Sacramento, CA' %}
+{% assign location = location | default: 'Sacramento, CA' %}
 
 {% unless page.external %}
   <div class="row justify-content-center">
@@ -19,14 +19,14 @@ layout: default
           href="/press"
           >Press</a
         >
-        <h1 class="h2">{{ page.heading }}</h1>
-        {% if page.lead %}
-          <p>{{ page.lead }}</p>
+        <h1 class="h2">{{ heading }}</h1>
+        {% if lead %}
+          <p>{{ lead }}</p>
         {% endif %}
         <hr>
         <p class="d-block pb-2 text-uppercase fw-semibold">For immediate release</p>
-        <p>{{ date | append: location | append: '—' | append: page.intro }}</p>
-        {{ page.content }}
+        <p>{{ date | append: location | append: '—' | append: intro }}</p>
+        {{ content }}
       </article>
     </div>
   </div>

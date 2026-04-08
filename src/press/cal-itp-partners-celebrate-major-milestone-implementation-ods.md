@@ -89,4 +89,4 @@ hardware and software and competitively priced cellular data plans.
 
 ## Questions? In need of free support?
 
-For additional information, please email [hello@calitp.org](mailto:hello@calitp.org?subject=Attn: Scott Frazier) Attn: Scott Frazier.
+For additional information, please email [hello@calitp.org](mailto:hello@calitp.org?subject=%20Scott%20Frazier) Attn: Scott Frazier.
