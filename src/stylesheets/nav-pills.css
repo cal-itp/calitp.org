@@ -22,7 +22,7 @@
 }
 
 .black-on-white .nav-pills .nav-link:hover {
-  border-color: rgb(38  38  38 / 0.8);  /* dsdl-gray-80 at 80% opacity */
+  border-color: rgb(38 38 38 / 0.8); /* dsdl-gray-80 at 80% opacity */
 }
 
 .white-on-color .nav-pills {
