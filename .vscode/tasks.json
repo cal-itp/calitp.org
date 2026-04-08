@@ -6,11 +6,7 @@
     {
       "label": "Jekyll: Build and Serve Locally",
       "type": "shell",
-      "command": [
-        "bundle",
-        "exec",
-        "jekyll serve --force_polling --livereload"
-      ],
+      "command": ["bundle", "exec", "jekyll serve --force_polling --livereload"],
       "group": {
         "kind": "build",
         "isDefault": true
