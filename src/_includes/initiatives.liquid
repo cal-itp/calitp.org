@@ -15,7 +15,7 @@
       id="pills-tab"
       role="tablist"
     >
-      {% for initiative in site.data.initiatives %}
+      {% for initiative in initiatives %}
         <li class="nav-item" role="presentation">
           <button
             class="nav-link {{ initiative.active }}"
@@ -36,7 +36,7 @@
 </div>
 
 <div class="tab-content" id="pills-tabContent">
-  {% for initiative in site.data.initiatives %}
+  {% for initiative in initiatives %}
     <div
       class="tab-pane fade scroll-link {{ initiative.active }}"
       id="initiatives-{{ initiative.slug }}"
@@ -47,7 +47,7 @@
       <div
         id="{{ initiative.id }}"
         class="px-4 px-md-3 py-3 py-md-5 my-4 clipped-initiative"
-        style="background-color: var({{ initiative.class }})"
+        style="background-color: var({{ initiative.bgColor }})"
       >
         <div class="row px-2 px-md-0 pt-3 pt-md-5">
           <picture class="col-12 col-md-2 col-lg-2 d-flex justify-content-md-end align-self-md-start justify-content-center">
@@ -77,24 +77,24 @@
           <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="text-small-caps">Recent News</h4>
             <div class="tab-list pb-2">
-              {% assign all_press = site.press | reverse %}
+              {% assign all_press = collections.press | reverse %}
               {% for press in all_press %}
                 {% assign url = press.url %}
-                {% if press.external %}
-                  {% assign url = press.external %}
+                {% if press.data.external %}
+                  {% assign url = press.data.external %}
                 {% endif %}
 
-                {% if press.tags contains initiative.tag %}
+                {% if press.data.tags contains initiative.tag %}
                   <article class="press-item">
                     <a
                       class="text-white fw-bold py-2 d-block"
                       rel="noreferrer"
                       href="{{ url }}"
-                      {% if press.external %}
+                      {% if press.data.external %}
                         target="_blank"
                       {% endif %}
                     >
-                      {{- press.title -}}
+                      {{- press.data.title -}}
                     </a>
                   </article>
                 {% endif %}
