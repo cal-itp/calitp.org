@@ -41,7 +41,9 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets:
-      base_path: !relative # Relative to the current Markdown file
+      # Relative to the current Markdown file
+      base_path: !relative
+
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tabbed
