@@ -7,6 +7,8 @@ services:
       dockerfile: .devcontainer/Dockerfile
     image: calitp-dot-org:site
     command: sleep infinity
+    ports:
+      - 8080:8080
     volumes:
       - ..:/usr/src/calitp
 
