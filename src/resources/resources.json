@@ -1,3 +1,5 @@
 {
-  "tags": ["resources"]
+  "tags": ["resources"],
+  "layout": "resource",
+  "stylesheet": "press-and-resources.css"
 }
