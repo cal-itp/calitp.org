@@ -32,12 +32,12 @@ repos:
         args: ["--maxkb=2500"]
 
   - repo: https://github.com/JoC0de/pre-commit-prettier
-    rev: v3.8.1
+    rev: v3.8.2
     hooks:
       - id: prettier
         language_version: 24.14.1
         additional_dependencies:
-          - prettier@3.8.1
+          - prettier@3.8.2
           - "@shopify/prettier-plugin-liquid@1.10.2"
         types_or: [css, html, javascript, json, liquid, markdown, yaml]
 
