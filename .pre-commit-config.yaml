@@ -12,6 +12,9 @@ default_install_hook_types:
 # https://pre-commit.com/#top_level-default_stages
 default_stages: [pre-commit]
 
+default_language_version:
+  node: 24.14.1
+
 repos:
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v4.4.0
@@ -35,7 +38,7 @@ repos:
     rev: v3.8.2
     hooks:
       - id: prettier
-        language_version: 24.14.1
+        language: node
         additional_dependencies:
           - prettier@3.8.2
           - "@shopify/prettier-plugin-liquid@1.10.2"
