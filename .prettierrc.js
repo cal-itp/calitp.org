@@ -4,7 +4,7 @@
 // https://github.com/prettier/prettier/issues/15085
 const config = {
   printWidth: 130,
-  plugins: [import.meta.resolve("@shopify/prettier-plugin-liquid")],
+  // plugins: [import.meta.resolve("@shopify/prettier-plugin-liquid")],
 };
 
 export default config;
