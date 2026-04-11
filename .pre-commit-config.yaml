@@ -35,6 +35,7 @@ repos:
     rev: v3.8.1
     hooks:
       - id: prettier
+        language_version: 24.14.1
         additional_dependencies:
           - prettier@3.8.1
           - "@shopify/prettier-plugin-liquid@1.10.2"
