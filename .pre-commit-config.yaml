@@ -39,7 +39,7 @@ repos:
         types_or: ["html"]
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v9.6.0
+    rev: v10.0.0
     hooks:
       - id: cspell # Spell check changed files and commit message
         name: check commit message spelling
