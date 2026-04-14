@@ -16,4 +16,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("**/*.svg");
 
   eleventyConfig.addPassthroughCopy("src/assets/");
+
+  // Define a custom collection for grouping resources by category.
+  eleventyConfig.addCollection("resourcesByCategory", (collectionApi) => {
+    const resources = collectionApi.getFilteredByTag("resources");
+    const groupedByCategory = Object.groupBy(resources, (resource) => resource.data.category);
+    return Object.entries(groupedByCategory).sort(); // order by category name in ascending order
+  });
 }

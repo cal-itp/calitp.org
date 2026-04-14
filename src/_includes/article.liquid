@@ -27,9 +27,8 @@
   <br>
   <span class="text-body-tertiary text-body-m">
     {% if item.data.outlet %}{{ item.data.outlet }} |{% endif %}
-    {% if item.data.tags.size > 0 %}
-      {% assign filtered_tags = item.data.tags | where_exp: 't', "t != 'press'" %}
-      {{ filtered_tags | join: ', ' }} |
+    {% if item.data.filteredTags.size > 0 %}
+      {{ item.data.filteredTags | join: ', ' }} |
     {% endif %}
     {% include 'date', date: item.date, format: '%b %Y' -%}
   </span>

@@ -22,7 +22,7 @@ description: >
           >hello@calitp.org</a
         >.
       </p>
-      {% include 'pills', tags: site.data.resource_tags %}
+      {% include 'pills', tags: resourceTags %}
     </div>
   </div>
 </div>
@@ -30,12 +30,6 @@ description: >
 <section class="row justify-content-center" id="resources">
   <div class="col-10">
     <div class="offset-md-2 col-md-8 mb-5 pb-5">
-      {% comment %} Sort explicitly to avoid https://github.com/cal-itp/calitp.org/issues/457 {% endcomment %}
-      {% assign all_resources = site.resources | sort: 'date' | reverse %}
-
-      {% comment %}one more reverse when creating the groups to order ascending by name {% endcomment %}
-      {% assign groups = all_resources | group_by: 'category' | reverse %}
-
       <div class="tab-content" id="pills-tabContent">
         <div
           class="tab-pane fade active show"
@@ -43,9 +37,12 @@ description: >
           role="tabpanel"
           tabindex="0"
         >
-          {% for group in groups %}
-            <h2 class="mb-4 mt-5">{{ group.name }}</h2>
-            {% assign items = group.items %}
+          {% for group in collections.resourcesByCategory %}
+            {% assign category = group[0] %}
+            <h2 class="mb-4 mt-5">{{ category }}</h2>
+
+            {% comment %} Sort explicitly to avoid https://github.com/cal-itp/calitp.org/issues/457 {% endcomment %}
+            {% assign items = group[1] | sort: 'date' | reverse %}
 
             {% include 'articles', items: items %}
 
@@ -54,7 +51,7 @@ description: >
             {% endunless %}
           {% endfor %}
         </div>
-        {% for tag in site.data.resource_tags %}
+        {% for tag in resourceTags %}
           <div
             class="tab-pane fade"
             id="pills-{{ tag.id }}"
@@ -62,11 +59,13 @@ description: >
             aria-labelledby="pills-{{ tag.id }}-tab"
             tabindex="0"
           >
-            {% for group in groups %}
-              {% assign items = group.items | where_exp: 'item', 'item.tags contains tag.name' %}
+            {% for group in collections.resourcesByCategory %}
+              {% comment %} Sort explicitly to avoid https://github.com/cal-itp/calitp.org/issues/457 {% endcomment %}
+              {% assign items = group[1] | where_exp: 'item', 'item.data.tags contains tag.name' | sort: 'date' | reverse %}
 
               {% unless items.size == 0 %}
-                <h2 class="mb-4 mt-5">{{ group.name }}</h2>
+                {% assign category = group[0] %}
+                <h2 class="mb-4 mt-5">{{ category }}</h2>
 
                 {% include 'articles', items: items %}
 
