@@ -10,6 +10,8 @@
     "@11ty/eleventy": "^3.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.0",
     "@shopify/prettier-plugin-liquid": "^1.10.2",
+    "markdown-it": "^14.1.1",
+    "markdown-it-footnote": "^4.0.0",
     "prettier": "^3.8.1"
   },
   "scripts": {
