@@ -47,6 +47,7 @@ jinja
 Kegan
 keyserver
 linenums
+liquidjs
 Machiko
 Maher
 markdownextradata
