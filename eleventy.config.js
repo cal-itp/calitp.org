@@ -1,4 +1,13 @@
+import markdownIt from "markdown-it";
+import markdownItFootnote from "markdown-it-footnote";
+
 export default async function (eleventyConfig) {
+  // this customization opts us into a markdown parsing feature that parses and
+  // formats footnotes in a div of their own at the bottom of the page
+  // Jekyll provides this functionality OOTB
+  const mdOptions = { html: true, linkify: true };
+  eleventyConfig.setLibrary("md", markdownIt(mdOptions).use(markdownItFootnote));
+
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setLayoutsDirectory("_layouts");
 
