@@ -21,6 +21,7 @@ DSDL
 eamodio
 EDITMSG
 endcapture
+endcomment
 endfor
 endif
 endunless
@@ -46,6 +47,8 @@ jinja
 Kegan
 keyserver
 linenums
+linkify
+liquidjs
 Machiko
 Maher
 markdownextradata

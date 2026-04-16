@@ -57,5 +57,11 @@
       "description": "Matches everything in a Liquid template tag until the first string",
       "pattern": "/{%[^\"']+/g"
     }
+  ],
+  "overrides": [
+    {
+      "filename": "**/*.liquid",
+      "languageId": "html"
+    }
   ]
 }

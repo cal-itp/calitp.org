@@ -1,0 +1,35 @@
+{% if item.data.category %}
+  {% if item.data.asset %}
+    {% assign url = item.data.asset %}
+    {% unless url contains 'https://' %}
+      {% assign url = '/assets/' | append: url %}
+    {% endunless %}
+  {% else %}
+    {% assign url = item.url %}
+  {% endif %}
+{% else %}
+  {% assign url = item.url %}
+  {% if item.external %}
+    {% assign url = item.data.external %}
+  {% endif %}
+{% endif %}
+
+<article class="mb-3 pb-4">
+  <a
+    href="{{ url }}"
+    {% if item.data.external %}
+      target="_blank"
+    {% endif %}
+    class="fw-bold"
+  >
+    {{- item.data.title -}}
+  </a>
+  <br>
+  <span class="text-body-tertiary text-body-m">
+    {% if item.data.outlet %}{{ item.data.outlet }} |{% endif %}
+    {% if item.data.filteredTags.size > 0 %}
+      {{ item.data.filteredTags | join: ', ' }} |
+    {% endif %}
+    {% include 'date', date: item.date, format: '%b %Y' -%}
+  </span>
+</article>

@@ -10,11 +10,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
-  "files.associations": {
-    "*.html": "liquid"
-  },
-  "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid",
-    "editor.formatOnSave": true
+  "[css][html][javascript][json][liquid][markdown][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
