@@ -41,6 +41,7 @@ Grotesk
 gtag
 gtfs
 headerlink
+hubspot
 inlinehilite
 jekyll
 jinja
