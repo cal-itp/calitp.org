@@ -1,7 +1,12 @@
+import sitemap from "@quasibit/eleventy-plugin-sitemap";
 import markdownIt from "markdown-it";
 import markdownItFootnote from "markdown-it-footnote";
 
+import site from "./src/_data/site.js";
+
 export default async function (eleventyConfig) {
+  eleventyConfig.addPlugin(sitemap, { sitemap: { hostname: site.url } });
+
   // this customization opts us into a markdown parsing feature that parses and
   // formats footnotes in a div of their own at the bottom of the page
   // Jekyll provides this functionality OOTB
