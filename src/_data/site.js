@@ -4,15 +4,15 @@ export default {
     header: [
       {
         name: "Customer stories",
-        url: "/customer-stories",
+        url: "/customer-stories/",
       },
       {
         name: "Resources",
-        url: "/resources",
+        url: "/resources/",
       },
       {
         name: "Press",
-        url: "/press",
+        url: "/press/",
       },
       {
         name: "Reach out",
