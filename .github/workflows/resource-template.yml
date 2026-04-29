@@ -64,6 +64,6 @@ jobs:
             review the changes and merge when ready.
 
             Closes #${{ steps.workflow_state.outputs.issue_number }}
-          add-paths: "src/_resources/"
+          add-paths: "src/resources/"
           commit-message: "feat: start resource for req #${{ steps.workflow_state.outputs.issue_number }}"
           branch: "chore/resource-${{ steps.workflow_state.outputs.issue_number }}"
