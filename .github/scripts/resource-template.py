@@ -121,7 +121,7 @@ def build_filename(prefix, title):
   return f'{filename}.md'
 
 def create_resource(filename, content):
-  with open(f'src/_resources/{filename}', 'w') as file:
+  with open(f'src/resources/{filename}', 'w') as file:
     file.write(content)
 
 def main():
