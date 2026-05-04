@@ -9,7 +9,7 @@
   {% endif %}
 {% else %}
   {% assign url = item.url %}
-  {% if item.external %}
+  {% if item.data.external %}
     {% assign url = item.data.external %}
   {% endif %}
 {% endif %}
