@@ -107,18 +107,18 @@
           <div class="col-12 offset-md-2 col-md-8 col-lg-8 mb-28 mb-md-40">
             <h4 class="text-small-caps">Resources</h4>
             <div class="tab-list pb-2">
-              {% assign all_resources = site.resources | reverse %}
+              {% assign all_resources = collections.resources | reverse %}
               {% for resource in all_resources %}
-                {% if resource.asset %}
-                  {% assign url = resource.asset %}
+                {% if resource.data.asset %}
+                  {% assign url = resource.data.asset %}
                   {% unless url contains 'https://' %}
                     {% assign url = '/assets/' | append: url %}
                   {% endunless %}
                 {% else %}
-                  {% assign url = resource.url %}
+                  {% assign url = resource.data.url %}
                 {% endif %}
 
-                {% if resource.tags contains initiative.tag %}
+                {% if resource.data.tags contains initiative.tag %}
                   <article class="resource">
                     <a
                       class="text-white fw-bold py-2 d-block"
@@ -126,7 +126,7 @@
                       href="{{ url }}"
                       target="_blank"
                     >
-                      {{- resource.title -}}
+                      {{- resource.data.title -}}
                     </a>
                   </article>
                 {% endif %}
