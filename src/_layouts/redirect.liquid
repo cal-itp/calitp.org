@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    {% include 'seo' %}
+    {% include 'styles.html' %}
+    {% include 'analytics.html' %}
+    <link rel="canonical" href="{{ redirect_to }}">
+    <meta http-equiv="refresh" content="0;url={{ redirect_to }}">
+  </head>
+
+  <body>
+    {% include 'header' %}
+    <article>
+      <section id="deck">
+        {% include 'script_redirect', location: redirect_to %}
+      </section>
+    </article>
+  </body>
+</html>

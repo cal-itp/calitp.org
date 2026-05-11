@@ -1,0 +1,53 @@
+{% comment %}
+  as outlined in https://nicolashery.com/moving-a-blog-from-jekyll-to-eleventy/#seo
+{% endcomment %}
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- begin SEO tag -->
+<title>{{ seo.title }}</title>
+<link rel="canonical" href="{{  seo.canonicalUrl }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+<meta name="description" content="{{ seo.description }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@California_ITP">
+<meta name="twitter:creator" content="@California_ITP">
+<meta name="twitter:domain" content="{{ site.url }}">
+<meta property="og:title" content="{{ seo.pageTitle }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:description" content="{{ seo.description }}">
+<meta property="og:url" content="{{  seo.canonicalUrl }}">
+<meta property="og:site_name" content="{{ seo.siteTitle }}">
+<meta property="og:image" content="{{  seo.imgUrl }}">
+<meta property="og:type" content="website">
+<meta property="twitter:image" content="{{  seo.imgUrl }}">
+<meta property="twitter:title" content="{{  seo.pageTitle }}">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{  seo.schemaType }}",
+    "description": "{{  seo.description }}",
+    "headline": "{{  seo.pageTitle }}",
+    "image": "{{  seo.imgUrl }}",
+    "url": "{{  seo.canonicalUrl }}",
+    "name": "{{  seo.siteTitle }}"
+  }
+</script>
+
+{% assign is_article = date and tags %}
+{% if is_article %}
+  {% for tag in tags %}
+    <meta property="article:tag" content="{{ tag }}">
+  {% endfor %}
+  <meta
+    property="article:published_time"
+    content="{{ page.date | date: "%Y-%m-%d" }}"
+  >
+{% endif %}
+
+{% if asset or external %}
+  <meta name="robots" content="noindex">
+{% endif %}
+<!-- end SEO tag -->

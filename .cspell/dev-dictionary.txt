@@ -21,6 +21,7 @@ DSDL
 eamodio
 EDITMSG
 endcapture
+endcomment
 endfor
 endif
 endunless
@@ -40,12 +41,15 @@ Grotesk
 gtag
 gtfs
 headerlink
+hubspot
 inlinehilite
 jekyll
 jinja
 Kegan
 keyserver
 linenums
+linkify
+liquidjs
 Machiko
 Maher
 markdownextradata

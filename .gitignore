@@ -1,9 +1,4 @@
-.jekyll-*
-.bundle
 node_modules
 .netlify
 _site
 .DS_Store
-site
-# netlify uses mise to manage ruby, locally we use rvm
-mise.local.toml

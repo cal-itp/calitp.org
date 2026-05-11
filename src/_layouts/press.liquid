@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% if external %}
+  {% include 'script_redirect', location: external %}
+{% endif %}
+
+{% capture date %}
+  {% include "date" date: date format: "%B %e, %Y, " %}
+{% endcapture %}
+{% assign location = location | default: 'Sacramento, CA' %}
+
+{% unless page.external %}
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-8">
+      <article class="press-release pb-5 mb-5">
+        <a
+          class="fw-bold d-block text-decoration-none mb-2 pt-3 mt-5"
+          href="/press/"
+          >Press</a
+        >
+        <h1 class="h2">{{ heading }}</h1>
+        {% if lead %}
+          <p>{{ lead }}</p>
+        {% endif %}
+        <hr>
+        <p class="d-block pb-2 text-uppercase fw-semibold">For immediate release</p>
+        <p>{{ date | append: location | append: '—' | append: intro }}</p>
+        {{ content }}
+      </article>
+    </div>
+  </div>
+{% endunless %}
