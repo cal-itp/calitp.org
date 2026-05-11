@@ -5,8 +5,9 @@
 
 version: 2
 updates:
-  - package-ecosystem: "bundler" # See documentation for possible values
-    directory: "/" # Location of Gemfile
+  - package-ecosystem: "npm"
+    # Look for `package*.json` files in the `root` directory
+    directory: "/"
     schedule:
       interval: "daily"
     commit-message:
