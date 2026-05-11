@@ -1,1 +1,4 @@
-/links                https://share.hsforms.com/1RORrSA2FTQuiN1xEpxMv1A3aanu
+# https://docs.netlify.com/manage/routing/redirects/overview/#syntax-for-the-_redirects-file
+
+/links                              https://share.hsforms.com/1RORrSA2FTQuiN1xEpxMv1A3aanu
+/assets/Cal-ITP.Remix.One.Pager.pdf https://www.camobilitymarketplace.org/route-scheduling/
