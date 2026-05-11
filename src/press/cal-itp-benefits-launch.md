@@ -1,13 +1,13 @@
 ---
 date: "2022-09-21T17:00:00"
 title: Cal-ITP Benefits is first web tool to enable transit riders to verify identity and benefit eligibility, link fare discounts to bank cards
-heading: |-
+heading: >-
   State of California launches Cal-ITP Benefits, the first online tool for transit riders to verify their identity and benefit
   eligibility and link fare discounts to debit and credit cards
-lead: |-
+lead: >-
   California is one of the first states to integrate the federal government’s secure Login.gov sign-in service, enabling older
   adults to tap to pay a discounted bus fare at participating transit agencies
-intro: |-
+intro: >-
   The debut of a new web application called <a href="https://benefits.calitp.org/" target="_blank">Cal-ITP Benefits</a> allows
   transit riders to quickly and securely verify their eligibility online for discounted fares and link that discount benefit to
   a contactless debit or credit card to automatically receive reduced fares whenever they tap to pay with the card.

@@ -1,9 +1,9 @@
 ---
 date: "2022-08-01T17:00:00"
 title: Valley CAN and the State of California issue preloaded, reloadable contactless debit cards for low-income EV owners to use at any charging station
-heading: |-
+heading: >-
   Valley CAN and the State of California issue preloaded, reloadable contactless debit cards for low-income EV owners to use at any charging station
-intro: |-
+intro: >-
   One hundred low-income electric vehicle (EV) owners in the San Joaquin Valley are receiving reloadable contactless debit cards to use at EV charging stations as part of a demonstration project launched today by Valley Clean Air Now (Valley CAN) and the State of California.
 tags:
   - Contactless Payments
