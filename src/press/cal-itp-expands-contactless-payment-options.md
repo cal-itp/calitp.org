@@ -1,9 +1,9 @@
 ---
 date: "2025-10-31T17:00:00"
 title: "Cal-ITP Expands Contactless Payment Options: Transit Riders Can Now Pay with Discover® Network"
-heading: |-
+heading: >-
   Cal-ITP Expands Contactless Payment Options: Transit Riders Can Now Pay with Discover® Network
-intro: |-
+intro: >-
   The California Integrated Travel Project (Cal-ITP) is excited to announce that transit agencies partnering with Cal-ITP can accept credit card payments and process fares using Discover® Cards. This marks a major milestone that expands the accessibility of convenient, contactless transit payments for riders across California.
 tags:
   - Contactless Payments

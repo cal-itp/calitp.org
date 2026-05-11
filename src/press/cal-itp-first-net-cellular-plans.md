@@ -1,11 +1,11 @@
 ---
 date: "2022-11-03T17:00:00"
 title: Discounted cellular data plans now available for U.S. public transportation providers via California Mobility Marketplace
-heading: |-
+heading: >-
   Discounted cellular data plans now available for U.S. public transportation providers via California Mobility Marketplace
-lead: |-
+lead: >-
   Caltrans’ Cal-ITP negotiates below-market rates for wider coverage areas and offers grant-based subsidies to state transit agencies via California Mobility Marketplace
-intro: |-
+intro: >-
   Whether accepting customers’ mobile wallets for fare payments or sharing the live location of a bus, public transportation providers are using more technology and internet-connected devices to improve the rider experience. To match this need for cellular data, Caltrans’ California Integrated Travel Project (Cal-ITP) negotiated below-market rates for data-only plans that can be tapped by transit agencies—in California and throughout the U.S. California transit agencies can also access even lower payments through state subsidies by reaching out to Cal-ITP for technical support.
 tags:
   - Data Plans

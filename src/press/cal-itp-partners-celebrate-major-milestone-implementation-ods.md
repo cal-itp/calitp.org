@@ -2,7 +2,7 @@
 date: "2023-08-22T09:00:00"
 title: Cal-ITP and partners celebrate major milestones in implementation of Operational Data Standard (ODS) for transit
 heading: Cal-ITP and partners celebrate major milestones in implementation of Operational Data Standard (ODS) for transit
-intro: |-
+intro: >-
   The California Integrated Travel Project (Cal-ITP) today announced significant progress in implementing the Operational Data
   Standard (ODS) for transit agencies. In a major milestone for the project, the first vendor-to-vendor integrations powered by
   ODS have been officially launched. Five companies—EQUANS, Remix (owned by Via), Schedule Masters, Swiftly, and GIRO—now are

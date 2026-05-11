@@ -2,7 +2,7 @@
 date: "2022-06-02T17:00:00"
 title: ODS—New open data standard helps improve transit agency operations
 heading: ODS—New open data standard helps improve transit agency operations
-intro: |-
+intro: >-
   Caltrans’ California Integrated Travel Project (Cal-ITP) today launched a new open data standard to capture and integrate
   more information impacting transit agency operations. The Operational Data Standard (ODS) leverages the existing GTFS
   (General Transit Feed Specification) standard used by transit agencies and riders all over the world for transit service

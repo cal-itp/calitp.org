@@ -1,9 +1,9 @@
 ---
 date: "2022-03-09T17:00:00"
 title: State of California’s purchasing agreements allow public transit agencies across U.S. to skip procurement and quickly modernize fare collection systems
-heading: |-
+heading: >-
   State of California’s purchasing agreements allow public transit agencies across U.S. to skip procurement and quickly modernize fare collection systems
-intro: |-
+intro: >-
   California is making it easier and more affordable for public transportation providers anywhere in the U.S. to acquire the tools to allow riders a convenient option to pay their fare using a contactless credit/debit/prepaid card or mobile wallet on a smart device.
 tags:
   - Contactless Payments
