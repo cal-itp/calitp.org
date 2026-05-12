@@ -58,6 +58,6 @@ repos:
     hooks:
       - id: frontmatter-timestamp
         name: frontmatter timestamp
-        entry: bin/timestamp-format-pre-commit.py
+        entry: scripts/timestamp-format-pre-commit.py
         language: python
         files: \.md$

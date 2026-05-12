@@ -2,3 +2,5 @@ node_modules
 .netlify
 _site
 .DS_Store
+.vscode/
+.editorconfig
