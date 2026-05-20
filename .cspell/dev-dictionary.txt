@@ -78,6 +78,7 @@ shopify
 sissel
 smallcaps
 smartsymbols
+softprops
 stylesheet
 superfences
 toc
