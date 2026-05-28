@@ -59,9 +59,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "Auto-PR for Resource Request #${{ steps.workflow_state.outputs.issue_number }}"
           draft: true
-          body: >
+          body: |-
             This PR is created automatically from a resource request. Please
             review the changes and merge when ready.
+
+            Follow these steps to complete the resource creation.
+            1. Download the asset file
+            1. Add the downloaded file to the `src/assets/` directory'
+            1. Update the `asset` field in the created resource (above) to the filename of the newly added resource'
 
             Closes #${{ steps.workflow_state.outputs.issue_number }}
           add-paths: "src/resources/"
