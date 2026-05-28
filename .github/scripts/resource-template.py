@@ -180,7 +180,7 @@ def main():
   tags = issue['tag'] if isinstance(issue['tag'], list) else [issue['tag']]
   content = f"""
 ---
-date: "{issue['date_year']}-{issue['date_month']}-01 00:00:00"
+date: "{issue['date_year']}-{issue['date_month']}-01T00:00:00"
 title: "{issue['title']}"
 asset: "{issue['asset_url']}"
 category: "{issue['category']}"
