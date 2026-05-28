@@ -59,7 +59,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "Auto-PR for Resource Request #${{ steps.workflow_state.outputs.issue_number }}"
           draft: true
-          body: >
+          body: |-
             This PR is created automatically from a resource request. Please
             review the changes and merge when ready.
 
