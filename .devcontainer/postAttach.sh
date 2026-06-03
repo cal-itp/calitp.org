@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eux
 
-git config --global --add safe.directory /usr/src/calitp
+git config --global --add safe.directory /home/calitp/site
 
 # this triggers a node.js install using version specified in mise.toml
 mise exec -- npm ci

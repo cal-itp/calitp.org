@@ -26,7 +26,8 @@
     "/Cal-ITP/",
     "/github.com\\/cal-itp/",
     "/cal-itp\\/calitp.org/",
-    "/\/usr\/src\/calitp/",
+    "/USER=calitp/",
+    "/\/home\/calitp\/site/",
     "/github[/_\\.\\-]/i"
   ],
   "languageSettings": [
