@@ -3,9 +3,9 @@
   "dockerComposeFile": "compose.yml",
   "service": "site",
   "runServices": ["site", "docs"],
-  "workspaceFolder": "/usr/src/calitp",
+  "workspaceFolder": "/home/calitp/site",
   "remoteEnv": {
-    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/usr/src/calitp"
+    "MISE_TRUSTED_CONFIG_PATHS": "${containerEnv:PATH}:/home/calitp/site"
   },
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
