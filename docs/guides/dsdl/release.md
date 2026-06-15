@@ -4,14 +4,17 @@
 
 The steps to create a release tag are identical to [Benefits](https://docs.calitp.org/benefits/guides/release/). Release candidate tags are skipped.
 
+After a release has been published it is necessary to identify the associated netlify deployment and use the permalink to update the list below.
+
 ## Consuming a release
 
 Referencing a specific [release](https://github.com/cal-itp/calitp.org/releases) via a link tag is recommended:
 
+### `2026.05.01`
 ```html
 <link
   rel="stylesheet"
-  href="https://raw.githubusercontent.com/cal-itp/calitp.org/refs/tags/2026.03.1/src/stylesheets/dsdl/dsdl.css"
+  href="https://6a0e339e78e8ea00086cacb6--cal-itp-website.netlify.app/stylesheets/dsdl/dsdl.css"
 >
 ```
 
