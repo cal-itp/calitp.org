@@ -4,7 +4,7 @@
 
 The steps to create a release tag are identical to [Benefits](https://docs.calitp.org/benefits/guides/release/). Release candidate tags are skipped.
 
-After a release has been published it is necessary to identify the associated netlify deployment and use the permalink to update the list below.
+After a release has been published, it is necessary to identify the associated Netlify deployment and document the release's permalink on this page.
 
 ## Consuming a release
 
