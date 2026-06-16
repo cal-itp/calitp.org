@@ -6,7 +6,7 @@ RUN useradd --create-home --shell /bin/bash $USER
 ENV WORK_DIR=/home/$USER/site
 WORKDIR $WORK_DIR
 
-RUN chown -R $USER $WORK_DIR
+RUN chown -R $USER /home/$USER
 
 # Install mise (to manage Node.js) https://mise.jdx.dev/mise-cookbook/docker.html#docker-image-with-mise
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
