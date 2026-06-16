@@ -11,6 +11,10 @@ services:
       - 8080:8080
     volumes:
       - ..:/home/calitp/site
+      # ensure the workspace mount above does not obscure the npm deps
+      # originally laid down in the container's isolated filesystem
+      # this allows for better caching than running npm install in a lifecycle hook
+      - /home/calitp/site/node_modules
 
   docs:
     image: calitp-dot-org:site
