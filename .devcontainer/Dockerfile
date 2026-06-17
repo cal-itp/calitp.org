@@ -1,11 +1,12 @@
 FROM python:3.12
 
 ENV USER=calitp
+RUN useradd --create-home --shell /bin/bash $USER
 
-RUN useradd --create-home --shell /bin/bash $USER && \
-    chown -R $USER /home/$USER
+ENV WORK_DIR=/home/$USER/site
+WORKDIR $WORK_DIR
 
-WORKDIR /home/$USER/site
+RUN chown -R $USER /home/$USER
 
 # Install mise (to manage Node.js) https://mise.jdx.dev/mise-cookbook/docker.html#docker-image-with-mise
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -13,11 +14,10 @@ ENV MISE_DATA_DIR="/home/$USER/mise"
 ENV MISE_CONFIG_DIR="/home/$USER/mise"
 ENV MISE_CACHE_DIR="/home/$USER/mise/cache"
 ENV MISE_INSTALL_PATH="/usr/local/bin/mise"
+ENV MISE_TRUSTED_CONFIG_PATHS=$WORK_DIR
 ENV PATH="/home/$USER/mise/shims:$PATH"
 
 RUN curl https://mise.run | sh
-
-RUN apt-get update
 
 # Install Python dependencies
 COPY .devcontainer/requirements.txt .devcontainer/requirements.txt
@@ -27,3 +27,9 @@ RUN pip install --no-cache-dir -r .devcontainer/requirements.txt
 RUN pip install --no-cache-dir -r docs/requirements.txt
 
 USER $USER
+
+RUN git config --global --add safe.directory $WORK_DIR
+
+# Install Node.js and npm dependencies
+COPY mise.toml .node-version package.json package-lock.json ./
+RUN mise exec -- npm install -g npm@latest && npm clean-install
