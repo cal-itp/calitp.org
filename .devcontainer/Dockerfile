@@ -19,8 +19,6 @@ ENV PATH="/home/$USER/mise/shims:$PATH"
 
 RUN curl https://mise.run | sh
 
-RUN apt-get update
-
 # Install Python dependencies
 COPY .devcontainer/requirements.txt .devcontainer/requirements.txt
 COPY docs/requirements.txt docs/requirements.txt
@@ -34,5 +32,4 @@ RUN git config --global --add safe.directory $WORK_DIR
 
 # Install Node.js and npm dependencies
 COPY mise.toml .node-version package.json package-lock.json ./
-RUN mise exec -- npm install -g npm@latest
-RUN mise exec -- npm clean-install
+RUN mise exec -- npm install -g npm@latest && npm clean-install
