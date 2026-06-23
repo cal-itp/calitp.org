@@ -31,14 +31,12 @@ repos:
       - id: check-added-large-files
         args: ["--maxkb=2500"]
 
-  - repo: https://github.com/JoC0de/pre-commit-prettier
-    rev: v3.8.4
+  - repo: local
     hooks:
       - id: prettier
-        additional_dependencies:
-          - prettier@3.8.4
-          - "@shopify/prettier-plugin-liquid@1.10.3"
-        types_or: [css, html, javascript, json, liquid, markdown, yaml]
+        name: Prettier (+ shopify plugin)
+        entry: npm run lint:check
+        language: node
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
     rev: v10.0.1
