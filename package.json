@@ -17,7 +17,7 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve",
-    "lint:check": "npx prettier --check .",
+    "lint:check": "npx --no-install prettier --check .",
     "lint:fix": "npx prettier --write ."
   }
 }
