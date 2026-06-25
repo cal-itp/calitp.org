@@ -46,7 +46,7 @@
       <th>RGB</th>
       <th>CSS Variable</th>
     </tr>
-    {% for color in dsdl_colors %}{# Loop through every color in _data/dsdl_colors.yml #}
+    {% for color in dsdlColors %}{# Loop through every color in _data/dsdlColors.json #}
       {% if loop.previtem is defined and color.group != loop.previtem.group %}
         {# If we have changed groups, start a new table #}
   </table>
