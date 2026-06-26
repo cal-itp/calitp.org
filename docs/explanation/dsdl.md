@@ -35,7 +35,7 @@ When paired with black, the values of the colors in the 10–50 range have been 
 <div class="dsdl-colors">
   {# Start the first color group's list #}
   <ol>
-    {% for color in dsdl_colors %}{# Loop through every color in _data/dsdl_colors.yml #}
+    {% for color in dsdlColors %}{# Loop through every color in _data/dsdlColors.json #}
       {% if loop.previtem is defined and color.group != loop.previtem.group %}
         {# If we have changed groups, start a new list #}
   </ol>
