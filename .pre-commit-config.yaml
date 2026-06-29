@@ -32,7 +32,7 @@ repos:
         args: ["--maxkb=2500"]
 
   - repo: https://github.com/JoC0de/pre-commit-prettier
-    rev: v3.8.4
+    rev: v3.9.3
     hooks:
       - id: prettier
         additional_dependencies:
