@@ -32,16 +32,16 @@ repos:
         args: ["--maxkb=2500"]
 
   - repo: https://github.com/JoC0de/pre-commit-prettier
-    rev: v3.9.4
+    rev: v3.9.6
     hooks:
       - id: prettier
         additional_dependencies:
-          - prettier@3.9.4
-          - "@shopify/prettier-plugin-liquid@1.10.3"
+          - prettier@3.9.6
+          - "@shopify/prettier-plugin-liquid@1.11.0"
         types_or: [css, html, javascript, json, liquid, markdown, yaml]
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v10.0.1
+    rev: v10.1.0
     hooks:
       - id: cspell
         name: check commit message and changed file spelling
