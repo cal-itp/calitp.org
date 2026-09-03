@@ -113,5 +113,5 @@ Sacramento light rail; on-demand transit vans in San Diego; and LAX’s FlyAway 
 which connects airport passengers to commuter rail.
 
 Learn more at [calitp.org](https://calitp.org) and on [@California_ITP](https://twitter.com/california_itp?utm_source=FirstNet+PR&utm_medium=Press+Release) on Twitter, or by subscribing to the
-[Caltrans Mobility Newsletter](https://lp.constantcontactpages.com/su/eLbtFoE/calitp?FNPR=&utm_source=FirstNet+PR&utm_medium=Press+Release). And visit Cal-ITP’s [CAMobilityMarketplace.org](camobilitymarketplace.org/) for a
+[Caltrans Mobility Newsletter](https://lp.constantcontactpages.com/su/eLbtFoE/calitp?FNPR=&utm_source=FirstNet+PR&utm_medium=Press+Release). And visit Cal-ITP’s [CAMobilityMarketplace.org](https://www.camobilitymarketplace.org/) for a
 catalog of code-compliant products and services for public mobility providers, including contactless payment acceptance hardware and software. Agencies that would like to tap Cal-ITP’s technical assistance can indicate interest via this [Cal-ITP Support Request Form](https://www.camobilitymarketplace.org/contact) or by reaching out to [hello@calitp.org](mailto:hello@calitp.org).

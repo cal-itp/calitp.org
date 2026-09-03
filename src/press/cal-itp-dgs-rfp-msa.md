@@ -26,6 +26,6 @@ The building blocks to launch contactless fare payment systems are available fro
 More information about the benefits of offering open-loop contactless fare payments is available on the [California Mobility Marketplace](https://www.camobilitymarketplace.org/go-contactless), which is managed by Cal-ITP. Supported by the California State Transportation Agency, Cal-ITP is a Caltrans-led statewide solution to make travel planning and payments simpler and more cost-effective for transit providers and riders. Through Cal-ITP, numerous
 transportation providers in California—including Monterey Salinas-Transit, Sacramento Regional Transit light rail, Clean Air Express, and Santa Barbara Metropolitan Transit District—have launched successful contactless payment demonstrations.
 
-To make the transition to contactless fare collection as easy and cost-effective as possible, Cal-ITP provides extensive support to transit agencies. Agencies that would like to take advantage of Cal-ITP’s technical assistance can indicate interest via this [Cal-ITP Support Request Form: bit.ly/Cal-ITPsupport](bit.ly/Cal-ITPsupport).
+To make the transition to contactless fare collection as easy and cost-effective as possible, Cal-ITP provides extensive support to transit agencies. Agencies that would like to take advantage of Cal-ITP’s technical assistance can indicate interest via the [Cal-ITP Support Request Form](https://www.camobilitymarketplace.org/get-support/).
 
 For more information, email [hello@calitp.org](mailto:hello@calitp.org).
