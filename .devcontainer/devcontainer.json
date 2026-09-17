@@ -2,7 +2,6 @@
   "name": "cal-itp/calitp.org",
   "dockerComposeFile": "compose.yml",
   "service": "site",
-  "runServices": ["site", "docs"],
   "workspaceFolder": "/home/calitp/site",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
